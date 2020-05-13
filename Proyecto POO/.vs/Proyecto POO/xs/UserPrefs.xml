@@ -1,0 +1,25 @@
+﻿<Properties StartupConfiguration="{E9AAEB2E-006B-476B-A131-7631491B2CC3}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Proyecto POO/Archivo.cs">
+    <Files>
+      <File FileName="Proyecto POO/Archivo.cs" Line="26" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Proyecto POO" expanded="True">
+            <Node name="Proyecto POO" expanded="True">
+              <Node name="Archivo.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Proyecto_220POO PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>
