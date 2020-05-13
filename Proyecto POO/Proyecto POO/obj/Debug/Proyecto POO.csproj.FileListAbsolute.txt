@@ -1,0 +1,9 @@
+C:\Users\juani\Desktop\POO\Proyecto\Repositorio Proyecto\ProyectoPOO\Proyecto POO\Proyecto POO\bin\Debug\Proyecto POO.exe.config
+C:\Users\juani\Desktop\POO\Proyecto\Repositorio Proyecto\ProyectoPOO\Proyecto POO\Proyecto POO\bin\Debug\Proyecto POO.exe
+C:\Users\juani\Desktop\POO\Proyecto\Repositorio Proyecto\ProyectoPOO\Proyecto POO\Proyecto POO\bin\Debug\Proyecto POO.pdb
+C:\Users\juani\Desktop\POO\Proyecto\Repositorio Proyecto\ProyectoPOO\Proyecto POO\Proyecto POO\obj\Debug\Proyecto POO.csprojAssemblyReference.cache
+C:\Users\juani\Desktop\POO\Proyecto\Repositorio Proyecto\ProyectoPOO\Proyecto POO\Proyecto POO\obj\Debug\Proyecto POO.csproj.CoreCompileInputs.cache
+C:\Users\juani\Desktop\POO\Proyecto\Repositorio Proyecto\ProyectoPOO\Proyecto POO\Proyecto POO\obj\Debug\Proyecto POO.exe
+C:\Users\juani\Desktop\POO\Proyecto\Repositorio Proyecto\ProyectoPOO\Proyecto POO\Proyecto POO\obj\Debug\Proyecto POO.pdb
+C:\Users\juani\Desktop\POO\Proyecto\Repositorio Proyecto\ProyectoPOO\Proyecto POO\Proyecto POO\obj\Debug\Interop.WMPLib.dll
+C:\Users\juani\Desktop\POO\Proyecto\Repositorio Proyecto\ProyectoPOO\Proyecto POO\Proyecto POO\obj\Debug\Proyecto POO.csproj.ResolveComReference.cache

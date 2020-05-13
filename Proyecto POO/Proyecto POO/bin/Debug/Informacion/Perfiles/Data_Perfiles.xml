@@ -1,0 +1,222 @@
+<?xml version="1.0"?>
+<ArrayOfPerfil xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Perfil>
+    <Usuario_Asociado>
+      <Nombre>Juan</Nombre>
+      <Apellido>Roncagliolo</Apellido>
+      <Fecha_De_Nacimiento>1998-01-16T00:00:00</Fecha_De_Nacimiento>
+      <Sexo>1</Sexo>
+      <Pais>Chile</Pais>
+      <Email>ronca@spotflix.com</Email>
+      <Contraseña>ronca</Contraseña>
+      <Tipo_de_Membresia>2</Tipo_de_Membresia>
+    </Usuario_Asociado>
+    <Nombre_perfil>Ronca</Nombre_perfil>
+    <Tipo_de_Perfil>1</Tipo_de_Perfil>
+    <Fav_Canciones>
+      <Cancion>
+        <Titulo>Como se siente</Titulo>
+        <Categoria>1</Categoria>
+        <Año>2020-05-11T00:00:00</Año>
+        <Duracion />
+        <Ranking>10</Ranking>
+        <Estado>2</Estado>
+        <URL>C:\Users\juani\Desktop\POO\Proyecto\Repositorio Proyecto\ProyectoPOO\Proyecto POO\Proyecto POO\bin\Debug\Musica\Bad bunny - Como se siente.mp3</URL>
+        <Cantante>
+          <Persona>
+            <Nombre_y_Apellido>Bad bunny</Nombre_y_Apellido>
+            <Sexo>1</Sexo>
+            <Nacionalidad>Puertorriqueño</Nacionalidad>
+            <Fecha_De_Nacimiento>1994-03-10T00:00:00</Fecha_De_Nacimiento>
+            <Profesion>
+              <int>1</int>
+              <int>2</int>
+            </Profesion>
+          </Persona>
+        </Cantante>
+        <Compositor>
+          <Persona>
+            <Nombre_y_Apellido>Bad bunny</Nombre_y_Apellido>
+            <Sexo>1</Sexo>
+            <Nacionalidad>Puertorriqueño</Nacionalidad>
+            <Fecha_De_Nacimiento>1994-03-10T00:00:00</Fecha_De_Nacimiento>
+            <Profesion>
+              <int>1</int>
+              <int>2</int>
+            </Profesion>
+          </Persona>
+        </Compositor>
+        <Album>Las que no iban a salir</Album>
+        <Imagen>Imagen</Imagen>
+        <Letra>Letra</Letra>
+        <Genero>Trap</Genero>
+      </Cancion>
+    </Fav_Canciones>
+    <Fav_Pelicula />
+    <Fav_Videos />
+    <Fav_Podcast />
+    <Fav_AudioLibro />
+    <Playlists_Canciones_Propias>
+      <Playlist>
+        <Playlist_paralista>
+          <Cancion>
+            <Titulo>Como se siente</Titulo>
+            <Categoria>1</Categoria>
+            <Año>2020-05-11T00:00:00</Año>
+            <Duracion />
+            <Ranking>10</Ranking>
+            <Estado>2</Estado>
+            <URL>C:\Users\juani\Desktop\POO\Proyecto\Repositorio Proyecto\ProyectoPOO\Proyecto POO\Proyecto POO\bin\Debug\Musica\Bad bunny - Como se siente.mp3</URL>
+            <Cantante>
+              <Persona>
+                <Nombre_y_Apellido>Bad Bunny</Nombre_y_Apellido>
+                <Sexo>1</Sexo>
+                <Nacionalidad>Puertorriqueño</Nacionalidad>
+                <Fecha_De_Nacimiento>1994-03-10T00:00:00</Fecha_De_Nacimiento>
+                <Profesion>
+                  <int>1</int>
+                  <int>2</int>
+                </Profesion>
+              </Persona>
+            </Cantante>
+            <Compositor>
+              <Persona>
+                <Nombre_y_Apellido>Bad Bunny</Nombre_y_Apellido>
+                <Sexo>1</Sexo>
+                <Nacionalidad>Puertorriqueño</Nacionalidad>
+                <Fecha_De_Nacimiento>1994-03-10T00:00:00</Fecha_De_Nacimiento>
+                <Profesion>
+                  <int>1</int>
+                  <int>2</int>
+                </Profesion>
+              </Persona>
+            </Compositor>
+            <Album>Las que no iban a salir</Album>
+            <Imagen>Imagen</Imagen>
+            <Letra>Letra</Letra>
+            <Genero>Trap</Genero>
+          </Cancion>
+        </Playlist_paralista>
+        <Nombre>Ronca Reggaeton</Nombre>
+        <Duracion />
+        <Tipo_De_Playlist>1</Tipo_De_Playlist>
+      </Playlist>
+    </Playlists_Canciones_Propias>
+    <Playlists_Canciones_De_Otros />
+    <Seguidos />
+    <Seguidores />
+    <Personas_Seguidas />
+    <En_Cola_cancion>
+      <Cancion>
+        <Titulo>Como se siente</Titulo>
+        <Categoria>1</Categoria>
+        <Año>2020-05-11T00:00:00</Año>
+        <Duracion />
+        <Ranking>10</Ranking>
+        <Estado>2</Estado>
+        <URL>C:\Users\juani\Desktop\POO\Proyecto\Repositorio Proyecto\ProyectoPOO\Proyecto POO\Proyecto POO\bin\Debug\Musica\Bad bunny - Como se siente.mp3</URL>
+        <Cantante>
+          <Persona>
+            <Nombre_y_Apellido>Bad bunny</Nombre_y_Apellido>
+            <Sexo>1</Sexo>
+            <Nacionalidad>Puertorriqueño</Nacionalidad>
+            <Fecha_De_Nacimiento>1994-03-10T00:00:00</Fecha_De_Nacimiento>
+            <Profesion>
+              <int>1</int>
+              <int>2</int>
+            </Profesion>
+          </Persona>
+        </Cantante>
+        <Compositor>
+          <Persona>
+            <Nombre_y_Apellido>Bad bunny</Nombre_y_Apellido>
+            <Sexo>1</Sexo>
+            <Nacionalidad>Puertorriqueño</Nacionalidad>
+            <Fecha_De_Nacimiento>1994-03-10T00:00:00</Fecha_De_Nacimiento>
+            <Profesion>
+              <int>1</int>
+              <int>2</int>
+            </Profesion>
+          </Persona>
+        </Compositor>
+        <Album>Las que no iban a salir</Album>
+        <Imagen>Imagen</Imagen>
+        <Letra>Letra</Letra>
+        <Genero>Trap</Genero>
+      </Cancion>
+    </En_Cola_cancion>
+    <En_Cola_video />
+    <En_Cola_pelicula />
+    <En_Cola_podcast />
+    <En_Cola_audiolibro />
+  </Perfil>
+  <Perfil>
+    <Usuario_Asociado>
+      <Nombre>Camila</Nombre>
+      <Apellido>Villalobos</Apellido>
+      <Fecha_De_Nacimiento>1998-09-30T00:00:00</Fecha_De_Nacimiento>
+      <Sexo>2</Sexo>
+      <Pais>Chile</Pais>
+      <Email>cami@spotflix.com</Email>
+      <Contraseña>cami</Contraseña>
+      <Tipo_de_Membresia>2</Tipo_de_Membresia>
+    </Usuario_Asociado>
+    <Nombre_perfil>Cami</Nombre_perfil>
+    <Tipo_de_Perfil>1</Tipo_de_Perfil>
+    <Fav_Canciones />
+    <Fav_Pelicula />
+    <Fav_Videos />
+    <Fav_Podcast />
+    <Fav_AudioLibro />
+    <Playlists_Canciones_Propias />
+    <Playlists_Canciones_De_Otros />
+    <Seguidos />
+    <Seguidores />
+    <Personas_Seguidas />
+    <En_Cola_cancion />
+    <En_Cola_video />
+    <En_Cola_pelicula />
+    <En_Cola_podcast />
+    <En_Cola_audiolibro />
+  </Perfil>
+  <Perfil>
+    <Usuario_Asociado>
+      <Nombre>Cristobal</Nombre>
+      <Apellido>Neira</Apellido>
+      <Fecha_De_Nacimiento>1998-09-16T00:00:00</Fecha_De_Nacimiento>
+      <Sexo>1</Sexo>
+      <Pais>Chile</Pais>
+      <Email>cristobal@spotflix.com</Email>
+      <Contraseña>cristobal</Contraseña>
+      <Tipo_de_Membresia>2</Tipo_de_Membresia>
+    </Usuario_Asociado>
+    <Nombre_perfil>Cristobal</Nombre_perfil>
+    <Tipo_de_Perfil>1</Tipo_de_Perfil>
+    <Fav_Canciones />
+    <Fav_Pelicula />
+    <Fav_Videos />
+    <Fav_Podcast />
+    <Fav_AudioLibro />
+    <Playlists_Canciones_Propias />
+    <Playlists_Canciones_De_Otros />
+    <Seguidos />
+    <Seguidores />
+    <Personas_Seguidas>
+      <Persona>
+        <Nombre_y_Apellido>Bad bunny</Nombre_y_Apellido>
+        <Sexo>1</Sexo>
+        <Nacionalidad>Puertorriqueño</Nacionalidad>
+        <Fecha_De_Nacimiento>1994-03-10T00:00:00</Fecha_De_Nacimiento>
+        <Profesion>
+          <int>1</int>
+          <int>2</int>
+        </Profesion>
+      </Persona>
+    </Personas_Seguidas>
+    <En_Cola_cancion />
+    <En_Cola_video />
+    <En_Cola_pelicula />
+    <En_Cola_podcast />
+    <En_Cola_audiolibro />
+  </Perfil>
+</ArrayOfPerfil>

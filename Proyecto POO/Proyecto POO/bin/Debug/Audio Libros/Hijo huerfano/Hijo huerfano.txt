@@ -1,0 +1,5 @@
+Era hace una vez un padre que le dice a su hijo:
+Si repruebas el examen de programación orientada a objetos olvídate que soy tu padre. 
+Al día siguiente le pregunta el padre: 
+Hijo! Cómo te fue en tu examen? 
+Y el hijo contesta: Y tú quien eres?
