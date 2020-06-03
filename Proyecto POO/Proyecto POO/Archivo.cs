@@ -20,5 +20,9 @@ namespace Proyecto_POO
         public int Estado;
         public string URL;
 
+
+
+
+
     }
 }
