@@ -57,7 +57,7 @@ namespace Proyecto_POO
             spotflix.controls.previous();
 
         }
-        public static void Info()
+        public static void Info()//informacion playlist
         {
             for (int i = 0; i < spotflix.currentPlaylist.count; i++)
             {
