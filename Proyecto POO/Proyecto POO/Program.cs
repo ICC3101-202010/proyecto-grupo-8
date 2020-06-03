@@ -1110,8 +1110,6 @@ namespace Proyecto_POO
                 XmlSerializer serializer = new XmlSerializer(typeof(List<Usuario>));
                 serializer.Serialize(fs2, Spotflix.Lista_Usuarios);
             }
-
-
         }
     }
 }
