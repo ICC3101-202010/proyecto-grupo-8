@@ -28,12 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main_Spotflix));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.button_Minimizar = new System.Windows.Forms.Button();
             this.button_Maximizar = new System.Windows.Forms.Button();
             this.button_Close = new System.Windows.Forms.Button();
+            this.button_Restaurar = new System.Windows.Forms.Button();
             this.main_menu1 = new Consola_Spotflix.Main_menu();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -63,6 +65,7 @@
             // panel3
             // 
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel3.Controls.Add(this.button_Restaurar);
             this.panel3.Controls.Add(this.button_Minimizar);
             this.panel3.Controls.Add(this.button_Maximizar);
             this.panel3.Controls.Add(this.button_Close);
@@ -74,7 +77,6 @@
             // 
             // button_Minimizar
             // 
-            this.button_Minimizar.Dock = System.Windows.Forms.DockStyle.Right;
             this.button_Minimizar.FlatAppearance.BorderSize = 0;
             this.button_Minimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Minimizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -116,6 +118,23 @@
             this.button_Close.Text = "X";
             this.button_Close.UseVisualStyleBackColor = true;
             this.button_Close.Click += new System.EventHandler(this.button_Close_Click);
+            this.button_Close.MouseLeave += new System.EventHandler(this.button_Close_MouseLeave);
+            this.button_Close.MouseHover += new System.EventHandler(this.button_Close_MouseHover);
+            // 
+            // button_Restaurar
+            // 
+            this.button_Restaurar.FlatAppearance.BorderSize = 0;
+            this.button_Restaurar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_Restaurar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_Restaurar.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button_Restaurar.Image = ((System.Drawing.Image)(resources.GetObject("button_Restaurar.Image")));
+            this.button_Restaurar.Location = new System.Drawing.Point(45, 0);
+            this.button_Restaurar.Name = "button_Restaurar";
+            this.button_Restaurar.Size = new System.Drawing.Size(45, 30);
+            this.button_Restaurar.TabIndex = 4;
+            this.button_Restaurar.UseVisualStyleBackColor = true;
+            this.button_Restaurar.Visible = false;
+            this.button_Restaurar.Click += new System.EventHandler(this.button_Restaurar_Click);
             // 
             // main_menu1
             // 
@@ -135,6 +154,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
             this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(1);
             this.MinimumSize = new System.Drawing.Size(500, 500);
             this.Name = "Main_Spotflix";
@@ -161,6 +181,7 @@
         private System.Windows.Forms.Button button_Minimizar;
         private System.Windows.Forms.Button button_Maximizar;
         private System.Windows.Forms.Button button_Close;
+        private System.Windows.Forms.Button button_Restaurar;
     }
 }
 

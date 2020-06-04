@@ -26,12 +26,39 @@ namespace Consola_Spotflix
 
         private void button_Maximizar_Click(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Maximized;
+            if (this.WindowState != FormWindowState.Maximized)
+            {
+                this.WindowState = FormWindowState.Maximized;
+                button_Restaurar.Show();
+                button_Minimizar.Show();
+            }
+            button_Maximizar.Hide();
         }
 
         private void button_Minimizar_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void button_Restaurar_Click(object sender, EventArgs e)
+        {
+            if (this.WindowState == FormWindowState.Maximized)
+            {
+                this.WindowState = FormWindowState.Normal;
+                button_Maximizar.Show();
+                button_Minimizar.Show();
+            }
+            button_Restaurar.Hide();
+        }
+
+        private void button_Close_MouseHover(object sender, EventArgs e)
+        {
+            button_Close.BackColor = System.Drawing.Color.Red;
+        }
+
+        private void button_Close_MouseLeave(object sender, EventArgs e)
+        {
+            button_Close.BackColor = System.Drawing.Color.FromArgb(23,23,23) ;
         }
     }
 }
