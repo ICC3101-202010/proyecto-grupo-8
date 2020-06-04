@@ -17,7 +17,6 @@ namespace Consola_Spotflix
         public Main_menu()
         {
             InitializeComponent();
-            
         }
     }
 }
