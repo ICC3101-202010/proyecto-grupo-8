@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Reflection;
+using System.Runtime.InteropServices;
 
 namespace Consola_Spotflix
 {
@@ -15,6 +17,7 @@ namespace Consola_Spotflix
         public Main_menu()
         {
             InitializeComponent();
+            
         }
     }
 }
