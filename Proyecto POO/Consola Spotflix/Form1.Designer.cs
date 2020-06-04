@@ -29,16 +29,28 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.main_menu1 = new Consola_Spotflix.Main_menu();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.AutoSize = true;
+            this.panel1.Controls.Add(this.main_menu1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1264, 681);
             this.panel1.TabIndex = 1;
+            // 
+            // main_menu1
+            // 
+            this.main_menu1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.main_menu1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.main_menu1.Location = new System.Drawing.Point(0, 0);
+            this.main_menu1.Name = "main_menu1";
+            this.main_menu1.Size = new System.Drawing.Size(1264, 681);
+            this.main_menu1.TabIndex = 0;
             // 
             // Main_Spotflix
             // 
@@ -53,6 +65,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consola Spotflix";
             this.TransparencyKey = System.Drawing.Color.Transparent;
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -61,6 +74,7 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
+        private Main_menu main_menu1;
     }
 }
 

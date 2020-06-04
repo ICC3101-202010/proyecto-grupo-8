@@ -15,6 +15,8 @@ namespace Consola_Spotflix
         public Main_Spotflix()
         {
             InitializeComponent();
+            Main_menu main_Menu = new Main_menu();
+            main_Menu.Show();
         }
     }
 }
