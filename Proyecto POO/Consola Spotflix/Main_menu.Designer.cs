@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main_menu));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -48,18 +48,38 @@
             this.button14 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.button20 = new System.Windows.Forms.Button();
+            this.button17 = new System.Windows.Forms.Button();
+            this.button18 = new System.Windows.Forms.Button();
+            this.button19 = new System.Windows.Forms.Button();
+            this.button21 = new System.Windows.Forms.Button();
+            this.button22 = new System.Windows.Forms.Button();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.button23 = new System.Windows.Forms.Button();
+            this.button24 = new System.Windows.Forms.Button();
+            this.button26 = new System.Windows.Forms.Button();
+            this.button25 = new System.Windows.Forms.Button();
+            this.button27 = new System.Windows.Forms.Button();
+            this.button28 = new System.Windows.Forms.Button();
+            this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel1.Controls.Add(this.panel1, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.panel4, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.panel5, 2, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -72,21 +92,13 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.axWindowsMediaPlayer1);
             this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(195, 33);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(890, 624);
             this.panel1.TabIndex = 0;
-            // 
-            // panel2
-            // 
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(890, 309);
-            this.panel2.TabIndex = 0;
             // 
             // panel3
             // 
@@ -257,17 +269,171 @@
             this.button16.Text = "button16";
             this.button16.UseVisualStyleBackColor = true;
             // 
+            // panel4
+            // 
+            this.panel4.AutoScroll = true;
+            this.panel4.Controls.Add(this.button21);
+            this.panel4.Controls.Add(this.button22);
+            this.panel4.Controls.Add(this.button18);
+            this.panel4.Controls.Add(this.button19);
+            this.panel4.Controls.Add(this.button17);
+            this.panel4.Controls.Add(this.button20);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel4.Location = new System.Drawing.Point(3, 33);
+            this.panel4.MaximumSize = new System.Drawing.Size(186, 10000);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(186, 624);
+            this.panel4.TabIndex = 1;
+            // 
+            // button20
+            // 
+            this.button20.Location = new System.Drawing.Point(14, 3);
+            this.button20.Name = "button20";
+            this.button20.Size = new System.Drawing.Size(150, 138);
+            this.button20.TabIndex = 2;
+            this.button20.Text = "button20";
+            this.button20.UseVisualStyleBackColor = true;
+            // 
+            // button17
+            // 
+            this.button17.Location = new System.Drawing.Point(14, 162);
+            this.button17.Name = "button17";
+            this.button17.Size = new System.Drawing.Size(150, 138);
+            this.button17.TabIndex = 3;
+            this.button17.Text = "button17";
+            this.button17.UseVisualStyleBackColor = true;
+            // 
+            // button18
+            // 
+            this.button18.Location = new System.Drawing.Point(14, 483);
+            this.button18.Name = "button18";
+            this.button18.Size = new System.Drawing.Size(150, 138);
+            this.button18.TabIndex = 5;
+            this.button18.Text = "button18";
+            this.button18.UseVisualStyleBackColor = true;
+            // 
+            // button19
+            // 
+            this.button19.Location = new System.Drawing.Point(14, 324);
+            this.button19.Name = "button19";
+            this.button19.Size = new System.Drawing.Size(150, 138);
+            this.button19.TabIndex = 4;
+            this.button19.Text = "button19";
+            this.button19.UseVisualStyleBackColor = true;
+            // 
+            // button21
+            // 
+            this.button21.Location = new System.Drawing.Point(14, 804);
+            this.button21.Name = "button21";
+            this.button21.Size = new System.Drawing.Size(150, 138);
+            this.button21.TabIndex = 7;
+            this.button21.Text = "button21";
+            this.button21.UseVisualStyleBackColor = true;
+            // 
+            // button22
+            // 
+            this.button22.Location = new System.Drawing.Point(14, 645);
+            this.button22.Name = "button22";
+            this.button22.Size = new System.Drawing.Size(150, 138);
+            this.button22.TabIndex = 6;
+            this.button22.Text = "button22";
+            this.button22.UseVisualStyleBackColor = true;
+            // 
+            // panel5
+            // 
+            this.panel5.AutoScroll = true;
+            this.panel5.Controls.Add(this.button25);
+            this.panel5.Controls.Add(this.button27);
+            this.panel5.Controls.Add(this.button28);
+            this.panel5.Controls.Add(this.button26);
+            this.panel5.Controls.Add(this.button24);
+            this.panel5.Controls.Add(this.button23);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel5.Location = new System.Drawing.Point(1091, 33);
+            this.panel5.MaximumSize = new System.Drawing.Size(186, 10000);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(186, 624);
+            this.panel5.TabIndex = 2;
+            // 
+            // button23
+            // 
+            this.button23.Location = new System.Drawing.Point(12, 3);
+            this.button23.Name = "button23";
+            this.button23.Size = new System.Drawing.Size(150, 138);
+            this.button23.TabIndex = 3;
+            this.button23.Text = "button23";
+            this.button23.UseVisualStyleBackColor = true;
+            // 
+            // button24
+            // 
+            this.button24.Location = new System.Drawing.Point(12, 162);
+            this.button24.Name = "button24";
+            this.button24.Size = new System.Drawing.Size(150, 138);
+            this.button24.TabIndex = 4;
+            this.button24.Text = "button24";
+            this.button24.UseVisualStyleBackColor = true;
+            // 
+            // button26
+            // 
+            this.button26.Location = new System.Drawing.Point(12, 324);
+            this.button26.Name = "button26";
+            this.button26.Size = new System.Drawing.Size(150, 138);
+            this.button26.TabIndex = 5;
+            this.button26.Text = "button26";
+            this.button26.UseVisualStyleBackColor = true;
+            // 
+            // button25
+            // 
+            this.button25.Location = new System.Drawing.Point(12, 804);
+            this.button25.Name = "button25";
+            this.button25.Size = new System.Drawing.Size(150, 138);
+            this.button25.TabIndex = 8;
+            this.button25.Text = "button25";
+            this.button25.UseVisualStyleBackColor = true;
+            // 
+            // button27
+            // 
+            this.button27.Location = new System.Drawing.Point(12, 642);
+            this.button27.Name = "button27";
+            this.button27.Size = new System.Drawing.Size(150, 138);
+            this.button27.TabIndex = 7;
+            this.button27.Text = "button27";
+            this.button27.UseVisualStyleBackColor = true;
+            // 
+            // button28
+            // 
+            this.button28.Location = new System.Drawing.Point(12, 483);
+            this.button28.Name = "button28";
+            this.button28.Size = new System.Drawing.Size(150, 138);
+            this.button28.TabIndex = 6;
+            this.button28.Text = "button28";
+            this.button28.UseVisualStyleBackColor = true;
+            // 
+            // axWindowsMediaPlayer1
+            // 
+            this.axWindowsMediaPlayer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.axWindowsMediaPlayer1.Enabled = true;
+            this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(0, 0);
+            this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
+            this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
+            this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(890, 315);
+            this.axWindowsMediaPlayer1.TabIndex = 2;
+            // 
             // Main_menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
             this.Controls.Add(this.tableLayoutPanel1);
+            this.MinimumSize = new System.Drawing.Size(100, 100);
             this.Name = "Main_menu";
             this.Size = new System.Drawing.Size(1280, 720);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -293,6 +459,20 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Button button21;
+        private System.Windows.Forms.Button button22;
+        private System.Windows.Forms.Button button18;
+        private System.Windows.Forms.Button button19;
+        private System.Windows.Forms.Button button17;
+        private System.Windows.Forms.Button button20;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Button button25;
+        private System.Windows.Forms.Button button27;
+        private System.Windows.Forms.Button button28;
+        private System.Windows.Forms.Button button26;
+        private System.Windows.Forms.Button button24;
+        private System.Windows.Forms.Button button23;
+        private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
     }
 }

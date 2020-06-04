@@ -48,6 +48,7 @@
             this.main_menu1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
             this.main_menu1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.main_menu1.Location = new System.Drawing.Point(0, 0);
+            this.main_menu1.MinimumSize = new System.Drawing.Size(100, 100);
             this.main_menu1.Name = "main_menu1";
             this.main_menu1.Size = new System.Drawing.Size(1264, 681);
             this.main_menu1.TabIndex = 0;
@@ -60,6 +61,7 @@
             this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(1);
+            this.MinimumSize = new System.Drawing.Size(100, 100);
             this.Name = "Main_Spotflix";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
