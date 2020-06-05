@@ -58,6 +58,7 @@
             // 
             this.main_menu1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
             this.main_menu1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.main_menu1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.main_menu1.Location = new System.Drawing.Point(0, 0);
             this.main_menu1.Margin = new System.Windows.Forms.Padding(0);
             this.main_menu1.MinimumSize = new System.Drawing.Size(100, 100);
