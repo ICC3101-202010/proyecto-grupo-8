@@ -33,6 +33,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.NombrePerfil = new System.Windows.Forms.TextBox();
             this.comboTipoPerfil = new System.Windows.Forms.ComboBox();
+            this.botonCrearPerfil = new System.Windows.Forms.Button();
+            this.Creado = new System.Windows.Forms.Label();
+            this.NoCreado = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -87,12 +90,48 @@
             this.comboTipoPerfil.Name = "comboTipoPerfil";
             this.comboTipoPerfil.Size = new System.Drawing.Size(242, 21);
             this.comboTipoPerfil.TabIndex = 4;
+            this.comboTipoPerfil.SelectedIndexChanged += new System.EventHandler(this.comboTipoPerfil_SelectedIndexChanged);
+            // 
+            // botonCrearPerfil
+            // 
+            this.botonCrearPerfil.Location = new System.Drawing.Point(464, 301);
+            this.botonCrearPerfil.Name = "botonCrearPerfil";
+            this.botonCrearPerfil.Size = new System.Drawing.Size(75, 23);
+            this.botonCrearPerfil.TabIndex = 5;
+            this.botonCrearPerfil.Text = "Crear";
+            this.botonCrearPerfil.UseVisualStyleBackColor = true;
+            this.botonCrearPerfil.Click += new System.EventHandler(this.botonCrearPerfil_Click);
+            // 
+            // Creado
+            // 
+            this.Creado.AutoSize = true;
+            this.Creado.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Creado.ForeColor = System.Drawing.Color.LimeGreen;
+            this.Creado.Location = new System.Drawing.Point(496, 184);
+            this.Creado.Name = "Creado";
+            this.Creado.Size = new System.Drawing.Size(97, 18);
+            this.Creado.TabIndex = 6;
+            this.Creado.Text = "¡Perfil creado!";
+            // 
+            // NoCreado
+            // 
+            this.NoCreado.AutoSize = true;
+            this.NoCreado.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NoCreado.ForeColor = System.Drawing.Color.Red;
+            this.NoCreado.Location = new System.Drawing.Point(400, 267);
+            this.NoCreado.Name = "NoCreado";
+            this.NoCreado.Size = new System.Drawing.Size(193, 18);
+            this.NoCreado.TabIndex = 7;
+            this.NoCreado.Text = "¡Rellene todos los espacios!";
             // 
             // NuevoPerfil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.Controls.Add(this.NoCreado);
+            this.Controls.Add(this.Creado);
+            this.Controls.Add(this.botonCrearPerfil);
             this.Controls.Add(this.comboTipoPerfil);
             this.Controls.Add(this.NombrePerfil);
             this.Controls.Add(this.label3);
@@ -100,6 +139,7 @@
             this.Controls.Add(this.label1);
             this.Name = "NuevoPerfil";
             this.Size = new System.Drawing.Size(614, 383);
+            this.Load += new System.EventHandler(this.NuevoPerfil_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -112,5 +152,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox NombrePerfil;
         private System.Windows.Forms.ComboBox comboTipoPerfil;
+        private System.Windows.Forms.Button botonCrearPerfil;
+        private System.Windows.Forms.Label Creado;
+        private System.Windows.Forms.Label NoCreado;
     }
 }

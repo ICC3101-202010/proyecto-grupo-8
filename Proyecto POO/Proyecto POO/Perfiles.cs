@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Proyecto_POO;
 
 namespace Proyecto_POO
 {
@@ -17,9 +18,34 @@ namespace Proyecto_POO
             InitializeComponent();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void botonCrearPerfil_Click(object sender, EventArgs e)
         {
+            Hide();
+            
+        }
 
+        private void botonPerfil1_Click(object sender, EventArgs e)
+        {
+            Hide();
+        }
+
+        private void botonPerfil2_Click(object sender, EventArgs e)
+        {
+            Hide();
+        }
+
+        private void botonPerfil3_Click(object sender, EventArgs e)
+        {
+            Hide();
+            
+        }
+
+        private void Perfiles_Load(object sender, EventArgs e)
+        {
+            foreach (var item in Spotflix.Lista_Perfiles) 
+            {
+               
+            }
         }
     }
 }
