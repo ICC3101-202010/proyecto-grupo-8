@@ -28,3 +28,15 @@ C:\Users\Acer\Documents\GitHub\proyecto-grupo-8\Proyecto POO\Proyecto POO\obj\De
 C:\Users\Acer\Documents\GitHub\proyecto-grupo-8\Proyecto POO\Proyecto POO\obj\Debug\Proyecto POO.csproj.CoreCompileInputs.cache
 C:\Users\Acer\Documents\GitHub\proyecto-grupo-8\Proyecto POO\Proyecto POO\obj\Debug\Proyecto POO.exe
 C:\Users\Acer\Documents\GitHub\proyecto-grupo-8\Proyecto POO\Proyecto POO\obj\Debug\Proyecto POO.pdb
+C:\Users\Cristobal\Documents\GitHub\proyecto-grupo-8\Proyecto POO\Proyecto POO\bin\Debug\Proyecto POO.exe.config
+C:\Users\Cristobal\Documents\GitHub\proyecto-grupo-8\Proyecto POO\Proyecto POO\bin\Debug\Proyecto POO.exe
+C:\Users\Cristobal\Documents\GitHub\proyecto-grupo-8\Proyecto POO\Proyecto POO\bin\Debug\Proyecto POO.pdb
+C:\Users\Cristobal\Documents\GitHub\proyecto-grupo-8\Proyecto POO\Proyecto POO\obj\Debug\Proyecto POO.csprojAssemblyReference.cache
+C:\Users\Cristobal\Documents\GitHub\proyecto-grupo-8\Proyecto POO\Proyecto POO\obj\Debug\Interop.WMPLib.dll
+C:\Users\Cristobal\Documents\GitHub\proyecto-grupo-8\Proyecto POO\Proyecto POO\obj\Debug\Proyecto POO.csproj.ResolveComReference.cache
+C:\Users\Cristobal\Documents\GitHub\proyecto-grupo-8\Proyecto POO\Proyecto POO\obj\Debug\Proyecto_POO.NuevoPerfil.resources
+C:\Users\Cristobal\Documents\GitHub\proyecto-grupo-8\Proyecto POO\Proyecto POO\obj\Debug\Proyecto_POO.Perfiles.resources
+C:\Users\Cristobal\Documents\GitHub\proyecto-grupo-8\Proyecto POO\Proyecto POO\obj\Debug\Proyecto POO.csproj.GenerateResource.cache
+C:\Users\Cristobal\Documents\GitHub\proyecto-grupo-8\Proyecto POO\Proyecto POO\obj\Debug\Proyecto POO.csproj.CoreCompileInputs.cache
+C:\Users\Cristobal\Documents\GitHub\proyecto-grupo-8\Proyecto POO\Proyecto POO\obj\Debug\Proyecto POO.exe
+C:\Users\Cristobal\Documents\GitHub\proyecto-grupo-8\Proyecto POO\Proyecto POO\obj\Debug\Proyecto POO.pdb
