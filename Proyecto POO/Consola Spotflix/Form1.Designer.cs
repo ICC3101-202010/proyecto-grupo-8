@@ -36,6 +36,7 @@
             this.Registrarse = new System.Windows.Forms.Button();
             this.Aceptar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.main_menu1 = new Consola_Spotflix.Main_menu();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -116,6 +117,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.main_menu1);
             this.panel1.Controls.Add(this.Aceptar);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.textBox2);
@@ -129,6 +131,18 @@
             this.panel1.Size = new System.Drawing.Size(1264, 681);
             this.panel1.TabIndex = 14;
             // 
+            // main_menu1
+            // 
+            this.main_menu1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.main_menu1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.main_menu1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.main_menu1.Location = new System.Drawing.Point(0, 0);
+            this.main_menu1.Margin = new System.Windows.Forms.Padding(0);
+            this.main_menu1.MinimumSize = new System.Drawing.Size(500, 500);
+            this.main_menu1.Name = "main_menu1";
+            this.main_menu1.Size = new System.Drawing.Size(1264, 681);
+            this.main_menu1.TabIndex = 14;
+            // 
             // Main_Spotflix
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -137,7 +151,7 @@
             this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(1);
-            this.MinimumSize = new System.Drawing.Size(500, 500);
+            this.MinimumSize = new System.Drawing.Size(700, 700);
             this.Name = "Main_Spotflix";
             this.ShowIcon = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
@@ -161,6 +175,7 @@
         private System.Windows.Forms.Button Registrarse;
         private System.Windows.Forms.Button Aceptar;
         private System.Windows.Forms.Panel panel1;
+        private Main_menu main_menu1;
     }
 }
 

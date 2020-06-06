@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Proyecto_POO;
 
 namespace Consola_Spotflix
 {
@@ -28,8 +29,8 @@ namespace Consola_Spotflix
 
         private void Aceptar_Click(object sender, EventArgs e)
         {
-            //main_menu1.Show();
-            //main_menu1.BringToFront();
+            main_menu1.Show();
+            main_menu1.BringToFront();
         }
 
     }
