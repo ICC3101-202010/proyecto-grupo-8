@@ -18,6 +18,19 @@ namespace Consola_Spotflix
             InitializeComponent();
             Main_menu main_Menu = new Main_menu();
             main_Menu.Show();
-        }       
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            crearCuenta1.show1();
+            crearCuenta1.HidePremiumstuff();
+        }
+
+        private void Aceptar_Click(object sender, EventArgs e)
+        {
+            main_menu1.Show();
+            main_menu1.BringToFront();
+        }
+
     }
 }
