@@ -37,8 +37,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.Registrarse = new System.Windows.Forms.Button();
             this.Aceptar = new System.Windows.Forms.Button();
-            this.main_menu1 = new Consola_Spotflix.Main_menu();
             this.crearCuenta1 = new Consola_Spotflix.CrearCuenta();
+            this.main_menu1 = new Consola_Spotflix.Main_menu();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -135,27 +135,29 @@
             this.Aceptar.UseVisualStyleBackColor = true;
             this.Aceptar.Click += new System.EventHandler(this.Aceptar_Click);
             // 
-            // main_menu1
-            // 
-            this.main_menu1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
-            this.main_menu1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.main_menu1.Location = new System.Drawing.Point(-95, 3);
-            this.main_menu1.Margin = new System.Windows.Forms.Padding(0);
-            this.main_menu1.MinimumSize = new System.Drawing.Size(500, 500);
-            this.main_menu1.Name = "main_menu1";
-            this.main_menu1.Size = new System.Drawing.Size(1356, 717);
-            this.main_menu1.TabIndex = 8;
-            this.main_menu1.Visible = false;
-            // 
             // crearCuenta1
             // 
             this.crearCuenta1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.crearCuenta1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.crearCuenta1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.crearCuenta1.Location = new System.Drawing.Point(0, 3);
+            this.crearCuenta1.Location = new System.Drawing.Point(0, 0);
             this.crearCuenta1.Name = "crearCuenta1";
-            this.crearCuenta1.Size = new System.Drawing.Size(1261, 717);
+            this.crearCuenta1.Size = new System.Drawing.Size(1264, 681);
             this.crearCuenta1.TabIndex = 7;
             this.crearCuenta1.Visible = false;
+            // 
+            // main_menu1
+            // 
+            this.main_menu1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.main_menu1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.main_menu1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.main_menu1.Location = new System.Drawing.Point(0, 0);
+            this.main_menu1.Margin = new System.Windows.Forms.Padding(0);
+            this.main_menu1.MinimumSize = new System.Drawing.Size(500, 500);
+            this.main_menu1.Name = "main_menu1";
+            this.main_menu1.Size = new System.Drawing.Size(1264, 681);
+            this.main_menu1.TabIndex = 8;
+            this.main_menu1.Visible = false;
             // 
             // Main_Spotflix
             // 
@@ -164,7 +166,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
             this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(1);
+            this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.MinimumSize = new System.Drawing.Size(500, 500);
             this.Name = "Main_Spotflix";
             this.ShowIcon = false;

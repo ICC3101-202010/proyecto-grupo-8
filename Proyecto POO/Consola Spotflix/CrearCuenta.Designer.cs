@@ -89,7 +89,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label4.Location = new System.Drawing.Point(344, 58);
@@ -101,7 +101,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label1.Location = new System.Drawing.Point(692, 355);
@@ -112,7 +112,7 @@
             // 
             // CodSeguridad
             // 
-            this.CodSeguridad.BackColor = System.Drawing.SystemColors.MenuText;
+            this.CodSeguridad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
             this.CodSeguridad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CodSeguridad.ForeColor = System.Drawing.Color.White;
             this.CodSeguridad.Location = new System.Drawing.Point(399, 480);
@@ -123,7 +123,7 @@
             // 
             // Membresia
             // 
-            this.Membresia.BackColor = System.Drawing.SystemColors.MenuText;
+            this.Membresia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
             this.Membresia.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Membresia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Membresia.ForeColor = System.Drawing.Color.White;
@@ -136,7 +136,7 @@
             // 
             // Sexo
             // 
-            this.Sexo.BackColor = System.Drawing.SystemColors.MenuText;
+            this.Sexo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
             this.Sexo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Sexo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Sexo.ForeColor = System.Drawing.Color.White;
@@ -149,7 +149,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label2.Location = new System.Drawing.Point(692, 291);
@@ -160,7 +160,7 @@
             // 
             // Vencimiento
             // 
-            this.Vencimiento.BackColor = System.Drawing.SystemColors.MenuText;
+            this.Vencimiento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
             this.Vencimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Vencimiento.ForeColor = System.Drawing.Color.White;
             this.Vencimiento.Location = new System.Drawing.Point(399, 448);
@@ -172,7 +172,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label3.Location = new System.Drawing.Point(692, 195);
@@ -183,7 +183,7 @@
             // 
             // Ntarjeta
             // 
-            this.Ntarjeta.BackColor = System.Drawing.SystemColors.MenuText;
+            this.Ntarjeta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
             this.Ntarjeta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Ntarjeta.ForeColor = System.Drawing.Color.White;
             this.Ntarjeta.Location = new System.Drawing.Point(399, 416);
@@ -194,7 +194,7 @@
             // 
             // Banco
             // 
-            this.Banco.BackColor = System.Drawing.SystemColors.MenuText;
+            this.Banco.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
             this.Banco.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Banco.ForeColor = System.Drawing.Color.White;
             this.Banco.Location = new System.Drawing.Point(399, 384);
@@ -205,7 +205,7 @@
             // 
             // Email
             // 
-            this.Email.BackColor = System.Drawing.SystemColors.MenuText;
+            this.Email.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
             this.Email.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Email.ForeColor = System.Drawing.Color.White;
             this.Email.Location = new System.Drawing.Point(399, 288);
@@ -215,7 +215,7 @@
             // 
             // Contraseña
             // 
-            this.Contraseña.BackColor = System.Drawing.SystemColors.MenuText;
+            this.Contraseña.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
             this.Contraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Contraseña.ForeColor = System.Drawing.Color.White;
             this.Contraseña.Location = new System.Drawing.Point(399, 320);
@@ -225,7 +225,7 @@
             // 
             // Pais
             // 
-            this.Pais.BackColor = System.Drawing.SystemColors.MenuText;
+            this.Pais.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
             this.Pais.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Pais.ForeColor = System.Drawing.Color.White;
             this.Pais.Location = new System.Drawing.Point(399, 256);
@@ -235,7 +235,7 @@
             // 
             // FechaNac
             // 
-            this.FechaNac.BackColor = System.Drawing.SystemColors.MenuText;
+            this.FechaNac.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
             this.FechaNac.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FechaNac.ForeColor = System.Drawing.Color.White;
             this.FechaNac.Location = new System.Drawing.Point(399, 192);
@@ -245,7 +245,7 @@
             // 
             // Apellido
             // 
-            this.Apellido.BackColor = System.Drawing.SystemColors.MenuText;
+            this.Apellido.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
             this.Apellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Apellido.ForeColor = System.Drawing.Color.White;
             this.Apellido.Location = new System.Drawing.Point(399, 160);
@@ -255,7 +255,7 @@
             // 
             // Nombre
             // 
-            this.Nombre.BackColor = System.Drawing.SystemColors.MenuText;
+            this.Nombre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
             this.Nombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Nombre.ForeColor = System.Drawing.Color.White;
             this.Nombre.Location = new System.Drawing.Point(399, 128);
@@ -266,7 +266,7 @@
             // labelCodSeg
             // 
             this.labelCodSeg.AutoSize = true;
-            this.labelCodSeg.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.labelCodSeg.BackColor = System.Drawing.Color.Transparent;
             this.labelCodSeg.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelCodSeg.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.labelCodSeg.Location = new System.Drawing.Point(231, 480);
@@ -279,7 +279,7 @@
             // labelBanco
             // 
             this.labelBanco.AutoSize = true;
-            this.labelBanco.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.labelBanco.BackColor = System.Drawing.Color.Transparent;
             this.labelBanco.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelBanco.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.labelBanco.Location = new System.Drawing.Point(334, 384);
@@ -292,7 +292,7 @@
             // labelFechaV
             // 
             this.labelFechaV.AutoSize = true;
-            this.labelFechaV.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.labelFechaV.BackColor = System.Drawing.Color.Transparent;
             this.labelFechaV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelFechaV.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.labelFechaV.Location = new System.Drawing.Point(243, 448);
@@ -305,7 +305,7 @@
             // labelNoomTarj
             // 
             this.labelNoomTarj.AutoSize = true;
-            this.labelNoomTarj.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.labelNoomTarj.BackColor = System.Drawing.Color.Transparent;
             this.labelNoomTarj.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNoomTarj.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.labelNoomTarj.Location = new System.Drawing.Point(253, 416);
@@ -318,7 +318,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label10.Location = new System.Drawing.Point(307, 352);
@@ -330,7 +330,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label11.Location = new System.Drawing.Point(302, 320);
@@ -342,7 +342,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label12.Location = new System.Drawing.Point(341, 288);
@@ -354,7 +354,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label13.Location = new System.Drawing.Point(350, 256);
@@ -366,7 +366,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label14.Location = new System.Drawing.Point(344, 224);
@@ -378,7 +378,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label15.Location = new System.Drawing.Point(257, 192);
@@ -390,7 +390,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label16.Location = new System.Drawing.Point(324, 160);
@@ -402,7 +402,7 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label17.BackColor = System.Drawing.Color.Transparent;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label17.Location = new System.Drawing.Point(324, 128);
@@ -437,7 +437,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
             this.Controls.Add(this.Crear);
             this.Controls.Add(this.Menu);
             this.Controls.Add(this.Remember);

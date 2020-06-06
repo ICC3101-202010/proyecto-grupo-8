@@ -19,7 +19,7 @@ namespace Consola_Spotflix
             Main_menu main_Menu = new Main_menu();
             main_Menu.Show();
         }
-
+        
         private void button2_Click(object sender, EventArgs e)
         {
             crearCuenta1.show1();
