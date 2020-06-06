@@ -67,7 +67,7 @@
             this.Remember.AutoSize = true;
             this.Remember.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Remember.ForeColor = System.Drawing.Color.Red;
-            this.Remember.Location = new System.Drawing.Point(809, 402);
+            this.Remember.Location = new System.Drawing.Point(809, 405);
             this.Remember.Name = "Remember";
             this.Remember.Size = new System.Drawing.Size(148, 40);
             this.Remember.TabIndex = 92;
@@ -114,7 +114,7 @@
             // 
             this.CodSeguridad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
             this.CodSeguridad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CodSeguridad.ForeColor = System.Drawing.SystemColors.Window;
+            this.CodSeguridad.ForeColor = System.Drawing.Color.White;
             this.CodSeguridad.Location = new System.Drawing.Point(399, 480);
             this.CodSeguridad.Name = "CodSeguridad";
             this.CodSeguridad.Size = new System.Drawing.Size(287, 26);
@@ -162,7 +162,7 @@
             // 
             this.Vencimiento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
             this.Vencimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Vencimiento.ForeColor = System.Drawing.SystemColors.Window;
+            this.Vencimiento.ForeColor = System.Drawing.Color.White;
             this.Vencimiento.Location = new System.Drawing.Point(399, 448);
             this.Vencimiento.Name = "Vencimiento";
             this.Vencimiento.Size = new System.Drawing.Size(287, 26);
@@ -185,7 +185,7 @@
             // 
             this.Ntarjeta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
             this.Ntarjeta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Ntarjeta.ForeColor = System.Drawing.SystemColors.Window;
+            this.Ntarjeta.ForeColor = System.Drawing.Color.White;
             this.Ntarjeta.Location = new System.Drawing.Point(399, 416);
             this.Ntarjeta.Name = "Ntarjeta";
             this.Ntarjeta.Size = new System.Drawing.Size(287, 26);
@@ -196,7 +196,7 @@
             // 
             this.Banco.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
             this.Banco.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Banco.ForeColor = System.Drawing.SystemColors.Window;
+            this.Banco.ForeColor = System.Drawing.Color.White;
             this.Banco.Location = new System.Drawing.Point(399, 384);
             this.Banco.Name = "Banco";
             this.Banco.Size = new System.Drawing.Size(287, 26);
@@ -207,7 +207,7 @@
             // 
             this.Email.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
             this.Email.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Email.ForeColor = System.Drawing.SystemColors.Window;
+            this.Email.ForeColor = System.Drawing.Color.White;
             this.Email.Location = new System.Drawing.Point(399, 288);
             this.Email.Name = "Email";
             this.Email.Size = new System.Drawing.Size(287, 26);
@@ -217,7 +217,7 @@
             // 
             this.Contraseña.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
             this.Contraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Contraseña.ForeColor = System.Drawing.SystemColors.Window;
+            this.Contraseña.ForeColor = System.Drawing.Color.White;
             this.Contraseña.Location = new System.Drawing.Point(399, 320);
             this.Contraseña.Name = "Contraseña";
             this.Contraseña.Size = new System.Drawing.Size(287, 26);
@@ -227,7 +227,7 @@
             // 
             this.Pais.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
             this.Pais.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Pais.ForeColor = System.Drawing.SystemColors.Window;
+            this.Pais.ForeColor = System.Drawing.Color.White;
             this.Pais.Location = new System.Drawing.Point(399, 256);
             this.Pais.Name = "Pais";
             this.Pais.Size = new System.Drawing.Size(287, 26);
@@ -237,7 +237,7 @@
             // 
             this.FechaNac.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
             this.FechaNac.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FechaNac.ForeColor = System.Drawing.SystemColors.Window;
+            this.FechaNac.ForeColor = System.Drawing.Color.White;
             this.FechaNac.Location = new System.Drawing.Point(399, 192);
             this.FechaNac.Name = "FechaNac";
             this.FechaNac.Size = new System.Drawing.Size(287, 26);
@@ -247,7 +247,7 @@
             // 
             this.Apellido.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
             this.Apellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Apellido.ForeColor = System.Drawing.SystemColors.Window;
+            this.Apellido.ForeColor = System.Drawing.Color.White;
             this.Apellido.Location = new System.Drawing.Point(399, 160);
             this.Apellido.Name = "Apellido";
             this.Apellido.Size = new System.Drawing.Size(287, 26);
@@ -257,12 +257,11 @@
             // 
             this.Nombre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
             this.Nombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Nombre.ForeColor = System.Drawing.SystemColors.Window;
+            this.Nombre.ForeColor = System.Drawing.Color.White;
             this.Nombre.Location = new System.Drawing.Point(399, 128);
             this.Nombre.Name = "Nombre";
             this.Nombre.Size = new System.Drawing.Size(287, 26);
             this.Nombre.TabIndex = 75;
-            this.Nombre.TextChanged += new System.EventHandler(this.Nombre_TextChanged);
             // 
             // labelCodSeg
             // 
