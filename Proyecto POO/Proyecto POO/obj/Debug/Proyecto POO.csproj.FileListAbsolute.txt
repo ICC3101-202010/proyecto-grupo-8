@@ -28,3 +28,6 @@ C:\Users\Acer\Documents\GitHub\proyecto-grupo-8\Proyecto POO\Proyecto POO\obj\De
 C:\Users\Acer\Documents\GitHub\proyecto-grupo-8\Proyecto POO\Proyecto POO\obj\Debug\Proyecto POO.csproj.CoreCompileInputs.cache
 C:\Users\Acer\Documents\GitHub\proyecto-grupo-8\Proyecto POO\Proyecto POO\obj\Debug\Proyecto POO.exe
 C:\Users\Acer\Documents\GitHub\proyecto-grupo-8\Proyecto POO\Proyecto POO\obj\Debug\Proyecto POO.pdb
+C:\Users\juani\Desktop\POO\Proyecto\Repositorio Proyecto\proyecto-grupo-8\Proyecto POO\Proyecto POO\obj\Debug\Proyecto_POO.NuevoPerfil.resources
+C:\Users\juani\Desktop\POO\Proyecto\Repositorio Proyecto\proyecto-grupo-8\Proyecto POO\Proyecto POO\obj\Debug\Proyecto_POO.Perfiles.resources
+C:\Users\juani\Desktop\POO\Proyecto\Repositorio Proyecto\proyecto-grupo-8\Proyecto POO\Proyecto POO\obj\Debug\Proyecto POO.csproj.GenerateResource.cache

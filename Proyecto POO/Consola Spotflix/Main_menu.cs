@@ -9,6 +9,10 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Reflection;
 using System.Runtime.InteropServices;
+using WMPLib;
+using Proyecto_POO;
+using AxWMPLib;
+using System.Threading;
 
 namespace Consola_Spotflix
 {
@@ -17,6 +21,21 @@ namespace Consola_Spotflix
         public Main_menu()
         {
             InitializeComponent();
+        }
+        private void button35_Click(object sender, EventArgs e)
+        {
+            axWindowsMediaPlayer1.URL = Spotflix.Lista_Canciones[0].URL;
+        }
+
+
+        private void button32_Click(object sender, EventArgs e)
+        {
+            axWindowsMediaPlayer1.Ctlcontrols.play();
+        }
+
+        private void button31_Click(object sender, EventArgs e)
+        {
+            axWindowsMediaPlayer1.Ctlcontrols.pause();
         }
     }
 }

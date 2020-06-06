@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main_menu));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -49,6 +50,7 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.button35 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.button21 = new System.Windows.Forms.Button();
             this.button22 = new System.Windows.Forms.Button();
@@ -64,12 +66,28 @@
             this.button24 = new System.Windows.Forms.Button();
             this.button23 = new System.Windows.Forms.Button();
             this.button29 = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.button34 = new System.Windows.Forms.Button();
+            this.button33 = new System.Windows.Forms.Button();
+            this.button32 = new System.Windows.Forms.Button();
+            this.button31 = new System.Windows.Forms.Button();
+            this.button30 = new System.Windows.Forms.Button();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.trackBar1 = new System.Windows.Forms.TrackBar();
+            this.label2 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -79,9 +97,11 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel1.Controls.Add(this.panel1, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.button35, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.panel4, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.panel5, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.button29, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.panel2, 1, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -107,10 +127,9 @@
             this.axWindowsMediaPlayer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.axWindowsMediaPlayer1.Enabled = true;
             this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(0, 0);
-            this.axWindowsMediaPlayer1.MinimumSize = new System.Drawing.Size(200, 200);
             this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
             this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
-            this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(890, 315);
+            this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(890, 393);
             this.axWindowsMediaPlayer1.TabIndex = 2;
             // 
             // panel3
@@ -133,9 +152,9 @@
             this.panel3.Controls.Add(this.button2);
             this.panel3.Controls.Add(this.button1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 315);
+            this.panel3.Location = new System.Drawing.Point(0, 393);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(890, 309);
+            this.panel3.Size = new System.Drawing.Size(890, 231);
             this.panel3.TabIndex = 1;
             // 
             // button9
@@ -281,6 +300,16 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button35
+            // 
+            this.button35.Location = new System.Drawing.Point(3, 663);
+            this.button35.Name = "button35";
+            this.button35.Size = new System.Drawing.Size(83, 36);
+            this.button35.TabIndex = 5;
+            this.button35.Text = "temp play";
+            this.button35.UseVisualStyleBackColor = true;
+            this.button35.Click += new System.EventHandler(this.button35_Click);
             // 
             // panel4
             // 
@@ -431,6 +460,130 @@
             this.button29.Text = "button29";
             this.button29.UseVisualStyleBackColor = true;
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.button34);
+            this.panel2.Controls.Add(this.button33);
+            this.panel2.Controls.Add(this.button32);
+            this.panel2.Controls.Add(this.button31);
+            this.panel2.Controls.Add(this.button30);
+            this.panel2.Controls.Add(this.panel6);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(195, 663);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(890, 54);
+            this.panel2.TabIndex = 4;
+            // 
+            // button34
+            // 
+            this.button34.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button34.Location = new System.Drawing.Point(326, 0);
+            this.button34.Name = "button34";
+            this.button34.Size = new System.Drawing.Size(71, 31);
+            this.button34.TabIndex = 4;
+            this.button34.Text = "button34";
+            this.button34.UseVisualStyleBackColor = true;
+            // 
+            // button33
+            // 
+            this.button33.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button33.Location = new System.Drawing.Point(557, 0);
+            this.button33.Name = "button33";
+            this.button33.Size = new System.Drawing.Size(71, 31);
+            this.button33.TabIndex = 3;
+            this.button33.Text = "button33";
+            this.button33.UseVisualStyleBackColor = true;
+            // 
+            // button32
+            // 
+            this.button32.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button32.Location = new System.Drawing.Point(403, 0);
+            this.button32.Name = "button32";
+            this.button32.Size = new System.Drawing.Size(71, 31);
+            this.button32.TabIndex = 2;
+            this.button32.Text = "play";
+            this.button32.UseVisualStyleBackColor = true;
+            this.button32.Click += new System.EventHandler(this.button32_Click);
+            // 
+            // button31
+            // 
+            this.button31.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button31.Location = new System.Drawing.Point(480, 0);
+            this.button31.Name = "button31";
+            this.button31.Size = new System.Drawing.Size(71, 31);
+            this.button31.TabIndex = 1;
+            this.button31.Text = "pausa";
+            this.button31.UseVisualStyleBackColor = true;
+            this.button31.Click += new System.EventHandler(this.button31_Click);
+            // 
+            // button30
+            // 
+            this.button30.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button30.Location = new System.Drawing.Point(249, 0);
+            this.button30.Name = "button30";
+            this.button30.Size = new System.Drawing.Size(71, 31);
+            this.button30.TabIndex = 0;
+            this.button30.Text = "button30";
+            this.button30.UseVisualStyleBackColor = true;
+            // 
+            // panel6
+            // 
+            this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel6.AutoSize = true;
+            this.panel6.Controls.Add(this.panel7);
+            this.panel6.Location = new System.Drawing.Point(56, 0);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(785, 60);
+            this.panel6.TabIndex = 7;
+            // 
+            // panel7
+            // 
+            this.panel7.AutoSize = true;
+            this.panel7.Controls.Add(this.label1);
+            this.panel7.Controls.Add(this.trackBar1);
+            this.panel7.Controls.Add(this.label2);
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel7.Location = new System.Drawing.Point(0, 22);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(785, 38);
+            this.panel7.TabIndex = 8;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label1.ForeColor = System.Drawing.SystemColors.MenuBar;
+            this.label1.Location = new System.Drawing.Point(3, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(28, 13);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "0:00";
+            // 
+            // trackBar1
+            // 
+            this.trackBar1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.trackBar1.LargeChange = 0;
+            this.trackBar1.Location = new System.Drawing.Point(64, 6);
+            this.trackBar1.MaximumSize = new System.Drawing.Size(10000, 24);
+            this.trackBar1.MinimumSize = new System.Drawing.Size(549, 24);
+            this.trackBar1.Name = "trackBar1";
+            this.trackBar1.Size = new System.Drawing.Size(655, 24);
+            this.trackBar1.TabIndex = 0;
+            this.trackBar1.TickStyle = System.Windows.Forms.TickStyle.None;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label2.ForeColor = System.Drawing.SystemColors.MenuBar;
+            this.label2.Location = new System.Drawing.Point(754, 9);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(28, 13);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "0:00";
+            // 
             // Main_menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -449,6 +602,13 @@
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -488,7 +648,20 @@
         private System.Windows.Forms.Button button26;
         private System.Windows.Forms.Button button24;
         private System.Windows.Forms.Button button23;
-        private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
         private System.Windows.Forms.Button button29;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button button34;
+        private System.Windows.Forms.Button button33;
+        private System.Windows.Forms.Button button32;
+        private System.Windows.Forms.Button button31;
+        private System.Windows.Forms.Button button30;
+        private System.Windows.Forms.Button button35;
+        private System.Windows.Forms.TrackBar trackBar1;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Panel panel7;
+        private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
     }
 }

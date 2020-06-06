@@ -22,9 +22,7 @@ namespace Consola_Spotflix
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Main_Spotflix());
+            
             //////////////////////////////////////////////////////////
             //////////////////////////////////////////////////////////
             //////////////////////////////////////////////////////////
@@ -88,22 +86,22 @@ namespace Consola_Spotflix
 
             //Crear Canciones:
             Cancion Como_se_siente = new Cancion("Como se siente", 1, new DateTime(2020, 05, 11), TimeSpan.Zero, 10.0, 2,
-                Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 23) + @".\Biblioteca\Musica\Bad bunny - Como se siente.mp3"
+                Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + @".\Biblioteca\Musica\Bad bunny - Como se siente.mp3"
                 , new List<Persona> { Bad_Bunny }, new List<Persona> { Bad_Bunny }, "Las que no iban a salir", "Imagen", "Letra", "Trap");
             Cancion Gangstas_paradise = new Cancion("Gangsta's paradise", 1, new DateTime(1995, 08, 08), TimeSpan.Zero, 10.0, 2,
-                Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 23) + @"\Biblioteca\Musica\Coolio - gangstas paradise.wav",
+                Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + @"\Biblioteca\Musica\Coolio - gangstas paradise.wav",
                 new List<Persona> { Coolio }, new List<Persona> { Coolio }, "Gangsta's Paradise 2k11", "Imagen", "Letra", "Rap");
             Cancion Tres_de_abril = new Cancion("3 de Abril", 1, new DateTime(2020, 04, 03), TimeSpan.Zero, 10.0, 2,
-                Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 23) + @"\Biblioteca\Musica\Anuel AA - 3 de abril.wav",
+                Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + @"\Biblioteca\Musica\Anuel AA - 3 de abril.wav",
                 new List<Persona> { Anuel }, new List<Persona> { Anuel }, "3 de Abril", "Imagen", "Letra", "Trap");
             Cancion Keii = new Cancion("Keii", 1, new DateTime(2020, 02, 07), TimeSpan.Zero, 10.0, 2,
-                Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 23) + @"\Biblioteca\Musica\Anuel AA - Keii.wav",
+                Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + @"\Biblioteca\Musica\Anuel AA - Keii.wav",
                 new List<Persona> { Anuel }, new List<Persona> { Anuel }, "Keii", "Imagen", "Letra", "Trap");
             Cancion Follow = new Cancion("Follow", 1, new DateTime(2020, 04, 01), TimeSpan.Zero, 10.0, 2,
-                Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 23) + @"\Biblioteca\Musica\Karol G, Anuel AA - Follow.wav",
+                Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + @"\Biblioteca\Musica\Karol G, Anuel AA - Follow.wav",
                 new List<Persona> { Karol_G, Anuel }, new List<Persona> { Karol_G }, "Keii", "Imagen", "Letra", "Reggaeton");
             Cancion Skechers = new Cancion("Skechers", 1, new DateTime(2020, 01, 12), TimeSpan.Zero, 10.0, 2,
-                Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 23) + @"\Biblioteca\Musica\DripReport - Skechers.wav",
+                Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + @"\Biblioteca\Musica\DripReport - Skechers.wav",
                 new List<Persona> { DripReport }, new List<Persona> { DripReport }, "Skechers", "Imagen", "Letra", "Rap");
 
             //Agregar Canciones:
@@ -116,19 +114,19 @@ namespace Consola_Spotflix
 
             //Crear Peliculas:
             Pelicula MasBaratoPorDocena = new Pelicula("Mas Barato Por Docena", 4, new DateTime(2003, 12, 25), new TimeSpan(1, 46, 0), 10.0, 1,
-                Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 23) + @"\Biblioteca\Peliculas\Mas Barato por Docena - Trailer.mp4", new List<Persona> { SteveMartin, BonnieHunt, PiperPerabo }, new List<Persona> { ShawnLevy },
+                Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + @"\Biblioteca\Peliculas\Mas Barato por Docena - Trailer.mp4", new List<Persona> { SteveMartin, BonnieHunt, PiperPerabo }, new List<Persona> { ShawnLevy },
                 "‎20th Century Fox Home Entertainment", 2, "Descripcion", 1, "Familiar");
             Pelicula Nerve = new Pelicula("Nerve", 4, new DateTime(2016, 09, 01), new TimeSpan(1, 36, 0), 10.0, 1,
-                Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 23) + @"\Biblioteca\Peliculas\Nerve - Trailer Oficial.mp4", new List<Persona> { EmmaRoberts, DaveFranco, JulietteLewis }, new List<Persona> { HenryJoost },
+                Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + @"\Biblioteca\Peliculas\Nerve - Trailer Oficial.mp4", new List<Persona> { EmmaRoberts, DaveFranco, JulietteLewis }, new List<Persona> { HenryJoost },
                 "‎Allison Shearmur Productions", 2, "Descripcion", 1, "Accion");
             Pelicula LaCenicienta = new Pelicula("La Cenicienta", 4, new DateTime(2015, 03, 13), new TimeSpan(1, 54, 0), 10.0, 1,
-                Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 23) + @"\Biblioteca\Peliculas\La Cenicienta - Trailer Oficial.mp4", new List<Persona> { LilyJames, BenChaplin, RichardMadden }, new List<Persona> { KennethBranagh },
+                Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + @"\Biblioteca\Peliculas\La Cenicienta - Trailer Oficial.mp4", new List<Persona> { LilyJames, BenChaplin, RichardMadden }, new List<Persona> { KennethBranagh },
                 "Walt Disney Productions", 2, "Descripcion", 1, "Fantasia");
             Pelicula HighSchoolMusical = new Pelicula("High School Musical", 4, new DateTime(2006, 01, 20), new TimeSpan(1, 38, 0), 10.0, 1,
-                Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 23) + @"\Biblioteca\Peliculas\High School Musical – Original Trailer.mp4", new List<Persona> { ZacEfron, VanessaHudgens, AshleyTisdale }, new List<Persona> { KennyOrtega },
+                Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + @"\Biblioteca\Peliculas\High School Musical – Original Trailer.mp4", new List<Persona> { ZacEfron, VanessaHudgens, AshleyTisdale }, new List<Persona> { KennyOrtega },
                 "Salty Films", 1, "Descripcion", 2, "Musical");
             Pelicula SonComoNiños = new Pelicula("Son Como Niños", 4, new DateTime(2010, 06, 24), new TimeSpan(1, 42, 0), 10.0, 1,
-                Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 23) + @"\Biblioteca\Peliculas\Son como Niños - Trailer Oficial.mp4", new List<Persona> { AdamSandler, KevinJames, ChrisRock }, new List<Persona> { DennisDugan },
+                Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + @"\Biblioteca\Peliculas\Son como Niños - Trailer Oficial.mp4", new List<Persona> { AdamSandler, KevinJames, ChrisRock }, new List<Persona> { DennisDugan },
                 "Relativity Media", 2, "Descripcion", 1, "Comedia");
 
             //Agregar Peliculas:
@@ -140,11 +138,11 @@ namespace Consola_Spotflix
 
             //Crear Audiolibros
             AudioLibro Azafata_Chistosa = new AudioLibro("Azafata chistosa", 3, new DateTime(2020, 05, 11), TimeSpan.Zero, 10.0, 2,
-                Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 23) + @"\Biblioteca\Audio libros\Azafata Chistosa\Azafata chistosa.mp3",
-                Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 23) + @"\Biblioteca\Audio libros\Azafata Chistosa\Azafata chistosa.txt", "Comedia", 1, Roxana_Gonzalez);
+                Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + @"\Biblioteca\Audio libros\Azafata Chistosa\Azafata chistosa.mp3",
+                Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + @"\Biblioteca\Audio libros\Azafata Chistosa\Azafata chistosa.txt", "Comedia", 1, Roxana_Gonzalez);
             AudioLibro Hijo_Huerfano = new AudioLibro("Hijo huerfano", 3, new DateTime(2020, 05, 11), TimeSpan.Zero, 10.0, 2,
-                Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 23) + @"\Biblioteca\Audio libros\Hijo Huerfano\Hijo huerfano.mp3",
-                Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 23) + @"\Biblioteca\Audio libros\Hijo Huerfano\Hijo huerfano.txt", "Comedia", 1, Roxana_Gonzalez);
+                Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + @"\Biblioteca\Audio libros\Hijo Huerfano\Hijo huerfano.mp3",
+                Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + @"\Biblioteca\Audio libros\Hijo Huerfano\Hijo huerfano.txt", "Comedia", 1, Roxana_Gonzalez);
 
             //Agregar Audilibors:
             Spotflix.Lista_AudioLibros.Add(Azafata_Chistosa);
@@ -152,14 +150,14 @@ namespace Consola_Spotflix
 
             //Crear Videos:
             Video Como_Bajar_videos = new Video("Como bajar videos de youtube", 2, new DateTime(2020, 01, 15), TimeSpan.Zero, 10.0, 2,
-                 Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 23) + @"\Biblioteca\Videos\2 Formas Increibles de bajar videos en youtube sin programas 2020.mp4", 2, "", 2, "Informativo");
+                 Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + @"\Biblioteca\Videos\2 Formas Increibles de bajar videos en youtube sin programas 2020.mp4", 2, "", 2, "Informativo");
 
             //Agregar Videos:
             Spotflix.Lista_Videos.Add(Como_Bajar_videos);
 
             //Crear Podcast:
             Podcast Comedia_Miguel_Granados = new Podcast("Comedia Miguel Granados", 3, new DateTime(2019, 10, 17), TimeSpan.Zero, 10.0, 2,
-                Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 23) + @"\Biblioteca\Podcast\Comedia - Miguel Granados.mp3", new List<Persona> { Miguel_Granados }, "Imagen", "Comedia");
+                Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + @"\Biblioteca\Podcast\Comedia - Miguel Granados.mp3", new List<Persona> { Miguel_Granados }, "Imagen", "Comedia");
 
             //Agregar Podcast:
             Spotflix.Lista_Podcasts.Add(Comedia_Miguel_Granados);
@@ -192,13 +190,15 @@ namespace Consola_Spotflix
             {
                 Spotflix.Lista_Usuarios = (List<Usuario>)serializer2.Deserialize(fs3);
             }
+            /////////////////////////////////////////////////////////
+            /////////////////////////////////////////////////////////
+            Application.EnableVisualStyles();                    ////
+            Application.SetCompatibleTextRenderingDefault(false);////
+            Application.Run(new Main_Spotflix());                ////
+            /////////////////////////////////////////////////////////
+            /////////////////////////////////////////////////////////
 
-
-
-
-
-
-
+            
             ////////////////MENU////////////////////////
             int entrada = -1;
             while (entrada != 0)
