@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.Win32;
 using Proyecto_POO;
 
 namespace Consola_Spotflix
@@ -42,9 +43,9 @@ namespace Consola_Spotflix
             string email = textBox1.Text;
             string contraseña = textBox2.Text;
             //cantidad de perfiles
-            foreach  (Perfil p in Spotflix.Lista_Perfiles)
+            foreach (Perfil p in Spotflix.Lista_Perfiles)
             {
-                if (p.Usuario_Asociado.Email==email && p.Usuario_Asociado.Contraseña == contraseña)
+                if (p.Usuario_Asociado.Email == email && p.Usuario_Asociado.Contraseña == contraseña)
                 {
                     Spotflix.Lista_perfilesenlinea.Add(p);
                     b += 1;

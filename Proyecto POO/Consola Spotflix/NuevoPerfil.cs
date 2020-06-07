@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Proyecto_POO;
+using Consola_Spotflix;
 
 namespace Proyecto_POO
 {
@@ -19,6 +20,7 @@ namespace Proyecto_POO
         public NuevoPerfil()
         {
             InitializeComponent();
+            Registro.np1=this;
         }
 
         private void NombrePerfil_TextChanged(object sender, EventArgs e)
@@ -28,10 +30,6 @@ namespace Proyecto_POO
 
         private void comboTipoPerfil_SelectedIndexChanged(object sender, EventArgs e)
         {
-            comboTipoPerfil.Items.Add("Artista");
-            comboTipoPerfil.Items.Add("Publico");
-            comboTipoPerfil.Items.Add("Privado");
-            tipodeperfil = (string)comboTipoPerfil.SelectedItem;
 
         }
 
@@ -57,17 +55,26 @@ namespace Proyecto_POO
                 tipo = 3;
             }
 
-            Usuario usuarioenlinea = new Usuario();
-            Perfil p1 = new Perfil(usuarioenlinea, nombreperfil, tipo);
+
+            Perfil p1 = new Perfil(Spotflix.usuarioenlinea, nombreperfil, tipo);
             Creado.Show();
-            //Spotflix.Lista_Perfiles.Add();
-            Hide();
+            //Spotflix.Lista_Perfiles.Add(p1);
         }
 
         private void NuevoPerfil_Load(object sender, EventArgs e)
         {
             Creado.Hide();
             NoCreado.Hide();
+            comboTipoPerfil.Items.Add("Artista");
+            comboTipoPerfil.Items.Add("Publico");
+            comboTipoPerfil.Items.Add("Privado");
+
+        }
+
+        private void Back_Click(object sender, EventArgs e)
+        {
+            Hide();
+            Registro.p1.loadPerfiles(Registro.Cantidaddeperfiles(Spotflix.usuarioenlinea));
 
         }
     }

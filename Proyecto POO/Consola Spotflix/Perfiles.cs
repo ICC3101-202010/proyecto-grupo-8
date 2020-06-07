@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Proyecto_POO;
+using Consola_Spotflix;
 
 namespace Proyecto_POO
 {
@@ -16,10 +17,12 @@ namespace Proyecto_POO
         public Perfiles()
         {
             InitializeComponent();
+            Registro.p1 = this;
         }
         private void botonCrearPerfil_Click(object sender, EventArgs e)
         {
             Hide();
+            Registro.np1.Show();
         }
         private void botonPerfil1_Click(object sender, EventArgs e)
         {
