@@ -36,7 +36,8 @@
             this.Registrarse = new System.Windows.Forms.Button();
             this.Aceptar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.main_menu1 = new Consola_Spotflix.Main_menu();
+            this.crearCuenta1 = new Consola_Spotflix.CrearCuenta();
+            this.Usuarionoencontrado = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -73,6 +74,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(264, 20);
             this.textBox1.TabIndex = 11;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label2
             // 
@@ -104,6 +106,7 @@
             this.Registrarse.TabIndex = 8;
             this.Registrarse.Text = "Registrarse";
             this.Registrarse.UseVisualStyleBackColor = true;
+            this.Registrarse.Click += new System.EventHandler(this.Registrarse_Click);
             // 
             // Aceptar
             // 
@@ -114,10 +117,12 @@
             this.Aceptar.TabIndex = 7;
             this.Aceptar.Text = "Aceptar";
             this.Aceptar.UseVisualStyleBackColor = true;
+            this.Aceptar.Click += new System.EventHandler(this.Aceptar_Click_1);
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.main_menu1);
+            this.panel1.Controls.Add(this.Usuarionoencontrado);
+            this.panel1.Controls.Add(this.crearCuenta1);
             this.panel1.Controls.Add(this.Aceptar);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.textBox2);
@@ -131,17 +136,27 @@
             this.panel1.Size = new System.Drawing.Size(1264, 681);
             this.panel1.TabIndex = 14;
             // 
-            // main_menu1
+            // crearCuenta1
             // 
-            this.main_menu1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
-            this.main_menu1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.main_menu1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.main_menu1.Location = new System.Drawing.Point(0, 0);
-            this.main_menu1.Margin = new System.Windows.Forms.Padding(0);
-            this.main_menu1.MinimumSize = new System.Drawing.Size(500, 500);
-            this.main_menu1.Name = "main_menu1";
-            this.main_menu1.Size = new System.Drawing.Size(1264, 681);
-            this.main_menu1.TabIndex = 14;
+            this.crearCuenta1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.crearCuenta1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.crearCuenta1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.crearCuenta1.Location = new System.Drawing.Point(0, 0);
+            this.crearCuenta1.Name = "crearCuenta1";
+            this.crearCuenta1.Size = new System.Drawing.Size(1264, 681);
+            this.crearCuenta1.TabIndex = 14;
+            this.crearCuenta1.Visible = false;
+            // 
+            // Usuarionoencontrado
+            // 
+            this.Usuarionoencontrado.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Usuarionoencontrado.ForeColor = System.Drawing.SystemColors.Menu;
+            this.Usuarionoencontrado.Location = new System.Drawing.Point(782, 277);
+            this.Usuarionoencontrado.Name = "Usuarionoencontrado";
+            this.Usuarionoencontrado.Size = new System.Drawing.Size(108, 28);
+            this.Usuarionoencontrado.TabIndex = 15;
+            this.Usuarionoencontrado.Text = "Usuario no encontrado";
+            this.Usuarionoencontrado.Visible = false;
             // 
             // Main_Spotflix
             // 
@@ -159,6 +174,7 @@
             this.Text = "Consola Spotflix";
             this.TopMost = true;
             this.TransparencyKey = System.Drawing.Color.Transparent;
+            this.Load += new System.EventHandler(this.Main_Spotflix_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -175,7 +191,8 @@
         private System.Windows.Forms.Button Registrarse;
         private System.Windows.Forms.Button Aceptar;
         private System.Windows.Forms.Panel panel1;
-        private Main_menu main_menu1;
+        private CrearCuenta crearCuenta1;
+        private System.Windows.Forms.Label Usuarionoencontrado;
     }
 }
 

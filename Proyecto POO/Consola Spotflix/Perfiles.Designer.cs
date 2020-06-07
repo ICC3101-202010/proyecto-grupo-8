@@ -100,7 +100,7 @@
             this.Controls.Add(this.botonPerfil1);
             this.Controls.Add(this.label1);
             this.Name = "Perfiles";
-            this.Size = new System.Drawing.Size(581, 407);
+            this.Size = new System.Drawing.Size(653, 418);
             this.Load += new System.EventHandler(this.Perfiles_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -66,6 +66,18 @@
     <Compile Include="Main_menu.Designer.cs">
       <DependentUpon>Main_menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="NuevoPerfil.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NuevoPerfil.Designer.cs">
+      <DependentUpon>NuevoPerfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Perfiles.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Perfiles.Designer.cs">
+      <DependentUpon>Perfiles.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="CrearCuenta.resx">
@@ -76,6 +88,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Main_menu.resx">
       <DependentUpon>Main_menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NuevoPerfil.resx">
+      <DependentUpon>NuevoPerfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Perfiles.resx">
+      <DependentUpon>Perfiles.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
