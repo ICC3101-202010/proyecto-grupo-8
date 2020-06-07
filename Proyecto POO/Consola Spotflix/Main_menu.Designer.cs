@@ -533,16 +533,16 @@
             this.panel7.Controls.Add(this.trackBar_Duracion);
             this.panel7.Controls.Add(this.label_Tiempo_Fin);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel7.Location = new System.Drawing.Point(0, 20);
+            this.panel7.Location = new System.Drawing.Point(0, 43);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(785, 37);
+            this.panel7.Size = new System.Drawing.Size(785, 14);
             this.panel7.TabIndex = 8;
             // 
             // label_Tiempo_Inicio
             // 
             this.label_Tiempo_Inicio.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label_Tiempo_Inicio.ForeColor = System.Drawing.SystemColors.MenuBar;
-            this.label_Tiempo_Inicio.Location = new System.Drawing.Point(3, 8);
+            this.label_Tiempo_Inicio.Location = new System.Drawing.Point(3, -3);
             this.label_Tiempo_Inicio.Name = "label_Tiempo_Inicio";
             this.label_Tiempo_Inicio.Size = new System.Drawing.Size(55, 15);
             this.label_Tiempo_Inicio.TabIndex = 6;
@@ -568,7 +568,7 @@
             // 
             this.label_Tiempo_Fin.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label_Tiempo_Fin.ForeColor = System.Drawing.SystemColors.MenuBar;
-            this.label_Tiempo_Fin.Location = new System.Drawing.Point(725, 8);
+            this.label_Tiempo_Fin.Location = new System.Drawing.Point(725, -3);
             this.label_Tiempo_Fin.Name = "label_Tiempo_Fin";
             this.label_Tiempo_Fin.Size = new System.Drawing.Size(57, 12);
             this.label_Tiempo_Fin.TabIndex = 7;
