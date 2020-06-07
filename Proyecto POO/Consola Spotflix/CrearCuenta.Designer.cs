@@ -415,9 +415,9 @@
             // Menu
             // 
             this.Menu.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Menu.Location = new System.Drawing.Point(880, 58);
+            this.Menu.Location = new System.Drawing.Point(813, 58);
             this.Menu.Name = "Menu";
-            this.Menu.Size = new System.Drawing.Size(75, 23);
+            this.Menu.Size = new System.Drawing.Size(142, 39);
             this.Menu.TabIndex = 93;
             this.Menu.Text = "Menu";
             this.Menu.UseVisualStyleBackColor = true;

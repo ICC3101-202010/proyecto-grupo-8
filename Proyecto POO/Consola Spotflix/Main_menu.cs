@@ -21,6 +21,8 @@ namespace Consola_Spotflix
         public Main_menu()
         {
             InitializeComponent();
+
+
         }
         private void button35_Click(object sender, EventArgs e)
         {
@@ -37,5 +39,6 @@ namespace Consola_Spotflix
         {
             axWindowsMediaPlayer1.Ctlcontrols.pause();
         }
+
     }
 }

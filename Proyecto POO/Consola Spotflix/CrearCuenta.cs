@@ -116,6 +116,7 @@ namespace Consola_Spotflix
                 DateTime dt = Convert.ToDateTime(fechnac);
                 Usuario us1 = new Usuario(nombre1, apellido, dt, sexo, pais, email, contraseña, membb);
                 //Spotflix.Lista_Usuarios.Add(us1);
+                Spotflix.usuarioenlinea = us1;
             }
             else
             {

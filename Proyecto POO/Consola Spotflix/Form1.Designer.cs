@@ -37,8 +37,9 @@
             this.Aceptar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.Usuarionoencontrado = new System.Windows.Forms.Label();
-            this.crearCuenta1 = new Consola_Spotflix.CrearCuenta();
             this.perfiles1 = new Proyecto_POO.Perfiles();
+            this.crearCuenta1 = new Consola_Spotflix.CrearCuenta();
+            this.nuevoPerfil1 = new Proyecto_POO.NuevoPerfil();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -122,6 +123,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.nuevoPerfil1);
             this.panel1.Controls.Add(this.perfiles1);
             this.panel1.Controls.Add(this.Usuarionoencontrado);
             this.panel1.Controls.Add(this.crearCuenta1);
@@ -149,6 +151,15 @@
             this.Usuarionoencontrado.Text = "Usuario no encontrado";
             this.Usuarionoencontrado.Visible = false;
             // 
+            // perfiles1
+            // 
+            this.perfiles1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.perfiles1.Location = new System.Drawing.Point(-3, 0);
+            this.perfiles1.Name = "perfiles1";
+            this.perfiles1.Size = new System.Drawing.Size(1264, 568);
+            this.perfiles1.TabIndex = 16;
+            this.perfiles1.Visible = false;
+            // 
             // crearCuenta1
             // 
             this.crearCuenta1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
@@ -160,14 +171,14 @@
             this.crearCuenta1.TabIndex = 14;
             this.crearCuenta1.Visible = false;
             // 
-            // perfiles1
+            // nuevoPerfil1
             // 
-            this.perfiles1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
-            this.perfiles1.Location = new System.Drawing.Point(0, 0);
-            this.perfiles1.Name = "perfiles1";
-            this.perfiles1.Size = new System.Drawing.Size(1216, 571);
-            this.perfiles1.TabIndex = 16;
-            this.perfiles1.Visible = false;
+            this.nuevoPerfil1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.nuevoPerfil1.Location = new System.Drawing.Point(0, 0);
+            this.nuevoPerfil1.Name = "nuevoPerfil1";
+            this.nuevoPerfil1.Size = new System.Drawing.Size(955, 452);
+            this.nuevoPerfil1.TabIndex = 17;
+            this.nuevoPerfil1.Visible = false;
             // 
             // Main_Spotflix
             // 
@@ -205,6 +216,7 @@
         private CrearCuenta crearCuenta1;
         private System.Windows.Forms.Label Usuarionoencontrado;
         private Proyecto_POO.Perfiles perfiles1;
+        private Proyecto_POO.NuevoPerfil nuevoPerfil1;
     }
 }
 
