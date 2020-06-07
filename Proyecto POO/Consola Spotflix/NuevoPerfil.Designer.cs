@@ -36,6 +36,7 @@
             this.botonCrearPerfil = new System.Windows.Forms.Button();
             this.Creado = new System.Windows.Forms.Label();
             this.NoCreado = new System.Windows.Forms.Label();
+            this.Back = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -124,11 +125,22 @@
             this.NoCreado.TabIndex = 7;
             this.NoCreado.Text = "¡Rellene todos los espacios!";
             // 
+            // Back
+            // 
+            this.Back.Location = new System.Drawing.Point(41, 301);
+            this.Back.Name = "Back";
+            this.Back.Size = new System.Drawing.Size(75, 23);
+            this.Back.TabIndex = 8;
+            this.Back.Text = "Atras";
+            this.Back.UseVisualStyleBackColor = true;
+            this.Back.Click += new System.EventHandler(this.Back_Click);
+            // 
             // NuevoPerfil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.Controls.Add(this.Back);
             this.Controls.Add(this.NoCreado);
             this.Controls.Add(this.Creado);
             this.Controls.Add(this.botonCrearPerfil);
@@ -155,5 +167,6 @@
         private System.Windows.Forms.Button botonCrearPerfil;
         private System.Windows.Forms.Label Creado;
         private System.Windows.Forms.Label NoCreado;
+        private System.Windows.Forms.Button Back;
     }
 }

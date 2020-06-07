@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Media;
 using WMPLib;
 using System.Threading;
+using System.Windows.Forms;
 
 namespace Proyecto_POO
 {
@@ -26,6 +27,12 @@ namespace Proyecto_POO
 
         public static Usuario usuarioenlinea;
         public static Perfil perfilenlinea;
+        public static List<Perfil> Lista_perfilesenlinea = new List<Perfil>();
+        
+        public static MainMenu mm1;
+        public static Perfiles p1;
+        public static NuevoPerfil np1;
+
 
         //Metodos:
 

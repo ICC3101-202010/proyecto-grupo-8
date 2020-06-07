@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Proyecto_POO;
+using Consola_Spotflix;
 
 namespace Proyecto_POO
 {
@@ -16,62 +17,72 @@ namespace Proyecto_POO
         public Perfiles()
         {
             InitializeComponent();
+            Registro.p1 = this;
         }
         private void botonCrearPerfil_Click(object sender, EventArgs e)
         {
             Hide();
-            
+            Registro.np1.Show();
         }
         private void botonPerfil1_Click(object sender, EventArgs e)
         {
-            Hide();
+
         }
 
         private void botonPerfil2_Click(object sender, EventArgs e)
         {
-            Hide();
         }
 
         private void botonPerfil3_Click(object sender, EventArgs e)
         {
-            Hide();
             
         }
 
-        private void Perfiles_Load(object sender, EventArgs e)
+        public void loadPerfiles(int b)
         {
-            int b = 0;
-            foreach (var item in Spotflix.Lista_Perfiles)
-            {
-                if (item.Usuario_Asociado == Spotflix.usuarioenlinea)
-                {
-                    b += 1;
-                }
-            }
+            Show();
             if (b == 0)
             {
-                botonPerfil1.Hide();
-                botonPerfil2.Hide();
-                botonPerfil3.Hide();
-                botonCrearPerfil.Location=new Point(247, 155);
-
+                botonCrearPerfil.Show();
+                botonCrearPerfil.Location = new Point(86, 148);
+                
             }
             else if (b == 1)
             {
-                botonPerfil2.Hide();
-                botonPerfil3.Hide();
-                botonCrearPerfil.Location = new Point(247, 155);
-
+                botonCrearPerfil.Show();
+                botonCrearPerfil.Location= new Point(222, 148);
+                botonPerfil1.Show();
+                botonPerfil1.Location= new Point(86, 148);
+                botonPerfil1.Text = Spotflix.Lista_perfilesenlinea[0].Nombre_perfil;
             }
             else if (b == 2)
             {
-                botonPerfil3.Hide();
-                botonCrearPerfil.Location = new Point(410, 155);
+                botonCrearPerfil.Show();
+                botonCrearPerfil.Location = new Point(363, 148);
+                botonPerfil1.Show();
+                botonPerfil1.Location = new Point(86, 148);
+                botonPerfil1.Text = Spotflix.Lista_perfilesenlinea[0].Nombre_perfil;
+                botonPerfil2.Show();
+                botonPerfil2.Location = new Point(222, 148);
+                botonPerfil2.Text = Spotflix.Lista_perfilesenlinea[1].Nombre_perfil;
             }
             else
             {
+                botonCrearPerfil.Show();
+                botonPerfil1.Show();
+                botonPerfil1.Location = new Point(86, 148);
+                botonPerfil1.Text = Spotflix.Lista_perfilesenlinea[0].Nombre_perfil;
+                botonPerfil2.Show();
+                botonPerfil2.Location = new Point(222, 148);
+                botonPerfil2.Text = Spotflix.Lista_perfilesenlinea[1].Nombre_perfil;
+                botonPerfil3.Show();
+                botonPerfil3.Location = new Point(363, 148);
+                botonPerfil3.Text = Spotflix.Lista_perfilesenlinea[2].Nombre_perfil;
             }
 
+        }
+        private void Perfiles_Load(object sender, EventArgs e)
+        {
         }
     }
 }

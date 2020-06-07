@@ -32,7 +32,6 @@ namespace Proyecto_POO
             comboTipoPerfil.Items.Add("Publico");
             comboTipoPerfil.Items.Add("Privado");
             tipodeperfil = (string)comboTipoPerfil.SelectedItem;
-
         }
 
         private void botonCrearPerfil_Click(object sender, EventArgs e)
@@ -41,7 +40,6 @@ namespace Proyecto_POO
             {
                 NoCreado.Show();
             }
-
             int tipo = 0;
             if (tipodeperfil == "Artista")
             {
@@ -50,15 +48,12 @@ namespace Proyecto_POO
             if (tipodeperfil == "Publico")
             {
                 tipo = 2;
-
             }
             if (tipodeperfil == "Privado")
             {
                 tipo = 3;
             }
-
-            Usuario usuarioenlinea = new Usuario();
-            Perfil p1 = new Perfil(usuarioenlinea, nombreperfil, tipo);
+            Perfil p1 = new Perfil(Spotflix.usuarioenlinea, nombreperfil, tipo);
             Creado.Show();
             //Spotflix.Lista_Perfiles.Add();
             Hide();

@@ -25,6 +25,8 @@ namespace Consola_Spotflix
         public Main_menu()
         {
             InitializeComponent();
+            Registro.mm1 = this;
+
         }
         private void button35_Click(object sender, EventArgs e)
         {
