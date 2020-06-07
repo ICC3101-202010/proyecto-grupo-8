@@ -17,13 +17,11 @@ namespace Proyecto_POO
         {
             InitializeComponent();
         }
-        Usuario Usuarioasociado;
         private void botonCrearPerfil_Click(object sender, EventArgs e)
         {
             Hide();
             
         }
-
         private void botonPerfil1_Click(object sender, EventArgs e)
         {
             Hide();
@@ -45,7 +43,7 @@ namespace Proyecto_POO
             int b = 0;
             foreach (var item in Spotflix.Lista_Perfiles)
             {
-                if (item.Usuario_Asociado == Usuarioasociado)
+                if (item.Usuario_Asociado == Spotflix.usuarioenlinea)
                 {
                     b += 1;
                 }

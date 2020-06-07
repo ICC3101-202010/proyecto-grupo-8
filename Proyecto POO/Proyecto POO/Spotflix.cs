@@ -24,9 +24,12 @@ namespace Proyecto_POO
         public static List<AudioLibro> Lista_AudioLibros = new List<AudioLibro>();
         public static List<Playlist> Lista_Playlists;
 
+        public static Usuario usuarioenlinea;
+        public static Perfil perfilenlinea;
+
         //Metodos:
 
-        
+
 
         public static WindowsMediaPlayer spotflix = new WindowsMediaPlayer();
 

@@ -22,12 +22,6 @@ namespace Consola_Spotflix
         }
         
 
-        private void Aceptar_Click(object sender, EventArgs e)
-        {
-            //main_menu1.Show();
-            //main_menu1.BringToFront();
-        }
-
         private void Main_Spotflix_Load(object sender, EventArgs e)
         {
             //main_menu1.Hide();
@@ -45,11 +39,16 @@ namespace Consola_Spotflix
         private void Aceptar_Click_1(object sender, EventArgs e)
         {
             int b = 0;
+            string email = textBox1.Text;
+            string contraseña = textBox2.Text;
             foreach (var item in Spotflix.Lista_Usuarios)
             {
-                if(item.Email==textBox1.Text && item.Contraseña == textBox2.Text)
+                MessageBox.Show("HOLA RONCA");
+                if(item.Email==email && item.Contraseña == contraseña)
                 {
-                    //Perfiles.Show();
+                    Spotflix.usuarioenlinea = item;
+                    perfiles1.Show();
+                    perfiles1.BringToFront();
                     b += 1;
                     break;
                 }

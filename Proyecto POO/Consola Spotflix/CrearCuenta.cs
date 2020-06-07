@@ -17,7 +17,7 @@ namespace Consola_Spotflix
         {
             InitializeComponent();
         }
-       
+        
         private void Membresia_SelectedIndexChanged(object sender, EventArgs e)
         {
             string memb = (string)Membresia.SelectedItem;

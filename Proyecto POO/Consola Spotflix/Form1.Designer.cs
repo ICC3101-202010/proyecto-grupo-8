@@ -36,8 +36,9 @@
             this.Registrarse = new System.Windows.Forms.Button();
             this.Aceptar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.crearCuenta1 = new Consola_Spotflix.CrearCuenta();
             this.Usuarionoencontrado = new System.Windows.Forms.Label();
+            this.crearCuenta1 = new Consola_Spotflix.CrearCuenta();
+            this.perfiles1 = new Proyecto_POO.Perfiles();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -121,6 +122,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.perfiles1);
             this.panel1.Controls.Add(this.Usuarionoencontrado);
             this.panel1.Controls.Add(this.crearCuenta1);
             this.panel1.Controls.Add(this.Aceptar);
@@ -136,6 +138,17 @@
             this.panel1.Size = new System.Drawing.Size(1264, 681);
             this.panel1.TabIndex = 14;
             // 
+            // Usuarionoencontrado
+            // 
+            this.Usuarionoencontrado.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Usuarionoencontrado.ForeColor = System.Drawing.SystemColors.Menu;
+            this.Usuarionoencontrado.Location = new System.Drawing.Point(782, 277);
+            this.Usuarionoencontrado.Name = "Usuarionoencontrado";
+            this.Usuarionoencontrado.Size = new System.Drawing.Size(108, 28);
+            this.Usuarionoencontrado.TabIndex = 15;
+            this.Usuarionoencontrado.Text = "Usuario no encontrado";
+            this.Usuarionoencontrado.Visible = false;
+            // 
             // crearCuenta1
             // 
             this.crearCuenta1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
@@ -147,16 +160,14 @@
             this.crearCuenta1.TabIndex = 14;
             this.crearCuenta1.Visible = false;
             // 
-            // Usuarionoencontrado
+            // perfiles1
             // 
-            this.Usuarionoencontrado.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Usuarionoencontrado.ForeColor = System.Drawing.SystemColors.Menu;
-            this.Usuarionoencontrado.Location = new System.Drawing.Point(782, 277);
-            this.Usuarionoencontrado.Name = "Usuarionoencontrado";
-            this.Usuarionoencontrado.Size = new System.Drawing.Size(108, 28);
-            this.Usuarionoencontrado.TabIndex = 15;
-            this.Usuarionoencontrado.Text = "Usuario no encontrado";
-            this.Usuarionoencontrado.Visible = false;
+            this.perfiles1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.perfiles1.Location = new System.Drawing.Point(0, 0);
+            this.perfiles1.Name = "perfiles1";
+            this.perfiles1.Size = new System.Drawing.Size(1216, 571);
+            this.perfiles1.TabIndex = 16;
+            this.perfiles1.Visible = false;
             // 
             // Main_Spotflix
             // 
@@ -193,6 +204,7 @@
         private System.Windows.Forms.Panel panel1;
         private CrearCuenta crearCuenta1;
         private System.Windows.Forms.Label Usuarionoencontrado;
+        private Proyecto_POO.Perfiles perfiles1;
     }
 }
 
