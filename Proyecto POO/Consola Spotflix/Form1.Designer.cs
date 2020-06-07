@@ -36,10 +36,11 @@
             this.Registrarse = new System.Windows.Forms.Button();
             this.Aceptar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.Usuarionoencontrado = new System.Windows.Forms.Label();
-            this.perfiles1 = new Proyecto_POO.Perfiles();
-            this.crearCuenta1 = new Consola_Spotflix.CrearCuenta();
             this.nuevoPerfil1 = new Proyecto_POO.NuevoPerfil();
+            this.perfiles1 = new Proyecto_POO.Perfiles();
+            this.Usuarionoencontrado = new System.Windows.Forms.Label();
+            this.crearCuenta1 = new Consola_Spotflix.CrearCuenta();
+            this.main_menu1 = new Consola_Spotflix.Main_menu();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -123,6 +124,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.main_menu1);
             this.panel1.Controls.Add(this.nuevoPerfil1);
             this.panel1.Controls.Add(this.perfiles1);
             this.panel1.Controls.Add(this.Usuarionoencontrado);
@@ -140,6 +142,24 @@
             this.panel1.Size = new System.Drawing.Size(1264, 681);
             this.panel1.TabIndex = 14;
             // 
+            // nuevoPerfil1
+            // 
+            this.nuevoPerfil1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.nuevoPerfil1.Location = new System.Drawing.Point(0, 0);
+            this.nuevoPerfil1.Name = "nuevoPerfil1";
+            this.nuevoPerfil1.Size = new System.Drawing.Size(955, 452);
+            this.nuevoPerfil1.TabIndex = 17;
+            this.nuevoPerfil1.Visible = false;
+            // 
+            // perfiles1
+            // 
+            this.perfiles1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.perfiles1.Location = new System.Drawing.Point(-3, 0);
+            this.perfiles1.Name = "perfiles1";
+            this.perfiles1.Size = new System.Drawing.Size(1264, 568);
+            this.perfiles1.TabIndex = 16;
+            this.perfiles1.Visible = false;
+            // 
             // Usuarionoencontrado
             // 
             this.Usuarionoencontrado.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -150,15 +170,6 @@
             this.Usuarionoencontrado.TabIndex = 15;
             this.Usuarionoencontrado.Text = "Usuario no encontrado";
             this.Usuarionoencontrado.Visible = false;
-            // 
-            // perfiles1
-            // 
-            this.perfiles1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
-            this.perfiles1.Location = new System.Drawing.Point(-3, 0);
-            this.perfiles1.Name = "perfiles1";
-            this.perfiles1.Size = new System.Drawing.Size(1264, 568);
-            this.perfiles1.TabIndex = 16;
-            this.perfiles1.Visible = false;
             // 
             // crearCuenta1
             // 
@@ -171,14 +182,18 @@
             this.crearCuenta1.TabIndex = 14;
             this.crearCuenta1.Visible = false;
             // 
-            // nuevoPerfil1
+            // main_menu1
             // 
-            this.nuevoPerfil1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
-            this.nuevoPerfil1.Location = new System.Drawing.Point(0, 0);
-            this.nuevoPerfil1.Name = "nuevoPerfil1";
-            this.nuevoPerfil1.Size = new System.Drawing.Size(955, 452);
-            this.nuevoPerfil1.TabIndex = 17;
-            this.nuevoPerfil1.Visible = false;
+            this.main_menu1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.main_menu1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.main_menu1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.main_menu1.Location = new System.Drawing.Point(0, 0);
+            this.main_menu1.Margin = new System.Windows.Forms.Padding(0);
+            this.main_menu1.MinimumSize = new System.Drawing.Size(500, 500);
+            this.main_menu1.Name = "main_menu1";
+            this.main_menu1.Size = new System.Drawing.Size(1264, 681);
+            this.main_menu1.TabIndex = 18;
+            this.main_menu1.Visible = false;
             // 
             // Main_Spotflix
             // 
@@ -217,6 +232,7 @@
         private System.Windows.Forms.Label Usuarionoencontrado;
         private Proyecto_POO.Perfiles perfiles1;
         private Proyecto_POO.NuevoPerfil nuevoPerfil1;
+        private Main_menu main_menu1;
     }
 }
 

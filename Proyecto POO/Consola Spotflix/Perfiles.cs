@@ -26,16 +26,20 @@ namespace Proyecto_POO
         }
         private void botonPerfil1_Click(object sender, EventArgs e)
         {
-
+            Hide();
+            Registro.mm1.Show();
         }
 
         private void botonPerfil2_Click(object sender, EventArgs e)
         {
+            Hide();
+            Registro.mm1.Show();
         }
 
         private void botonPerfil3_Click(object sender, EventArgs e)
         {
-            
+            Hide();
+            Registro.mm1.Show();
         }
 
         public void loadPerfiles(int b)

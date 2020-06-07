@@ -81,7 +81,9 @@ namespace Consola_Spotflix
         {
             try
             {
-                axWindowsMediaPlayer1.URL = @"" + ruta;
+
+                //axWindowsMediaPlayer1.URL = @"" + ruta;
+                axWindowsMediaPlayer1.URL = Spotflix.Lista_Videos[0].URL;
                 axWindowsMediaPlayer1.Ctlcontrols.play();
                 this.Visible = true;
                 tmSlider.Start();
@@ -133,5 +135,9 @@ namespace Consola_Spotflix
             ruta = archivo.FileName;
         }
 
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
