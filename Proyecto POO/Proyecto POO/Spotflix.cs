@@ -26,7 +26,9 @@ namespace Proyecto_POO
         public static List<Playlist> Lista_Playlists;
 
         public static Usuario usuarioenlinea;
+
         public static Perfil perfilenlinea;
+
         public static List<Perfil> Lista_perfilesenlinea = new List<Perfil>();
         
         public static MainMenu mm1;
