@@ -24,7 +24,7 @@ namespace Consola_Spotflix
 
         private void Main_Spotflix_Load(object sender, EventArgs e)
         {
-            //main_menu1.Hide();
+            main_menu1.Hide();
         }
 
         private void Registrarse_Click(object sender, EventArgs e)
@@ -47,8 +47,9 @@ namespace Consola_Spotflix
                 if(item.Email==email && item.Contraseña == contraseña)
                 {
                     Spotflix.usuarioenlinea = item;
-                    perfiles1.Show();
-                    perfiles1.BringToFront();
+                    //perfiles1.Show();
+                    //perfiles1.BringToFront();
+                    main_menu1.Show();
                     b += 1;
                     break;
                 }

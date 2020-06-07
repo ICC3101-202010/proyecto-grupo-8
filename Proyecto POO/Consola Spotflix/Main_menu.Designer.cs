@@ -67,17 +67,16 @@
             this.button23 = new System.Windows.Forms.Button();
             this.button29 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button34 = new System.Windows.Forms.Button();
-            this.button33 = new System.Windows.Forms.Button();
-            this.button32 = new System.Windows.Forms.Button();
-            this.button31 = new System.Windows.Forms.Button();
+            this.button_Retroceder = new System.Windows.Forms.Button();
+            this.button_Adelantar = new System.Windows.Forms.Button();
             this.button30 = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.button_PlayPausa = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.trackBar1 = new System.Windows.Forms.TrackBar();
-            this.label2 = new System.Windows.Forms.Label();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.label_Tiempo_Inicio = new System.Windows.Forms.Label();
+            this.trackBar_Duracion = new System.Windows.Forms.TrackBar();
+            this.label_Tiempo_Fin = new System.Windows.Forms.Label();
+            this.tmSlider = new System.Windows.Forms.Timer(this.components);
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
@@ -87,7 +86,7 @@
             this.panel2.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar_Duracion)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -129,7 +128,7 @@
             this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(0, 0);
             this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
             this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
-            this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(890, 393);
+            this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(890, 467);
             this.axWindowsMediaPlayer1.TabIndex = 2;
             // 
             // panel3
@@ -152,9 +151,9 @@
             this.panel3.Controls.Add(this.button2);
             this.panel3.Controls.Add(this.button1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 393);
+            this.panel3.Location = new System.Drawing.Point(0, 467);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(890, 231);
+            this.panel3.Size = new System.Drawing.Size(890, 157);
             this.panel3.TabIndex = 1;
             // 
             // button9
@@ -462,10 +461,8 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.button34);
-            this.panel2.Controls.Add(this.button33);
-            this.panel2.Controls.Add(this.button32);
-            this.panel2.Controls.Add(this.button31);
+            this.panel2.Controls.Add(this.button_Retroceder);
+            this.panel2.Controls.Add(this.button_Adelantar);
             this.panel2.Controls.Add(this.button30);
             this.panel2.Controls.Add(this.panel6);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -474,47 +471,26 @@
             this.panel2.Size = new System.Drawing.Size(890, 54);
             this.panel2.TabIndex = 4;
             // 
-            // button34
+            // button_Retroceder
             // 
-            this.button34.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button34.Location = new System.Drawing.Point(326, 0);
-            this.button34.Name = "button34";
-            this.button34.Size = new System.Drawing.Size(71, 31);
-            this.button34.TabIndex = 4;
-            this.button34.Text = "button34";
-            this.button34.UseVisualStyleBackColor = true;
+            this.button_Retroceder.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button_Retroceder.Location = new System.Drawing.Point(326, 0);
+            this.button_Retroceder.Name = "button_Retroceder";
+            this.button_Retroceder.Size = new System.Drawing.Size(71, 31);
+            this.button_Retroceder.TabIndex = 4;
+            this.button_Retroceder.Text = "Retroceder";
+            this.button_Retroceder.UseVisualStyleBackColor = true;
             // 
-            // button33
+            // button_Adelantar
             // 
-            this.button33.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button33.Location = new System.Drawing.Point(557, 0);
-            this.button33.Name = "button33";
-            this.button33.Size = new System.Drawing.Size(71, 31);
-            this.button33.TabIndex = 3;
-            this.button33.Text = "button33";
-            this.button33.UseVisualStyleBackColor = true;
-            // 
-            // button32
-            // 
-            this.button32.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button32.Location = new System.Drawing.Point(403, 0);
-            this.button32.Name = "button32";
-            this.button32.Size = new System.Drawing.Size(71, 31);
-            this.button32.TabIndex = 2;
-            this.button32.Text = "play";
-            this.button32.UseVisualStyleBackColor = true;
-            this.button32.Click += new System.EventHandler(this.button32_Click);
-            // 
-            // button31
-            // 
-            this.button31.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button31.Location = new System.Drawing.Point(480, 0);
-            this.button31.Name = "button31";
-            this.button31.Size = new System.Drawing.Size(71, 31);
-            this.button31.TabIndex = 1;
-            this.button31.Text = "pausa";
-            this.button31.UseVisualStyleBackColor = true;
-            this.button31.Click += new System.EventHandler(this.button31_Click);
+            this.button_Adelantar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button_Adelantar.Location = new System.Drawing.Point(557, 0);
+            this.button_Adelantar.Name = "button_Adelantar";
+            this.button_Adelantar.Size = new System.Drawing.Size(71, 31);
+            this.button_Adelantar.TabIndex = 3;
+            this.button_Adelantar.Text = "Adelantar";
+            this.button_Adelantar.UseVisualStyleBackColor = true;
+            this.button_Adelantar.Click += new System.EventHandler(this.button33_Click);
             // 
             // button30
             // 
@@ -532,57 +508,75 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel6.AutoSize = true;
+            this.panel6.Controls.Add(this.button_PlayPausa);
             this.panel6.Controls.Add(this.panel7);
             this.panel6.Location = new System.Drawing.Point(56, 0);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(785, 60);
+            this.panel6.Size = new System.Drawing.Size(785, 57);
             this.panel6.TabIndex = 7;
+            // 
+            // button_PlayPausa
+            // 
+            this.button_PlayPausa.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button_PlayPausa.Location = new System.Drawing.Point(347, 0);
+            this.button_PlayPausa.Name = "button_PlayPausa";
+            this.button_PlayPausa.Size = new System.Drawing.Size(71, 31);
+            this.button_PlayPausa.TabIndex = 8;
+            this.button_PlayPausa.Text = "Play";
+            this.button_PlayPausa.UseVisualStyleBackColor = true;
+            this.button_PlayPausa.Click += new System.EventHandler(this.button_PlayPausa_Click);
             // 
             // panel7
             // 
             this.panel7.AutoSize = true;
-            this.panel7.Controls.Add(this.label1);
-            this.panel7.Controls.Add(this.trackBar1);
-            this.panel7.Controls.Add(this.label2);
+            this.panel7.Controls.Add(this.label_Tiempo_Inicio);
+            this.panel7.Controls.Add(this.trackBar_Duracion);
+            this.panel7.Controls.Add(this.label_Tiempo_Fin);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel7.Location = new System.Drawing.Point(0, 22);
+            this.panel7.Location = new System.Drawing.Point(0, 20);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(785, 38);
+            this.panel7.Size = new System.Drawing.Size(785, 37);
             this.panel7.TabIndex = 8;
             // 
-            // label1
+            // label_Tiempo_Inicio
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label1.ForeColor = System.Drawing.SystemColors.MenuBar;
-            this.label1.Location = new System.Drawing.Point(3, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(28, 13);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "0:00";
+            this.label_Tiempo_Inicio.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label_Tiempo_Inicio.ForeColor = System.Drawing.SystemColors.MenuBar;
+            this.label_Tiempo_Inicio.Location = new System.Drawing.Point(3, 8);
+            this.label_Tiempo_Inicio.Name = "label_Tiempo_Inicio";
+            this.label_Tiempo_Inicio.Size = new System.Drawing.Size(55, 15);
+            this.label_Tiempo_Inicio.TabIndex = 6;
+            this.label_Tiempo_Inicio.Text = "0:00";
             // 
-            // trackBar1
+            // trackBar_Duracion
             // 
-            this.trackBar1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.trackBar_Duracion.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.trackBar1.LargeChange = 0;
-            this.trackBar1.Location = new System.Drawing.Point(64, 6);
-            this.trackBar1.MaximumSize = new System.Drawing.Size(10000, 24);
-            this.trackBar1.MinimumSize = new System.Drawing.Size(549, 24);
-            this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(655, 24);
-            this.trackBar1.TabIndex = 0;
-            this.trackBar1.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.trackBar_Duracion.LargeChange = 0;
+            this.trackBar_Duracion.Location = new System.Drawing.Point(64, 6);
+            this.trackBar_Duracion.Maximum = 100;
+            this.trackBar_Duracion.MaximumSize = new System.Drawing.Size(10000, 24);
+            this.trackBar_Duracion.MinimumSize = new System.Drawing.Size(549, 24);
+            this.trackBar_Duracion.Name = "trackBar_Duracion";
+            this.trackBar_Duracion.Size = new System.Drawing.Size(655, 24);
+            this.trackBar_Duracion.TabIndex = 0;
+            this.trackBar_Duracion.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.trackBar_Duracion.ValueChanged += new System.EventHandler(this.trackBar_Duracion_ValueChanged);
             // 
-            // label2
+            // label_Tiempo_Fin
             // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label2.ForeColor = System.Drawing.SystemColors.MenuBar;
-            this.label2.Location = new System.Drawing.Point(754, 9);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(28, 13);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "0:00";
+            this.label_Tiempo_Fin.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label_Tiempo_Fin.ForeColor = System.Drawing.SystemColors.MenuBar;
+            this.label_Tiempo_Fin.Location = new System.Drawing.Point(725, 8);
+            this.label_Tiempo_Fin.Name = "label_Tiempo_Fin";
+            this.label_Tiempo_Fin.Size = new System.Drawing.Size(57, 12);
+            this.label_Tiempo_Fin.TabIndex = 7;
+            this.label_Tiempo_Fin.Text = "0:00";
+            // 
+            // tmSlider
+            // 
+            this.tmSlider.Tick += new System.EventHandler(this.tmSlider_Tick);
             // 
             // Main_menu
             // 
@@ -608,7 +602,7 @@
             this.panel6.PerformLayout();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar_Duracion)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -650,18 +644,17 @@
         private System.Windows.Forms.Button button23;
         private System.Windows.Forms.Button button29;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button34;
-        private System.Windows.Forms.Button button33;
-        private System.Windows.Forms.Button button32;
-        private System.Windows.Forms.Button button31;
+        private System.Windows.Forms.Button button_Retroceder;
+        private System.Windows.Forms.Button button_Adelantar;
         private System.Windows.Forms.Button button30;
         private System.Windows.Forms.Button button35;
-        private System.Windows.Forms.TrackBar trackBar1;
+        private System.Windows.Forms.TrackBar trackBar_Duracion;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label label_Tiempo_Fin;
+        private System.Windows.Forms.Label label_Tiempo_Inicio;
+        private System.Windows.Forms.Timer tmSlider;
         private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Button button_PlayPausa;
         private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
     }
 }

@@ -10,7 +10,6 @@ C:\Users\juani\Desktop\POO\Proyecto\Repositorio Proyecto\ProyectoPOO\Proyecto PO
 C:\Users\juani\Desktop\POO\Proyecto\Repositorio Proyecto\proyecto-grupo-8\Proyecto POO\Proyecto POO\bin\Debug\Proyecto POO.exe.config
 C:\Users\juani\Desktop\POO\Proyecto\Repositorio Proyecto\proyecto-grupo-8\Proyecto POO\Proyecto POO\bin\Debug\Proyecto POO.exe
 C:\Users\juani\Desktop\POO\Proyecto\Repositorio Proyecto\proyecto-grupo-8\Proyecto POO\Proyecto POO\bin\Debug\Proyecto POO.pdb
-C:\Users\juani\Desktop\POO\Proyecto\Repositorio Proyecto\proyecto-grupo-8\Proyecto POO\Proyecto POO\obj\Debug\Proyecto POO.csprojAssemblyReference.cache
 C:\Users\juani\Desktop\POO\Proyecto\Repositorio Proyecto\proyecto-grupo-8\Proyecto POO\Proyecto POO\obj\Debug\Interop.WMPLib.dll
 C:\Users\juani\Desktop\POO\Proyecto\Repositorio Proyecto\proyecto-grupo-8\Proyecto POO\Proyecto POO\obj\Debug\Proyecto POO.csproj.ResolveComReference.cache
 C:\Users\juani\Desktop\POO\Proyecto\Repositorio Proyecto\proyecto-grupo-8\Proyecto POO\Proyecto POO\obj\Debug\Proyecto POO.csproj.CoreCompileInputs.cache
@@ -40,3 +39,6 @@ C:\Users\Cristobal\Documents\GitHub\proyecto-grupo-8\Proyecto POO\Proyecto POO\o
 C:\Users\Cristobal\Documents\GitHub\proyecto-grupo-8\Proyecto POO\Proyecto POO\obj\Debug\Proyecto POO.csproj.CoreCompileInputs.cache
 C:\Users\Cristobal\Documents\GitHub\proyecto-grupo-8\Proyecto POO\Proyecto POO\obj\Debug\Proyecto POO.exe
 C:\Users\Cristobal\Documents\GitHub\proyecto-grupo-8\Proyecto POO\Proyecto POO\obj\Debug\Proyecto POO.pdb
+C:\Users\juani\Desktop\POO\Proyecto\Repositorio Proyecto\proyecto-grupo-8\Proyecto POO\Proyecto POO\obj\Debug\Proyecto_POO.NuevoPerfil.resources
+C:\Users\juani\Desktop\POO\Proyecto\Repositorio Proyecto\proyecto-grupo-8\Proyecto POO\Proyecto POO\obj\Debug\Proyecto_POO.Perfiles.resources
+C:\Users\juani\Desktop\POO\Proyecto\Repositorio Proyecto\proyecto-grupo-8\Proyecto POO\Proyecto POO\obj\Debug\Proyecto POO.csproj.GenerateResource.cache
