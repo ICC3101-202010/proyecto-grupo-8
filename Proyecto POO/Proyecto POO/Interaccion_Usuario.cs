@@ -29,10 +29,10 @@ namespace Proyecto_POO
                 Console.WriteLine("Como desea que se llame la playlist");
                 string nombre = Console.ReadLine();
                 Playlist temp2 = new Playlist(new List<Cancion>(), nombre, item.Categoria);
-                temp2.Playlist_paralista.Add(item);
+                temp2.Playlist_paralista_Ca.Add(item);
                 p.Playlists_Canciones_Propias.Add(temp2);
             }
-            p.Playlists_Canciones_Propias[(i_1 - 1)].Playlist_paralista.Add(item);
+            p.Playlists_Canciones_Propias[(i_1 - 1)].Playlist_paralista_Ca.Add(item);
         }
 
         public static void Buscar(Perfil p)
@@ -359,7 +359,7 @@ namespace Proyecto_POO
                             {
                                 if (playlist == item.Nombre)
                                 {
-                                    Console.WriteLine(Spotflix.Lista_Playlists[i - 1].Informacion_Playlist());
+                                    //Console.WriteLine(Spotflix.Lista_Playlists[i - 1].Informacion_Playlist(Spotflix.Lista_Playlists[i - 1]));
                                     Console.WriteLine("1. Seguir \n2. No seguir");
                                     Console.WriteLine("Desea seguir " + playlist + ": ");
                                     int seguir = Convert.ToInt32(Console.ReadLine());

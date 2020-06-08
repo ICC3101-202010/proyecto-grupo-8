@@ -80,14 +80,14 @@ namespace Proyecto_POO
             a += "\nPlaylist propias: ";
             foreach (var item in Playlists_Canciones_Propias)
             {
-                a += i_1 + ". " + item.Informacion_Playlist();
+                //a += i_1 + ". " + item.Informacion_Playlist(List<Cancion> Cancion);
                 i_1 += 1;
             }
             int i_2 = 1;
             a += "\nPlaylist de otros: ";
             foreach (var item in Playlists_Canciones_De_Otros)
             {
-                a += i_2 + ". " + item.Informacion_Playlist();
+               // a += i_2 + ". " + item.Informacion_Playlist(item);
                 i_2 += 1;
             }
             int i_3 = 1;

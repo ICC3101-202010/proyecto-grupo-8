@@ -60,7 +60,19 @@ namespace Consola_Spotflix
             axWindowsMediaPlayer1.Ctlcontrols.next();
             tmSlider.Start();
             Thread.Sleep(500);
-            Cancion_Artista();
+            try
+            {
+                Cancion_Artista_Ca();
+                Cancion_Artista_Pe();
+                Cancion_Artista_Po();
+                Cancion_Artista_AL();
+                Cancion_Artista_Vi();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
             
         }
 
@@ -100,7 +112,20 @@ namespace Consola_Spotflix
                 trackBar_Duracion.Enabled = true;
                 button_PlayPausa.Text = "Pausa";
                 play = 2;
-                Cancion_Artista();
+                try
+                {
+                    Cancion_Artista_Ca();
+                    Cancion_Artista_Pe();
+                    Cancion_Artista_Po();
+                    Cancion_Artista_AL();
+                    Cancion_Artista_Vi();
+                }
+                catch (Exception)
+                {
+
+                    throw;
+                }
+                
             }
             catch 
             {
@@ -118,14 +143,65 @@ namespace Consola_Spotflix
                 axWindowsMediaPlayer1.Ctlcontrols.currentPosition = trackBar_Duracion.Value;
             }
         }
-        private void Cancion_Artista()
+        private void Cancion_Artista_Ca()
         {
             for (int i = 0; i < Spotflix.Temporal.count; i++)
             {
                 if (axWindowsMediaPlayer1.currentMedia.isIdentical[Spotflix.Temporal.Item[i]])
                 {
-                    Nombre_Cancion.Text = Spotflix.Temporal_Info[i].Titulo;
-                    Nombre_Artista.Text = Spotflix.Temporal_Info[i].Cantante[0].Nombre_y_Apellido;
+                    Nombre_Cancion.Text = Spotflix.Temporal_Info_Ca[i].Titulo;
+                    Nombre_Artista.Text = Spotflix.Temporal_Info_Ca[i].Cantante[0].Nombre_y_Apellido;
+                    break;
+                }
+            }
+
+        }
+        private void Cancion_Artista_Pe()
+        {
+            for (int i = 0; i < Spotflix.Temporal.count; i++)
+            {
+                if (axWindowsMediaPlayer1.currentMedia.isIdentical[Spotflix.Temporal.Item[i]])
+                {
+                    Nombre_Cancion.Text = Spotflix.Temporal_Info_Pe[i].Titulo;
+                    Nombre_Artista.Text = Spotflix.Temporal_Info_Pe[i].Director[0].Nombre_y_Apellido;
+                    break;
+                }
+            }
+
+        }
+        private void Cancion_Artista_Po()
+        {
+            for (int i = 0; i < Spotflix.Temporal.count; i++)
+            {
+                if (axWindowsMediaPlayer1.currentMedia.isIdentical[Spotflix.Temporal.Item[i]])
+                {
+                    Nombre_Cancion.Text = Spotflix.Temporal_Info_Po[i].Titulo;
+                    Nombre_Artista.Text = Spotflix.Temporal_Info_Po[i].Locutor[0].Nombre_y_Apellido;
+                    break;
+                }
+            }
+
+        }
+        private void Cancion_Artista_AL()
+        {
+            for (int i = 0; i < Spotflix.Temporal.count; i++)
+            {
+                if (axWindowsMediaPlayer1.currentMedia.isIdentical[Spotflix.Temporal.Item[i]])
+                {
+                    Nombre_Cancion.Text = Spotflix.Temporal_Info_AL[i].Titulo;
+                    Nombre_Artista.Text = Spotflix.Temporal_Info_AL[i].Lector.Nombre_y_Apellido;
+                    break;
+                }
+            }
+
+        }
+        private void Cancion_Artista_Vi()
+        {
+            for (int i = 0; i < Spotflix.Temporal.count; i++)
+            {
+                if (axWindowsMediaPlayer1.currentMedia.isIdentical[Spotflix.Temporal.Item[i]])
+                {
+                    Nombre_Cancion.Text = Spotflix.Temporal_Info_Vi[i].Titulo;
                     break;
                 }
             }
@@ -171,7 +247,20 @@ namespace Consola_Spotflix
             axWindowsMediaPlayer1.Ctlcontrols.previous();
             tmSlider.Start();
             Thread.Sleep(500);
-            Cancion_Artista();
+            try
+            {
+                Cancion_Artista_Ca();
+                Cancion_Artista_Pe();
+                Cancion_Artista_Po();
+                Cancion_Artista_AL();
+                Cancion_Artista_Vi();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+
         }
 
         private void playlist_Perfil_En_Linea1_Load(object sender, EventArgs e)

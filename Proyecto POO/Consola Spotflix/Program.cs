@@ -446,7 +446,7 @@ namespace Consola_Spotflix
                                                 }
                                                 int a_7 = Convert.ToInt32(Console.ReadLine());
                                                 int a_3 = -1;
-                                                List<Cancion> lista_temporal = perfilenlinea.Playlists_Canciones_Propias[(a_7 - 1)].Playlist_paralista;
+                                                List<Cancion> lista_temporal = perfilenlinea.Playlists_Canciones_Propias[(a_7 - 1)].Playlist_paralista_Ca;
                                                 Agregar_a_temportal(lista_temporal);
                                                 Spotflix.Reproducir(Spotflix.Temporal);
                                                 while (a_3 != 0)
@@ -511,7 +511,7 @@ namespace Consola_Spotflix
                                                 }
                                                 int a_7 = Convert.ToInt32(Console.ReadLine());
                                                 int a_3 = -1;
-                                                List<Cancion> lista_temporal = perfilenlinea.Playlists_Canciones_De_Otros[(a_7 - 1)].Playlist_paralista;
+                                                List<Cancion> lista_temporal = perfilenlinea.Playlists_Canciones_De_Otros[(a_7 - 1)].Playlist_paralista_Ca;
                                                 Agregar_a_temportal(lista_temporal);
                                                 Spotflix.Reproducir(Spotflix.Temporal);
                                                 while (a_3 != 0)

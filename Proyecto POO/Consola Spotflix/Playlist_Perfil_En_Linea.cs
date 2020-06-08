@@ -23,27 +23,26 @@ namespace Consola_Spotflix
             try
             {
                 //Canciones:
-                button1.Text = "Todas las canciones";
+                button1.Text = "Todas las canciones"; 
+                button9.Text = "Todas las peliculas";
+                button17.Text = "Todos los podcast";
+                button25.Text = "Todos los audiolibros";
+                button33.Text = "Todos los videos";
                 button2.Text = Spotflix.perfilenlinea.Playlists_Canciones_Propias[0].Nombre;
                 button3.Text = Spotflix.perfilenlinea.Playlists_Canciones_Propias[1].Nombre;
                 button4.Text = Spotflix.perfilenlinea.Playlists_Canciones_Propias[2].Nombre;
                 //Peliculas
-                button9.Text = "Todas las peliculas";
                 button10.Text = Spotflix.perfilenlinea.Playlists_Peliculas_Propias[0].Nombre;
                 button11.Text = Spotflix.perfilenlinea.Playlists_Peliculas_Propias[1].Nombre;
                 button12.Text = Spotflix.perfilenlinea.Playlists_Peliculas_Propias[2].Nombre;
                 //Podcast
-                button17.Text = "Todos los podcast";
                 button18.Text = Spotflix.perfilenlinea.Playlists_Podcast_Propios[0].Nombre;
                 button19.Text = Spotflix.perfilenlinea.Playlists_Podcast_Propios[1].Nombre;
                 button20.Text = Spotflix.perfilenlinea.Playlists_Podcast_Propios[2].Nombre;
                 //AudioLibro
-                button25.Text = "Todos los audiolibros";
                 button26.Text = Spotflix.perfilenlinea.Playlists_Audiolibro_Propios[0].Nombre;
                 button27.Text = Spotflix.perfilenlinea.Playlists_Audiolibro_Propios[1].Nombre;
                 button28.Text = Spotflix.perfilenlinea.Playlists_Audiolibro_Propios[2].Nombre;
-                //Videos
-                button33.Text = "Todos los videos";
                 button34.Text = Spotflix.perfilenlinea.Playlists_Video_Propios[0].Nombre;
                 button35.Text = Spotflix.perfilenlinea.Playlists_Video_Propios[1].Nombre;
                 button36.Text = Spotflix.perfilenlinea.Playlists_Video_Propios[2].Nombre;
