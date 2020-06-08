@@ -66,9 +66,11 @@
             this.panel9 = new System.Windows.Forms.Panel();
             this.Nombre_Cancion = new System.Windows.Forms.Label();
             this.Nombre_Artista = new System.Windows.Forms.Label();
-            this.tmSlider = new System.Windows.Forms.Timer(this.components);
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nuevoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eliminarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.buscarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.perfilesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.artistaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -79,9 +81,7 @@
             this.peliculasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.podcastsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.audiolibrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.nuevoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.editarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.eliminarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tmSlider = new System.Windows.Forms.Timer(this.components);
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
@@ -494,10 +494,6 @@
             this.Nombre_Artista.TabIndex = 1;
             this.Nombre_Artista.Text = "Artista";
             // 
-            // tmSlider
-            // 
-            this.tmSlider.Tick += new System.EventHandler(this.tmSlider_Tick);
-            // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -518,6 +514,24 @@
             this.archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
             this.archivoToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
             this.archivoToolStripMenuItem.Text = "Archivo";
+            // 
+            // nuevoToolStripMenuItem
+            // 
+            this.nuevoToolStripMenuItem.Name = "nuevoToolStripMenuItem";
+            this.nuevoToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.nuevoToolStripMenuItem.Text = "Nuevo";
+            // 
+            // editarToolStripMenuItem
+            // 
+            this.editarToolStripMenuItem.Name = "editarToolStripMenuItem";
+            this.editarToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.editarToolStripMenuItem.Text = "Editar";
+            // 
+            // eliminarToolStripMenuItem
+            // 
+            this.eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
+            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.eliminarToolStripMenuItem.Text = "Eliminar";
             // 
             // buscarToolStripMenuItem
             // 
@@ -563,50 +577,36 @@
             // cancionesToolStripMenuItem
             // 
             this.cancionesToolStripMenuItem.Name = "cancionesToolStripMenuItem";
-            this.cancionesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cancionesToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
             this.cancionesToolStripMenuItem.Text = "Canciones";
             // 
             // videosToolStripMenuItem
             // 
             this.videosToolStripMenuItem.Name = "videosToolStripMenuItem";
-            this.videosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.videosToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
             this.videosToolStripMenuItem.Text = "Videos";
             // 
             // peliculasToolStripMenuItem
             // 
             this.peliculasToolStripMenuItem.Name = "peliculasToolStripMenuItem";
-            this.peliculasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.peliculasToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
             this.peliculasToolStripMenuItem.Text = "Peliculas";
             // 
             // podcastsToolStripMenuItem
             // 
             this.podcastsToolStripMenuItem.Name = "podcastsToolStripMenuItem";
-            this.podcastsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.podcastsToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
             this.podcastsToolStripMenuItem.Text = "Podcasts";
             // 
             // audiolibrosToolStripMenuItem
             // 
             this.audiolibrosToolStripMenuItem.Name = "audiolibrosToolStripMenuItem";
-            this.audiolibrosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.audiolibrosToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
             this.audiolibrosToolStripMenuItem.Text = "Audiolibros";
             // 
-            // nuevoToolStripMenuItem
+            // tmSlider
             // 
-            this.nuevoToolStripMenuItem.Name = "nuevoToolStripMenuItem";
-            this.nuevoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.nuevoToolStripMenuItem.Text = "Nuevo";
-            // 
-            // editarToolStripMenuItem
-            // 
-            this.editarToolStripMenuItem.Name = "editarToolStripMenuItem";
-            this.editarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.editarToolStripMenuItem.Text = "Editar";
-            // 
-            // eliminarToolStripMenuItem
-            // 
-            this.eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
-            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.eliminarToolStripMenuItem.Text = "Eliminar";
+            this.tmSlider.Tick += new System.EventHandler(this.tmSlider_Tick);
             // 
             // Main_menu
             // 

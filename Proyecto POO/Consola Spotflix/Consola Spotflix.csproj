@@ -48,6 +48,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Buscador.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Buscador.Designer.cs">
+      <DependentUpon>Buscador.cs</DependentUpon>
+    </Compile>
     <Compile Include="CambiodeCuenta.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -99,6 +105,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Registro.cs" />
+    <EmbeddedResource Include="Buscador.resx">
+      <DependentUpon>Buscador.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CambiodeCuenta.resx">
       <DependentUpon>CambiodeCuenta.cs</DependentUpon>
     </EmbeddedResource>
