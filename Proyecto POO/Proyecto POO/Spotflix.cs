@@ -13,7 +13,8 @@ namespace Proyecto_POO
     public static class Spotflix
     {
 
-        public static IWMPPlaylist Temporal;
+        public static IWMPPlaylist Temporal = new WindowsMediaPlayer().newPlaylist("Temporal", null);
+        public static List<Cancion> Temporal_Info = new List<Cancion>();
         public static List<Usuario> Lista_Usuarios = new List<Usuario>();
         public static List<Perfil> Lista_Perfiles = new List<Perfil>();
         public static List<Persona> Lista_Personas = new List<Persona>();
@@ -37,6 +38,15 @@ namespace Proyecto_POO
 
 
         //Metodos:
+
+        public static void Agregar_a_temportal(List<Cancion> canciones)
+        {
+            foreach (var item_4 in canciones)
+            {
+                Temporal.appendItem(new WindowsMediaPlayer().newMedia(item_4.URL));
+            }
+            Temporal_Info = canciones;
+        }
 
 
 

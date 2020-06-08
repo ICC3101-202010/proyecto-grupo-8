@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Consola_Spotflix
 {
@@ -12,6 +13,7 @@ namespace Consola_Spotflix
         public static Main_menu mm1;
         public static NuevoPerfil np1;
         public static Perfiles p1;
+        
         public static int Cantidaddeperfiles(Usuario u)
         {
             int c = 0;
