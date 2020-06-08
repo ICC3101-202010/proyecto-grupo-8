@@ -14,7 +14,11 @@ namespace Proyecto_POO
     {
 
         public static IWMPPlaylist Temporal = new WindowsMediaPlayer().newPlaylist("Temporal", null);
-        public static List<Cancion> Temporal_Info = new List<Cancion>();
+        public static List<Cancion> Temporal_Info_Ca = new List<Cancion>();
+        public static List<Pelicula> Temporal_Info_Pe = new List<Pelicula>();
+        public static List<Podcast> Temporal_Info_Po = new List<Podcast>();
+        public static List<AudioLibro> Temporal_Info_AL = new List<AudioLibro>();
+        public static List<Video> Temporal_Info_Vi = new List<Video>();
         public static List<Usuario> Lista_Usuarios = new List<Usuario>();
         public static List<Perfil> Lista_Perfiles = new List<Perfil>();
         public static List<Persona> Lista_Personas = new List<Persona>();
@@ -45,7 +49,39 @@ namespace Proyecto_POO
             {
                 Temporal.appendItem(new WindowsMediaPlayer().newMedia(item_4.URL));
             }
-            Temporal_Info = canciones;
+            Temporal_Info_Ca = canciones;
+        }
+        public static void Agregar_a_temportal(List<Pelicula> peliculas)
+        {
+            foreach (var item_4 in peliculas)
+            {
+                Temporal.appendItem(new WindowsMediaPlayer().newMedia(item_4.URL));
+            }
+            Temporal_Info_Pe = peliculas;
+        }
+        public static void Agregar_a_temportal(List<Podcast> podcasts)
+        {
+            foreach (var item_4 in podcasts)
+            {
+                Temporal.appendItem(new WindowsMediaPlayer().newMedia(item_4.URL));
+            }
+            Temporal_Info_Po = podcasts;
+        }
+        public static void Agregar_a_temportal(List<AudioLibro> audioLibros)
+        {
+            foreach (var item_4 in audioLibros)
+            {
+                Temporal.appendItem(new WindowsMediaPlayer().newMedia(item_4.URL));
+            }
+            Temporal_Info_AL = audioLibros;
+        }
+        public static void Agregar_a_temportal(List<Video> videos)
+        {
+            foreach (var item_4 in videos)
+            {
+                Temporal.appendItem(new WindowsMediaPlayer().newMedia(item_4.URL));
+            }
+            Temporal_Info_Vi = videos;
         }
 
 

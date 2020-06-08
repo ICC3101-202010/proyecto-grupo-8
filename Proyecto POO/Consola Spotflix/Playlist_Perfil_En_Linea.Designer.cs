@@ -168,6 +168,7 @@
             this.button4.TabIndex = 4;
             this.button4.Text = "button4";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -251,6 +252,7 @@
             this.button12.TabIndex = 12;
             this.button12.Text = "button12";
             this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // button11
             // 
@@ -260,6 +262,7 @@
             this.button11.TabIndex = 11;
             this.button11.Text = "button11";
             this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // button10
             // 
@@ -269,6 +272,7 @@
             this.button10.TabIndex = 10;
             this.button10.Text = "button10";
             this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // button9
             // 
@@ -278,6 +282,7 @@
             this.button9.TabIndex = 9;
             this.button9.Text = "button9";
             this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // Lable_Nombre_Playlist2
             // 
@@ -352,6 +357,7 @@
             this.button20.TabIndex = 20;
             this.button20.Text = "button20";
             this.button20.UseVisualStyleBackColor = true;
+            this.button20.Click += new System.EventHandler(this.button20_Click);
             // 
             // button19
             // 
@@ -361,6 +367,7 @@
             this.button19.TabIndex = 19;
             this.button19.Text = "button19";
             this.button19.UseVisualStyleBackColor = true;
+            this.button19.Click += new System.EventHandler(this.button19_Click);
             // 
             // button18
             // 
@@ -370,6 +377,7 @@
             this.button18.TabIndex = 18;
             this.button18.Text = "button18";
             this.button18.UseVisualStyleBackColor = true;
+            this.button18.Click += new System.EventHandler(this.button18_Click);
             // 
             // button17
             // 
@@ -379,6 +387,7 @@
             this.button17.TabIndex = 17;
             this.button17.Text = "button17";
             this.button17.UseVisualStyleBackColor = true;
+            this.button17.Click += new System.EventHandler(this.button17_Click);
             // 
             // Lable_Nombre_Playlist3
             // 
@@ -453,6 +462,7 @@
             this.button28.TabIndex = 28;
             this.button28.Text = "button28";
             this.button28.UseVisualStyleBackColor = true;
+            this.button28.Click += new System.EventHandler(this.button28_Click);
             // 
             // button27
             // 
@@ -462,6 +472,7 @@
             this.button27.TabIndex = 27;
             this.button27.Text = "button27";
             this.button27.UseVisualStyleBackColor = true;
+            this.button27.Click += new System.EventHandler(this.button27_Click);
             // 
             // button26
             // 
@@ -471,6 +482,7 @@
             this.button26.TabIndex = 26;
             this.button26.Text = "button26";
             this.button26.UseVisualStyleBackColor = true;
+            this.button26.Click += new System.EventHandler(this.button26_Click);
             // 
             // button25
             // 
@@ -480,6 +492,7 @@
             this.button25.TabIndex = 25;
             this.button25.Text = "button25";
             this.button25.UseVisualStyleBackColor = true;
+            this.button25.Click += new System.EventHandler(this.button25_Click);
             // 
             // Lable_Nombre_Playlist4
             // 
@@ -554,6 +567,7 @@
             this.button36.TabIndex = 36;
             this.button36.Text = "button36";
             this.button36.UseVisualStyleBackColor = true;
+            this.button36.Click += new System.EventHandler(this.button36_Click);
             // 
             // button35
             // 
@@ -563,6 +577,7 @@
             this.button35.TabIndex = 35;
             this.button35.Text = "button35";
             this.button35.UseVisualStyleBackColor = true;
+            this.button35.Click += new System.EventHandler(this.button35_Click);
             // 
             // button34
             // 
@@ -572,6 +587,7 @@
             this.button34.TabIndex = 34;
             this.button34.Text = "button34";
             this.button34.UseVisualStyleBackColor = true;
+            this.button34.Click += new System.EventHandler(this.button34_Click);
             // 
             // button33
             // 
@@ -581,6 +597,7 @@
             this.button33.TabIndex = 33;
             this.button33.Text = "button33";
             this.button33.UseVisualStyleBackColor = true;
+            this.button33.Click += new System.EventHandler(this.button33_Click);
             // 
             // Lable_Nombre_Playlist5
             // 
