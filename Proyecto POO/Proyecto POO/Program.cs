@@ -306,20 +306,13 @@ namespace Proyecto_POO
                                             if (a_1 == 1)
                                             {
                                                 int a_2 = -1;
-                                                void Agregar_a_temportal(List<Cancion> canciones)
-                                                {
-                                                    Spotflix.Temporal = new WindowsMediaPlayer().newPlaylist("Temporal", null);
-                                                    foreach (var item_4 in canciones)
-                                                    {
-                                                        Spotflix.Temporal.appendItem(new WindowsMediaPlayer().newMedia(item_4.URL));
-                                                    }
-                                                }
+                                                
                                                 Console.WriteLine("Que playlist de canciones desea reproducir:\n1. Todas\n2. Canciones favoritas\n3. Playlist propias\n4. Playlist de otros\n5. En cola\n6. Crear playlist\n0. Salir");
                                                 a_2 = Convert.ToInt32(Console.ReadLine());
                                                 if (a_2 == 1)
                                                 {
                                                     int a_3 = -1;
-                                                    Agregar_a_temportal(Spotflix.Lista_Canciones);
+                                                    Spotflix.Agregar_a_temportal(Spotflix.Lista_Canciones);
                                                     Spotflix.Reproducir(Spotflix.Temporal);
                                                     while (a_3 != 0)
                                                     {
@@ -377,7 +370,7 @@ namespace Proyecto_POO
                                                 else if (a_2 == 2)
                                                 {
                                                     int a_3 = -1;
-                                                    Agregar_a_temportal(perfilenlinea.Fav_Canciones);
+                                                    Spotflix.Agregar_a_temportal(perfilenlinea.Fav_Canciones);
                                                     Spotflix.Reproducir(Spotflix.Temporal);
                                                     while (a_3 != 0)
                                                     {
@@ -442,7 +435,7 @@ namespace Proyecto_POO
                                                     int a_7 = Convert.ToInt32(Console.ReadLine());
                                                     int a_3 = -1;
                                                     List<Cancion> lista_temporal = perfilenlinea.Playlists_Canciones_Propias[(a_7 - 1)].Playlist_paralista;
-                                                    Agregar_a_temportal(lista_temporal);
+                                                    Spotflix.Agregar_a_temportal(lista_temporal);
                                                     Spotflix.Reproducir(Spotflix.Temporal);
                                                     while (a_3 != 0)
                                                     {
@@ -507,7 +500,7 @@ namespace Proyecto_POO
                                                     int a_7 = Convert.ToInt32(Console.ReadLine());
                                                     int a_3 = -1;
                                                     List<Cancion> lista_temporal = perfilenlinea.Playlists_Canciones_De_Otros[(a_7 - 1)].Playlist_paralista;
-                                                    Agregar_a_temportal(lista_temporal);
+                                                    Spotflix.Agregar_a_temportal(lista_temporal);
                                                     Spotflix.Reproducir(Spotflix.Temporal);
                                                     while (a_3 != 0)
                                                     {
@@ -564,7 +557,7 @@ namespace Proyecto_POO
                                                 else if (a_2 == 5)
                                                 {
                                                     int a_3 = -1;
-                                                    Agregar_a_temportal(perfilenlinea.En_Cola_cancion);
+                                                    Spotflix.Agregar_a_temportal(perfilenlinea.En_Cola_cancion);
                                                     Spotflix.Reproducir(Spotflix.Temporal);
                                                     while (a_3 != 0)
                                                     {

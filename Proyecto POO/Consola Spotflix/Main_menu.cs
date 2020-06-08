@@ -56,7 +56,12 @@ namespace Consola_Spotflix
 
         private void button33_Click(object sender, EventArgs e)
         {
-            axWindowsMediaPlayer1.fullScreen = true;
+            tmSlider.Stop();
+            axWindowsMediaPlayer1.Ctlcontrols.next();
+            tmSlider.Start();
+            Thread.Sleep(500);
+            Cancion_Artista();
+            
         }
 
         private void button_PlayPausa_Click(object sender, EventArgs e)
@@ -87,13 +92,15 @@ namespace Consola_Spotflix
             {
 
                 //axWindowsMediaPlayer1.URL = @"" + ruta;
-                axWindowsMediaPlayer1.URL = Spotflix.Lista_Canciones[0].URL;
+                axWindowsMediaPlayer1.currentPlaylist = Spotflix.Temporal;
+                //axWindowsMediaPlayer1.URL = ruta;
                 axWindowsMediaPlayer1.Ctlcontrols.play();
                 this.Visible = true;
                 tmSlider.Start();
                 trackBar_Duracion.Enabled = true;
                 button_PlayPausa.Text = "Pausa";
                 play = 2;
+                Cancion_Artista();
             }
             catch 
             {
@@ -111,13 +118,26 @@ namespace Consola_Spotflix
                 axWindowsMediaPlayer1.Ctlcontrols.currentPosition = trackBar_Duracion.Value;
             }
         }
+        private void Cancion_Artista()
+        {
+            for (int i = 0; i < Spotflix.Temporal.count; i++)
+            {
+                if (axWindowsMediaPlayer1.currentMedia.isIdentical[Spotflix.Temporal.Item[i]])
+                {
+                    Nombre_Cancion.Text = Spotflix.Temporal_Info[i].Titulo;
+                    Nombre_Artista.Text = Spotflix.Temporal_Info[i].Cantante[0].Nombre_y_Apellido;
+                    break;
+                }
+            }
+
+        }
         private void tmSlider_Tick(object sender, EventArgs e)
         {
             try
             {
                 trackBar_Duracion.Value = (int)axWindowsMediaPlayer1.Ctlcontrols.currentPosition;
                 label_Tiempo_Inicio.Text = axWindowsMediaPlayer1.Ctlcontrols.currentPositionString;
-                label_Tiempo_Fin.Text = axWindowsMediaPlayer1.currentMedia.durationString;
+                label_Tiempo_Fin.Text = axWindowsMediaPlayer1.currentMedia.durationString;               
 
             }
             catch
@@ -143,6 +163,20 @@ namespace Consola_Spotflix
         private void Button_Perfil_En_Linea_Click(object sender, EventArgs e)
         {
             MessageBox.Show(Spotflix.perfilenlinea.Usuario_Asociado.Nombre);
+        }
+
+        private void button_Retroceder_Click(object sender, EventArgs e)
+        {
+            tmSlider.Stop();
+            axWindowsMediaPlayer1.Ctlcontrols.previous();
+            tmSlider.Start();
+            Thread.Sleep(500);
+            Cancion_Artista();
+        }
+
+        private void playlist_Perfil_En_Linea1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
