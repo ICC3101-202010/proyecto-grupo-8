@@ -34,7 +34,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.playlist_Perfil_En_Linea1 = new Consola_Spotflix.Playlist_Perfil_En_Linea();
             this.panel4 = new System.Windows.Forms.Panel();
             this.button21 = new System.Windows.Forms.Button();
             this.button22 = new System.Windows.Forms.Button();
@@ -82,6 +81,7 @@
             this.podcastsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.audiolibrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tmSlider = new System.Windows.Forms.Timer(this.components);
+            this.playlist_Perfil_En_Linea1 = new Consola_Spotflix.Playlist_Perfil_En_Linea();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
@@ -149,19 +149,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(980, 193);
             this.panel3.TabIndex = 1;
-            // 
-            // playlist_Perfil_En_Linea1
-            // 
-            this.playlist_Perfil_En_Linea1.AutoScroll = true;
-            this.playlist_Perfil_En_Linea1.AutoSize = true;
-            this.playlist_Perfil_En_Linea1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
-            this.playlist_Perfil_En_Linea1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.playlist_Perfil_En_Linea1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.playlist_Perfil_En_Linea1.Location = new System.Drawing.Point(0, 0);
-            this.playlist_Perfil_En_Linea1.Name = "playlist_Perfil_En_Linea1";
-            this.playlist_Perfil_En_Linea1.Size = new System.Drawing.Size(980, 193);
-            this.playlist_Perfil_En_Linea1.TabIndex = 0;
-            this.playlist_Perfil_En_Linea1.Load += new System.EventHandler(this.playlist_Perfil_En_Linea1_Load);
             // 
             // panel4
             // 
@@ -337,15 +324,15 @@
             this.panel6.Controls.Add(this.button_Retroceder);
             this.panel6.Controls.Add(this.button_PlayPausa);
             this.panel6.Controls.Add(this.panel7);
-            this.panel6.Location = new System.Drawing.Point(56, 0);
+            this.panel6.Location = new System.Drawing.Point(75, 0);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(776, 57);
+            this.panel6.Size = new System.Drawing.Size(817, 57);
             this.panel6.TabIndex = 7;
             // 
             // button31
             // 
             this.button31.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button31.Location = new System.Drawing.Point(460, 0);
+            this.button31.Location = new System.Drawing.Point(480, 0);
             this.button31.Name = "button31";
             this.button31.Size = new System.Drawing.Size(71, 31);
             this.button31.TabIndex = 9;
@@ -355,7 +342,7 @@
             // button30
             // 
             this.button30.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button30.Location = new System.Drawing.Point(152, 0);
+            this.button30.Location = new System.Drawing.Point(172, 0);
             this.button30.Name = "button30";
             this.button30.Size = new System.Drawing.Size(71, 31);
             this.button30.TabIndex = 0;
@@ -365,7 +352,7 @@
             // button_Adelantar
             // 
             this.button_Adelantar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button_Adelantar.Location = new System.Drawing.Point(383, 0);
+            this.button_Adelantar.Location = new System.Drawing.Point(403, 0);
             this.button_Adelantar.Name = "button_Adelantar";
             this.button_Adelantar.Size = new System.Drawing.Size(71, 31);
             this.button_Adelantar.TabIndex = 3;
@@ -376,7 +363,7 @@
             // button_Retroceder
             // 
             this.button_Retroceder.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button_Retroceder.Location = new System.Drawing.Point(229, 0);
+            this.button_Retroceder.Location = new System.Drawing.Point(249, 0);
             this.button_Retroceder.Name = "button_Retroceder";
             this.button_Retroceder.Size = new System.Drawing.Size(71, 31);
             this.button_Retroceder.TabIndex = 4;
@@ -387,7 +374,7 @@
             // button_PlayPausa
             // 
             this.button_PlayPausa.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button_PlayPausa.Location = new System.Drawing.Point(306, 0);
+            this.button_PlayPausa.Location = new System.Drawing.Point(326, 0);
             this.button_PlayPausa.Name = "button_PlayPausa";
             this.button_PlayPausa.Size = new System.Drawing.Size(71, 31);
             this.button_PlayPausa.TabIndex = 8;
@@ -402,17 +389,18 @@
             this.panel7.Controls.Add(this.label_Tiempo_Inicio);
             this.panel7.Controls.Add(this.trackBar_Duracion);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel7.Location = new System.Drawing.Point(0, 32);
+            this.panel7.Location = new System.Drawing.Point(0, 24);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(776, 25);
+            this.panel7.Size = new System.Drawing.Size(817, 33);
             this.panel7.TabIndex = 8;
             // 
             // label_Tiempo_Fin
             // 
+            this.label_Tiempo_Fin.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label_Tiempo_Fin.ForeColor = System.Drawing.SystemColors.MenuBar;
-            this.label_Tiempo_Fin.Location = new System.Drawing.Point(708, 10);
+            this.label_Tiempo_Fin.Location = new System.Drawing.Point(774, 10);
             this.label_Tiempo_Fin.Name = "label_Tiempo_Fin";
-            this.label_Tiempo_Fin.Size = new System.Drawing.Size(47, 12);
+            this.label_Tiempo_Fin.Size = new System.Drawing.Size(43, 15);
             this.label_Tiempo_Fin.TabIndex = 7;
             this.label_Tiempo_Fin.Text = "0:00";
             // 
@@ -436,7 +424,7 @@
             this.trackBar_Duracion.MaximumSize = new System.Drawing.Size(10000, 24);
             this.trackBar_Duracion.MinimumSize = new System.Drawing.Size(549, 24);
             this.trackBar_Duracion.Name = "trackBar_Duracion";
-            this.trackBar_Duracion.Size = new System.Drawing.Size(648, 24);
+            this.trackBar_Duracion.Size = new System.Drawing.Size(714, 24);
             this.trackBar_Duracion.TabIndex = 0;
             this.trackBar_Duracion.TickStyle = System.Windows.Forms.TickStyle.None;
             this.trackBar_Duracion.ValueChanged += new System.EventHandler(this.trackBar_Duracion_ValueChanged);
@@ -607,6 +595,19 @@
             // tmSlider
             // 
             this.tmSlider.Tick += new System.EventHandler(this.tmSlider_Tick);
+            // 
+            // playlist_Perfil_En_Linea1
+            // 
+            this.playlist_Perfil_En_Linea1.AutoScroll = true;
+            this.playlist_Perfil_En_Linea1.AutoSize = true;
+            this.playlist_Perfil_En_Linea1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.playlist_Perfil_En_Linea1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.playlist_Perfil_En_Linea1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.playlist_Perfil_En_Linea1.Location = new System.Drawing.Point(0, 0);
+            this.playlist_Perfil_En_Linea1.Name = "playlist_Perfil_En_Linea1";
+            this.playlist_Perfil_En_Linea1.Size = new System.Drawing.Size(980, 193);
+            this.playlist_Perfil_En_Linea1.TabIndex = 0;
+            this.playlist_Perfil_En_Linea1.Load += new System.EventHandler(this.playlist_Perfil_En_Linea1_Load);
             // 
             // Main_menu
             // 
