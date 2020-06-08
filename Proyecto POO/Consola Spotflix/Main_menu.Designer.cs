@@ -58,15 +58,30 @@
             this.button_Retroceder = new System.Windows.Forms.Button();
             this.button_PlayPausa = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.label_Tiempo_Fin = new System.Windows.Forms.Label();
             this.label_Tiempo_Inicio = new System.Windows.Forms.Label();
             this.trackBar_Duracion = new System.Windows.Forms.TrackBar();
-            this.label_Tiempo_Fin = new System.Windows.Forms.Label();
             this.Button_Perfil_En_Linea = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.Nombre_Cancion = new System.Windows.Forms.Label();
             this.Nombre_Artista = new System.Windows.Forms.Label();
             this.tmSlider = new System.Windows.Forms.Timer(this.components);
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.buscarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.perfilesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.artistaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.playlistToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.multimediaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cancionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.videosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.peliculasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.podcastsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.audiolibrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nuevoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eliminarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
@@ -79,6 +94,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.trackBar_Duracion)).BeginInit();
             this.panel8.SuspendLayout();
             this.panel9.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -93,6 +109,7 @@
             this.tableLayoutPanel1.Controls.Add(this.panel2, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.Button_Perfil_En_Linea, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.panel8, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.menuStrip1, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -108,9 +125,9 @@
             this.panel1.Controls.Add(this.axWindowsMediaPlayer1);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(150, 33);
+            this.panel1.Location = new System.Drawing.Point(245, 33);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(980, 624);
+            this.panel1.Size = new System.Drawing.Size(885, 624);
             this.panel1.TabIndex = 0;
             // 
             // axWindowsMediaPlayer1
@@ -120,7 +137,7 @@
             this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(0, 0);
             this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
             this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
-            this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(980, 431);
+            this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(885, 431);
             this.axWindowsMediaPlayer1.TabIndex = 2;
             // 
             // panel3
@@ -130,7 +147,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel3.Location = new System.Drawing.Point(0, 431);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(980, 193);
+            this.panel3.Size = new System.Drawing.Size(885, 193);
             this.panel3.TabIndex = 1;
             // 
             // playlist_Perfil_En_Linea1
@@ -142,7 +159,7 @@
             this.playlist_Perfil_En_Linea1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.playlist_Perfil_En_Linea1.Location = new System.Drawing.Point(0, 0);
             this.playlist_Perfil_En_Linea1.Name = "playlist_Perfil_En_Linea1";
-            this.playlist_Perfil_En_Linea1.Size = new System.Drawing.Size(980, 193);
+            this.playlist_Perfil_En_Linea1.Size = new System.Drawing.Size(885, 193);
             this.playlist_Perfil_En_Linea1.TabIndex = 0;
             this.playlist_Perfil_En_Linea1.Load += new System.EventHandler(this.playlist_Perfil_En_Linea1_Load);
             // 
@@ -303,9 +320,9 @@
             // 
             this.panel2.Controls.Add(this.panel6);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(150, 663);
+            this.panel2.Location = new System.Drawing.Point(245, 663);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(980, 54);
+            this.panel2.Size = new System.Drawing.Size(885, 54);
             this.panel2.TabIndex = 4;
             // 
             // panel6
@@ -322,13 +339,13 @@
             this.panel6.Controls.Add(this.panel7);
             this.panel6.Location = new System.Drawing.Point(56, 0);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(776, 57);
+            this.panel6.Size = new System.Drawing.Size(681, 57);
             this.panel6.TabIndex = 7;
             // 
             // button31
             // 
             this.button31.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button31.Location = new System.Drawing.Point(460, 0);
+            this.button31.Location = new System.Drawing.Point(412, 0);
             this.button31.Name = "button31";
             this.button31.Size = new System.Drawing.Size(71, 31);
             this.button31.TabIndex = 9;
@@ -338,7 +355,7 @@
             // button30
             // 
             this.button30.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button30.Location = new System.Drawing.Point(152, 0);
+            this.button30.Location = new System.Drawing.Point(104, 0);
             this.button30.Name = "button30";
             this.button30.Size = new System.Drawing.Size(71, 31);
             this.button30.TabIndex = 0;
@@ -348,7 +365,7 @@
             // button_Adelantar
             // 
             this.button_Adelantar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button_Adelantar.Location = new System.Drawing.Point(383, 0);
+            this.button_Adelantar.Location = new System.Drawing.Point(335, 0);
             this.button_Adelantar.Name = "button_Adelantar";
             this.button_Adelantar.Size = new System.Drawing.Size(71, 31);
             this.button_Adelantar.TabIndex = 3;
@@ -359,7 +376,7 @@
             // button_Retroceder
             // 
             this.button_Retroceder.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button_Retroceder.Location = new System.Drawing.Point(229, 0);
+            this.button_Retroceder.Location = new System.Drawing.Point(181, 0);
             this.button_Retroceder.Name = "button_Retroceder";
             this.button_Retroceder.Size = new System.Drawing.Size(71, 31);
             this.button_Retroceder.TabIndex = 4;
@@ -370,7 +387,7 @@
             // button_PlayPausa
             // 
             this.button_PlayPausa.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button_PlayPausa.Location = new System.Drawing.Point(306, 0);
+            this.button_PlayPausa.Location = new System.Drawing.Point(258, 0);
             this.button_PlayPausa.Name = "button_PlayPausa";
             this.button_PlayPausa.Size = new System.Drawing.Size(71, 31);
             this.button_PlayPausa.TabIndex = 8;
@@ -385,10 +402,19 @@
             this.panel7.Controls.Add(this.label_Tiempo_Inicio);
             this.panel7.Controls.Add(this.trackBar_Duracion);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel7.Location = new System.Drawing.Point(0, 24);
+            this.panel7.Location = new System.Drawing.Point(0, 32);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(776, 33);
+            this.panel7.Size = new System.Drawing.Size(681, 25);
             this.panel7.TabIndex = 8;
+            // 
+            // label_Tiempo_Fin
+            // 
+            this.label_Tiempo_Fin.ForeColor = System.Drawing.SystemColors.MenuBar;
+            this.label_Tiempo_Fin.Location = new System.Drawing.Point(708, 10);
+            this.label_Tiempo_Fin.Name = "label_Tiempo_Fin";
+            this.label_Tiempo_Fin.Size = new System.Drawing.Size(47, 12);
+            this.label_Tiempo_Fin.TabIndex = 7;
+            this.label_Tiempo_Fin.Text = "0:00";
             // 
             // label_Tiempo_Inicio
             // 
@@ -410,19 +436,10 @@
             this.trackBar_Duracion.MaximumSize = new System.Drawing.Size(10000, 24);
             this.trackBar_Duracion.MinimumSize = new System.Drawing.Size(549, 24);
             this.trackBar_Duracion.Name = "trackBar_Duracion";
-            this.trackBar_Duracion.Size = new System.Drawing.Size(648, 24);
+            this.trackBar_Duracion.Size = new System.Drawing.Size(553, 24);
             this.trackBar_Duracion.TabIndex = 0;
             this.trackBar_Duracion.TickStyle = System.Windows.Forms.TickStyle.None;
             this.trackBar_Duracion.ValueChanged += new System.EventHandler(this.trackBar_Duracion_ValueChanged);
-            // 
-            // label_Tiempo_Fin
-            // 
-            this.label_Tiempo_Fin.ForeColor = System.Drawing.SystemColors.MenuBar;
-            this.label_Tiempo_Fin.Location = new System.Drawing.Point(708, 10);
-            this.label_Tiempo_Fin.Name = "label_Tiempo_Fin";
-            this.label_Tiempo_Fin.Size = new System.Drawing.Size(47, 12);
-            this.label_Tiempo_Fin.TabIndex = 7;
-            this.label_Tiempo_Fin.Text = "0:00";
             // 
             // Button_Perfil_En_Linea
             // 
@@ -444,7 +461,7 @@
             this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel8.Location = new System.Drawing.Point(3, 663);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(141, 54);
+            this.panel8.Size = new System.Drawing.Size(236, 54);
             this.panel8.TabIndex = 7;
             // 
             // panel9
@@ -452,7 +469,7 @@
             this.panel9.Controls.Add(this.Nombre_Cancion);
             this.panel9.Controls.Add(this.Nombre_Artista);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel9.Location = new System.Drawing.Point(57, 0);
+            this.panel9.Location = new System.Drawing.Point(152, 0);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(84, 54);
             this.panel9.TabIndex = 2;
@@ -481,6 +498,116 @@
             // 
             this.tmSlider.Tick += new System.EventHandler(this.tmSlider_Tick);
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.archivoToolStripMenuItem,
+            this.buscarToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(242, 24);
+            this.menuStrip1.TabIndex = 8;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // archivoToolStripMenuItem
+            // 
+            this.archivoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.nuevoToolStripMenuItem,
+            this.editarToolStripMenuItem,
+            this.eliminarToolStripMenuItem});
+            this.archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
+            this.archivoToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
+            this.archivoToolStripMenuItem.Text = "Archivo";
+            // 
+            // buscarToolStripMenuItem
+            // 
+            this.buscarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.perfilesToolStripMenuItem,
+            this.artistaToolStripMenuItem,
+            this.playlistToolStripMenuItem,
+            this.multimediaToolStripMenuItem});
+            this.buscarToolStripMenuItem.Name = "buscarToolStripMenuItem";
+            this.buscarToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
+            this.buscarToolStripMenuItem.Text = "Buscar";
+            // 
+            // perfilesToolStripMenuItem
+            // 
+            this.perfilesToolStripMenuItem.Name = "perfilesToolStripMenuItem";
+            this.perfilesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.perfilesToolStripMenuItem.Text = "Perfiles";
+            // 
+            // artistaToolStripMenuItem
+            // 
+            this.artistaToolStripMenuItem.Name = "artistaToolStripMenuItem";
+            this.artistaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.artistaToolStripMenuItem.Text = "Artista";
+            // 
+            // playlistToolStripMenuItem
+            // 
+            this.playlistToolStripMenuItem.Name = "playlistToolStripMenuItem";
+            this.playlistToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.playlistToolStripMenuItem.Text = "Playlist";
+            // 
+            // multimediaToolStripMenuItem
+            // 
+            this.multimediaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cancionesToolStripMenuItem,
+            this.videosToolStripMenuItem,
+            this.peliculasToolStripMenuItem,
+            this.podcastsToolStripMenuItem,
+            this.audiolibrosToolStripMenuItem});
+            this.multimediaToolStripMenuItem.Name = "multimediaToolStripMenuItem";
+            this.multimediaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.multimediaToolStripMenuItem.Text = "Multimedia";
+            // 
+            // cancionesToolStripMenuItem
+            // 
+            this.cancionesToolStripMenuItem.Name = "cancionesToolStripMenuItem";
+            this.cancionesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cancionesToolStripMenuItem.Text = "Canciones";
+            // 
+            // videosToolStripMenuItem
+            // 
+            this.videosToolStripMenuItem.Name = "videosToolStripMenuItem";
+            this.videosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.videosToolStripMenuItem.Text = "Videos";
+            // 
+            // peliculasToolStripMenuItem
+            // 
+            this.peliculasToolStripMenuItem.Name = "peliculasToolStripMenuItem";
+            this.peliculasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.peliculasToolStripMenuItem.Text = "Peliculas";
+            // 
+            // podcastsToolStripMenuItem
+            // 
+            this.podcastsToolStripMenuItem.Name = "podcastsToolStripMenuItem";
+            this.podcastsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.podcastsToolStripMenuItem.Text = "Podcasts";
+            // 
+            // audiolibrosToolStripMenuItem
+            // 
+            this.audiolibrosToolStripMenuItem.Name = "audiolibrosToolStripMenuItem";
+            this.audiolibrosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.audiolibrosToolStripMenuItem.Text = "Audiolibros";
+            // 
+            // nuevoToolStripMenuItem
+            // 
+            this.nuevoToolStripMenuItem.Name = "nuevoToolStripMenuItem";
+            this.nuevoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.nuevoToolStripMenuItem.Text = "Nuevo";
+            // 
+            // editarToolStripMenuItem
+            // 
+            this.editarToolStripMenuItem.Name = "editarToolStripMenuItem";
+            this.editarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.editarToolStripMenuItem.Text = "Editar";
+            // 
+            // eliminarToolStripMenuItem
+            // 
+            this.eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
+            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.eliminarToolStripMenuItem.Text = "Eliminar";
+            // 
             // Main_menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -494,6 +621,7 @@
             this.Name = "Main_menu";
             this.Size = new System.Drawing.Size(1280, 720);
             this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
             this.panel3.ResumeLayout(false);
@@ -511,6 +639,8 @@
             this.panel8.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -554,5 +684,20 @@
         public System.Windows.Forms.Button button28;
         public System.Windows.Forms.Button button26;
         public System.Windows.Forms.Label Nombre_Playlist;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem archivoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem nuevoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem editarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eliminarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem buscarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem perfilesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem artistaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem playlistToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem multimediaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cancionesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem videosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem peliculasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem podcastsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem audiolibrosToolStripMenuItem;
     }
 }
