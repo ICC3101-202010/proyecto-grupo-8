@@ -247,7 +247,7 @@
             // 
             // button25
             // 
-            this.button25.Location = new System.Drawing.Point(3, 173);
+            this.button25.Location = new System.Drawing.Point(3, 195);
             this.button25.Name = "button25";
             this.button25.Size = new System.Drawing.Size(114, 57);
             this.button25.TabIndex = 8;
@@ -256,7 +256,7 @@
             // 
             // button27
             // 
-            this.button27.Location = new System.Drawing.Point(3, 299);
+            this.button27.Location = new System.Drawing.Point(3, 321);
             this.button27.Name = "button27";
             this.button27.Size = new System.Drawing.Size(114, 57);
             this.button27.TabIndex = 7;
@@ -274,7 +274,7 @@
             // 
             // button26
             // 
-            this.button26.Location = new System.Drawing.Point(3, 236);
+            this.button26.Location = new System.Drawing.Point(3, 258);
             this.button26.Name = "button26";
             this.button26.Size = new System.Drawing.Size(114, 57);
             this.button26.TabIndex = 5;
@@ -283,7 +283,7 @@
             // 
             // button24
             // 
-            this.button24.Location = new System.Drawing.Point(3, 110);
+            this.button24.Location = new System.Drawing.Point(3, 132);
             this.button24.Name = "button24";
             this.button24.Size = new System.Drawing.Size(114, 57);
             this.button24.TabIndex = 4;
@@ -292,7 +292,7 @@
             // 
             // button23
             // 
-            this.button23.Location = new System.Drawing.Point(3, 47);
+            this.button23.Location = new System.Drawing.Point(3, 69);
             this.button23.Name = "button23";
             this.button23.Size = new System.Drawing.Size(114, 57);
             this.button23.TabIndex = 3;
@@ -418,7 +418,7 @@
             // label_Tiempo_Fin
             // 
             this.label_Tiempo_Fin.ForeColor = System.Drawing.SystemColors.MenuBar;
-            this.label_Tiempo_Fin.Location = new System.Drawing.Point(825, 10);
+            this.label_Tiempo_Fin.Location = new System.Drawing.Point(609, 10);
             this.label_Tiempo_Fin.Name = "label_Tiempo_Fin";
             this.label_Tiempo_Fin.Size = new System.Drawing.Size(47, 12);
             this.label_Tiempo_Fin.TabIndex = 7;
