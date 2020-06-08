@@ -12,7 +12,7 @@ using System.Runtime.InteropServices;
 using WMPLib;
 using Proyecto_POO;
 using System.Threading;
-
+using System.Security.AccessControl;
 
 namespace Consola_Spotflix
 {
@@ -21,12 +21,16 @@ namespace Consola_Spotflix
         int v1 = 50;
         public OpenFileDialog archivo = new OpenFileDialog();
         int play = 0;
-        string ruta;
+        public string ruta;
+        public void Iniciar()
+        {
+            Button_Perfil_En_Linea.Text = Spotflix.perfilenlinea.Nombre_perfil;
+            playlist_Perfil_En_Linea1.Iniciar();        
+        }
         public Main_menu()
         {
             InitializeComponent();
             Registro.mm1 = this;
-
         }
         private void button35_Click(object sender, EventArgs e)
         {
@@ -66,14 +70,14 @@ namespace Consola_Spotflix
             {
                 axWindowsMediaPlayer1.Ctlcontrols.pause();
                 tmSlider.Stop();
-                button_PlayPausa.Text = "Pausa";
+                button_PlayPausa.Text = "Play";
                 play = 3;
             }
             else if (play == 3)
             {
                 axWindowsMediaPlayer1.Ctlcontrols.play();
                 tmSlider.Start();
-                button_PlayPausa.Text = "Play";
+                button_PlayPausa.Text = "Pausa";
                 play = 2;
             }
         }
@@ -83,18 +87,18 @@ namespace Consola_Spotflix
             {
 
                 //axWindowsMediaPlayer1.URL = @"" + ruta;
-                axWindowsMediaPlayer1.URL = Spotflix.Lista_Videos[0].URL;
+                axWindowsMediaPlayer1.URL = Spotflix.Lista_Canciones[0].URL;
                 axWindowsMediaPlayer1.Ctlcontrols.play();
                 this.Visible = true;
                 tmSlider.Start();
                 trackBar_Duracion.Enabled = true;
                 button_PlayPausa.Text = "Pausa";
+                play = 2;
             }
             catch 
             {
             }
         }
-
         private void trackBar_Duracion_ValueChanged(object sender, EventArgs e)
         {
             trackBar_Duracion.Maximum = (int)axWindowsMediaPlayer1.currentMedia.duration;
@@ -114,6 +118,7 @@ namespace Consola_Spotflix
                 trackBar_Duracion.Value = (int)axWindowsMediaPlayer1.Ctlcontrols.currentPosition;
                 label_Tiempo_Inicio.Text = axWindowsMediaPlayer1.Ctlcontrols.currentPositionString;
                 label_Tiempo_Fin.Text = axWindowsMediaPlayer1.currentMedia.durationString;
+
             }
             catch
             {
@@ -135,13 +140,9 @@ namespace Consola_Spotflix
             ruta = archivo.FileName;
         }
 
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        private void Button_Perfil_En_Linea_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void button29_Click(object sender, EventArgs e)
-        {
+            MessageBox.Show(Spotflix.perfilenlinea.Usuario_Asociado.Nombre);
         }
     }
 }

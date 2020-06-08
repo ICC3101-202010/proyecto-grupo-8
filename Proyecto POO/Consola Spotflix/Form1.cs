@@ -23,7 +23,7 @@ namespace Consola_Spotflix
 
         private void Main_Spotflix_Load(object sender, EventArgs e)
         {
-            //main_menu1.Hide();
+            
         }
 
         private void Registrarse_Click(object sender, EventArgs e)

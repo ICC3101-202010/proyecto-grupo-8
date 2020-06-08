@@ -28,22 +28,25 @@ namespace Proyecto_POO
         private void botonPerfil1_Click(object sender, EventArgs e)
         {
             Hide();
-            Registro.mm1.Show();
             Spotflix.perfilenlinea = Spotflix.Lista_perfilesenlinea[0];
+            Registro.mm1.Iniciar();
+            Registro.mm1.Show();
         }
 
         private void botonPerfil2_Click(object sender, EventArgs e)
         {
             Hide();
-            Registro.mm1.Show();
             Spotflix.perfilenlinea = Spotflix.Lista_perfilesenlinea[1];
+            Registro.mm1.Iniciar();
+            Registro.mm1.Show();
         }
 
         private void botonPerfil3_Click(object sender, EventArgs e)
         {
             Hide();
-            Registro.mm1.Show();
             Spotflix.perfilenlinea = Spotflix.Lista_perfilesenlinea[2];
+            Registro.mm1.Iniciar();
+            Registro.mm1.Show();
         }
 
         public void loadPerfiles(int b)
