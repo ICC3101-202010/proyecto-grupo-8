@@ -108,9 +108,9 @@
             this.panel1.Controls.Add(this.axWindowsMediaPlayer1);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(249, 33);
+            this.panel1.Location = new System.Drawing.Point(150, 33);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(881, 624);
+            this.panel1.Size = new System.Drawing.Size(980, 624);
             this.panel1.TabIndex = 0;
             // 
             // axWindowsMediaPlayer1
@@ -120,7 +120,7 @@
             this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(0, 0);
             this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
             this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
-            this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(881, 431);
+            this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(980, 431);
             this.axWindowsMediaPlayer1.TabIndex = 2;
             // 
             // panel3
@@ -130,7 +130,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel3.Location = new System.Drawing.Point(0, 431);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(881, 193);
+            this.panel3.Size = new System.Drawing.Size(980, 193);
             this.panel3.TabIndex = 1;
             // 
             // playlist_Perfil_En_Linea1
@@ -142,7 +142,7 @@
             this.playlist_Perfil_En_Linea1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.playlist_Perfil_En_Linea1.Location = new System.Drawing.Point(0, 0);
             this.playlist_Perfil_En_Linea1.Name = "playlist_Perfil_En_Linea1";
-            this.playlist_Perfil_En_Linea1.Size = new System.Drawing.Size(881, 193);
+            this.playlist_Perfil_En_Linea1.Size = new System.Drawing.Size(980, 193);
             this.playlist_Perfil_En_Linea1.TabIndex = 0;
             this.playlist_Perfil_En_Linea1.Load += new System.EventHandler(this.playlist_Perfil_En_Linea1_Load);
             // 
@@ -303,9 +303,9 @@
             // 
             this.panel2.Controls.Add(this.panel6);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(249, 663);
+            this.panel2.Location = new System.Drawing.Point(150, 663);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(881, 54);
+            this.panel2.Size = new System.Drawing.Size(980, 54);
             this.panel2.TabIndex = 4;
             // 
             // panel6
@@ -322,13 +322,13 @@
             this.panel6.Controls.Add(this.panel7);
             this.panel6.Location = new System.Drawing.Point(56, 0);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(677, 57);
+            this.panel6.Size = new System.Drawing.Size(776, 57);
             this.panel6.TabIndex = 7;
             // 
             // button31
             // 
             this.button31.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button31.Location = new System.Drawing.Point(410, 0);
+            this.button31.Location = new System.Drawing.Point(460, 0);
             this.button31.Name = "button31";
             this.button31.Size = new System.Drawing.Size(71, 31);
             this.button31.TabIndex = 9;
@@ -338,7 +338,7 @@
             // button30
             // 
             this.button30.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button30.Location = new System.Drawing.Point(102, 0);
+            this.button30.Location = new System.Drawing.Point(152, 0);
             this.button30.Name = "button30";
             this.button30.Size = new System.Drawing.Size(71, 31);
             this.button30.TabIndex = 0;
@@ -348,7 +348,7 @@
             // button_Adelantar
             // 
             this.button_Adelantar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button_Adelantar.Location = new System.Drawing.Point(333, 0);
+            this.button_Adelantar.Location = new System.Drawing.Point(383, 0);
             this.button_Adelantar.Name = "button_Adelantar";
             this.button_Adelantar.Size = new System.Drawing.Size(71, 31);
             this.button_Adelantar.TabIndex = 3;
@@ -359,7 +359,7 @@
             // button_Retroceder
             // 
             this.button_Retroceder.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button_Retroceder.Location = new System.Drawing.Point(179, 0);
+            this.button_Retroceder.Location = new System.Drawing.Point(229, 0);
             this.button_Retroceder.Name = "button_Retroceder";
             this.button_Retroceder.Size = new System.Drawing.Size(71, 31);
             this.button_Retroceder.TabIndex = 4;
@@ -370,7 +370,7 @@
             // button_PlayPausa
             // 
             this.button_PlayPausa.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button_PlayPausa.Location = new System.Drawing.Point(256, 0);
+            this.button_PlayPausa.Location = new System.Drawing.Point(306, 0);
             this.button_PlayPausa.Name = "button_PlayPausa";
             this.button_PlayPausa.Size = new System.Drawing.Size(71, 31);
             this.button_PlayPausa.TabIndex = 8;
@@ -381,13 +381,13 @@
             // panel7
             // 
             this.panel7.AutoSize = true;
+            this.panel7.Controls.Add(this.label_Tiempo_Fin);
             this.panel7.Controls.Add(this.label_Tiempo_Inicio);
             this.panel7.Controls.Add(this.trackBar_Duracion);
-            this.panel7.Controls.Add(this.label_Tiempo_Fin);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel7.Location = new System.Drawing.Point(0, 32);
+            this.panel7.Location = new System.Drawing.Point(0, 24);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(677, 25);
+            this.panel7.Size = new System.Drawing.Size(776, 33);
             this.panel7.TabIndex = 8;
             // 
             // label_Tiempo_Inicio
@@ -410,7 +410,7 @@
             this.trackBar_Duracion.MaximumSize = new System.Drawing.Size(10000, 24);
             this.trackBar_Duracion.MinimumSize = new System.Drawing.Size(549, 24);
             this.trackBar_Duracion.Name = "trackBar_Duracion";
-            this.trackBar_Duracion.Size = new System.Drawing.Size(549, 24);
+            this.trackBar_Duracion.Size = new System.Drawing.Size(648, 24);
             this.trackBar_Duracion.TabIndex = 0;
             this.trackBar_Duracion.TickStyle = System.Windows.Forms.TickStyle.None;
             this.trackBar_Duracion.ValueChanged += new System.EventHandler(this.trackBar_Duracion_ValueChanged);
@@ -418,7 +418,7 @@
             // label_Tiempo_Fin
             // 
             this.label_Tiempo_Fin.ForeColor = System.Drawing.SystemColors.MenuBar;
-            this.label_Tiempo_Fin.Location = new System.Drawing.Point(609, 10);
+            this.label_Tiempo_Fin.Location = new System.Drawing.Point(708, 10);
             this.label_Tiempo_Fin.Name = "label_Tiempo_Fin";
             this.label_Tiempo_Fin.Size = new System.Drawing.Size(47, 12);
             this.label_Tiempo_Fin.TabIndex = 7;
@@ -444,7 +444,7 @@
             this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel8.Location = new System.Drawing.Point(3, 663);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(240, 54);
+            this.panel8.Size = new System.Drawing.Size(141, 54);
             this.panel8.TabIndex = 7;
             // 
             // panel9
@@ -452,7 +452,7 @@
             this.panel9.Controls.Add(this.Nombre_Cancion);
             this.panel9.Controls.Add(this.Nombre_Artista);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel9.Location = new System.Drawing.Point(156, 0);
+            this.panel9.Location = new System.Drawing.Point(57, 0);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(84, 54);
             this.panel9.TabIndex = 2;
