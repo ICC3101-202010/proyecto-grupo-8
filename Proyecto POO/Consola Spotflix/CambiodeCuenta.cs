@@ -25,8 +25,6 @@ namespace Consola_Spotflix
             comboBox1.Items.Add("Contraseña");
             comboBox1.Items.Add("Membresia");
 
-
-
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
