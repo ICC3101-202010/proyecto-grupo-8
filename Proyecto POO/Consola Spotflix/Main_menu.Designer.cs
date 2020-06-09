@@ -34,6 +34,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.playlist_Perfil_En_Linea1 = new Consola_Spotflix.Playlist_Perfil_En_Linea();
             this.panel4 = new System.Windows.Forms.Panel();
             this.button21 = new System.Windows.Forms.Button();
             this.button22 = new System.Windows.Forms.Button();
@@ -81,7 +82,6 @@
             this.podcastsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.audiolibrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tmSlider = new System.Windows.Forms.Timer(this.components);
-            this.playlist_Perfil_En_Linea1 = new Consola_Spotflix.Playlist_Perfil_En_Linea();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
@@ -149,6 +149,19 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(980, 193);
             this.panel3.TabIndex = 1;
+            // 
+            // playlist_Perfil_En_Linea1
+            // 
+            this.playlist_Perfil_En_Linea1.AutoScroll = true;
+            this.playlist_Perfil_En_Linea1.AutoSize = true;
+            this.playlist_Perfil_En_Linea1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.playlist_Perfil_En_Linea1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.playlist_Perfil_En_Linea1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.playlist_Perfil_En_Linea1.Location = new System.Drawing.Point(0, 0);
+            this.playlist_Perfil_En_Linea1.Name = "playlist_Perfil_En_Linea1";
+            this.playlist_Perfil_En_Linea1.Size = new System.Drawing.Size(980, 193);
+            this.playlist_Perfil_En_Linea1.TabIndex = 0;
+            this.playlist_Perfil_En_Linea1.Load += new System.EventHandler(this.playlist_Perfil_En_Linea1_Load);
             // 
             // panel4
             // 
@@ -389,16 +402,16 @@
             this.panel7.Controls.Add(this.label_Tiempo_Inicio);
             this.panel7.Controls.Add(this.trackBar_Duracion);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel7.Location = new System.Drawing.Point(0, 24);
+            this.panel7.Location = new System.Drawing.Point(0, 32);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(817, 33);
+            this.panel7.Size = new System.Drawing.Size(817, 25);
             this.panel7.TabIndex = 8;
             // 
             // label_Tiempo_Fin
             // 
             this.label_Tiempo_Fin.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label_Tiempo_Fin.ForeColor = System.Drawing.SystemColors.MenuBar;
-            this.label_Tiempo_Fin.Location = new System.Drawing.Point(774, 10);
+            this.label_Tiempo_Fin.Location = new System.Drawing.Point(774, 6);
             this.label_Tiempo_Fin.Name = "label_Tiempo_Fin";
             this.label_Tiempo_Fin.Size = new System.Drawing.Size(43, 15);
             this.label_Tiempo_Fin.TabIndex = 7;
@@ -535,20 +548,23 @@
             // perfilesToolStripMenuItem
             // 
             this.perfilesToolStripMenuItem.Name = "perfilesToolStripMenuItem";
-            this.perfilesToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.perfilesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.perfilesToolStripMenuItem.Text = "Perfiles";
+            this.perfilesToolStripMenuItem.Click += new System.EventHandler(this.perfilesToolStripMenuItem_Click);
             // 
             // artistaToolStripMenuItem
             // 
             this.artistaToolStripMenuItem.Name = "artistaToolStripMenuItem";
-            this.artistaToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.artistaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.artistaToolStripMenuItem.Text = "Artista";
+            this.artistaToolStripMenuItem.Click += new System.EventHandler(this.artistaToolStripMenuItem_Click);
             // 
             // playlistToolStripMenuItem
             // 
             this.playlistToolStripMenuItem.Name = "playlistToolStripMenuItem";
-            this.playlistToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.playlistToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.playlistToolStripMenuItem.Text = "Playlist";
+            this.playlistToolStripMenuItem.Click += new System.EventHandler(this.playlistToolStripMenuItem_Click);
             // 
             // multimediaToolStripMenuItem
             // 
@@ -559,55 +575,47 @@
             this.podcastsToolStripMenuItem,
             this.audiolibrosToolStripMenuItem});
             this.multimediaToolStripMenuItem.Name = "multimediaToolStripMenuItem";
-            this.multimediaToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.multimediaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.multimediaToolStripMenuItem.Text = "Multimedia";
             // 
             // cancionesToolStripMenuItem
             // 
             this.cancionesToolStripMenuItem.Name = "cancionesToolStripMenuItem";
-            this.cancionesToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.cancionesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.cancionesToolStripMenuItem.Text = "Canciones";
+            this.cancionesToolStripMenuItem.Click += new System.EventHandler(this.cancionesToolStripMenuItem_Click);
             // 
             // videosToolStripMenuItem
             // 
             this.videosToolStripMenuItem.Name = "videosToolStripMenuItem";
-            this.videosToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.videosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.videosToolStripMenuItem.Text = "Videos";
+            this.videosToolStripMenuItem.Click += new System.EventHandler(this.videosToolStripMenuItem_Click);
             // 
             // peliculasToolStripMenuItem
             // 
             this.peliculasToolStripMenuItem.Name = "peliculasToolStripMenuItem";
-            this.peliculasToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.peliculasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.peliculasToolStripMenuItem.Text = "Peliculas";
+            this.peliculasToolStripMenuItem.Click += new System.EventHandler(this.peliculasToolStripMenuItem_Click);
             // 
             // podcastsToolStripMenuItem
             // 
             this.podcastsToolStripMenuItem.Name = "podcastsToolStripMenuItem";
-            this.podcastsToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.podcastsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.podcastsToolStripMenuItem.Text = "Podcasts";
+            this.podcastsToolStripMenuItem.Click += new System.EventHandler(this.podcastsToolStripMenuItem_Click);
             // 
             // audiolibrosToolStripMenuItem
             // 
             this.audiolibrosToolStripMenuItem.Name = "audiolibrosToolStripMenuItem";
-            this.audiolibrosToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.audiolibrosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.audiolibrosToolStripMenuItem.Text = "Audiolibros";
+            this.audiolibrosToolStripMenuItem.Click += new System.EventHandler(this.audiolibrosToolStripMenuItem_Click);
             // 
             // tmSlider
             // 
             this.tmSlider.Tick += new System.EventHandler(this.tmSlider_Tick);
-            // 
-            // playlist_Perfil_En_Linea1
-            // 
-            this.playlist_Perfil_En_Linea1.AutoScroll = true;
-            this.playlist_Perfil_En_Linea1.AutoSize = true;
-            this.playlist_Perfil_En_Linea1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
-            this.playlist_Perfil_En_Linea1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.playlist_Perfil_En_Linea1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.playlist_Perfil_En_Linea1.Location = new System.Drawing.Point(0, 0);
-            this.playlist_Perfil_En_Linea1.Name = "playlist_Perfil_En_Linea1";
-            this.playlist_Perfil_En_Linea1.Size = new System.Drawing.Size(980, 193);
-            this.playlist_Perfil_En_Linea1.TabIndex = 0;
-            this.playlist_Perfil_En_Linea1.Load += new System.EventHandler(this.playlist_Perfil_En_Linea1_Load);
             // 
             // Main_menu
             // 

@@ -290,5 +290,46 @@ namespace Consola_Spotflix
         {
 
         }
+
+        private void perfilesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void artistaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void playlistToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cancionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void videosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void peliculasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void podcastsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void audiolibrosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Registro.buscador1.cargar(); ;
+            buscador1.tipo = "Audio Libro";
+        }
     }
 }

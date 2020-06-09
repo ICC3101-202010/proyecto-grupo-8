@@ -30,16 +30,19 @@
         {
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Accion = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.atras = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.Buscar = new System.Windows.Forms.Button();
+            this.Busqueda = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // comboBox1
@@ -60,17 +63,18 @@
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(349, 21);
             this.comboBox2.TabIndex = 2;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
-            // button1
+            // Accion
             // 
-            this.button1.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.button1.Location = new System.Drawing.Point(589, 304);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(206, 45);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Seguir";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.Accion.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.Accion.Location = new System.Drawing.Point(589, 304);
+            this.Accion.Name = "Accion";
+            this.Accion.Size = new System.Drawing.Size(206, 45);
+            this.Accion.TabIndex = 5;
+            this.Accion.Text = "Accion";
+            this.Accion.UseVisualStyleBackColor = true;
+            this.Accion.Click += new System.EventHandler(this.button1_Click);
             // 
             // label3
             // 
@@ -80,15 +84,6 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(0, 13);
             this.label3.TabIndex = 6;
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(229, 384);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(349, 21);
-            this.comboBox3.TabIndex = 7;
             // 
             // atras
             // 
@@ -131,14 +126,14 @@
             this.label4.TabIndex = 11;
             this.label4.Text = "label4";
             // 
-            // comboBox4
+            // comboBox3
             // 
-            this.comboBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(229, 198);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(349, 21);
-            this.comboBox4.TabIndex = 12;
+            this.comboBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(229, 198);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(349, 21);
+            this.comboBox3.TabIndex = 12;
             // 
             // label5
             // 
@@ -159,21 +154,64 @@
             this.textBox1.Size = new System.Drawing.Size(349, 20);
             this.textBox1.TabIndex = 14;
             // 
+            // comboBox4
+            // 
+            this.comboBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Location = new System.Drawing.Point(229, 225);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(349, 21);
+            this.comboBox4.TabIndex = 15;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.ForeColor = System.Drawing.SystemColors.Menu;
+            this.label6.Location = new System.Drawing.Point(162, 228);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(35, 13);
+            this.label6.TabIndex = 16;
+            this.label6.Text = "label6";
+            // 
+            // Buscar
+            // 
+            this.Buscar.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.Buscar.Location = new System.Drawing.Point(589, 172);
+            this.Buscar.Name = "Buscar";
+            this.Buscar.Size = new System.Drawing.Size(75, 23);
+            this.Buscar.TabIndex = 17;
+            this.Buscar.Text = "Buscar";
+            this.Buscar.UseVisualStyleBackColor = true;
+            this.Buscar.Click += new System.EventHandler(this.Buscar_Click);
+            // 
+            // Busqueda
+            // 
+            this.Busqueda.AutoSize = true;
+            this.Busqueda.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Busqueda.Location = new System.Drawing.Point(275, 14);
+            this.Busqueda.Name = "Busqueda";
+            this.Busqueda.Size = new System.Drawing.Size(242, 55);
+            this.Busqueda.TabIndex = 18;
+            this.Busqueda.Text = "Busqueda";
+            // 
             // Buscador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.Controls.Add(this.Busqueda);
+            this.Controls.Add(this.Buscar);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.comboBox4);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.comboBox4);
+            this.Controls.Add(this.comboBox3);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.atras);
-            this.Controls.Add(this.comboBox3);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Accion);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
             this.ForeColor = System.Drawing.SystemColors.Menu;
@@ -188,15 +226,18 @@
         #endregion
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Accion;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.Button atras;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button Buscar;
+        private System.Windows.Forms.Label Busqueda;
     }
 }
