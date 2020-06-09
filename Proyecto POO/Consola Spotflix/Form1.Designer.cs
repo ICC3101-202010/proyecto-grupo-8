@@ -211,7 +211,6 @@
             this.Text = "Consola Spotflix";
             this.TopMost = true;
             this.TransparencyKey = System.Drawing.Color.Transparent;
-            this.Load += new System.EventHandler(this.Main_Spotflix_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

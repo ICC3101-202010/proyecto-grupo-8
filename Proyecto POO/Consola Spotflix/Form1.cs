@@ -19,12 +19,7 @@ namespace Consola_Spotflix
         {
             InitializeComponent();
         }
-        
 
-        private void Main_Spotflix_Load(object sender, EventArgs e)
-        {
-            
-        }
 
         private void Registrarse_Click(object sender, EventArgs e)
         {
