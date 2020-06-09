@@ -85,6 +85,7 @@
             // comboTipoPerfil
             // 
             this.comboTipoPerfil.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.comboTipoPerfil.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboTipoPerfil.ForeColor = System.Drawing.SystemColors.Menu;
             this.comboTipoPerfil.FormattingEnabled = true;
             this.comboTipoPerfil.Location = new System.Drawing.Point(216, 212);

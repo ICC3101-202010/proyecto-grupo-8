@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Proyecto_POO;
+using System.Threading;
 
 namespace Consola_Spotflix
 {
@@ -55,6 +56,27 @@ namespace Consola_Spotflix
             Vencimiento.Hide();
             Ntarjeta.Hide();
         }
+        public void ALMENU()
+        {
+            Hide();
+            Remember.Hide();
+            Creado.Hide();
+
+            Nombre.Clear();
+            Apellido.Clear();
+            FechaNac.Clear();
+
+            Sexo.Items.Clear();
+            Membresia.Items.Clear();
+            show1();
+            Pais.Clear();
+            Email.Clear();
+            Contraseña.Clear();
+            Banco.Clear();
+            Ntarjeta.Clear();
+            Vencimiento.Clear();
+            CodSeguridad.Clear();
+        }
         private void Menu_Click(object sender, EventArgs e)
         {
             Hide();
@@ -83,7 +105,7 @@ namespace Consola_Spotflix
             if (a % 2 == 0)
             {
                 Remember.Hide();
-                Creado.Show();
+                
                 //Crear
                 string nombre1 = Nombre.Text;
                 string apellido = Apellido.Text;
@@ -108,15 +130,14 @@ namespace Consola_Spotflix
                 {
                     membb = 2;
                 }
-                else
-                {
-                    membb = 1;
-                }
+                
                 string fechnac = FechaNac.Text;
                 DateTime dt = Convert.ToDateTime(fechnac);
                 Usuario us1 = new Usuario(nombre1, apellido, dt, sexo, pais, email, contraseña, membb);
                 Spotflix.Lista_Usuarios.Add(us1);
-                
+                MessageBox.Show("Tu usuario " + nombre1 + " ha sido creado!");
+                ALMENU();
+
             }
             else
             {
