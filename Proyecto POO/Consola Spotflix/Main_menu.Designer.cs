@@ -548,21 +548,21 @@
             // perfilesToolStripMenuItem
             // 
             this.perfilesToolStripMenuItem.Name = "perfilesToolStripMenuItem";
-            this.perfilesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.perfilesToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
             this.perfilesToolStripMenuItem.Text = "Perfiles";
             this.perfilesToolStripMenuItem.Click += new System.EventHandler(this.perfilesToolStripMenuItem_Click);
             // 
             // artistaToolStripMenuItem
             // 
             this.artistaToolStripMenuItem.Name = "artistaToolStripMenuItem";
-            this.artistaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.artistaToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
             this.artistaToolStripMenuItem.Text = "Artista";
             this.artistaToolStripMenuItem.Click += new System.EventHandler(this.artistaToolStripMenuItem_Click);
             // 
             // playlistToolStripMenuItem
             // 
             this.playlistToolStripMenuItem.Name = "playlistToolStripMenuItem";
-            this.playlistToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.playlistToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
             this.playlistToolStripMenuItem.Text = "Playlist";
             this.playlistToolStripMenuItem.Click += new System.EventHandler(this.playlistToolStripMenuItem_Click);
             // 
@@ -575,41 +575,41 @@
             this.podcastsToolStripMenuItem,
             this.audiolibrosToolStripMenuItem});
             this.multimediaToolStripMenuItem.Name = "multimediaToolStripMenuItem";
-            this.multimediaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.multimediaToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
             this.multimediaToolStripMenuItem.Text = "Multimedia";
             // 
             // cancionesToolStripMenuItem
             // 
             this.cancionesToolStripMenuItem.Name = "cancionesToolStripMenuItem";
-            this.cancionesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cancionesToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
             this.cancionesToolStripMenuItem.Text = "Canciones";
             this.cancionesToolStripMenuItem.Click += new System.EventHandler(this.cancionesToolStripMenuItem_Click);
             // 
             // videosToolStripMenuItem
             // 
             this.videosToolStripMenuItem.Name = "videosToolStripMenuItem";
-            this.videosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.videosToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
             this.videosToolStripMenuItem.Text = "Videos";
             this.videosToolStripMenuItem.Click += new System.EventHandler(this.videosToolStripMenuItem_Click);
             // 
             // peliculasToolStripMenuItem
             // 
             this.peliculasToolStripMenuItem.Name = "peliculasToolStripMenuItem";
-            this.peliculasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.peliculasToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
             this.peliculasToolStripMenuItem.Text = "Peliculas";
             this.peliculasToolStripMenuItem.Click += new System.EventHandler(this.peliculasToolStripMenuItem_Click);
             // 
             // podcastsToolStripMenuItem
             // 
             this.podcastsToolStripMenuItem.Name = "podcastsToolStripMenuItem";
-            this.podcastsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.podcastsToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
             this.podcastsToolStripMenuItem.Text = "Podcasts";
             this.podcastsToolStripMenuItem.Click += new System.EventHandler(this.podcastsToolStripMenuItem_Click);
             // 
             // audiolibrosToolStripMenuItem
             // 
             this.audiolibrosToolStripMenuItem.Name = "audiolibrosToolStripMenuItem";
-            this.audiolibrosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.audiolibrosToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
             this.audiolibrosToolStripMenuItem.Text = "Audiolibros";
             this.audiolibrosToolStripMenuItem.Click += new System.EventHandler(this.audiolibrosToolStripMenuItem_Click);
             // 

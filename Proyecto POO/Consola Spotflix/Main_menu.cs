@@ -229,8 +229,27 @@ namespace Consola_Spotflix
             {
                 trackBar_Duracion.Value = (int)axWindowsMediaPlayer1.Ctlcontrols.currentPosition;
                 label_Tiempo_Inicio.Text = axWindowsMediaPlayer1.Ctlcontrols.currentPositionString;
-                label_Tiempo_Fin.Text = axWindowsMediaPlayer1.currentMedia.durationString;               
-
+                label_Tiempo_Fin.Text = axWindowsMediaPlayer1.currentMedia.durationString;
+                if (tipo == 1)
+                {
+                    Cancion_Artista_Ca();
+                }
+                else if (tipo == 2)
+                {
+                    Cancion_Artista_Pe();
+                }
+                else if (tipo == 3)
+                {
+                    Cancion_Artista_Po();
+                }
+                else if (tipo == 4)
+                {
+                    Cancion_Artista_AL();
+                }
+                else if (tipo == 5)
+                {
+                    Cancion_Artista_Vi();
+                }
             }
             catch
             {
@@ -328,8 +347,8 @@ namespace Consola_Spotflix
 
         private void audiolibrosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Registro.buscador1.cargar(); ;
-            buscador1.tipo = "Audio Libro";
+            //Registro.buscador1.cargar(); ;
+            //buscador1.tipo = "Audio Libro";
         }
     }
 }
