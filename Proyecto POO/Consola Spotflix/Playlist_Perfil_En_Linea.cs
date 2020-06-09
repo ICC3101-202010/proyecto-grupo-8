@@ -56,9 +56,11 @@ namespace Consola_Spotflix
         private void button1_Click(object sender, EventArgs e)
         {
             Spotflix.Temporal.clear();
+            Registro.mm1.tipo = 1;
             Spotflix.Agregar_a_temportal(Spotflix.Lista_Canciones);
             Registro.mm1.AbrirMusica();
             Registro.mm1.Nombre_Playlist.Text = button1.Text;
+
             try
             {
                 Registro.mm1.button23.Text = Spotflix.Temporal_Info_Ca[0].Titulo;
@@ -78,9 +80,12 @@ namespace Consola_Spotflix
         private void button2_Click_1(object sender, EventArgs e)
         {
             Spotflix.Temporal.clear();
+            Registro.mm1.tipo = 1;
             Spotflix.Agregar_a_temportal(Spotflix.perfilenlinea.Playlists_Canciones_Propias[0].Playlist_paralista_Ca);
             Registro.mm1.AbrirMusica();
             Registro.mm1.Nombre_Playlist.Text = button2.Text;
+
+
             try
             {
                 Registro.mm1.button23.Text = Spotflix.Temporal_Info_Ca[0].Titulo;
@@ -100,9 +105,12 @@ namespace Consola_Spotflix
         private void button3_Click_1(object sender, EventArgs e)
         {
             Spotflix.Temporal.clear();
+            Registro.mm1.tipo = 1;
             Spotflix.Agregar_a_temportal(Spotflix.perfilenlinea.Playlists_Canciones_Propias[1].Playlist_paralista_Ca);
             Registro.mm1.AbrirMusica();
             Registro.mm1.Nombre_Playlist.Text = button3.Text;
+
+
             try
             {
                 Registro.mm1.button23.Text = Spotflix.Temporal_Info_Ca[0].Titulo;
@@ -121,9 +129,12 @@ namespace Consola_Spotflix
         private void button4_Click(object sender, EventArgs e)
         {
             Spotflix.Temporal.clear();
+            Registro.mm1.tipo = 1;
             Spotflix.Agregar_a_temportal(Spotflix.perfilenlinea.Playlists_Canciones_Propias[2].Playlist_paralista_Ca);
             Registro.mm1.AbrirMusica();
             Registro.mm1.Nombre_Playlist.Text = button4.Text;
+
+
             try
             {
                 Registro.mm1.button23.Text = Spotflix.Temporal_Info_Ca[0].Titulo;
@@ -143,9 +154,12 @@ namespace Consola_Spotflix
         private void button9_Click(object sender, EventArgs e)
         {
             Spotflix.Temporal.clear();
+            Registro.mm1.tipo = 2;
             Spotflix.Agregar_a_temportal(Spotflix.Lista_Peliculas);
             Registro.mm1.AbrirMusica();
             Registro.mm1.Nombre_Playlist.Text = button9.Text;
+
+
             try
             {
                 Registro.mm1.button23.Text = Spotflix.Temporal_Info_Pe[0].Titulo;
@@ -165,9 +179,12 @@ namespace Consola_Spotflix
         private void button10_Click(object sender, EventArgs e)
         {
             Spotflix.Temporal.clear();
+            Registro.mm1.tipo = 2;
             Spotflix.Agregar_a_temportal(Spotflix.perfilenlinea.Playlists_Peliculas_Propias[0].Playlist_paralista_Pe);
             Registro.mm1.AbrirMusica();
             Registro.mm1.Nombre_Playlist.Text = button10.Text;
+
+
             try
             {
                 Registro.mm1.button23.Text = Spotflix.Temporal_Info_Pe[0].Titulo;
@@ -187,9 +204,12 @@ namespace Consola_Spotflix
         private void button11_Click(object sender, EventArgs e)
         {
             Spotflix.Temporal.clear();
+            Registro.mm1.tipo = 2;
             Spotflix.Agregar_a_temportal(Spotflix.perfilenlinea.Playlists_Peliculas_Propias[1].Playlist_paralista_Pe);
             Registro.mm1.AbrirMusica();
             Registro.mm1.Nombre_Playlist.Text = button11.Text;
+
+
             try
             {
                 Registro.mm1.button23.Text = Spotflix.Temporal_Info_Pe[0].Titulo;
@@ -209,9 +229,12 @@ namespace Consola_Spotflix
         private void button12_Click(object sender, EventArgs e)
         {
             Spotflix.Temporal.clear();
+            Registro.mm1.tipo = 2;
             Spotflix.Agregar_a_temportal(Spotflix.perfilenlinea.Playlists_Peliculas_Propias[2].Playlist_paralista_Pe);
             Registro.mm1.AbrirMusica();
             Registro.mm1.Nombre_Playlist.Text = button12.Text;
+
+
             try
             {
                 Registro.mm1.button23.Text = Spotflix.Temporal_Info_Pe[0].Titulo;
@@ -232,9 +255,12 @@ namespace Consola_Spotflix
         private void button17_Click(object sender, EventArgs e)
         {
             Spotflix.Temporal.clear();
+            Registro.mm1.tipo = 3;
             Spotflix.Agregar_a_temportal(Spotflix.Lista_Podcasts);
             Registro.mm1.AbrirMusica();
             Registro.mm1.Nombre_Playlist.Text = button17.Text;
+
+
             try
             {
                 Registro.mm1.button23.Text = Spotflix.Temporal_Info_Po[0].Titulo;
@@ -253,9 +279,12 @@ namespace Consola_Spotflix
         private void button18_Click(object sender, EventArgs e)
         {
             Spotflix.Temporal.clear();
+            Registro.mm1.tipo = 3;
             Spotflix.Agregar_a_temportal(Spotflix.perfilenlinea.Playlists_Podcast_Propios[0].Playlist_paralista_Po);
             Registro.mm1.AbrirMusica();
             Registro.mm1.Nombre_Playlist.Text = button18.Text;
+
+
             try
             {
                 Registro.mm1.button23.Text = Spotflix.Temporal_Info_Po[0].Titulo;
@@ -274,9 +303,12 @@ namespace Consola_Spotflix
         private void button19_Click(object sender, EventArgs e)
         {
             Spotflix.Temporal.clear();
+            Registro.mm1.tipo = 3;
             Spotflix.Agregar_a_temportal(Spotflix.perfilenlinea.Playlists_Podcast_Propios[1].Playlist_paralista_Po);
             Registro.mm1.AbrirMusica();
             Registro.mm1.Nombre_Playlist.Text = button19.Text;
+
+
             try
             {
                 Registro.mm1.button23.Text = Spotflix.Temporal_Info_Po[0].Titulo;
@@ -295,9 +327,12 @@ namespace Consola_Spotflix
         private void button20_Click(object sender, EventArgs e)
         {
             Spotflix.Temporal.clear();
+            Registro.mm1.tipo = 3;
             Spotflix.Agregar_a_temportal(Spotflix.perfilenlinea.Playlists_Podcast_Propios[2].Playlist_paralista_Po);
             Registro.mm1.AbrirMusica();
             Registro.mm1.Nombre_Playlist.Text = button20.Text;
+
+
             try
             {
                 Registro.mm1.button23.Text = Spotflix.Temporal_Info_Po[0].Titulo;
@@ -317,9 +352,12 @@ namespace Consola_Spotflix
         private void button25_Click(object sender, EventArgs e)
         {
             Spotflix.Temporal.clear();
+            Registro.mm1.tipo = 4;
             Spotflix.Agregar_a_temportal(Spotflix.Lista_AudioLibros);
             Registro.mm1.AbrirMusica();
             Registro.mm1.Nombre_Playlist.Text = button25.Text;
+
+
             try
             {
                 Registro.mm1.button23.Text = Spotflix.Temporal_Info_AL[0].Titulo;
@@ -339,9 +377,12 @@ namespace Consola_Spotflix
         private void button26_Click(object sender, EventArgs e)
         {
             Spotflix.Temporal.clear();
+            Registro.mm1.tipo = 4;
             Spotflix.Agregar_a_temportal(Spotflix.perfilenlinea.Playlists_Audiolibro_Propios[0].Playlist_paralista_AL);
             Registro.mm1.AbrirMusica();
             Registro.mm1.Nombre_Playlist.Text = button26.Text;
+
+
             try
             {
                 Registro.mm1.button23.Text = Spotflix.Temporal_Info_AL[0].Titulo;
@@ -361,9 +402,12 @@ namespace Consola_Spotflix
         private void button27_Click(object sender, EventArgs e)
         {
             Spotflix.Temporal.clear();
+            Registro.mm1.tipo = 4;
             Spotflix.Agregar_a_temportal(Spotflix.perfilenlinea.Playlists_Audiolibro_Propios[1].Playlist_paralista_AL);
             Registro.mm1.AbrirMusica();
             Registro.mm1.Nombre_Playlist.Text = button27.Text;
+
+
             try
             {
                 Registro.mm1.button23.Text = Spotflix.Temporal_Info_AL[0].Titulo;
@@ -384,9 +428,12 @@ namespace Consola_Spotflix
         private void button28_Click(object sender, EventArgs e)
         {
             Spotflix.Temporal.clear();
+            Registro.mm1.tipo = 4;
             Spotflix.Agregar_a_temportal(Spotflix.perfilenlinea.Playlists_Audiolibro_Propios[2].Playlist_paralista_AL);
             Registro.mm1.AbrirMusica();
             Registro.mm1.Nombre_Playlist.Text = button28.Text;
+
+
             try
             {
                 Registro.mm1.button23.Text = Spotflix.Temporal_Info_AL[0].Titulo;
@@ -406,9 +453,12 @@ namespace Consola_Spotflix
         private void button33_Click(object sender, EventArgs e)
         {
             Spotflix.Temporal.clear();
+            Registro.mm1.tipo = 5;
             Spotflix.Agregar_a_temportal(Spotflix.Lista_Videos);
             Registro.mm1.AbrirMusica();
             Registro.mm1.Nombre_Playlist.Text = button33.Text;
+
+
             try
             {
                 Registro.mm1.button23.Text = Spotflix.Temporal_Info_Vi[0].Titulo;
@@ -428,9 +478,12 @@ namespace Consola_Spotflix
         private void button34_Click(object sender, EventArgs e)
         {
             Spotflix.Temporal.clear();
+            Registro.mm1.tipo = 5;
             Spotflix.Agregar_a_temportal(Spotflix.perfilenlinea.Playlists_Video_Propios[0].Playlist_paralista_Vi);
             Registro.mm1.AbrirMusica();
             Registro.mm1.Nombre_Playlist.Text = button34.Text;
+
+
             try
             {
                 Registro.mm1.button23.Text = Spotflix.Temporal_Info_Vi[0].Titulo;
@@ -450,9 +503,12 @@ namespace Consola_Spotflix
         private void button35_Click(object sender, EventArgs e)
         {
             Spotflix.Temporal.clear();
+            Registro.mm1.tipo = 5;
             Spotflix.Agregar_a_temportal(Spotflix.perfilenlinea.Playlists_Video_Propios[1].Playlist_paralista_Vi);
             Registro.mm1.AbrirMusica();
             Registro.mm1.Nombre_Playlist.Text = button35.Text;
+
+
             try
             {
                 Registro.mm1.button23.Text = Spotflix.Temporal_Info_Vi[0].Titulo;
@@ -472,9 +528,12 @@ namespace Consola_Spotflix
         private void button36_Click(object sender, EventArgs e)
         {
             Spotflix.Temporal.clear();
+            Registro.mm1.tipo = 5;
             Spotflix.Agregar_a_temportal(Spotflix.perfilenlinea.Playlists_Video_Propios[2].Playlist_paralista_Vi);
             Registro.mm1.AbrirMusica();
             Registro.mm1.Nombre_Playlist.Text = button36.Text;
+
+
             try
             {
                 Registro.mm1.button23.Text = Spotflix.Temporal_Info_Vi[0].Titulo;

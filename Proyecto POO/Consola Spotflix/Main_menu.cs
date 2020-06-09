@@ -22,6 +22,7 @@ namespace Consola_Spotflix
         public OpenFileDialog archivo = new OpenFileDialog();
         int play = 0;
         public string ruta;
+        public int tipo = 0;
         public void Iniciar()
         {
             Button_Perfil_En_Linea.Text = Spotflix.perfilenlinea.Nombre_perfil;
@@ -60,19 +61,27 @@ namespace Consola_Spotflix
             axWindowsMediaPlayer1.Ctlcontrols.next();
             tmSlider.Start();
             Thread.Sleep(500);
-            try
+            if (tipo ==1)
             {
                 Cancion_Artista_Ca();
+            }
+            else if (tipo == 2)
+            {
                 Cancion_Artista_Pe();
+            }
+            else if (tipo == 3)
+            {
                 Cancion_Artista_Po();
+            }
+            else if (tipo == 4)
+            {
                 Cancion_Artista_AL();
+            }
+            else if (tipo == 5)
+            {
                 Cancion_Artista_Vi();
             }
-            catch (Exception)
-            {
-
-                throw;
-            }
+            
             
         }
 
@@ -112,20 +121,27 @@ namespace Consola_Spotflix
                 trackBar_Duracion.Enabled = true;
                 button_PlayPausa.Text = "Pausa";
                 play = 2;
-                try
+                if (tipo == 1)
                 {
                     Cancion_Artista_Ca();
+                }
+                else if (tipo == 2)
+                {
                     Cancion_Artista_Pe();
+                }
+                else if (tipo == 3)
+                {
                     Cancion_Artista_Po();
+                }
+                else if (tipo == 4)
+                {
                     Cancion_Artista_AL();
+                }
+                else if (tipo == 5)
+                {
                     Cancion_Artista_Vi();
                 }
-                catch (Exception)
-                {
 
-                    throw;
-                }
-                
             }
             catch 
             {
@@ -247,18 +263,25 @@ namespace Consola_Spotflix
             axWindowsMediaPlayer1.Ctlcontrols.previous();
             tmSlider.Start();
             Thread.Sleep(500);
-            try
+            if (tipo == 1)
             {
                 Cancion_Artista_Ca();
-                Cancion_Artista_Pe();
-                Cancion_Artista_Po();
-                Cancion_Artista_AL();
-                Cancion_Artista_Vi();
             }
-            catch (Exception)
+            else if (tipo == 2)
             {
-
-                throw;
+                Cancion_Artista_Pe();
+            }
+            else if (tipo == 3)
+            {
+                Cancion_Artista_Po();
+            }
+            else if (tipo == 4)
+            {
+                Cancion_Artista_AL();
+            }
+            else if (tipo == 5)
+            {
+                Cancion_Artista_Vi();
             }
 
         }
