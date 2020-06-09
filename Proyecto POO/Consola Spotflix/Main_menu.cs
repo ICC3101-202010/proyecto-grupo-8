@@ -189,6 +189,7 @@ namespace Consola_Spotflix
         {
             for (int i = 0; i < Spotflix.Temporal.count; i++)
             {
+
                 if (axWindowsMediaPlayer1.currentMedia.isIdentical[Spotflix.Temporal.Item[i]])
                 {
                     Nombre_Cancion.Text = Spotflix.Temporal_Info_Po[i].Titulo;
@@ -204,6 +205,7 @@ namespace Consola_Spotflix
             {
                 if (axWindowsMediaPlayer1.currentMedia.isIdentical[Spotflix.Temporal.Item[i]])
                 {
+                    
                     Nombre_Cancion.Text = Spotflix.Temporal_Info_AL[i].Titulo;
                     Nombre_Artista.Text = Spotflix.Temporal_Info_AL[i].Lector.Nombre_y_Apellido;
                     break;

@@ -158,7 +158,7 @@ namespace Consola_Spotflix
 
             Button button = sender as Button;
             Spotflix.Temporal.clear();
-            Registro.mm1.tipo = 1;
+            Registro.mm1.tipo = 2;
             Spotflix.Agregar_a_temportal(peliculas);
             Registro.mm1.AbrirMusica();
             Registro.mm1.Nombre_Playlist.Text = button.Text;
@@ -168,7 +168,7 @@ namespace Consola_Spotflix
 
             Button button = sender as Button;
             Spotflix.Temporal.clear();
-            Registro.mm1.tipo = 1;
+            Registro.mm1.tipo = 3;
             Spotflix.Agregar_a_temportal(podcasts);
             Registro.mm1.AbrirMusica();
             Registro.mm1.Nombre_Playlist.Text = button.Text;
@@ -178,7 +178,7 @@ namespace Consola_Spotflix
 
             Button button = sender as Button;
             Spotflix.Temporal.clear();
-            Registro.mm1.tipo = 1;
+            Registro.mm1.tipo = 4;
             Spotflix.Agregar_a_temportal(audiolibros);
             Registro.mm1.AbrirMusica();
             Registro.mm1.Nombre_Playlist.Text = button.Text;
@@ -188,7 +188,7 @@ namespace Consola_Spotflix
 
             Button button = sender as Button;
             Spotflix.Temporal.clear();
-            Registro.mm1.tipo = 1;
+            Registro.mm1.tipo = 5;
             Spotflix.Agregar_a_temportal(videos);
             Registro.mm1.AbrirMusica();
             Registro.mm1.Nombre_Playlist.Text = button.Text;
@@ -221,7 +221,7 @@ namespace Consola_Spotflix
             peliculas = Spotflix.Lista_Peliculas;
             Button button = sender as Button;
             Spotflix.Temporal.clear();
-            Registro.mm1.tipo = 1;
+            Registro.mm1.tipo = 2;
             Spotflix.Agregar_a_temportal(peliculas);
             Registro.mm1.AbrirMusica();
             Registro.mm1.Nombre_Playlist.Text = button.Text;
@@ -232,7 +232,7 @@ namespace Consola_Spotflix
             peliculas = Spotflix.perfilenlinea.Fav_Pelicula;
             Button button = sender as Button;
             Spotflix.Temporal.clear();
-            Registro.mm1.tipo = 1;
+            Registro.mm1.tipo = 2;
             Spotflix.Agregar_a_temportal(peliculas);
             Registro.mm1.AbrirMusica();
             Registro.mm1.Nombre_Playlist.Text = button.Text;
@@ -243,7 +243,7 @@ namespace Consola_Spotflix
             podcasts = Spotflix.Lista_Podcasts;
             Button button = sender as Button;
             Spotflix.Temporal.clear();
-            Registro.mm1.tipo = 1;
+            Registro.mm1.tipo = 3;
             Spotflix.Agregar_a_temportal(podcasts);
             Registro.mm1.AbrirMusica();
             Registro.mm1.Nombre_Playlist.Text = button.Text;
@@ -254,7 +254,7 @@ namespace Consola_Spotflix
             podcasts = Spotflix.perfilenlinea.Fav_Podcast;
             Button button = sender as Button;
             Spotflix.Temporal.clear();
-            Registro.mm1.tipo = 1;
+            Registro.mm1.tipo = 3;
             Spotflix.Agregar_a_temportal(podcasts);
             Registro.mm1.AbrirMusica();
             Registro.mm1.Nombre_Playlist.Text = button.Text;
@@ -265,7 +265,7 @@ namespace Consola_Spotflix
             audiolibros = Spotflix.Lista_AudioLibros;
             Button button = sender as Button;
             Spotflix.Temporal.clear();
-            Registro.mm1.tipo = 1;
+            Registro.mm1.tipo = 4;
             Spotflix.Agregar_a_temportal(audiolibros);
             Registro.mm1.AbrirMusica();
             Registro.mm1.Nombre_Playlist.Text = button.Text;
@@ -276,7 +276,7 @@ namespace Consola_Spotflix
             audiolibros = Spotflix.perfilenlinea.Fav_AudioLibro;
             Button button = sender as Button;
             Spotflix.Temporal.clear();
-            Registro.mm1.tipo = 1;
+            Registro.mm1.tipo = 4;
             Spotflix.Agregar_a_temportal(audiolibros);
             Registro.mm1.AbrirMusica();
             Registro.mm1.Nombre_Playlist.Text = button.Text;
@@ -287,7 +287,7 @@ namespace Consola_Spotflix
             videos = Spotflix.Lista_Videos;
             Button button = sender as Button;
             Spotflix.Temporal.clear();
-            Registro.mm1.tipo = 1;
+            Registro.mm1.tipo = 5;
             Spotflix.Agregar_a_temportal(videos);
             Registro.mm1.AbrirMusica();
             Registro.mm1.Nombre_Playlist.Text = button.Text;
@@ -298,7 +298,7 @@ namespace Consola_Spotflix
             videos = Spotflix.perfilenlinea.Fav_Videos;
             Button button = sender as Button;
             Spotflix.Temporal.clear();
-            Registro.mm1.tipo = 1;
+            Registro.mm1.tipo = 5;
             Spotflix.Agregar_a_temportal(videos);
             Registro.mm1.AbrirMusica();
             Registro.mm1.Nombre_Playlist.Text = button.Text;
@@ -319,8 +319,10 @@ namespace Consola_Spotflix
 
 
 
+        private void metodo()
+        {
 
-
+        }
 
 
 
