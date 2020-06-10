@@ -61,8 +61,10 @@ namespace Consola_Spotflix
 
                 label4.Text = "Valor:";
                 //
+                label5.Text = "Artista:";
                 label4.Show();
-
+                label1.Show();
+                label2.Show();
                 label5.Show();
                 comboBox3.Show();
                 textBox1.Show();
