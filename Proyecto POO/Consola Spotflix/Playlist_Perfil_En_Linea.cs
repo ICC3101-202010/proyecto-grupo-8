@@ -16,6 +16,11 @@ namespace Consola_Spotflix
         public List<Podcast> podcasts = new List<Podcast>();
         public List<AudioLibro> audiolibros = new List<AudioLibro>();
         public List<Video> videos = new List<Video>();
+        public Cancion cancion = new Cancion();
+        public Pelicula pelicula = new Pelicula();
+        public Podcast podcast = new Podcast();
+        public AudioLibro audiolibro = new AudioLibro();
+        public Video video = new Video();
         public void Iniciar()
         {
             button0.Text = "Todas las Canciones";
@@ -49,9 +54,9 @@ namespace Consola_Spotflix
             button41.Show();
             button41.Click += new EventHandler(this.button41_Click);
 
-            foreach ( Control C in this.Controls)
+            foreach (Control C in this.Controls)
             {
-                
+
                 if (C.GetType() == typeof(Panel))
                 {
                     int i_Ca = 7;
@@ -59,12 +64,12 @@ namespace Consola_Spotflix
                     int i_Po = 7;
                     int i_AL = 7;
                     int i_Vi = 7;
-                    
+
                     foreach (Control control in C.Controls)
                     {
                         if (control.GetType() == typeof(Button))
                         {
-                            if (Convert.ToInt32(control.Name.Substring(6))<= 9 && Convert.ToInt32(control.Name.Substring(6)) >= 2)
+                            if (Convert.ToInt32(control.Name.Substring(6)) <= 9 && Convert.ToInt32(control.Name.Substring(6)) >= 2)
                             {
                                 try
                                 {
@@ -75,7 +80,7 @@ namespace Consola_Spotflix
                                     control.Click += new EventHandler(this.Prueba_Ca);
                                 }
 
-                                catch 
+                                catch
                                 {
                                 }
                                 i_Ca -= 1;
@@ -140,18 +145,19 @@ namespace Consola_Spotflix
                     }
                     //C.Text = "Botones Cambiados por foreach";
                 }
-            }    
+            }
         }
 
         public void Prueba_Ca(object sender, EventArgs e)
         {
-            
-            Button button =  sender as Button;
+
+            Button button = sender as Button;
             Spotflix.Temporal.clear();
             Registro.mm1.tipo = 1;
             Spotflix.Agregar_a_temportal(canciones);
             Registro.mm1.AbrirMusica();
             Registro.mm1.Nombre_Playlist.Text = button.Text;
+            Metodo(canciones);
         }
         public void Prueba_Pe(object sender, EventArgs e)
         {
@@ -162,6 +168,7 @@ namespace Consola_Spotflix
             Spotflix.Agregar_a_temportal(peliculas);
             Registro.mm1.AbrirMusica();
             Registro.mm1.Nombre_Playlist.Text = button.Text;
+            Metodo(peliculas);
         }
         public void Prueba_Po(object sender, EventArgs e)
         {
@@ -172,6 +179,7 @@ namespace Consola_Spotflix
             Spotflix.Agregar_a_temportal(podcasts);
             Registro.mm1.AbrirMusica();
             Registro.mm1.Nombre_Playlist.Text = button.Text;
+            Metodo(podcasts);
         }
         public void Prueba_AL(object sender, EventArgs e)
         {
@@ -182,6 +190,7 @@ namespace Consola_Spotflix
             Spotflix.Agregar_a_temportal(audiolibros);
             Registro.mm1.AbrirMusica();
             Registro.mm1.Nombre_Playlist.Text = button.Text;
+            Metodo(audiolibros);
         }
         public void Prueba_Vi(object sender, EventArgs e)
         {
@@ -192,6 +201,7 @@ namespace Consola_Spotflix
             Spotflix.Agregar_a_temportal(videos);
             Registro.mm1.AbrirMusica();
             Registro.mm1.Nombre_Playlist.Text = button.Text;
+            Metodo(videos);
         }
 
         public void button0_Click(object sender, EventArgs e)
@@ -203,6 +213,8 @@ namespace Consola_Spotflix
             Spotflix.Agregar_a_temportal(canciones);
             Registro.mm1.AbrirMusica();
             Registro.mm1.Nombre_Playlist.Text = button.Text;
+            Metodo(canciones);
+
 
         }
         public void button1_Click(object sender, EventArgs e)
@@ -214,6 +226,7 @@ namespace Consola_Spotflix
             Spotflix.Agregar_a_temportal(canciones);
             Registro.mm1.AbrirMusica();
             Registro.mm1.Nombre_Playlist.Text = button.Text;
+            Metodo(canciones);
 
         }
         public void button10_Click(object sender, EventArgs e)
@@ -225,6 +238,7 @@ namespace Consola_Spotflix
             Spotflix.Agregar_a_temportal(peliculas);
             Registro.mm1.AbrirMusica();
             Registro.mm1.Nombre_Playlist.Text = button.Text;
+            Metodo(peliculas);
 
         }
         public void button11_Click(object sender, EventArgs e)
@@ -236,7 +250,7 @@ namespace Consola_Spotflix
             Spotflix.Agregar_a_temportal(peliculas);
             Registro.mm1.AbrirMusica();
             Registro.mm1.Nombre_Playlist.Text = button.Text;
-
+            Metodo(peliculas);
         }
         public void button20_Click(object sender, EventArgs e)
         {
@@ -247,7 +261,7 @@ namespace Consola_Spotflix
             Spotflix.Agregar_a_temportal(podcasts);
             Registro.mm1.AbrirMusica();
             Registro.mm1.Nombre_Playlist.Text = button.Text;
-
+            Metodo(podcasts);
         }
         public void button21_Click(object sender, EventArgs e)
         {
@@ -258,7 +272,7 @@ namespace Consola_Spotflix
             Spotflix.Agregar_a_temportal(podcasts);
             Registro.mm1.AbrirMusica();
             Registro.mm1.Nombre_Playlist.Text = button.Text;
-
+            Metodo(podcasts);
         }
         public void button30_Click(object sender, EventArgs e)
         {
@@ -269,7 +283,7 @@ namespace Consola_Spotflix
             Spotflix.Agregar_a_temportal(audiolibros);
             Registro.mm1.AbrirMusica();
             Registro.mm1.Nombre_Playlist.Text = button.Text;
-
+            Metodo(audiolibros);
         }
         public void button31_Click(object sender, EventArgs e)
         {
@@ -280,7 +294,7 @@ namespace Consola_Spotflix
             Spotflix.Agregar_a_temportal(audiolibros);
             Registro.mm1.AbrirMusica();
             Registro.mm1.Nombre_Playlist.Text = button.Text;
-
+            Metodo(audiolibros);
         }
         public void button40_Click(object sender, EventArgs e)
         {
@@ -291,7 +305,7 @@ namespace Consola_Spotflix
             Spotflix.Agregar_a_temportal(videos);
             Registro.mm1.AbrirMusica();
             Registro.mm1.Nombre_Playlist.Text = button.Text;
-
+            Metodo(videos);
         }
         public void button41_Click(object sender, EventArgs e)
         {
@@ -302,537 +316,252 @@ namespace Consola_Spotflix
             Spotflix.Agregar_a_temportal(videos);
             Registro.mm1.AbrirMusica();
             Registro.mm1.Nombre_Playlist.Text = button.Text;
-
+            Metodo(videos);
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        private void metodo()
+        //
+        private void Metodo(List<Cancion> canciones)
         {
+            foreach (Control C in Registro.mm1.Controls)
+            {
+                foreach (Control D in C.Controls)
+                {
+                    if (D.Name == "panel5")
+                    {
+                        int i = 0;
+                        foreach (Control E in D.Controls)
+                        {
 
+                            if (E.GetType() == typeof(Button))
+                            {
+                                E.Hide();
+                                try
+                                {
+                                    E.Text = canciones[i].Titulo;
+                                    E.Click += new EventHandler(this.Reproducir_Ca);
+                                    E.Show();
+                                    i++;
+                                }
+                                catch { }
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+        private void Metodo(List<Pelicula> peliculas)
+        {
+            foreach (Control C in Registro.mm1.Controls)
+            {
+                foreach (Control D in C.Controls)
+                {
+                    if (D.Name == "panel5")
+                    {
+                        int i = 0;
+                        foreach (Control E in D.Controls)
+                        {
+
+                            if (E.GetType() == typeof(Button))
+                            {
+                                E.Hide();
+                                try
+                                {
+                                    E.Text = peliculas[i].Titulo;
+                                    E.Click += new EventHandler(this.Reproducir_Pe);
+                                    E.Show();
+                                    i++;
+                                }
+                                catch { }
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+        private void Metodo(List<Podcast> podcasts)
+        {
+            foreach (Control C in Registro.mm1.Controls)
+            {
+                foreach (Control D in C.Controls)
+                {
+                    if (D.Name == "panel5")
+                    {
+                        int i = 0;
+                        foreach (Control E in D.Controls)
+                        {
+
+                            if (E.GetType() == typeof(Button))
+                            {
+                                E.Hide();
+                                try
+                                {
+                                    E.Text = podcasts[i].Titulo;
+                                    E.Click += new EventHandler(this.Reproducir_Po);
+                                    E.Show();
+                                    i++;
+                                }
+                                catch { }
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+        private void Metodo(List<AudioLibro> audioLibros)
+        {
+            foreach (Control C in Registro.mm1.Controls)
+            {
+                foreach (Control D in C.Controls)
+                {
+                    if (D.Name == "panel5")
+                    {
+                        int i = 0;
+                        foreach (Control E in D.Controls)
+                        {
+
+                            if (E.GetType() == typeof(Button))
+                            {
+                                E.Hide();
+                                try
+                                {
+                                    E.Text = audioLibros[i].Titulo;
+                                    E.Click += new EventHandler(this.Reproducir_AL);
+                                    E.Show();
+                                    i++;
+                                }
+                                catch { }
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+        private void Metodo(List<Video> videos)
+        {
+            foreach (Control C in Registro.mm1.Controls)
+            {
+                foreach (Control D in C.Controls)
+                {
+                    if (D.Name == "panel5")
+                    {
+                        int i = 0;
+                        foreach (Control E in D.Controls)
+                        {
+
+                            if (E.GetType() == typeof(Button))
+                            {
+                                E.Hide();
+                                try
+                                {
+                                    E.Text = videos[i].Titulo;
+                                    E.Click += new EventHandler(this.Reproducir_Vi);
+                                    E.Show();
+                                    i++;
+                                }
+                                catch { }
+                            }
+                        }
+                    }
+                }
+
+            }
         }
 
+        public void Reproducir_Ca(object sender, EventArgs e)
+        {
+            Button button = sender as Button;
+            foreach (var item in canciones)
+            {
+                if (item.Titulo==button.Text )
+                {
+                    cancion = item;
+                }
+            }
+            List<Cancion> temp = new List<Cancion>();
+            temp.Add(cancion);
+            Spotflix.Temporal.clear();
+            Registro.mm1.tipo = 1;
+            Spotflix.Agregar_a_temportal(temp);
+            Registro.mm1.AbrirMusica();
+            Registro.mm1.Nombre_Playlist.Text = button.Text;
+        }     
+
+        public void Reproducir_Pe(object sender, EventArgs e)
+        {
+            Button button = sender as Button;
+            foreach (var item in peliculas)
+            {
+                if (item.Titulo == button.Text)
+                {
+                    pelicula = item;
+                }
+            }
+            List<Pelicula> temp = new List<Pelicula>();
+            temp.Add(pelicula);
+            Spotflix.Temporal.clear();
+            Registro.mm1.tipo = 2;
+            Spotflix.Agregar_a_temportal(temp);
+            Registro.mm1.AbrirMusica();
+            Registro.mm1.Nombre_Playlist.Text = button.Text;
+        }
+        public void Reproducir_Po(object sender, EventArgs e)
+        {
+            Button button = sender as Button;
+            foreach (var item in podcasts)
+            {
+                if (item.Titulo == button.Text)
+                {
+                    podcast = item;
+                }
+            }
+            List<Podcast> temp = new List<Podcast>();
+            temp.Add(podcast);
+            Spotflix.Temporal.clear();
+            Registro.mm1.tipo = 3;
+            Spotflix.Agregar_a_temportal(temp);
+            Registro.mm1.AbrirMusica();
+            Registro.mm1.Nombre_Playlist.Text = button.Text;
+        }
+        public void Reproducir_AL(object sender, EventArgs e)
+        {
+            Button button = sender as Button;
+            foreach (var item in audiolibros)
+            {
+                if (item.Titulo == button.Text)
+                {
+                    audiolibro = item;
+                }
+            }
+            List<AudioLibro> temp = new List<AudioLibro>();
+            temp.Add(audiolibro);
+            Spotflix.Temporal.clear();
+            Registro.mm1.tipo = 4;
+            Spotflix.Agregar_a_temportal(temp);
+            Registro.mm1.AbrirMusica();
+            Registro.mm1.Nombre_Playlist.Text = button.Text;
+        }
+        public void Reproducir_Vi(object sender, EventArgs e)
+        {
+            Button button = sender as Button;
+            foreach (var item in videos)
+            {
+                if (item.Titulo == button.Text)
+                {
+                    video = item;
+                }
+            }
+            List<Video> temp = new List<Video>();
+            temp.Add(video);
+            Spotflix.Temporal.clear();
+            Registro.mm1.tipo = 5;
+            Spotflix.Agregar_a_temportal(temp);
+            Registro.mm1.AbrirMusica();
+            Registro.mm1.Nombre_Playlist.Text = button.Text;
+        }
 
-
-
-
-
-
-
-
-
-
-
-
-
-        //Botones Canciones
-        //private void button1_Click(object sender, EventArgs e)
-        //{
-        //    Spotflix.Temporal.clear();
-        //    Registro.mm1.tipo = 1;
-        //    Spotflix.Agregar_a_temportal(Spotflix.Lista_Canciones);
-        //    Registro.mm1.AbrirMusica();
-        //    Registro.mm1.Nombre_Playlist.Text = button1.Text;
-
-        //    try
-        //    {
-        //        Registro.mm1.button23.Text = Spotflix.Temporal_Info_Ca[0].Titulo;
-        //        Registro.mm1.button24.Text = Spotflix.Temporal_Info_Ca[1].Titulo;
-        //        Registro.mm1.button25.Text = Spotflix.Temporal_Info_Ca[2].Titulo;
-        //        Registro.mm1.button26.Text = Spotflix.Temporal_Info_Ca[3].Titulo;
-        //        Registro.mm1.button27.Text = Spotflix.Temporal_Info_Ca[4].Titulo;
-
-        //    }
-        //    catch (Exception)
-        //    {
-
-        //        throw;
-        //    }
-        //}
-
-        //private void button2_Click_1(object sender, EventArgs e)
-        //{
-        //    Spotflix.Temporal.clear();
-        //    Registro.mm1.tipo = 1;
-        //    Spotflix.Agregar_a_temportal(Spotflix.perfilenlinea.Playlists_Canciones_Propias[0].Playlist_paralista_Ca);
-        //    Registro.mm1.AbrirMusica();
-        //    Registro.mm1.Nombre_Playlist.Text = button2.Text;
-
-
-        //    try
-        //    {
-        //        Registro.mm1.button23.Text = Spotflix.Temporal_Info_Ca[0].Titulo;
-        //        Registro.mm1.button24.Text = Spotflix.Temporal_Info_Ca[1].Titulo;
-        //        Registro.mm1.button25.Text = Spotflix.Temporal_Info_Ca[2].Titulo;
-        //        Registro.mm1.button26.Text = Spotflix.Temporal_Info_Ca[3].Titulo;
-        //        Registro.mm1.button27.Text = Spotflix.Temporal_Info_Ca[4].Titulo;
-
-        //    }
-        //    catch 
-        //    {
-
-        //    }
-        //}
-
-        //private void button3_Click_1(object sender, EventArgs e)
-        //{
-        //    Spotflix.Temporal.clear();
-        //    Registro.mm1.tipo = 1;
-        //    Spotflix.Agregar_a_temportal(Spotflix.perfilenlinea.Playlists_Canciones_Propias[1].Playlist_paralista_Ca);
-        //    Registro.mm1.AbrirMusica();
-        //    Registro.mm1.Nombre_Playlist.Text = button3.Text;
-
-
-        //    try
-        //    {
-        //        Registro.mm1.button23.Text = Spotflix.Temporal_Info_Ca[0].Titulo;
-        //        Registro.mm1.button24.Text = Spotflix.Temporal_Info_Ca[1].Titulo;
-        //        Registro.mm1.button25.Text = Spotflix.Temporal_Info_Ca[2].Titulo;
-        //        Registro.mm1.button26.Text = Spotflix.Temporal_Info_Ca[3].Titulo;
-        //        Registro.mm1.button27.Text = Spotflix.Temporal_Info_Ca[4].Titulo;
-
-        //    }
-        //    catch (Exception)
-        //    {
-
-        //        throw;
-        //    }
-        //}
-        //private void button4_Click(object sender, EventArgs e)
-        //{
-        //    Spotflix.Temporal.clear();
-        //    Registro.mm1.tipo = 1;
-        //    Spotflix.Agregar_a_temportal(Spotflix.perfilenlinea.Playlists_Canciones_Propias[2].Playlist_paralista_Ca);
-        //    Registro.mm1.AbrirMusica();
-        //    Registro.mm1.Nombre_Playlist.Text = button4.Text;
-
-
-        //    try
-        //    {
-        //        Registro.mm1.button23.Text = Spotflix.Temporal_Info_Ca[0].Titulo;
-        //        Registro.mm1.button24.Text = Spotflix.Temporal_Info_Ca[1].Titulo;
-        //        Registro.mm1.button25.Text = Spotflix.Temporal_Info_Ca[2].Titulo;
-        //        Registro.mm1.button26.Text = Spotflix.Temporal_Info_Ca[3].Titulo;
-        //        Registro.mm1.button27.Text = Spotflix.Temporal_Info_Ca[4].Titulo;
-
-        //    }
-        //    catch (Exception)
-        //    {
-
-        //        throw;
-        //    }
-        //}
-        ////Botones Peliculas
-        //private void button9_Click(object sender, EventArgs e)
-        //{
-        //    Spotflix.Temporal.clear();
-        //    Registro.mm1.tipo = 2;
-        //    Spotflix.Agregar_a_temportal(Spotflix.Lista_Peliculas);
-        //    Registro.mm1.AbrirMusica();
-        //    Registro.mm1.Nombre_Playlist.Text = button9.Text;
-
-
-        //    try
-        //    {
-        //        Registro.mm1.button23.Text = Spotflix.Temporal_Info_Pe[0].Titulo;
-        //        Registro.mm1.button24.Text = Spotflix.Temporal_Info_Pe[1].Titulo;
-        //        Registro.mm1.button25.Text = Spotflix.Temporal_Info_Pe[2].Titulo;
-        //        Registro.mm1.button26.Text = Spotflix.Temporal_Info_Pe[3].Titulo;
-        //        Registro.mm1.button27.Text = Spotflix.Temporal_Info_Pe[4].Titulo;
-
-        //    }
-        //    catch (Exception)
-        //    {
-
-        //        throw;
-        //    }
-        //}
-
-        //private void button10_Click(object sender, EventArgs e)
-        //{
-        //    Spotflix.Temporal.clear();
-        //    Registro.mm1.tipo = 2;
-        //    Spotflix.Agregar_a_temportal(Spotflix.perfilenlinea.Playlists_Peliculas_Propias[0].Playlist_paralista_Pe);
-        //    Registro.mm1.AbrirMusica();
-        //    Registro.mm1.Nombre_Playlist.Text = button10.Text;
-
-
-        //    try
-        //    {
-        //        Registro.mm1.button23.Text = Spotflix.Temporal_Info_Pe[0].Titulo;
-        //        Registro.mm1.button24.Text = Spotflix.Temporal_Info_Pe[1].Titulo;
-        //        Registro.mm1.button25.Text = Spotflix.Temporal_Info_Pe[2].Titulo;
-        //        Registro.mm1.button26.Text = Spotflix.Temporal_Info_Pe[3].Titulo;
-        //        Registro.mm1.button27.Text = Spotflix.Temporal_Info_Pe[4].Titulo;
-
-        //    }
-        //    catch (Exception)
-        //    {
-
-        //        throw;
-        //    }
-        //}
-
-        //private void button11_Click(object sender, EventArgs e)
-        //{
-        //    Spotflix.Temporal.clear();
-        //    Registro.mm1.tipo = 2;
-        //    Spotflix.Agregar_a_temportal(Spotflix.perfilenlinea.Playlists_Peliculas_Propias[1].Playlist_paralista_Pe);
-        //    Registro.mm1.AbrirMusica();
-        //    Registro.mm1.Nombre_Playlist.Text = button11.Text;
-
-
-        //    try
-        //    {
-        //        Registro.mm1.button23.Text = Spotflix.Temporal_Info_Pe[0].Titulo;
-        //        Registro.mm1.button24.Text = Spotflix.Temporal_Info_Pe[1].Titulo;
-        //        Registro.mm1.button25.Text = Spotflix.Temporal_Info_Pe[2].Titulo;
-        //        Registro.mm1.button26.Text = Spotflix.Temporal_Info_Pe[3].Titulo;
-        //        Registro.mm1.button27.Text = Spotflix.Temporal_Info_Pe[4].Titulo;
-
-        //    }
-        //    catch (Exception)
-        //    {
-
-        //        throw;
-        //    }
-        //}
-
-        //private void button12_Click(object sender, EventArgs e)
-        //{
-        //    Spotflix.Temporal.clear();
-        //    Registro.mm1.tipo = 2;
-        //    Spotflix.Agregar_a_temportal(Spotflix.perfilenlinea.Playlists_Peliculas_Propias[2].Playlist_paralista_Pe);
-        //    Registro.mm1.AbrirMusica();
-        //    Registro.mm1.Nombre_Playlist.Text = button12.Text;
-
-
-        //    try
-        //    {
-        //        Registro.mm1.button23.Text = Spotflix.Temporal_Info_Pe[0].Titulo;
-        //        Registro.mm1.button24.Text = Spotflix.Temporal_Info_Pe[1].Titulo;
-        //        Registro.mm1.button25.Text = Spotflix.Temporal_Info_Pe[2].Titulo;
-        //        Registro.mm1.button26.Text = Spotflix.Temporal_Info_Pe[3].Titulo;
-        //        Registro.mm1.button27.Text = Spotflix.Temporal_Info_Pe[4].Titulo;
-
-        //    }
-        //    catch (Exception)
-        //    {
-
-        //        throw;
-        //    }
-        //}
-
-        ////Botones Podcast
-        //private void button17_Click(object sender, EventArgs e)
-        //{
-        //    Spotflix.Temporal.clear();
-        //    Registro.mm1.tipo = 3;
-        //    Spotflix.Agregar_a_temportal(Spotflix.Lista_Podcasts);
-        //    Registro.mm1.AbrirMusica();
-        //    Registro.mm1.Nombre_Playlist.Text = button17.Text;
-
-
-        //    try
-        //    {
-        //        Registro.mm1.button23.Text = Spotflix.Temporal_Info_Po[0].Titulo;
-        //        Registro.mm1.button24.Text = Spotflix.Temporal_Info_Po[1].Titulo;
-        //        Registro.mm1.button25.Text = Spotflix.Temporal_Info_Po[2].Titulo;
-        //        Registro.mm1.button26.Text = Spotflix.Temporal_Info_Po[3].Titulo;
-        //        Registro.mm1.button27.Text = Spotflix.Temporal_Info_Po[4].Titulo;
-
-        //    }
-        //    catch (Exception)
-        //    {
-
-        //        throw;
-        //    }
-        //}
-        //private void button18_Click(object sender, EventArgs e)
-        //{
-        //    Spotflix.Temporal.clear();
-        //    Registro.mm1.tipo = 3;
-        //    Spotflix.Agregar_a_temportal(Spotflix.perfilenlinea.Playlists_Podcast_Propios[0].Playlist_paralista_Po);
-        //    Registro.mm1.AbrirMusica();
-        //    Registro.mm1.Nombre_Playlist.Text = button18.Text;
-
-
-        //    try
-        //    {
-        //        Registro.mm1.button23.Text = Spotflix.Temporal_Info_Po[0].Titulo;
-        //        Registro.mm1.button24.Text = Spotflix.Temporal_Info_Po[1].Titulo;
-        //        Registro.mm1.button25.Text = Spotflix.Temporal_Info_Po[2].Titulo;
-        //        Registro.mm1.button26.Text = Spotflix.Temporal_Info_Po[3].Titulo;
-        //        Registro.mm1.button27.Text = Spotflix.Temporal_Info_Po[4].Titulo;
-
-        //    }
-        //    catch (Exception)
-        //    {
-
-        //        throw;
-        //    }
-        //}
-        //private void button19_Click(object sender, EventArgs e)
-        //{
-        //    Spotflix.Temporal.clear();
-        //    Registro.mm1.tipo = 3;
-        //    Spotflix.Agregar_a_temportal(Spotflix.perfilenlinea.Playlists_Podcast_Propios[1].Playlist_paralista_Po);
-        //    Registro.mm1.AbrirMusica();
-        //    Registro.mm1.Nombre_Playlist.Text = button19.Text;
-
-
-        //    try
-        //    {
-        //        Registro.mm1.button23.Text = Spotflix.Temporal_Info_Po[0].Titulo;
-        //        Registro.mm1.button24.Text = Spotflix.Temporal_Info_Po[1].Titulo;
-        //        Registro.mm1.button25.Text = Spotflix.Temporal_Info_Po[2].Titulo;
-        //        Registro.mm1.button26.Text = Spotflix.Temporal_Info_Po[3].Titulo;
-        //        Registro.mm1.button27.Text = Spotflix.Temporal_Info_Po[4].Titulo;
-
-        //    }
-        //    catch (Exception)
-        //    {
-
-        //        throw;
-        //    }
-        //}
-        //private void button20_Click(object sender, EventArgs e)
-        //{
-        //    Spotflix.Temporal.clear();
-        //    Registro.mm1.tipo = 3;
-        //    Spotflix.Agregar_a_temportal(Spotflix.perfilenlinea.Playlists_Podcast_Propios[2].Playlist_paralista_Po);
-        //    Registro.mm1.AbrirMusica();
-        //    Registro.mm1.Nombre_Playlist.Text = button20.Text;
-
-
-        //    try
-        //    {
-        //        Registro.mm1.button23.Text = Spotflix.Temporal_Info_Po[0].Titulo;
-        //        Registro.mm1.button24.Text = Spotflix.Temporal_Info_Po[1].Titulo;
-        //        Registro.mm1.button25.Text = Spotflix.Temporal_Info_Po[2].Titulo;
-        //        Registro.mm1.button26.Text = Spotflix.Temporal_Info_Po[3].Titulo;
-        //        Registro.mm1.button27.Text = Spotflix.Temporal_Info_Po[4].Titulo;
-
-        //    }
-        //    catch (Exception)
-        //    {
-
-        //        throw;
-        //    }
-        //}
-        ////Botones Audiolibros
-        //private void button25_Click(object sender, EventArgs e)
-        //{
-        //    Spotflix.Temporal.clear();
-        //    Registro.mm1.tipo = 4;
-        //    Spotflix.Agregar_a_temportal(Spotflix.Lista_AudioLibros);
-        //    Registro.mm1.AbrirMusica();
-        //    Registro.mm1.Nombre_Playlist.Text = button25.Text;
-
-
-        //    try
-        //    {
-        //        Registro.mm1.button23.Text = Spotflix.Temporal_Info_AL[0].Titulo;
-        //        Registro.mm1.button24.Text = Spotflix.Temporal_Info_AL[1].Titulo;
-        //        Registro.mm1.button25.Text = Spotflix.Temporal_Info_AL[2].Titulo;
-        //        Registro.mm1.button26.Text = Spotflix.Temporal_Info_AL[3].Titulo;
-        //        Registro.mm1.button27.Text = Spotflix.Temporal_Info_AL[4].Titulo;
-
-        //    }
-        //    catch (Exception)
-        //    {
-
-        //        throw;
-        //    }
-        //}
-
-        //private void button26_Click(object sender, EventArgs e)
-        //{
-        //    Spotflix.Temporal.clear();
-        //    Registro.mm1.tipo = 4;
-        //    Spotflix.Agregar_a_temportal(Spotflix.perfilenlinea.Playlists_Audiolibro_Propios[0].Playlist_paralista_AL);
-        //    Registro.mm1.AbrirMusica();
-        //    Registro.mm1.Nombre_Playlist.Text = button26.Text;
-
-
-        //    try
-        //    {
-        //        Registro.mm1.button23.Text = Spotflix.Temporal_Info_AL[0].Titulo;
-        //        Registro.mm1.button24.Text = Spotflix.Temporal_Info_AL[1].Titulo;
-        //        Registro.mm1.button25.Text = Spotflix.Temporal_Info_AL[2].Titulo;
-        //        Registro.mm1.button26.Text = Spotflix.Temporal_Info_AL[3].Titulo;
-        //        Registro.mm1.button27.Text = Spotflix.Temporal_Info_AL[4].Titulo;
-
-        //    }
-        //    catch (Exception)
-        //    {
-
-        //        throw;
-        //    }
-        //}
-
-        //private void button27_Click(object sender, EventArgs e)
-        //{
-        //    Spotflix.Temporal.clear();
-        //    Registro.mm1.tipo = 4;
-        //    Spotflix.Agregar_a_temportal(Spotflix.perfilenlinea.Playlists_Audiolibro_Propios[1].Playlist_paralista_AL);
-        //    Registro.mm1.AbrirMusica();
-        //    Registro.mm1.Nombre_Playlist.Text = button27.Text;
-
-
-        //    try
-        //    {
-        //        Registro.mm1.button23.Text = Spotflix.Temporal_Info_AL[0].Titulo;
-        //        Registro.mm1.button24.Text = Spotflix.Temporal_Info_AL[1].Titulo;
-        //        Registro.mm1.button25.Text = Spotflix.Temporal_Info_AL[2].Titulo;
-        //        Registro.mm1.button26.Text = Spotflix.Temporal_Info_AL[3].Titulo;
-        //        Registro.mm1.button27.Text = Spotflix.Temporal_Info_AL[4].Titulo;
-
-        //    }
-        //    catch (Exception)
-        //    {
-
-        //        throw;
-        //    }
-
-        //}
-
-        //private void button28_Click(object sender, EventArgs e)
-        //{
-        //    Spotflix.Temporal.clear();
-        //    Registro.mm1.tipo = 4;
-        //    Spotflix.Agregar_a_temportal(Spotflix.perfilenlinea.Playlists_Audiolibro_Propios[2].Playlist_paralista_AL);
-        //    Registro.mm1.AbrirMusica();
-        //    Registro.mm1.Nombre_Playlist.Text = button28.Text;
-
-
-        //    try
-        //    {
-        //        Registro.mm1.button23.Text = Spotflix.Temporal_Info_AL[0].Titulo;
-        //        Registro.mm1.button24.Text = Spotflix.Temporal_Info_AL[1].Titulo;
-        //        Registro.mm1.button25.Text = Spotflix.Temporal_Info_AL[2].Titulo;
-        //        Registro.mm1.button26.Text = Spotflix.Temporal_Info_AL[3].Titulo;
-        //        Registro.mm1.button27.Text = Spotflix.Temporal_Info_AL[4].Titulo;
-
-        //    }
-        //    catch (Exception)
-        //    {
-
-        //        throw;
-        //    }
-        //}
-        ////Botones Videos
-        //private void button33_Click(object sender, EventArgs e)
-        //{
-        //    Spotflix.Temporal.clear();
-        //    Registro.mm1.tipo = 5;
-        //    Spotflix.Agregar_a_temportal(Spotflix.Lista_Videos);
-        //    Registro.mm1.AbrirMusica();
-        //    Registro.mm1.Nombre_Playlist.Text = button33.Text;
-
-
-        //    try
-        //    {
-        //        Registro.mm1.button23.Text = Spotflix.Temporal_Info_Vi[0].Titulo;
-        //        Registro.mm1.button24.Text = Spotflix.Temporal_Info_Vi[1].Titulo;
-        //        Registro.mm1.button25.Text = Spotflix.Temporal_Info_Vi[2].Titulo;
-        //        Registro.mm1.button26.Text = Spotflix.Temporal_Info_Vi[3].Titulo;
-        //        Registro.mm1.button27.Text = Spotflix.Temporal_Info_Vi[4].Titulo;
-
-        //    }
-        //    catch (Exception)
-        //    {
-
-        //        throw;
-        //    }
-        //}
-
-        //private void button34_Click(object sender, EventArgs e)
-        //{
-        //    Spotflix.Temporal.clear();
-        //    Registro.mm1.tipo = 5;
-        //    Spotflix.Agregar_a_temportal(Spotflix.perfilenlinea.Playlists_Video_Propios[0].Playlist_paralista_Vi);
-        //    Registro.mm1.AbrirMusica();
-        //    Registro.mm1.Nombre_Playlist.Text = button34.Text;
-
-
-        //    try
-        //    {
-        //        Registro.mm1.button23.Text = Spotflix.Temporal_Info_Vi[0].Titulo;
-        //        Registro.mm1.button24.Text = Spotflix.Temporal_Info_Vi[1].Titulo;
-        //        Registro.mm1.button25.Text = Spotflix.Temporal_Info_Vi[2].Titulo;
-        //        Registro.mm1.button26.Text = Spotflix.Temporal_Info_Vi[3].Titulo;
-        //        Registro.mm1.button27.Text = Spotflix.Temporal_Info_Vi[4].Titulo;
-
-        //    }
-        //    catch (Exception)
-        //    {
-
-        //        throw;
-        //    }
-        //}
-
-        //private void button35_Click(object sender, EventArgs e)
-        //{
-        //    Spotflix.Temporal.clear();
-        //    Registro.mm1.tipo = 5;
-        //    Spotflix.Agregar_a_temportal(Spotflix.perfilenlinea.Playlists_Video_Propios[1].Playlist_paralista_Vi);
-        //    Registro.mm1.AbrirMusica();
-        //    Registro.mm1.Nombre_Playlist.Text = button35.Text;
-
-
-        //    try
-        //    {
-        //        Registro.mm1.button23.Text = Spotflix.Temporal_Info_Vi[0].Titulo;
-        //        Registro.mm1.button24.Text = Spotflix.Temporal_Info_Vi[1].Titulo;
-        //        Registro.mm1.button25.Text = Spotflix.Temporal_Info_Vi[2].Titulo;
-        //        Registro.mm1.button26.Text = Spotflix.Temporal_Info_Vi[3].Titulo;
-        //        Registro.mm1.button27.Text = Spotflix.Temporal_Info_Vi[4].Titulo;
-
-        //    }
-        //    catch (Exception)
-        //    {
-
-        //        throw;
-        //    }
-        //}
-
-        //private void button36_Click(object sender, EventArgs e)
-        //{
-        //    Spotflix.Temporal.clear();
-        //    Registro.mm1.tipo = 5;
-        //    Spotflix.Agregar_a_temportal(Spotflix.perfilenlinea.Playlists_Video_Propios[2].Playlist_paralista_Vi);
-        //    Registro.mm1.AbrirMusica();
-        //    Registro.mm1.Nombre_Playlist.Text = button36.Text;
-
-
-        //    try
-        //    {
-        //        Registro.mm1.button23.Text = Spotflix.Temporal_Info_Vi[0].Titulo;
-        //        Registro.mm1.button24.Text = Spotflix.Temporal_Info_Vi[1].Titulo;
-        //        Registro.mm1.button25.Text = Spotflix.Temporal_Info_Vi[2].Titulo;
-        //        Registro.mm1.button26.Text = Spotflix.Temporal_Info_Vi[3].Titulo;
-        //        Registro.mm1.button27.Text = Spotflix.Temporal_Info_Vi[4].Titulo;
-
-        //    }
-        //    catch (Exception)
-        //    {
-
-        //        throw;
-        //    }
-        //}
 
 
     }

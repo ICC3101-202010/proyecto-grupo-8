@@ -231,27 +231,40 @@ namespace Consola_Spotflix
             {
                 trackBar_Duracion.Value = (int)axWindowsMediaPlayer1.Ctlcontrols.currentPosition;
                 label_Tiempo_Inicio.Text = axWindowsMediaPlayer1.Ctlcontrols.currentPositionString;
-                label_Tiempo_Fin.Text = axWindowsMediaPlayer1.currentMedia.durationString;
-                if (tipo == 1)
+                string a="";
+                if (axWindowsMediaPlayer1.currentMedia==null)
                 {
-                    Cancion_Artista_Ca();
+                  
                 }
-                else if (tipo == 2)
+                else
                 {
-                    Cancion_Artista_Pe();
+                    a = axWindowsMediaPlayer1.currentMedia.durationString;
                 }
-                else if (tipo == 3)
+                if (a!="")
                 {
-                    Cancion_Artista_Po();
+                    label_Tiempo_Fin.Text = axWindowsMediaPlayer1.currentMedia.durationString;
+                    if (tipo == 1)
+                    {
+                        Cancion_Artista_Ca();
+                    }
+                    else if (tipo == 2)
+                    {
+                        Cancion_Artista_Pe();
+                    }
+                    else if (tipo == 3)
+                    {
+                        Cancion_Artista_Po();
+                    }
+                    else if (tipo == 4)
+                    {
+                        Cancion_Artista_AL();
+                    }
+                    else if (tipo == 5)
+                    {
+                        Cancion_Artista_Vi();
+                    }
                 }
-                else if (tipo == 4)
-                {
-                    Cancion_Artista_AL();
-                }
-                else if (tipo == 5)
-                {
-                    Cancion_Artista_Vi();
-                }
+                
             }
             catch
             {
