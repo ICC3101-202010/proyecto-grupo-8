@@ -46,6 +46,7 @@
             this.cambiodeCuenta2 = new Consola_Spotflix.CambiodeCuenta();
             this.crearPlaylist1 = new Consola_Spotflix.CrearPlaylist();
             this.buscador1 = new Consola_Spotflix.Buscador();
+            this.archivos1 = new Consola_Spotflix.Archivos();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -129,6 +130,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.archivos1);
             this.panel1.Controls.Add(this.buscador1);
             this.panel1.Controls.Add(this.crearPlaylist1);
             this.panel1.Controls.Add(this.cambiodeCuenta2);
@@ -257,6 +259,16 @@
             this.buscador1.TabIndex = 23;
             this.buscador1.Visible = false;
             // 
+            // archivos1
+            // 
+            this.archivos1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.archivos1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.archivos1.Location = new System.Drawing.Point(0, 0);
+            this.archivos1.Name = "archivos1";
+            this.archivos1.Size = new System.Drawing.Size(1264, 681);
+            this.archivos1.TabIndex = 24;
+            this.archivos1.Visible = false;
+            // 
             // Main_Spotflix
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -299,6 +311,7 @@
         private CambiodeCuenta cambiodeCuenta2;
         private CrearPlaylist crearPlaylist1;
         private Buscador buscador1;
+        private Archivos archivos1;
     }
 }
 

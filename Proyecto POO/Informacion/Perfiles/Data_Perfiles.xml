@@ -88,6 +88,53 @@
         <Letra>Letra</Letra>
         <Genero>Trap</Genero>
       </Cancion>
+      <Cancion>
+        <Titulo>Follow</Titulo>
+        <Categoria>1</Categoria>
+        <Año>2020-04-01T00:00:00</Año>
+        <Duracion />
+        <Ranking>10</Ranking>
+        <Estado>2</Estado>
+        <URL>C:\Users\juani\Desktop\POO\Proyecto\Repositorio Proyecto\proyecto-grupo-8\Proyecto POO\Biblioteca\Musica\Karol G, Anuel AA - Follow.wav</URL>
+        <Cantante>
+          <Persona>
+            <Nombre_y_Apellido>Karol G</Nombre_y_Apellido>
+            <Sexo>2</Sexo>
+            <Nacionalidad>Colombiana</Nacionalidad>
+            <Fecha_De_Nacimiento>1991-02-14T00:00:00</Fecha_De_Nacimiento>
+            <Profesion>
+              <int>1</int>
+              <int>2</int>
+            </Profesion>
+          </Persona>
+          <Persona>
+            <Nombre_y_Apellido>Anuel AA</Nombre_y_Apellido>
+            <Sexo>1</Sexo>
+            <Nacionalidad>Puertorriqueño</Nacionalidad>
+            <Fecha_De_Nacimiento>1992-11-27T00:00:00</Fecha_De_Nacimiento>
+            <Profesion>
+              <int>1</int>
+              <int>2</int>
+            </Profesion>
+          </Persona>
+        </Cantante>
+        <Compositor>
+          <Persona>
+            <Nombre_y_Apellido>Karol G</Nombre_y_Apellido>
+            <Sexo>2</Sexo>
+            <Nacionalidad>Colombiana</Nacionalidad>
+            <Fecha_De_Nacimiento>1991-02-14T00:00:00</Fecha_De_Nacimiento>
+            <Profesion>
+              <int>1</int>
+              <int>2</int>
+            </Profesion>
+          </Persona>
+        </Compositor>
+        <Album>Keii</Album>
+        <Imagen>Imagen</Imagen>
+        <Letra>Letra</Letra>
+        <Genero>Reggaeton</Genero>
+      </Cancion>
     </Fav_Canciones>
     <Fav_Pelicula />
     <Fav_Videos />

@@ -334,7 +334,7 @@ namespace Consola_Spotflix
 
         private void artistaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Registro.busc1.tipo = "Artista";
+            Registro.busc1.tipo = "Artistas";
             Registro.busc1.CargarBuscador();
         }
 
@@ -396,6 +396,12 @@ namespace Consola_Spotflix
         {
             Registro.Crear_playlist.Show();
             Registro.Crear_playlist.BringToFront();
+        }
+
+        private void nuevoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Registro.Crear_Archivo.Show();
+            Registro.Crear_Archivo.BringToFront();
         }
     }
 }
