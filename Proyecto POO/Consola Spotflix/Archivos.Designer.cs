@@ -51,11 +51,13 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.openFileDialog2 = new System.Windows.Forms.OpenFileDialog();
+            this.label12 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.label12);
             this.panel2.Controls.Add(this.button4);
             this.panel2.Controls.Add(this.button5);
             this.panel2.Controls.Add(this.button3);
@@ -278,6 +280,17 @@
             // 
             this.openFileDialog2.FileName = "openFileDialog2";
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.SystemColors.Menu;
+            this.label12.Location = new System.Drawing.Point(251, 74);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(222, 31);
+            this.label12.TabIndex = 22;
+            this.label12.Text = "Agregar Archivos";
+            // 
             // Archivos
             // 
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
@@ -340,5 +353,6 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.OpenFileDialog openFileDialog2;
+        private System.Windows.Forms.Label label12;
     }
 }
