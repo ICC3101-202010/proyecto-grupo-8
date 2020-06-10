@@ -191,6 +191,7 @@ namespace Consola_Spotflix
                 {
                     comboBox2.Items.Add(item);
                 }
+
                 label2.Text = "Playlists:";
                 comboBox3.Items.Add("");
                 label4.Hide();

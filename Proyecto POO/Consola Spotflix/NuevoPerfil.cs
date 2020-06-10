@@ -60,6 +60,7 @@ namespace Proyecto_POO
             Creado.Show();
             Spotflix.Lista_Perfiles.Add(p1);
             Spotflix.Lista_perfilesenlinea.Add(p1);
+            MessageBox.Show("Tu perfil " + nombreperfil + " ha sido añadido a tu cuenta!");
         }
 
         private void NuevoPerfil_Load(object sender, EventArgs e)

@@ -53,7 +53,9 @@ namespace Consola_Spotflix
                 if (u.Email==email && u.Contraseña == contraseña)
                 {
                     c += 1;
+                    Usuarionoencontrado.Hide();
                     perfiles1.loadPerfiles(b);
+                    
                     break;
                 }
             }

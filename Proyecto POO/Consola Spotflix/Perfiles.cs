@@ -51,6 +51,7 @@ namespace Proyecto_POO
 
         public void loadPerfiles(int b)
         {
+            
             Show();
             if (b == 0)
             {
