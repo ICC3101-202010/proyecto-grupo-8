@@ -51,6 +51,43 @@
         <Letra>Letra</Letra>
         <Genero>Trap</Genero>
       </Cancion>
+      <Cancion>
+        <Titulo>Keii</Titulo>
+        <Categoria>1</Categoria>
+        <Año>2020-02-07T00:00:00</Año>
+        <Duracion />
+        <Ranking>10</Ranking>
+        <Estado>2</Estado>
+        <URL>C:\Users\juani\Desktop\POO\Proyecto\Repositorio Proyecto\proyecto-grupo-8\Proyecto POO\Biblioteca\Musica\Anuel AA - Keii.wav</URL>
+        <Cantante>
+          <Persona>
+            <Nombre_y_Apellido>Anuel AA</Nombre_y_Apellido>
+            <Sexo>1</Sexo>
+            <Nacionalidad>Puertorriqueño</Nacionalidad>
+            <Fecha_De_Nacimiento>1992-11-27T00:00:00</Fecha_De_Nacimiento>
+            <Profesion>
+              <int>1</int>
+              <int>2</int>
+            </Profesion>
+          </Persona>
+        </Cantante>
+        <Compositor>
+          <Persona>
+            <Nombre_y_Apellido>Anuel AA</Nombre_y_Apellido>
+            <Sexo>1</Sexo>
+            <Nacionalidad>Puertorriqueño</Nacionalidad>
+            <Fecha_De_Nacimiento>1992-11-27T00:00:00</Fecha_De_Nacimiento>
+            <Profesion>
+              <int>1</int>
+              <int>2</int>
+            </Profesion>
+          </Persona>
+        </Compositor>
+        <Album>Keii</Album>
+        <Imagen>Imagen</Imagen>
+        <Letra>Letra</Letra>
+        <Genero>Trap</Genero>
+      </Cancion>
     </Fav_Canciones>
     <Fav_Pelicula />
     <Fav_Videos />
@@ -64,6 +101,16 @@
         <Playlist_paralista_AL />
         <Playlist_paralista_Vi />
         <Nombre>Ronca Reggaeton</Nombre>
+        <Duracion />
+        <Tipo_De_Playlist>1</Tipo_De_Playlist>
+      </Playlist>
+      <Playlist>
+        <Playlist_paralista_Ca />
+        <Playlist_paralista_Pe />
+        <Playlist_paralista_Po />
+        <Playlist_paralista_AL />
+        <Playlist_paralista_Vi />
+        <Nombre>Ronca Trap</Nombre>
         <Duracion />
         <Tipo_De_Playlist>1</Tipo_De_Playlist>
       </Playlist>

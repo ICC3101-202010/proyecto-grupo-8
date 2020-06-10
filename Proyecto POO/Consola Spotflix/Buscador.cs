@@ -1245,7 +1245,7 @@ namespace Consola_Spotflix
 
         private void Buscador_Load(object sender, EventArgs e)
         {
-            
+            BringToFront();
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)

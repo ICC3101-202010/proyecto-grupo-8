@@ -42,7 +42,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Menu;
-            this.label1.Location = new System.Drawing.Point(472, 85);
+            this.label1.Location = new System.Drawing.Point(233, 42);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(216, 39);
             this.label1.TabIndex = 0;
@@ -50,7 +50,7 @@
             // 
             // botonPerfil1
             // 
-            this.botonPerfil1.Location = new System.Drawing.Point(388, 176);
+            this.botonPerfil1.Location = new System.Drawing.Point(140, 144);
             this.botonPerfil1.Name = "botonPerfil1";
             this.botonPerfil1.Size = new System.Drawing.Size(103, 86);
             this.botonPerfil1.TabIndex = 1;
@@ -61,7 +61,7 @@
             // 
             // botonPerfil2
             // 
-            this.botonPerfil2.Location = new System.Drawing.Point(524, 176);
+            this.botonPerfil2.Location = new System.Drawing.Point(276, 144);
             this.botonPerfil2.Name = "botonPerfil2";
             this.botonPerfil2.Size = new System.Drawing.Size(103, 86);
             this.botonPerfil2.TabIndex = 2;
@@ -72,7 +72,7 @@
             // 
             // botonPerfil3
             // 
-            this.botonPerfil3.Location = new System.Drawing.Point(665, 176);
+            this.botonPerfil3.Location = new System.Drawing.Point(417, 144);
             this.botonPerfil3.Name = "botonPerfil3";
             this.botonPerfil3.Size = new System.Drawing.Size(103, 86);
             this.botonPerfil3.TabIndex = 3;
@@ -86,7 +86,7 @@
             this.botonCrearPerfil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.botonCrearPerfil.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.botonCrearPerfil.ForeColor = System.Drawing.SystemColors.Menu;
-            this.botonCrearPerfil.Location = new System.Drawing.Point(524, 299);
+            this.botonCrearPerfil.Location = new System.Drawing.Point(276, 267);
             this.botonCrearPerfil.Name = "botonCrearPerfil";
             this.botonCrearPerfil.Size = new System.Drawing.Size(103, 86);
             this.botonCrearPerfil.TabIndex = 4;
@@ -96,21 +96,22 @@
             // 
             // panel1
             // 
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.Controls.Add(this.botonCrearPerfil);
             this.panel1.Controls.Add(this.botonPerfil3);
             this.panel1.Controls.Add(this.botonPerfil2);
             this.panel1.Controls.Add(this.botonPerfil1);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Location = new System.Drawing.Point(291, 65);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1264, 681);
+            this.panel1.Size = new System.Drawing.Size(627, 427);
             this.panel1.TabIndex = 5;
             // 
             // Perfiles
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
             this.Controls.Add(this.panel1);
             this.Name = "Perfiles";

@@ -45,6 +45,7 @@
             this.crearCuenta1 = new Consola_Spotflix.CrearCuenta();
             this.cambiodeCuenta2 = new Consola_Spotflix.CambiodeCuenta();
             this.crearPlaylist1 = new Consola_Spotflix.CrearPlaylist();
+            this.buscador1 = new Consola_Spotflix.Buscador();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -128,6 +129,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.buscador1);
             this.panel1.Controls.Add(this.crearPlaylist1);
             this.panel1.Controls.Add(this.cambiodeCuenta2);
             this.panel1.Controls.Add(this.informacion1);
@@ -195,9 +197,10 @@
             // perfiles1
             // 
             this.perfiles1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
-            this.perfiles1.Location = new System.Drawing.Point(-3, 0);
+            this.perfiles1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.perfiles1.Location = new System.Drawing.Point(0, 0);
             this.perfiles1.Name = "perfiles1";
-            this.perfiles1.Size = new System.Drawing.Size(1264, 568);
+            this.perfiles1.Size = new System.Drawing.Size(1264, 681);
             this.perfiles1.TabIndex = 16;
             this.perfiles1.Visible = false;
             // 
@@ -243,6 +246,17 @@
             this.crearPlaylist1.TabIndex = 22;
             this.crearPlaylist1.Visible = false;
             // 
+            // buscador1
+            // 
+            this.buscador1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.buscador1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buscador1.ForeColor = System.Drawing.SystemColors.Menu;
+            this.buscador1.Location = new System.Drawing.Point(0, 0);
+            this.buscador1.Name = "buscador1";
+            this.buscador1.Size = new System.Drawing.Size(1264, 681);
+            this.buscador1.TabIndex = 23;
+            this.buscador1.Visible = false;
+            // 
             // Main_Spotflix
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -284,6 +298,7 @@
         private CambiodeCuenta cambiodeCuenta1;
         private CambiodeCuenta cambiodeCuenta2;
         private CrearPlaylist crearPlaylist1;
+        private Buscador buscador1;
     }
 }
 
