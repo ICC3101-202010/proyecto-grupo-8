@@ -68,7 +68,7 @@
             this.UsPer.Name = "UsPer";
             this.UsPer.Size = new System.Drawing.Size(169, 54);
             this.UsPer.TabIndex = 3;
-            this.UsPer.Text = "button1";
+            this.UsPer.Text = "Usuarios/Perfiles";
             this.UsPer.UseVisualStyleBackColor = true;
             this.UsPer.Click += new System.EventHandler(this.UsPer_Click_1);
             // 
@@ -98,7 +98,7 @@
             this.Atras.Name = "Atras";
             this.Atras.Size = new System.Drawing.Size(169, 54);
             this.Atras.TabIndex = 6;
-            this.Atras.Text = "button4";
+            this.Atras.Text = "Atras";
             this.Atras.UseVisualStyleBackColor = true;
             this.Atras.Click += new System.EventHandler(this.Atras_Click_1);
             // 
