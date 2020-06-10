@@ -26,7 +26,6 @@ namespace Consola_Spotflix
         public void CargarBuscador()
         {
             Show();
-            //ok
             if (tipo == "Perfiles")
             {
                 Buscar.Hide();
@@ -49,7 +48,7 @@ namespace Consola_Spotflix
             //ok
             else if (tipo == "Artistas")
             {
-                Buscar.Hide();
+                Buscar.Show();
                 label1.Text = "Accion";
                 comboBox1.Items.Add("Seguir");
                 comboBox1.Items.Add("Dejar de seguir");
@@ -62,10 +61,13 @@ namespace Consola_Spotflix
 
                 label4.Text = "Valor:";
                 //
-                label4.Hide();
-                label5.Hide();
-                comboBox3.Hide();
-                textBox1.Hide();
+                label5.Text = "Artista:";
+                label4.Show();
+                label1.Show();
+                label2.Show();
+                label5.Show();
+                comboBox3.Show();
+                textBox1.Show();
                 label3.Hide();
                 comboBox4.Hide();
                 label6.Hide();
@@ -185,6 +187,7 @@ namespace Consola_Spotflix
             else if (tipo == "Playlist")
             {
                 Buscar.Show();
+                label1.Show();
                 label1.Text = "Accion";
                 comboBox1.Items.Add("Seguir");
                 comboBox1.Items.Add("Dejar de Seguir");
@@ -196,16 +199,15 @@ namespace Consola_Spotflix
 
 
                 label2.Text = "Tipo de Playlists:";
+                label2.Show();
                 comboBox3.Items.Add("");
                 label4.Text = "Valor:";
-                label5.Hide();
-                comboBox3.Hide();
-                textBox1.Hide();
-                label3.Hide();
+                label4.Show();
+                label5.Show();
+                comboBox3.Show();
+                textBox1.Show();
                 comboBox4.Hide();
                 label6.Hide();
-
-
             }
         }
         private void button1_Click(object sender, EventArgs e)
@@ -268,6 +270,8 @@ namespace Consola_Spotflix
                                 {
                                     p.Seguidos.Remove(p2);
                                     o += 1;
+                                    label3.Show();
+                                    label3.Text = "Lo dejaste de seguir";
                                     break;
                                 }
 
@@ -438,7 +442,7 @@ namespace Consola_Spotflix
                         if (encontrado == true)
                         {
                             label3.Show();
-                            label3.Text = "AudioLibro eliminadad de la lista!";
+                            label3.Text = "AudioLibro eliminado de la lista!";
                             Spotflix.perfilenlinea.Fav_AudioLibro.Remove(c1);
                         }
                         else
@@ -514,10 +518,12 @@ namespace Consola_Spotflix
                         }
                         if (encontrado == true)
                         {
+                            label3.Show();
                             label3.Text = "Cancion ya existe en la lista!";
                         }
                         else
                         {
+                            label3.Show();
                             label3.Text = "Cancion Agregada a la lista!";
                             Spotflix.perfilenlinea.En_Cola_cancion.Add(c1);
                         }
@@ -545,11 +551,13 @@ namespace Consola_Spotflix
                         }
                         if (encontrado == true)
                         {
+                            label3.Show();
                             label3.Text = "Cancion eliminadad de la lista!";
                             Spotflix.perfilenlinea.Fav_Canciones.Remove(c1);
                         }
                         else
                         {
+                            label3.Show();
                             label3.Text = "Cancion no esta en la lista";
                         }
                     }
@@ -564,11 +572,13 @@ namespace Consola_Spotflix
                         }
                         if (encontrado == true)
                         {
+                            label3.Show();
                             label3.Text = "Cancion eliminadad de la lista!";
                             Spotflix.perfilenlinea.En_Cola_cancion.Remove(c1);
                         }
                         else
                         {
+                            label3.Show();
                             label3.Text = "Cancion no esta en la lista";
                         }
                     }
@@ -601,10 +611,12 @@ namespace Consola_Spotflix
                         }
                         if (encontrado == true)
                         {
+                            label3.Show();
                             label3.Text = "Pelicula ya existe en la lista!";
                         }
                         else
                         {
+                            label3.Show();
                             label3.Text = "Pelicula Agregada a la lista!";
                             Spotflix.perfilenlinea.Fav_Pelicula.Add(c1);
                         }
@@ -620,10 +632,12 @@ namespace Consola_Spotflix
                         }
                         if (encontrado == true)
                         {
+                            label3.Show();
                             label3.Text = "Pelicula ya existe en la lista!";
                         }
                         else
                         {
+                            label3.Show();
                             label3.Text = "Pelicula Agregada a la lista!";
                             Spotflix.perfilenlinea.En_Cola_pelicula.Add(c1);
                         }
@@ -651,11 +665,13 @@ namespace Consola_Spotflix
                         }
                         if (encontrado == true)
                         {
+                            label3.Show();
                             label3.Text = "Pelicula eliminada de la lista!";
                             Spotflix.perfilenlinea.Fav_Pelicula.Remove(c1);
                         }
                         else
                         {
+                            label3.Show();
                             label3.Text = "Pelicula no esta en la lista";
                         }
                     }
@@ -670,11 +686,13 @@ namespace Consola_Spotflix
                         }
                         if (encontrado == true)
                         {
+                            label3.Show();
                             label3.Text = "Pelicula eliminadad de la lista!";
                             Spotflix.perfilenlinea.En_Cola_pelicula.Remove(c1);
                         }
                         else
                         {
+                            label3.Show();
                             label3.Text = "Pelicula no esta en la lista";
                         }
                     }
@@ -728,10 +746,12 @@ namespace Consola_Spotflix
                         }
                         if (encontrado == true)
                         {
+                            label3.Show();
                             label3.Text = "Podcast ya existe en la lista!";
                         }
                         else
                         {
+                            label3.Show();
                             label3.Text = "Podcast Agregada a la lista!";
                             Spotflix.perfilenlinea.En_Cola_podcast.Add(c1);
                         }
@@ -759,11 +779,13 @@ namespace Consola_Spotflix
                         }
                         if (encontrado == true)
                         {
-                            label3.Text = "Podcast eliminadad de la lista!";
+                            label3.Show();
+                            label3.Text = "Podcast eliminado de la lista!";
                             Spotflix.perfilenlinea.Fav_Podcast.Remove(c1);
                         }
                         else
                         {
+                            label3.Show();
                             label3.Text = "Podcast no esta en la lista";
                         }
                     }
@@ -778,11 +800,13 @@ namespace Consola_Spotflix
                         }
                         if (encontrado == true)
                         {
+                            label3.Show();
                             label3.Text = "Podcast eliminadad de la lista!";
                             Spotflix.perfilenlinea.En_Cola_podcast.Remove(c1);
                         }
                         else
                         {
+                            label3.Show();
                             label3.Text = "Podcast no esta en la lista";
                         }
                     }
@@ -815,10 +839,12 @@ namespace Consola_Spotflix
                         }
                         if (encontrado == true)
                         {
+                            label3.Show();
                             label3.Text = "Video ya existe en la lista!";
                         }
                         else
                         {
+                            label3.Show();
                             label3.Text = "Video Agregada a la lista!";
                             Spotflix.perfilenlinea.Fav_Videos.Add(c1);
                         }
@@ -834,10 +860,12 @@ namespace Consola_Spotflix
                         }
                         if (encontrado == true)
                         {
+                            label3.Show();
                             label3.Text = "Cancion ya existe en la lista!";
                         }
                         else
                         {
+                            label3.Show();
                             label3.Text = "Cancion Agregada a la lista!";
                             Spotflix.perfilenlinea.En_Cola_video.Add(c1);
                         }
@@ -865,11 +893,13 @@ namespace Consola_Spotflix
                         }
                         if (encontrado == true)
                         {
+                            label3.Show();
                             label3.Text = "Video eliminado de la lista!";
                             Spotflix.perfilenlinea.Fav_Videos.Remove(c1);
                         }
                         else
                         {
+                            label3.Show();
                             label3.Text = "Video no esta en la lista";
                         }
                     }
@@ -884,11 +914,13 @@ namespace Consola_Spotflix
                         }
                         if (encontrado == true)
                         {
+                            label3.Show();
                             label3.Text = "Video eliminado de la lista!";
                             Spotflix.perfilenlinea.En_Cola_video.Remove(c1);
                         }
                         else
                         {
+                            label3.Show();
                             label3.Text = "Video no esta en la lista";
                         }
                     }
