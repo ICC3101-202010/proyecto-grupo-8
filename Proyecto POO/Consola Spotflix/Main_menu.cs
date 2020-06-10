@@ -365,5 +365,10 @@ namespace Consola_Spotflix
             //Registro.buscador1.cargar(); ;
             //buscador1.tipo = "Audio Libro";
         }
+
+        private void botonCerrarSesion_Click(object sender, EventArgs e)
+        {
+            Hide();
+        }
     }
 }
