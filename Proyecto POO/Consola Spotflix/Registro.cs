@@ -13,6 +13,8 @@ namespace Consola_Spotflix
         public static Main_menu mm1;
         public static NuevoPerfil np1;
         public static Perfiles p1;
+        public static Buscador busc1;
+        public static Informacion Informacion;
         
         public static int Cantidaddeperfiles(Usuario u)
         {

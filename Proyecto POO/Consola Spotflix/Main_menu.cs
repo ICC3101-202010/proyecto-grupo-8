@@ -322,42 +322,49 @@ namespace Consola_Spotflix
 
         private void playlist_Perfil_En_Linea1_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void perfilesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Registro.busc1.tipo = "Perfiles";
+            Registro.busc1.CargarBuscador();
         }
 
         private void artistaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Registro.busc1.tipo = "Artista";
+            Registro.busc1.CargarBuscador();
         }
 
         private void playlistToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Registro.busc1.tipo = "Playlist";
+            Registro.busc1.CargarBuscador();
         }
 
         private void cancionesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Registro.busc1.tipo = "Canciones";
+            Registro.busc1.CargarBuscador();
         }
 
         private void videosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Registro.busc1.tipo = "Videos";
+            Registro.busc1.CargarBuscador();
         }
 
         private void peliculasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Registro.busc1.tipo = "Peliculas";
+            Registro.busc1.CargarBuscador();
         }
 
         private void podcastsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Registro.busc1.tipo = "Podcasts";
+            Registro.busc1.CargarBuscador();
         }
 
         private void audiolibrosToolStripMenuItem_Click(object sender, EventArgs e)
@@ -369,6 +376,12 @@ namespace Consola_Spotflix
         private void botonCerrarSesion_Click(object sender, EventArgs e)
         {
             Hide();
+        }
+
+        private void informacionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Registro.Informacion.Show();
+
         }
     }
 }

@@ -18,6 +18,7 @@ namespace Consola_Spotflix
         public Buscador()
         {
             InitializeComponent();
+            Registro.busc1 = this;
         }
         //PLAYLIST 
         //ORDEN DE ESTA WEA
