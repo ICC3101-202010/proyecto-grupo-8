@@ -17,6 +17,7 @@ namespace Consola_Spotflix
         public CrearPlaylist()
         {
             InitializeComponent();
+            Registro.Crear_playlist = this;
         }
 
         private void comboBoxTipoMulti_SelectedIndexChanged(object sender, EventArgs e)

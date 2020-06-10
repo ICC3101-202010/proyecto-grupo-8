@@ -17,6 +17,7 @@ namespace Consola_Spotflix
         public CrearCuenta()
         {
             InitializeComponent();
+            Registro.Crear_Cuenta = this;
         }
         
         private void Membresia_SelectedIndexChanged(object sender, EventArgs e)

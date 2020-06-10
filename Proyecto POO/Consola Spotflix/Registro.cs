@@ -15,7 +15,11 @@ namespace Consola_Spotflix
         public static Perfiles p1;
         public static Buscador busc1;
         public static Informacion Informacion;
-        
+        public static CrearPlaylist Crear_playlist;
+        public static CrearCuenta Crear_Cuenta;
+
+
+
         public static int Cantidaddeperfiles(Usuario u)
         {
             int c = 0;

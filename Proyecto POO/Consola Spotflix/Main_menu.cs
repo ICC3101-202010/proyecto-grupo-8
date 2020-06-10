@@ -109,6 +109,7 @@ namespace Consola_Spotflix
         }
         public void AbrirMusica()
         {
+            tmSlider.Stop();
             try
             {
 
@@ -378,10 +379,23 @@ namespace Consola_Spotflix
             Hide();
         }
 
-        private void informacionToolStripMenuItem_Click(object sender, EventArgs e)
+
+
+        private void button_Informacion_Click(object sender, EventArgs e)
         {
             Registro.Informacion.Show();
+            Registro.Informacion.BringToFront();
+        }
 
+        private void button_Cambio_de_Cuenta_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void button_Crear_Playlist_Click(object sender, EventArgs e)
+        {
+            Registro.Crear_playlist.Show();
+            Registro.Crear_playlist.BringToFront();
         }
     }
 }

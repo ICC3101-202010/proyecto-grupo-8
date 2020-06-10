@@ -20,6 +20,7 @@ namespace Consola_Spotflix
         public Informacion()
         {
             InitializeComponent();
+            Registro.Informacion = this;
         }
 
         private void UsPer_Click_1(object sender, EventArgs e)

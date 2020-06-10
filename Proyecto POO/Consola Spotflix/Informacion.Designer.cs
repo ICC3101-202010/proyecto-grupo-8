@@ -36,12 +36,14 @@
             this.People = new System.Windows.Forms.Button();
             this.Atras = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(138, 177);
+            this.listBox1.Location = new System.Drawing.Point(401, 253);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(305, 199);
             this.listBox1.TabIndex = 0;
@@ -49,7 +51,7 @@
             // listBox2
             // 
             this.listBox2.FormattingEnabled = true;
-            this.listBox2.Location = new System.Drawing.Point(141, 179);
+            this.listBox2.Location = new System.Drawing.Point(404, 255);
             this.listBox2.Name = "listBox2";
             this.listBox2.Size = new System.Drawing.Size(305, 199);
             this.listBox2.TabIndex = 1;
@@ -57,14 +59,14 @@
             // listBox3
             // 
             this.listBox3.FormattingEnabled = true;
-            this.listBox3.Location = new System.Drawing.Point(138, 177);
+            this.listBox3.Location = new System.Drawing.Point(401, 253);
             this.listBox3.Name = "listBox3";
             this.listBox3.Size = new System.Drawing.Size(305, 199);
             this.listBox3.TabIndex = 2;
             // 
             // UsPer
             // 
-            this.UsPer.Location = new System.Drawing.Point(60, 91);
+            this.UsPer.Location = new System.Drawing.Point(323, 167);
             this.UsPer.Name = "UsPer";
             this.UsPer.Size = new System.Drawing.Size(169, 54);
             this.UsPer.TabIndex = 3;
@@ -74,7 +76,7 @@
             // 
             // Multimedia
             // 
-            this.Multimedia.Location = new System.Drawing.Point(235, 91);
+            this.Multimedia.Location = new System.Drawing.Point(498, 167);
             this.Multimedia.Name = "Multimedia";
             this.Multimedia.Size = new System.Drawing.Size(169, 54);
             this.Multimedia.TabIndex = 4;
@@ -84,7 +86,7 @@
             // 
             // People
             // 
-            this.People.Location = new System.Drawing.Point(410, 91);
+            this.People.Location = new System.Drawing.Point(673, 167);
             this.People.Name = "People";
             this.People.Size = new System.Drawing.Size(169, 54);
             this.People.TabIndex = 5;
@@ -94,7 +96,7 @@
             // 
             // Atras
             // 
-            this.Atras.Location = new System.Drawing.Point(476, 381);
+            this.Atras.Location = new System.Drawing.Point(739, 457);
             this.Atras.Name = "Atras";
             this.Atras.Size = new System.Drawing.Size(169, 54);
             this.Atras.TabIndex = 6;
@@ -107,29 +109,39 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Window;
-            this.label1.Location = new System.Drawing.Point(236, 32);
+            this.label1.Location = new System.Drawing.Point(499, 108);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(168, 33);
             this.label1.TabIndex = 7;
             this.label1.Text = "Informacion";
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.Atras);
+            this.panel1.Controls.Add(this.People);
+            this.panel1.Controls.Add(this.Multimedia);
+            this.panel1.Controls.Add(this.UsPer);
+            this.panel1.Controls.Add(this.listBox3);
+            this.panel1.Controls.Add(this.listBox2);
+            this.panel1.Controls.Add(this.listBox1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1264, 681);
+            this.panel1.TabIndex = 8;
+            // 
             // Informacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.Atras);
-            this.Controls.Add(this.People);
-            this.Controls.Add(this.Multimedia);
-            this.Controls.Add(this.UsPer);
-            this.Controls.Add(this.listBox3);
-            this.Controls.Add(this.listBox2);
-            this.Controls.Add(this.listBox1);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.Controls.Add(this.panel1);
             this.Name = "Informacion";
-            this.Size = new System.Drawing.Size(687, 473);
+            this.Size = new System.Drawing.Size(1264, 681);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -143,5 +155,6 @@
         private System.Windows.Forms.Button People;
         private System.Windows.Forms.Button Atras;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel1;
     }
 }

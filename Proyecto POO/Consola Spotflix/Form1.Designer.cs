@@ -36,11 +36,15 @@
             this.Registrarse = new System.Windows.Forms.Button();
             this.Aceptar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.informacion1 = new Consola_Spotflix.Informacion();
+            this.cambiodeCuenta1 = new Consola_Spotflix.CambiodeCuenta();
             this.main_menu1 = new Consola_Spotflix.Main_menu();
             this.nuevoPerfil1 = new Proyecto_POO.NuevoPerfil();
             this.perfiles1 = new Proyecto_POO.Perfiles();
             this.Usuarionoencontrado = new System.Windows.Forms.Label();
             this.crearCuenta1 = new Consola_Spotflix.CrearCuenta();
+            this.cambiodeCuenta2 = new Consola_Spotflix.CambiodeCuenta();
+            this.crearPlaylist1 = new Consola_Spotflix.CrearPlaylist();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -124,6 +128,10 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.crearPlaylist1);
+            this.panel1.Controls.Add(this.cambiodeCuenta2);
+            this.panel1.Controls.Add(this.informacion1);
+            this.panel1.Controls.Add(this.cambiodeCuenta1);
             this.panel1.Controls.Add(this.main_menu1);
             this.panel1.Controls.Add(this.nuevoPerfil1);
             this.panel1.Controls.Add(this.perfiles1);
@@ -141,6 +149,26 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1264, 681);
             this.panel1.TabIndex = 14;
+            // 
+            // informacion1
+            // 
+            this.informacion1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.informacion1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.informacion1.Location = new System.Drawing.Point(0, 0);
+            this.informacion1.Name = "informacion1";
+            this.informacion1.Size = new System.Drawing.Size(1264, 681);
+            this.informacion1.TabIndex = 20;
+            this.informacion1.Visible = false;
+            // 
+            // cambiodeCuenta1
+            // 
+            this.cambiodeCuenta1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.cambiodeCuenta1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cambiodeCuenta1.Location = new System.Drawing.Point(0, 0);
+            this.cambiodeCuenta1.Name = "cambiodeCuenta1";
+            this.cambiodeCuenta1.Size = new System.Drawing.Size(1264, 681);
+            this.cambiodeCuenta1.TabIndex = 19;
+            this.cambiodeCuenta1.Visible = false;
             // 
             // main_menu1
             // 
@@ -195,6 +223,26 @@
             this.crearCuenta1.TabIndex = 14;
             this.crearCuenta1.Visible = false;
             // 
+            // cambiodeCuenta2
+            // 
+            this.cambiodeCuenta2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.cambiodeCuenta2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cambiodeCuenta2.Location = new System.Drawing.Point(0, 0);
+            this.cambiodeCuenta2.Name = "cambiodeCuenta2";
+            this.cambiodeCuenta2.Size = new System.Drawing.Size(1264, 681);
+            this.cambiodeCuenta2.TabIndex = 21;
+            this.cambiodeCuenta2.Visible = false;
+            // 
+            // crearPlaylist1
+            // 
+            this.crearPlaylist1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.crearPlaylist1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.crearPlaylist1.Location = new System.Drawing.Point(0, 0);
+            this.crearPlaylist1.Name = "crearPlaylist1";
+            this.crearPlaylist1.Size = new System.Drawing.Size(1264, 681);
+            this.crearPlaylist1.TabIndex = 22;
+            this.crearPlaylist1.Visible = false;
+            // 
             // Main_Spotflix
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -232,6 +280,10 @@
         private Proyecto_POO.Perfiles perfiles1;
         private Proyecto_POO.NuevoPerfil nuevoPerfil1;
         private Main_menu main_menu1;
+        private Informacion informacion1;
+        private CambiodeCuenta cambiodeCuenta1;
+        private CambiodeCuenta cambiodeCuenta2;
+        private CrearPlaylist crearPlaylist1;
     }
 }
 
