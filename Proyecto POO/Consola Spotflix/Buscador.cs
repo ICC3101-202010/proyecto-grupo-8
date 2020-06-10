@@ -26,7 +26,6 @@ namespace Consola_Spotflix
         public void CargarBuscador()
         {
             Show();
-            //ok
             if (tipo == "Perfiles")
             {
                 Buscar.Hide();
@@ -49,7 +48,7 @@ namespace Consola_Spotflix
             //ok
             else if (tipo == "Artistas")
             {
-                Buscar.Hide();
+                Buscar.Show();
                 label1.Text = "Accion";
                 comboBox1.Items.Add("Seguir");
                 comboBox1.Items.Add("Dejar de seguir");
@@ -62,10 +61,11 @@ namespace Consola_Spotflix
 
                 label4.Text = "Valor:";
                 //
-                label4.Hide();
-                label5.Hide();
-                comboBox3.Hide();
-                textBox1.Hide();
+                label4.Show();
+
+                label5.Show();
+                comboBox3.Show();
+                textBox1.Show();
                 label3.Hide();
                 comboBox4.Hide();
                 label6.Hide();
@@ -185,6 +185,7 @@ namespace Consola_Spotflix
             else if (tipo == "Playlist")
             {
                 Buscar.Show();
+                label1.Show();
                 label1.Text = "Accion";
                 comboBox1.Items.Add("Seguir");
                 comboBox1.Items.Add("Dejar de Seguir");
@@ -196,16 +197,15 @@ namespace Consola_Spotflix
 
 
                 label2.Text = "Tipo de Playlists:";
+                label2.Show();
                 comboBox3.Items.Add("");
                 label4.Text = "Valor:";
-                label5.Hide();
-                comboBox3.Hide();
-                textBox1.Hide();
-                label3.Hide();
+                label4.Show();
+                label5.Show();
+                comboBox3.Show();
+                textBox1.Show();
                 comboBox4.Hide();
                 label6.Hide();
-
-
             }
         }
         private void button1_Click(object sender, EventArgs e)
