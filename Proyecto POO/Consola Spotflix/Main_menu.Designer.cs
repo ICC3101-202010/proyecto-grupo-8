@@ -83,6 +83,8 @@
             this.tmSlider = new System.Windows.Forms.Timer(this.components);
             this.descargarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.playlist_Perfil_En_Linea1 = new Consola_Spotflix.Playlist_Perfil_En_Linea();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.pictureBox = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
@@ -96,6 +98,7 @@
             this.panel8.SuspendLayout();
             this.panel9.SuspendLayout();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -404,7 +407,7 @@
             // 
             this.label_Tiempo_Fin.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label_Tiempo_Fin.ForeColor = System.Drawing.SystemColors.MenuBar;
-            this.label_Tiempo_Fin.Location = new System.Drawing.Point(774, 2);
+            this.label_Tiempo_Fin.Location = new System.Drawing.Point(774, 6);
             this.label_Tiempo_Fin.Name = "label_Tiempo_Fin";
             this.label_Tiempo_Fin.Size = new System.Drawing.Size(43, 15);
             this.label_Tiempo_Fin.TabIndex = 7;
@@ -430,7 +433,7 @@
             this.trackBar_Duracion.MaximumSize = new System.Drawing.Size(10000, 24);
             this.trackBar_Duracion.MinimumSize = new System.Drawing.Size(549, 24);
             this.trackBar_Duracion.Name = "trackBar_Duracion";
-            this.trackBar_Duracion.Size = new System.Drawing.Size(728, 24);
+            this.trackBar_Duracion.Size = new System.Drawing.Size(728, 45);
             this.trackBar_Duracion.TabIndex = 0;
             this.trackBar_Duracion.TickStyle = System.Windows.Forms.TickStyle.None;
             this.trackBar_Duracion.ValueChanged += new System.EventHandler(this.trackBar_Duracion_ValueChanged);
@@ -451,6 +454,7 @@
             // 
             // panel8
             // 
+            this.panel8.Controls.Add(this.pictureBox);
             this.panel8.Controls.Add(this.panel9);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel8.Location = new System.Drawing.Point(3, 663);
@@ -517,20 +521,20 @@
             // nuevoToolStripMenuItem
             // 
             this.nuevoToolStripMenuItem.Name = "nuevoToolStripMenuItem";
-            this.nuevoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.nuevoToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
             this.nuevoToolStripMenuItem.Text = "Nuevo";
             this.nuevoToolStripMenuItem.Click += new System.EventHandler(this.nuevoToolStripMenuItem_Click);
             // 
             // editarToolStripMenuItem
             // 
             this.editarToolStripMenuItem.Name = "editarToolStripMenuItem";
-            this.editarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.editarToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
             this.editarToolStripMenuItem.Text = "Editar";
             // 
             // eliminarToolStripMenuItem
             // 
             this.eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
-            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
             this.eliminarToolStripMenuItem.Text = "Eliminar";
             // 
             // buscarToolStripMenuItem
@@ -630,7 +634,7 @@
             // descargarToolStripMenuItem
             // 
             this.descargarToolStripMenuItem.Name = "descargarToolStripMenuItem";
-            this.descargarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.descargarToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
             this.descargarToolStripMenuItem.Text = "Descargar";
             // 
             // playlist_Perfil_En_Linea1
@@ -646,6 +650,21 @@
             this.playlist_Perfil_En_Linea1.Size = new System.Drawing.Size(980, 193);
             this.playlist_Perfil_En_Linea1.TabIndex = 0;
             this.playlist_Perfil_En_Linea1.Load += new System.EventHandler(this.playlist_Perfil_En_Linea1_Load);
+            // 
+            // imageList1
+            // 
+            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            // 
+            // pictureBox
+            // 
+            this.pictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox.Name = "pictureBox";
+            this.pictureBox.Size = new System.Drawing.Size(57, 54);
+            this.pictureBox.TabIndex = 3;
+            this.pictureBox.TabStop = false;
             // 
             // Main_menu
             // 
@@ -680,6 +699,7 @@
             this.panel9.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -739,5 +759,7 @@
         private System.Windows.Forms.Button button_Crear_Playlist;
         private System.Windows.Forms.Button button_Cambio_de_Cuenta;
         private System.Windows.Forms.ToolStripMenuItem descargarToolStripMenuItem;
+        private System.Windows.Forms.PictureBox pictureBox;
+        private System.Windows.Forms.ImageList imageList1;
     }
 }

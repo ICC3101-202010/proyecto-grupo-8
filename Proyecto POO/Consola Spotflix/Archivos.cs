@@ -31,35 +31,35 @@ namespace Consola_Spotflix
                 source = openFileDialog1.FileName;
                 destination = Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + @"\Biblioteca\Musica\"+textBox4;
                 System.IO.File.Copy(source, destination, true);
-                //Spotflix.Lista_Canciones.Add(new Cancion(textBox1.Text, 1, Convert.ToDateTime(textBox3), TimeSpan.Zero, 10, 1, destination,));
+                //Spotflix.Lista_Canciones.Add(new Cancion(textBox1.Text, 1, Convert.ToDateTime(textBox3), TimeSpan.Zero, 10, 1, destination,)));
             }
             else if (textBox2.Text == "Pelicula")
             {
                 source = openFileDialog1.FileName;
                 destination = Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + @"\Biblioteca\Peliculas\" + textBox4;
                 System.IO.File.Copy(source, destination, true);
-                //Spotflix.Lista_Canciones.Add(new Cancion(textBox1.Text, 1, Convert.ToDateTime(textBox3), TimeSpan.Zero, 10, 1, destination,));
+                //Spotflix.Lista_Peliculas.Add(new Pelicula(textBox1.Text, 1, Convert.ToDateTime(textBox3), TimeSpan.Zero, 10, 1, destination,));
             }
             else if (textBox2.Text == "Podcast")
             {
                 source = openFileDialog1.FileName;
                 destination = Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + @"\Biblioteca\Podcast\" + textBox4;
                 System.IO.File.Copy(source, destination, true);
-                //Spotflix.Lista_Canciones.Add(new Cancion(textBox1.Text, 1, Convert.ToDateTime(textBox3), TimeSpan.Zero, 10, 1, destination,));
+                //Spotflix.Lista_Podcasts.Add(new Podcast(textBox1.Text, 1, Convert.ToDateTime(textBox3), TimeSpan.Zero, 10, 1, destination,));
             }
             else if (textBox2.Text == "AudioLibro")
             {
                 source = openFileDialog1.FileName;
                 destination = Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + @"\Biblioteca\Audio Libro\" + textBox4;
                 System.IO.File.Copy(source, destination, true);
-                //Spotflix.Lista_Canciones.Add(new Cancion(textBox1.Text, 1, Convert.ToDateTime(textBox3), TimeSpan.Zero, 10, 1, destination,));
+                //Spotflix.Lista_AudioLibros.Add(new AudioLibro(textBox1.Text, 1, Convert.ToDateTime(textBox3), TimeSpan.Zero, 10, 1, destination,));
             }
             else if (textBox2.Text == "Video")
             {
                 source = openFileDialog1.FileName;
                 destination = Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + @"\Biblioteca\Videos\" + textBox4;
                 System.IO.File.Copy(source, destination, true);
-                //Spotflix.Lista_Canciones.Add(new Cancion(textBox1.Text, 1, Convert.ToDateTime(textBox3), TimeSpan.Zero, 10, 1, destination,));
+                Spotflix.Lista_Videos.Add(new Video(textBox1.Text, 1, Convert.ToDateTime(textBox3), TimeSpan.Zero, 10, 1, destination,0,"",5,textBox9.Text));
             }
         }
 
