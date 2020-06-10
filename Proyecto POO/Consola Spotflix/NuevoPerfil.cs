@@ -32,35 +32,44 @@ namespace Proyecto_POO
         {
 
         }
-
+        int a = 0;
         private void botonCrearPerfil_Click(object sender, EventArgs e)
         {
-            if (NombrePerfil.Text == null || comboTipoPerfil.Items == null)
+            a += 1;
+            if (a % 2 == 0)
+            {
+                if (NombrePerfil.Text == null || comboTipoPerfil.Items == null)
+                {
+                    NoCreado.Show();
+                }
+
+                int tipo = 0;
+                if (tipodeperfil == "Artista")
+                {
+                    tipo = 1;
+                }
+                if (tipodeperfil == "Publico")
+                {
+                    tipo = 2;
+
+                }
+                if (tipodeperfil == "Privado")
+                {
+                    tipo = 3;
+                }
+
+
+                Perfil p1 = new Perfil(Spotflix.usuarioenlinea, nombreperfil, tipo);
+                Creado.Show();
+                Spotflix.Lista_Perfiles.Add(p1);
+                Spotflix.Lista_perfilesenlinea.Add(p1);
+                MessageBox.Show("Tu perfil " + nombreperfil + " ha sido añadido a tu cuenta!");
+            }
+            else
             {
                 NoCreado.Show();
             }
-
-            int tipo = 0;
-            if (tipodeperfil == "Artista")
-            {
-                tipo = 1;
-            }
-            if (tipodeperfil == "Publico")
-            {
-                tipo = 2;
-
-            }
-            if (tipodeperfil == "Privado")
-            {
-                tipo = 3;
-            }
-
-
-            Perfil p1 = new Perfil(Spotflix.usuarioenlinea, nombreperfil, tipo);
-            Creado.Show();
-            Spotflix.Lista_Perfiles.Add(p1);
-            Spotflix.Lista_perfilesenlinea.Add(p1);
-            MessageBox.Show("Tu perfil " + nombreperfil + " ha sido añadido a tu cuenta!");
+           
         }
 
         private void NuevoPerfil_Load(object sender, EventArgs e)
