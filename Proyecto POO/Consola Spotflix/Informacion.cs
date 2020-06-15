@@ -33,12 +33,13 @@ namespace Consola_Spotflix
             foreach (Usuario u in Spotflix.Lista_Usuarios)
             {
                 listBox1.Items.Add(a.ToString() + ". Usuario: " + u.Nombre + ", Email: " + u.Email + ", Pais: " + u.Pais + ", Membresia: " + (enum_TipoDeMembresia)u.Tipo_de_Membresia);
-                listBox1.Items.Add("Perfiles:");
+                listBox1.Items.Add("Perfil/es:");
+                string contraseña = u.Contraseña;
                 foreach (Perfil p in Spotflix.Lista_Perfiles)
-                {
-                    if (p.Usuario_Asociado == u)
+                {      
+                    if (p.Usuario_Asociado.Contraseña == contraseña)
                     {
-                        listBox1.Items.Add("Perfil: " + p.Nombre_perfil + " Tipo de perfil: " + (enum_TipoDePerfil)p.Tipo_de_Perfil + " Usuario Asociado: " + p.Usuario_Asociado.Nombre);
+                        listBox1.Items.Add(p.Nombre_perfil + " Tipo de perfil: " + (enum_TipoDePerfil)p.Tipo_de_Perfil + " Usuario Asociado: " + p.Usuario_Asociado.Nombre);
                     }
                 }
                 a += 1;
