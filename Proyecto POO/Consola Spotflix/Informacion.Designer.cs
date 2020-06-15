@@ -45,9 +45,9 @@
             this.listBox1.BackColor = System.Drawing.SystemColors.Menu;
             this.listBox1.ForeColor = System.Drawing.SystemColors.WindowText;
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(342, 250);
+            this.listBox1.Location = new System.Drawing.Point(323, 227);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(500, 199);
+            this.listBox1.Size = new System.Drawing.Size(528, 264);
             this.listBox1.TabIndex = 0;
             // 
             // listBox2
@@ -55,9 +55,9 @@
             this.listBox2.BackColor = System.Drawing.SystemColors.Menu;
             this.listBox2.ForeColor = System.Drawing.SystemColors.WindowText;
             this.listBox2.FormattingEnabled = true;
-            this.listBox2.Location = new System.Drawing.Point(345, 252);
+            this.listBox2.Location = new System.Drawing.Point(323, 227);
             this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(500, 199);
+            this.listBox2.Size = new System.Drawing.Size(528, 264);
             this.listBox2.TabIndex = 1;
             // 
             // listBox3
@@ -65,14 +65,14 @@
             this.listBox3.BackColor = System.Drawing.SystemColors.Menu;
             this.listBox3.ForeColor = System.Drawing.SystemColors.WindowText;
             this.listBox3.FormattingEnabled = true;
-            this.listBox3.Location = new System.Drawing.Point(342, 252);
+            this.listBox3.Location = new System.Drawing.Point(323, 227);
             this.listBox3.Name = "listBox3";
-            this.listBox3.Size = new System.Drawing.Size(500, 199);
+            this.listBox3.Size = new System.Drawing.Size(703, 264);
             this.listBox3.TabIndex = 2;
             // 
             // UsPer
             // 
-            this.UsPer.Location = new System.Drawing.Point(323, 167);
+            this.UsPer.Location = new System.Drawing.Point(332, 128);
             this.UsPer.Name = "UsPer";
             this.UsPer.Size = new System.Drawing.Size(169, 54);
             this.UsPer.TabIndex = 3;
@@ -82,7 +82,7 @@
             // 
             // Multimedia
             // 
-            this.Multimedia.Location = new System.Drawing.Point(498, 167);
+            this.Multimedia.Location = new System.Drawing.Point(507, 128);
             this.Multimedia.Name = "Multimedia";
             this.Multimedia.Size = new System.Drawing.Size(169, 54);
             this.Multimedia.TabIndex = 4;
@@ -92,7 +92,7 @@
             // 
             // People
             // 
-            this.People.Location = new System.Drawing.Point(673, 167);
+            this.People.Location = new System.Drawing.Point(682, 128);
             this.People.Name = "People";
             this.People.Size = new System.Drawing.Size(169, 54);
             this.People.TabIndex = 5;
@@ -102,7 +102,7 @@
             // 
             // Atras
             // 
-            this.Atras.Location = new System.Drawing.Point(739, 457);
+            this.Atras.Location = new System.Drawing.Point(857, 529);
             this.Atras.Name = "Atras";
             this.Atras.Size = new System.Drawing.Size(169, 54);
             this.Atras.TabIndex = 6;
@@ -113,13 +113,13 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Menu;
-            this.label1.Location = new System.Drawing.Point(499, 108);
+            this.label1.Location = new System.Drawing.Point(454, 43);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(168, 33);
+            this.label1.Size = new System.Drawing.Size(275, 55);
             this.label1.TabIndex = 7;
-            this.label1.Text = "Informacion";
+            this.label1.Text = "Información";
             // 
             // panel1
             // 
