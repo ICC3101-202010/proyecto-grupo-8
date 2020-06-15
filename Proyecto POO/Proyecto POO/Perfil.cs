@@ -43,6 +43,7 @@ namespace Proyecto_POO
 
         public List<Perfil> Seguidos = new List<Perfil>();
         public List<Perfil> Seguidores = new List<Perfil>();
+
         public List<Persona> Personas_Seguidas = new List<Persona>();
         public List<Cancion> En_Cola_cancion = new List<Cancion>();
         public List<Video> En_Cola_video = new List<Video>();
