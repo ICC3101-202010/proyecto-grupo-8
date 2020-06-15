@@ -76,6 +76,18 @@ namespace Consola_Spotflix
             else if (tipo == "Canciones")
             {
                 Buscar.Show();
+
+                label1.Show();
+                label2.Show();
+                label4.Show();
+                label5.Show();
+                label6.Show();
+                comboBox1.Show();
+                comboBox2.Show();
+                comboBox3.Show();
+                comboBox4.Show();
+                label6.Text = "Playlist";
+
                 label1.Text = "Accion";
                 comboBox1.Items.Add("Agregar");
                 comboBox1.Items.Add("Eliminar");
@@ -87,8 +99,10 @@ namespace Consola_Spotflix
                 label2.Text = "Tipo de Categoria";
 
                 label6.Text = "En que lista?";
-                comboBox4.Items.Add("Canciones Favoritas");
-                comboBox4.Items.Add("En Cola");
+                foreach (var item in Spotflix.perfilenlinea.Playlists_Canciones_Propias)
+                {
+                    comboBox4.Items.Add(item.Nombre);
+                }
                 label5.Text = "Cancion: ";
                 label4.Text = "Valor";
 
@@ -96,6 +110,16 @@ namespace Consola_Spotflix
             //ok
             else if (tipo == "Videos")
             {
+                label1.Show();
+                label2.Show();
+                label4.Show();
+                label5.Show();
+                label6.Show();
+                comboBox1.Show();
+                comboBox2.Show();
+                comboBox3.Show();
+                comboBox4.Show();
+                label6.Text = "Playlist";
                 label1.Text = "Accion";
                 comboBox1.Items.Add("Agregar");
                 comboBox1.Items.Add("Eliminar");
@@ -107,8 +131,10 @@ namespace Consola_Spotflix
                 label2.Text = "Tipo de Categoria";
 
                 label6.Text = "En que lista?";
-                comboBox4.Items.Add("Videos Favoritos");
-                comboBox4.Items.Add("En Cola");
+                foreach (var item in Spotflix.perfilenlinea.Playlists_Video_Propios)
+                {
+                    comboBox4.Items.Add(item.Nombre);
+                }
                 label5.Text = "Video: ";
 
                 label4.Text = "Valor";
@@ -120,6 +146,16 @@ namespace Consola_Spotflix
             else if (tipo == "Peliculas")
             {
                 Buscar.Show();
+                label1.Show();
+                label2.Show();
+                label4.Show();
+                label5.Show();
+                label6.Show();
+                comboBox1.Show();
+                comboBox2.Show();
+                comboBox3.Show();
+                comboBox4.Show();
+                label6.Text = "Playlist";
                 label1.Text = "Accion";
                 comboBox1.Items.Add("Agregar");
                 comboBox1.Items.Add("Eliminar");
@@ -131,8 +167,10 @@ namespace Consola_Spotflix
                 label2.Text = "Tipo de Categoria";
 
                 label6.Text = "En que lista?";
-                comboBox4.Items.Add("Peliculas Favoritas");
-                comboBox4.Items.Add("En Cola");
+                foreach (var item in Spotflix.perfilenlinea.Playlists_Peliculas_Propias)
+                {
+                    comboBox4.Items.Add(item.Nombre);
+                }
                 label5.Text = "Pelicula: ";
 
                 label4.Text = "Valor";
@@ -141,6 +179,16 @@ namespace Consola_Spotflix
             //ok
             else if (tipo == "Podcasts")
             {
+                label1.Show();
+                label2.Show();
+                label4.Show();
+                label5.Show();
+                label6.Show();
+                comboBox1.Show();
+                comboBox2.Show();
+                comboBox3.Show();
+                comboBox4.Show();
+                label6.Text = "Playlist";
                 Buscar.Show();
                 label1.Text = "Accion";
                 comboBox1.Items.Add("Agregar");
@@ -153,8 +201,11 @@ namespace Consola_Spotflix
                 label2.Text = "Tipo de Categoria";
 
                 label6.Text = "En que lista?";
-                comboBox4.Items.Add("Podcast Favoritos");
-                comboBox4.Items.Add("En Cola");
+                foreach (var item in Spotflix.perfilenlinea.Playlists_Podcast_Propios)
+                {
+                    comboBox4.Items.Add(item.Nombre);
+                }
+
                 label5.Text = "Podcast: ";
 
                 label4.Text = "Valor";
@@ -164,6 +215,16 @@ namespace Consola_Spotflix
             else if (tipo == "Audiolibros")
             {
                 Buscar.Show();
+                label1.Show();
+                label2.Show();
+                label4.Show();
+                label5.Show();
+                label6.Show();
+                comboBox1.Show();
+                comboBox2.Show();
+                comboBox3.Show();
+                comboBox4.Show();
+                label6.Text = "Playlist";
                 label1.Text = "Accion";
                 comboBox1.Items.Add("Agregar");
                 comboBox1.Items.Add("Eliminar");
@@ -175,8 +236,11 @@ namespace Consola_Spotflix
                 label2.Text = "Tipo de Categoria";
 
                 label6.Text = "En que lista?";
-                comboBox4.Items.Add("AudioLibro Favorito");
-                comboBox4.Items.Add("En Cola");
+                foreach (var item in Spotflix.perfilenlinea.Playlists_Audiolibro_Propios)
+                {
+                    comboBox4.Items.Add(item.Nombre);
+                }
+
                 label5.Text = "AudioLibro: ";
 
                 label4.Text = "Valor";
@@ -202,6 +266,7 @@ namespace Consola_Spotflix
                 label2.Show();
                 comboBox3.Items.Add("");
                 label4.Text = "Valor:";
+                label5.Text = "Playlist";
                 label4.Show();
                 label5.Show();
                 comboBox3.Show();
