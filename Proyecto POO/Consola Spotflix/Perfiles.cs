@@ -51,7 +51,6 @@ namespace Proyecto_POO
 
         public void loadPerfiles(int b)
         {
-            
             Show();
             if (b == 0)
             {
@@ -78,8 +77,9 @@ namespace Proyecto_POO
                 botonPerfil2.Location = new Point(222, 148);
                 botonPerfil2.Text = Spotflix.Lista_perfilesenlinea[1].Nombre_perfil;
             }
-            else
+            else if (b==3)
             {
+                MessageBox.Show("ACA");
                 botonCrearPerfil.Show();
                 botonPerfil1.Show();
                 botonPerfil1.Location = new Point(86, 148);
@@ -91,7 +91,6 @@ namespace Proyecto_POO
                 botonPerfil3.Location = new Point(363, 148);
                 botonPerfil3.Text = Spotflix.Lista_perfilesenlinea[2].Nombre_perfil;
             }
-
         }
         private void Perfiles_Load(object sender, EventArgs e)
         {

@@ -69,19 +69,6 @@ namespace Proyecto_POO
                 Spotflix.Lista_perfilesenlinea.Add(p1);
                 MessageBox.Show("Tu perfil " + nombreperfil + " ha sido añadido a tu cuenta!");
                 //Serializar la info de perfil.
-                using (Stream fs1 = new FileStream(Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + @"\Informacion\Perfiles\Data_Perfiles.xml", FileMode.Create,
-                    FileAccess.Write, FileShare.None))
-                {
-                    XmlSerializer serializer = new XmlSerializer(typeof(List<Perfil>));
-                    serializer.Serialize(fs1, Spotflix.Lista_Perfiles);
-                }
-                //Serializar la info de usuario
-                using (Stream fs2 = new FileStream(Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + @"\Informacion\Usuarios\Data_Usuarios.xml", FileMode.Create,
-                    FileAccess.Write, FileShare.None))
-                {
-                    XmlSerializer serializer = new XmlSerializer(typeof(List<Usuario>));
-                    serializer.Serialize(fs2, Spotflix.Lista_Usuarios);
-                }
             }
             else
             {
@@ -102,9 +89,10 @@ namespace Proyecto_POO
 
         private void Back_Click(object sender, EventArgs e)
         {
+            int cantperfenlinea = Spotflix.Lista_perfilesenlinea.Count();
+            MessageBox.Show(cantperfenlinea.ToString());
+            Registro.p1.loadPerfiles(cantperfenlinea);
             Hide();
-            Registro.p1.loadPerfiles(Registro.Cantidaddeperfiles(Spotflix.usuarioenlinea));
-
         }
     }
 }
