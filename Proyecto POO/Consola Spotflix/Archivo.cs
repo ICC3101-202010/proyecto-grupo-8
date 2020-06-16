@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Proyecto_POO;
 using System.IO;
+using System.DirectoryServices;
 
 namespace Consola_Spotflix
 {
@@ -25,6 +26,7 @@ namespace Consola_Spotflix
         public string direccion_letra;
         public List<Persona> Cantantes = new List<Persona>();
         public List<Persona> Compositores = new List<Persona>();
+        public List<int> profesion = new List<int>();
 
         private void button_Atras_Agregar_archivo_Click(object sender, EventArgs e)
         {
@@ -457,6 +459,36 @@ namespace Consola_Spotflix
             }
             direccion_letra = destFile;
             textBox_Letra.Text = Path.GetFileName(openFileDialog1.FileName);
+        }
+
+        private void button_Agregar_Persona_Click(object sender, EventArgs e)
+        {
+            lista1();
+            Spotflix.Lista_Personas.Add(new Persona(textBox_Nombre_persona.Text, comboBox_Sexo.SelectedIndex, textBox_Nacionalidad.Text, Convert.ToDateTime(textBox_Fecha_De_Nacimiento.Text), profesion));
+        }
+        public void lista1()
+        {
+            profesion.Add(comboBox_Profesion_1.SelectedIndex);
+            try
+            {
+                profesion.Add(comboBox_Profesion_2.SelectedIndex);
+            }
+            catch 
+            {
+
+            }
+
+        }
+
+        private void button_Limpiar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button_Mostrar_Segunda_Profesion_Click(object sender, EventArgs e)
+        {
+            label_Profesion_2.Show();
+            comboBox_Profesion_2.Show();
         }
     }
 }

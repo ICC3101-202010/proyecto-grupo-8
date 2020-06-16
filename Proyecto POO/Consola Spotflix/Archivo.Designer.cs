@@ -709,6 +709,7 @@
             this.button_Limpiar.TabIndex = 36;
             this.button_Limpiar.Text = "Limpiar";
             this.button_Limpiar.UseVisualStyleBackColor = true;
+            this.button_Limpiar.Click += new System.EventHandler(this.button_Limpiar_Click);
             // 
             // button_Agregar_Persona
             // 
@@ -719,6 +720,7 @@
             this.button_Agregar_Persona.TabIndex = 35;
             this.button_Agregar_Persona.Text = "Agregar";
             this.button_Agregar_Persona.UseVisualStyleBackColor = true;
+            this.button_Agregar_Persona.Click += new System.EventHandler(this.button_Agregar_Persona_Click);
             // 
             // button_Mostrar_Segunda_Profesion
             // 
@@ -732,6 +734,7 @@
             this.button_Mostrar_Segunda_Profesion.TabIndex = 34;
             this.button_Mostrar_Segunda_Profesion.Text = "Agregar segunda profesion";
             this.button_Mostrar_Segunda_Profesion.UseVisualStyleBackColor = true;
+            this.button_Mostrar_Segunda_Profesion.Click += new System.EventHandler(this.button_Mostrar_Segunda_Profesion_Click);
             // 
             // comboBox_Profesion_2
             // 
