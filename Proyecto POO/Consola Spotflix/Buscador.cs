@@ -441,6 +441,7 @@ namespace Consola_Spotflix
             else if (tipo == "AudioLibros")
             {
                 bool encontrado = false;
+                bool encontrado2 = false;
                 if ((string)comboBox1.SelectedItem == "Agregar")
                 {
                     AudioLibro c1 = new AudioLibro();
@@ -499,27 +500,40 @@ namespace Consola_Spotflix
                     {
                         foreach (var item3 in Spotflix.perfilenlinea.Playlists_Audiolibro_Propios)
                         {
-                            foreach (var item in )
-                            if (item3 == c1)
+
+                            if (item3.Nombre == (string)comboBox4.SelectedItem)
                             {
-                                encontrado = true;
+                                encontrado2 = true; ;
                             }
-                            if (encontrado == true)
+                            if (encontrado2 == true)
+                            {
+                                foreach (var item2 in Spotflix.perfilenlinea.En_Cola_audiolibro)
+                                {
+                                    if (item2 == c1)
+                                    {
+                                        encontrado = true;
+                                    }
+                                }
+                            }
+                            if (encontrado2 == true && encontrado==true)
                             {
                                 label3.Show();
                                 label3.Text = "Audiolibro ya existe en la lista!";
+                                break;
                             }
-                            if ((string)comboBox4.SelectedItem == item3.Nombre)
+                            else if (encontrado2 == true && encontrado == false)
                             {
                                 label3.Show();
                                 label3.Text = "AudioLibro Agregada a la lista!";
-                                Spotflix.perfilenlinea.Playlists_Audiolibro_Propios.Add(c1);
+                                item3.Playlist_paralista_AL.Add(c1);
+                                break;
                             }
-
                         }
+                        
 
                     }
-                }
+
+                    }
                 if ((string)comboBox1.SelectedItem == "Eliminar")
                 {
                     AudioLibro c1 = new AudioLibro();
@@ -577,6 +591,7 @@ namespace Consola_Spotflix
             else if (tipo == "Canciones")
             {
                 bool encontrado = false;
+                bool encontrado2 = false;
 
                 if ((string)comboBox1.SelectedItem == "Agregar")
                 {
@@ -608,7 +623,7 @@ namespace Consola_Spotflix
                             Spotflix.perfilenlinea.Fav_Canciones.Add(c1);
                         }
                     }
-                    else
+                    else if ((string)comboBox4.SelectedItem == "En Cola")
                     {
                         foreach (var item2 in Spotflix.perfilenlinea.En_Cola_cancion)
                         {
@@ -628,6 +643,44 @@ namespace Consola_Spotflix
                             label3.Text = "Cancion Agregada a la lista!";
                             Spotflix.perfilenlinea.En_Cola_cancion.Add(c1);
                         }
+                    }
+                    else
+                    {
+                        foreach (var item3 in Spotflix.perfilenlinea.Playlists_Canciones_Propias)
+                        {
+
+                            if (item3.Nombre == (string)comboBox4.SelectedItem)
+                            {
+                                encontrado2 = true; ;
+                            }
+                            if (encontrado2 == true)
+                            {
+                                foreach (var item2 in Spotflix.perfilenlinea.En_Cola_cancion)
+                                {
+                                    if (item2 == c1)
+                                    {
+                                        encontrado = true;
+                                    }
+                                }
+                            }
+                            if (encontrado2 == true && encontrado == true)
+                            {
+                                label3.Show();
+                                label3.Text = "Cancion ya existe en la lista!";
+                                MessageBox.Show("");
+                                break;
+                            }
+                            else if (encontrado2 == true && encontrado == false)
+                            {
+                                label3.Show();
+                                MessageBox.Show("HOla");
+                                label3.Text = "Cancion Agregada a la lista!";
+                                item3.Playlist_paralista_Ca.Add(c1);
+                                break;
+                            }
+                        }
+
+
                     }
                 }
                 if ((string)comboBox1.SelectedItem == "Eliminar")

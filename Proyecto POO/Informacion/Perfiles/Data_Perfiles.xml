@@ -167,7 +167,18 @@
     <Playlists_Peliculas_De_Otros />
     <Playlists_Podcast_Propios />
     <Playlists_Podcast_De_Otros />
-    <Playlists_Audiolibro_Propios />
+    <Playlists_Audiolibro_Propios>
+      <Playlist>
+        <Playlist_paralista_Ca />
+        <Playlist_paralista_Pe />
+        <Playlist_paralista_Po />
+        <Playlist_paralista_AL />
+        <Playlist_paralista_Vi />
+        <Nombre>Al de Ronca</Nombre>
+        <Duracion />
+        <Tipo_De_Playlist>1</Tipo_De_Playlist>
+      </Playlist>
+    </Playlists_Audiolibro_Propios>
     <Playlists_Audiolibro_De_Otros />
     <Playlists_Video_Propios />
     <Playlists_Video_De_Otros />
@@ -208,6 +219,43 @@
           </Persona>
         </Compositor>
         <Album>Las que no iban a salir</Album>
+        <Imagen>Imagen</Imagen>
+        <Letra>Letra</Letra>
+        <Genero>Trap</Genero>
+      </Cancion>
+      <Cancion>
+        <Titulo>Keii</Titulo>
+        <Categoria>1</Categoria>
+        <Año>2020-02-07T00:00:00</Año>
+        <Duracion />
+        <Ranking>10</Ranking>
+        <Estado>2</Estado>
+        <URL>C:\Users\Cristobal\Documents\GitHub\proyecto-grupo-8\Proyecto POO\Biblioteca\Musica\Anuel AA - Keii.wav</URL>
+        <Cantante>
+          <Persona>
+            <Nombre_y_Apellido>Anuel AA</Nombre_y_Apellido>
+            <Sexo>1</Sexo>
+            <Nacionalidad>Puertorriqueño</Nacionalidad>
+            <Fecha_De_Nacimiento>1992-11-27T00:00:00</Fecha_De_Nacimiento>
+            <Profesion>
+              <int>1</int>
+              <int>2</int>
+            </Profesion>
+          </Persona>
+        </Cantante>
+        <Compositor>
+          <Persona>
+            <Nombre_y_Apellido>Anuel AA</Nombre_y_Apellido>
+            <Sexo>1</Sexo>
+            <Nacionalidad>Puertorriqueño</Nacionalidad>
+            <Fecha_De_Nacimiento>1992-11-27T00:00:00</Fecha_De_Nacimiento>
+            <Profesion>
+              <int>1</int>
+              <int>2</int>
+            </Profesion>
+          </Persona>
+        </Compositor>
+        <Album>Keii</Album>
         <Imagen>Imagen</Imagen>
         <Letra>Letra</Letra>
         <Genero>Trap</Genero>
