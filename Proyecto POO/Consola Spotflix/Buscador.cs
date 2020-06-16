@@ -266,7 +266,7 @@ namespace Consola_Spotflix
                 label1.Text = "Accion";
                 comboBox1.Items.Add("Seguir");
                 comboBox1.Items.Add("Dejar de Seguir");
-                comboBox2.Items.Add("AudioLibros");
+                comboBox2.Items.Add("Audiolibros");
                 comboBox2.Items.Add("Canciones");
                 comboBox2.Items.Add("Peliculas");
                 comboBox2.Items.Add("Podcasts"); 
@@ -454,7 +454,7 @@ namespace Consola_Spotflix
                             break;
                         }
                     }
-                    if ((string)comboBox4.SelectedItem == "Audiolibros Favoritos")
+                    if ((string)comboBox4.SelectedItem == "Audiolibros favoritos")
                     {
                         foreach (var item2 in Spotflix.perfilenlinea.Fav_AudioLibro)
                         {
@@ -545,7 +545,7 @@ namespace Consola_Spotflix
                             break;
                         }
                     }
-                    if ((string)comboBox4.SelectedItem == "AudioLibros Favoritas")
+                    if ((string)comboBox4.SelectedItem == "Audiolibros favoritos")
                     {
                         foreach (var item2 in Spotflix.perfilenlinea.Fav_AudioLibro)
                         {
@@ -604,7 +604,7 @@ namespace Consola_Spotflix
                             break;
                         }
                     }
-                    if ((string)comboBox4.SelectedItem == "Canciones Favoritas")
+                    if ((string)comboBox4.SelectedItem == "Canciones favoritas")
                     {
                         foreach (var item2 in Spotflix.perfilenlinea.Fav_Canciones)
                         {
@@ -694,7 +694,7 @@ namespace Consola_Spotflix
                             break;
                         }
                     }
-                    if ((string)comboBox4.SelectedItem == "Canciones Favoritas")
+                    if ((string)comboBox4.SelectedItem == "Canciones favoritas")
                     {
                         foreach (var item2 in Spotflix.perfilenlinea.Fav_Canciones)
                         {
@@ -754,7 +754,7 @@ namespace Consola_Spotflix
                             break;
                         }
                     }
-                    if ((string)comboBox4.SelectedItem == "Canciones Favoritas")
+                    if ((string)comboBox4.SelectedItem == "Peliculas favoritas")
                     {
                         foreach (var item2 in Spotflix.perfilenlinea.Fav_Pelicula)
                         {
@@ -808,7 +808,7 @@ namespace Consola_Spotflix
                             break;
                         }
                     }
-                    if ((string)comboBox4.SelectedItem == "Peliculas Favoritas")
+                    if ((string)comboBox4.SelectedItem == "Peliculas favoritas")
                     {
                         foreach (var item2 in Spotflix.perfilenlinea.Fav_Pelicula)
                         {
@@ -868,7 +868,7 @@ namespace Consola_Spotflix
                             break;
                         }
                     }
-                    if ((string)comboBox4.SelectedItem == "Podcasts Favoritas")
+                    if ((string)comboBox4.SelectedItem == "Podcasts favoritos")
                     {
                         foreach (var item2 in Spotflix.perfilenlinea.Fav_Podcast)
                         {
@@ -922,7 +922,7 @@ namespace Consola_Spotflix
                             break;
                         }
                     }
-                    if ((string)comboBox4.SelectedItem == "Podcasts Favoritas")
+                    if ((string)comboBox4.SelectedItem == "Podcasts favoritos")
                     {
                         foreach (var item2 in Spotflix.perfilenlinea.Fav_Podcast)
                         {
@@ -982,7 +982,7 @@ namespace Consola_Spotflix
                             break;
                         }
                     }
-                    if ((string)comboBox4.SelectedItem == "Videos Favoritas")
+                    if ((string)comboBox4.SelectedItem == "Videos favoritos")
                     {
                         foreach (var item2 in Spotflix.perfilenlinea.Fav_Videos)
                         {
@@ -999,7 +999,7 @@ namespace Consola_Spotflix
                         else
                         {
                             label3.Show();
-                            label3.Text = "Video Agregada a la lista!";
+                            label3.Text = "Video Agregado a la lista!";
                             Spotflix.perfilenlinea.Fav_Videos.Add(c1);
                         }
                     }
@@ -1015,12 +1015,12 @@ namespace Consola_Spotflix
                         if (encontrado == true)
                         {
                             label3.Show();
-                            label3.Text = "Cancion ya existe en la lista!";
+                            label3.Text = "Video ya existe en la lista!";
                         }
                         else
                         {
                             label3.Show();
-                            label3.Text = "Cancion Agregada a la lista!";
+                            label3.Text = "Video Agregado a la lista!";
                             Spotflix.perfilenlinea.En_Cola_video.Add(c1);
                         }
                     }
@@ -1036,7 +1036,7 @@ namespace Consola_Spotflix
                             break;
                         }
                     }
-                    if ((string)comboBox4.SelectedItem == "Videos Favoritas")
+                    if ((string)comboBox4.SelectedItem == "Videos favoritos")
                     {
                         foreach (var item2 in Spotflix.perfilenlinea.Fav_Videos)
                         {
@@ -1086,7 +1086,7 @@ namespace Consola_Spotflix
                 if ((string)comboBox1.SelectedItem == "Seguir")
                 {
                     bool encontrado = false;
-                    if ((string)comboBox2.SelectedItem == "AudioLibros")
+                    if ((string)comboBox2.SelectedItem == "Audiolibros")
                     {
                         Playlist p1 = new Playlist();
                         foreach (var item in Spotflix.Lista_Perfiles)
@@ -1257,7 +1257,7 @@ namespace Consola_Spotflix
                 else
                 {
                     bool encontrado = false;
-                    if ((string)comboBox2.SelectedItem == "AudioLibros")
+                    if ((string)comboBox2.SelectedItem == "Audiolibros")
                     {
                         Playlist p1 = new Playlist();
                         foreach (var item in Spotflix.Lista_Perfiles)
