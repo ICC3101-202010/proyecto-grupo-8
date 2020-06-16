@@ -20,9 +20,6 @@ namespace Consola_Spotflix
             InitializeComponent();
             Registro.busc1 = this;
         }
-        //PLAYLIST 
-        //ORDEN DE ESTA WEA
-        //VER
         public void CargarBuscador()
         {
             Show();
@@ -662,10 +659,12 @@ namespace Consola_Spotflix
                         }
                         if (encontrado == true)
                         {
+                            label3.Show();
                             label3.Text = "Cancion ya existe en la lista!";
                         }
                         else
                         {
+                            label3.Show();
                             label3.Text = "Cancion Agregada a la lista!";
                             Spotflix.perfilenlinea.Fav_Canciones.Add(c1);
                         }
