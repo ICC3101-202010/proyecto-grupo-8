@@ -351,6 +351,7 @@ namespace Consola_Spotflix
         private void botonCerrarSesion_Click(object sender, EventArgs e)
         {
             axWindowsMediaPlayer1.Ctlcontrols.stop();
+            Spotflix.Lista_perfilesenlinea.Clear();
             Hide();
         }
 
