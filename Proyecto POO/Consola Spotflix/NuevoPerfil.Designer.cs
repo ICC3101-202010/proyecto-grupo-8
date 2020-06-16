@@ -75,7 +75,6 @@
             // NombrePerfil
             // 
             this.NombrePerfil.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
-            this.NombrePerfil.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.NombrePerfil.ForeColor = System.Drawing.SystemColors.Menu;
             this.NombrePerfil.Location = new System.Drawing.Point(216, 148);
             this.NombrePerfil.Name = "NombrePerfil";

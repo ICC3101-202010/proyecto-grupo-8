@@ -20,7 +20,6 @@ namespace Consola_Spotflix
         public static Buscador bubusc1;
         public static Archivo Crear_Archivo;
         public static CambiodeCuenta CambiodeCuenta;
-        public static Playlist_Perfil_En_Linea ppel;
 
         public static List<Persona> cantantes()
         {

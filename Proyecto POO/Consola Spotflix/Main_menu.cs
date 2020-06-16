@@ -403,7 +403,7 @@ namespace Consola_Spotflix
 
         private void button_Crear_Playlist_Click(object sender, EventArgs e)
         {
-            Registro.Crear_playlist.cargarCrearPlaylists();
+            Registro.Crear_playlist.Show();
             Registro.Crear_playlist.BringToFront();
         }
 

@@ -10,7 +10,6 @@ namespace Consola_Spotflix
         public Playlist_Perfil_En_Linea()
         {
             InitializeComponent();
-            Registro.ppel = this;
         }
         public List<Cancion> canciones = new List<Cancion>();
         public List<Pelicula> peliculas = new List<Pelicula>();

@@ -55,6 +55,7 @@ namespace Consola_Spotflix
                 {
                     Usuario u2 = u;
                     Spotflix.usuarioenlinea = u2;
+                    MessageBox.Show(Spotflix.usuarioenlinea.Nombre);
                     c += 1;
                     Usuarionoencontrado.Hide();
                     perfiles1.loadPerfiles(b);
