@@ -33,27 +33,6 @@ namespace Consola_Spotflix
             InitializeComponent();
             Registro.mm1 = this;
         }
-        private void button35_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                AbrirArchivo();
-                if (ruta != "")
-                {
-                    play = 2;
-                    AbrirMusica();
-                }
-                else
-                {
-
-                }
-            }
-            catch (Exception)
-            {
-
-                throw;
-            }
-        }
 
         private void button33_Click(object sender, EventArgs e)
         {
@@ -168,6 +147,7 @@ namespace Consola_Spotflix
                 {
                     Nombre_Cancion.Text = Spotflix.Temporal_Info_Ca[i].Titulo;
                     Nombre_Artista.Text = Spotflix.Temporal_Info_Ca[i].Cantante[0].Nombre_y_Apellido;
+                    Spotflix.Temporal_Info_Ca[i].Duracion = TimeSpan.Parse(axWindowsMediaPlayer1.currentMedia.durationString);
                     break;
                 }
             }
@@ -181,6 +161,7 @@ namespace Consola_Spotflix
                 {
                     Nombre_Cancion.Text = Spotflix.Temporal_Info_Pe[i].Titulo;
                     Nombre_Artista.Text = Spotflix.Temporal_Info_Pe[i].Director[0].Nombre_y_Apellido;
+                    Spotflix.Temporal_Info_Pe[i].Duracion = TimeSpan.Parse(axWindowsMediaPlayer1.currentMedia.durationString);
                     break;
                 }
             }
@@ -195,6 +176,7 @@ namespace Consola_Spotflix
                 {
                     Nombre_Cancion.Text = Spotflix.Temporal_Info_Po[i].Titulo;
                     Nombre_Artista.Text = Spotflix.Temporal_Info_Po[i].Locutor[0].Nombre_y_Apellido;
+                    Spotflix.Temporal_Info_Po[i].Duracion = TimeSpan.Parse(axWindowsMediaPlayer1.currentMedia.durationString);
                     break;
                 }
             }
@@ -209,6 +191,7 @@ namespace Consola_Spotflix
                     
                     Nombre_Cancion.Text = Spotflix.Temporal_Info_AL[i].Titulo;
                     Nombre_Artista.Text = Spotflix.Temporal_Info_AL[i].Lector.Nombre_y_Apellido;
+                    Spotflix.Temporal_Info_AL[i].Duracion = TimeSpan.Parse(axWindowsMediaPlayer1.currentMedia.durationString);
                     break;
                 }
             }
@@ -221,6 +204,7 @@ namespace Consola_Spotflix
                 if (axWindowsMediaPlayer1.currentMedia.isIdentical[Spotflix.Temporal.Item[i]])
                 {
                     Nombre_Cancion.Text = Spotflix.Temporal_Info_Vi[i].Titulo;
+                    Spotflix.Temporal_Info_Vi[i].Duracion = TimeSpan.Parse(axWindowsMediaPlayer1.currentMedia.durationString);
                     break;
                 }
             }
@@ -272,20 +256,8 @@ namespace Consola_Spotflix
 
             }
         }
-        public void AbrirArchivo()
-        {
-            archivo.Filter = "Archivo files|*.wav;*.mp3;*.mp4;.*;";
-            DialogResult dres1 = archivo.ShowDialog();
-            if (dres1 ==DialogResult.Abort)
-            {
-                return;
-            }
-            if (dres1 == DialogResult.Cancel)
-            {
-                return;
-            }
-            ruta = archivo.FileName;
-        }
+
+
 
         private void Button_Perfil_En_Linea_Click(object sender, EventArgs e)
         {
@@ -376,6 +348,7 @@ namespace Consola_Spotflix
 
         private void botonCerrarSesion_Click(object sender, EventArgs e)
         {
+            axWindowsMediaPlayer1.Ctlcontrols.stop();
             Hide();
         }
 

@@ -32,7 +32,7 @@ namespace Consola_Spotflix
             listBox1.Items.Clear();
             foreach (Usuario u in Spotflix.Lista_Usuarios)
             {
-                listBox1.Items.Add(a.ToString() + ". Usuario: " + u.Nombre + ", Email: " + u.Email + ", Pais: " + u.Pais + ", Membresia: " + (enum_TipoDeMembresia)u.Tipo_de_Membresia);
+                listBox1.Items.Add(a.ToString() + ". Usuario:" + u.Nombre + " Email: " + u.Email + " Pais: " + u.Pais + " Membresia: " + (enum_TipoDeMembresia)u.Tipo_de_Membresia);
                 listBox1.Items.Add("Perfiles:");
                 foreach (Perfil p in Spotflix.Lista_Perfiles)
                 {
@@ -41,7 +41,6 @@ namespace Consola_Spotflix
                         listBox1.Items.Add("Perfil: " + p.Nombre_perfil + " Tipo de perfil: " + (enum_TipoDePerfil)p.Tipo_de_Perfil + " Usuario Asociado: " + p.Usuario_Asociado.Nombre);
                     }
                 }
-                a += 1;
             }
         }
 
@@ -53,18 +52,14 @@ namespace Consola_Spotflix
 
             listBox2.Items.Clear();
             int b = 1;
-            int c = 0;
             foreach (Persona p in Spotflix.Lista_Personas)
             {
                 string profesion = "";
                 foreach (var item in p.Profesion)
                 {
-                    c += 1;
-                    profesion += (enum_Profesion)item+" ";
-
+                    profesion += (enum_Profesion)item + " ";
                 }
-
-                listBox2.Items.Add(b.ToString() + ". " + p.Nombre_y_Apellido + ", Nacionalidad: " + p.Nacionalidad + ", Profesion: " + profesion);
+                listBox2.Items.Add(b.ToString() + ". Persona: " + p.Nombre_y_Apellido + "Nacionalidad: " + p.Nacionalidad + " Profesion: " + profesion);
                 b += 1;
             }
         }
@@ -76,59 +71,54 @@ namespace Consola_Spotflix
             listBox3.Show();
             listBox3.Items.Clear();
             int c = 1;
-            listBox3.Items.Add("AudioLibros:");
             foreach (AudioLibro al in Spotflix.Lista_AudioLibros)
             {
-                listBox3.Items.Add(c.ToString() + ". Titulo: " + al.Titulo + ", Año: " + al.Año.Year.ToString() + ", Genero: " + al.Genero + ", Idioma: " + (enum_Idioma)al.Idioma + ", Ranking; " + al.Ranking);
+                listBox3.Items.Add(c.ToString() + ". AudioLibro: " + al.Titulo + " Año: " + al.Año + " Genero:" + al.Genero + " Idioma: " + (enum_Idioma)al.Idioma + " Ranking; " + al.Ranking);
                 c += 1;
             }
             listBox3.Items.Add("------------------------------------------------------------------------");
             c = 0;
-            listBox3.Items.Add("Canciones:");
             foreach (Cancion al in Spotflix.Lista_Canciones)
             {
                 string cantantes = "";
                 foreach (var item in al.Cantante)
                 {
-                    cantantes += item.Nombre_y_Apellido + " ";
+                    cantantes += item + " ";
                 }
                 c += 1;
-                listBox3.Items.Add(c.ToString() + ". Titulo: " + al.Titulo + ", Año: " + al.Año.Year.ToString() + ", Genero: " + al.Genero + ", Cantante/s: " + cantantes + ", Ranking; " + al.Ranking);
+                listBox3.Items.Add(c.ToString() + ". Cancion: " + al.Titulo + " Año: " + al.Año + " Genero:" + al.Genero + " Cantante/s: " + cantantes + " Ranking; " + al.Ranking);
             }
             listBox3.Items.Add("------------------------------------------------------------------------");
             c = 0;
-            listBox3.Items.Add("Peliculas:");
             foreach (Pelicula al in Spotflix.Lista_Peliculas)
             {
                 c += 1;
                 string actores = "";
                 foreach (var item in al.Actor)
                 {
-                    actores += item.Nombre_y_Apellido + " ";
+                    actores += item + " ";
                 }
-                listBox3.Items.Add(c.ToString() + ". Titulo: " + al.Titulo + ", Año: " + al.Año.Year.ToString() + ", Genero: " + al.Genero + ", Actores : " + actores + ", Ranking; " + al.Ranking);
-                
+                listBox3.Items.Add(c.ToString() + ". Pelicula: " + al.Titulo + " Año: " + al.Año + " Genero:" + al.Genero + " Actores : " + actores + " Ranking; " + al.Ranking);
+                c += 1;
             }
             listBox3.Items.Add("------------------------------------------------------------------------");
             c = 1;
-            listBox3.Items.Add("Podcasts:");
             foreach (Podcast al in Spotflix.Lista_Podcasts)
             {
                 string locutores = "";
                 foreach (var item in al.Locutor)
                 {
-                    locutores += item.Nombre_y_Apellido + " ";
+                    locutores += item + " ";
                 }
-                listBox3.Items.Add(c.ToString() + ". Titulo: " + al.Titulo + ", Año: " + al.Año.Year.ToString() + ", Genero: " + al.Genero + ", Locutor " + locutores + ", Ranking; " + al.Ranking);
+                listBox3.Items.Add(c.ToString() + ". AudioLibro: " + al.Titulo + " Año: " + al.Año + " Genero:" + al.Genero + " Locutor " + locutores + " Ranking; " + al.Ranking);
                 c += 1;
             }
             listBox3.Items.Add("------------------------------------------------------------------------");
             c = 0;
-            listBox3.Items.Add("Videos:");
             foreach (Video al in Spotflix.Lista_Videos)
             {
                 c += 1;
-                listBox3.Items.Add(c.ToString() + ". Titulo: " + al.Titulo + ", Año: " + al.Año.Year.ToString() + ", Genero: " + al.Genero + ", Clasificacion: " + (enum_Clasificacion)al.Clasificacion + ", Ranking; " + al.Ranking) ;
+                listBox3.Items.Add(c.ToString() + ". Video: " + al.Titulo + " Año: " + al.Año + " Genero:" + al.Genero + "Clasificacion: " + (enum_Clasificacion)al.Clasificacion + " Ranking; " + al.Ranking);
 
             }
         }
