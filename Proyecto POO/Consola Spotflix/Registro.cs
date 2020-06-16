@@ -10,6 +10,7 @@ namespace Consola_Spotflix
 {
     public static class Registro
     {
+        public static InfoPerfil Infoperf;
         public static Main_menu mm1;
         public static NuevoPerfil np1;
         public static Perfiles p1;

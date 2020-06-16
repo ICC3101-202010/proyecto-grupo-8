@@ -36,6 +36,10 @@
             this.Registrarse = new System.Windows.Forms.Button();
             this.Aceptar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.archivos1 = new Consola_Spotflix.Archivo();
+            this.buscador1 = new Consola_Spotflix.Buscador();
+            this.crearPlaylist1 = new Consola_Spotflix.CrearPlaylist();
+            this.cambiodeCuenta2 = new Consola_Spotflix.CambiodeCuenta();
             this.informacion1 = new Consola_Spotflix.Informacion();
             this.cambiodeCuenta1 = new Consola_Spotflix.CambiodeCuenta();
             this.main_menu1 = new Consola_Spotflix.Main_menu();
@@ -43,10 +47,7 @@
             this.perfiles1 = new Proyecto_POO.Perfiles();
             this.Usuarionoencontrado = new System.Windows.Forms.Label();
             this.crearCuenta1 = new Consola_Spotflix.CrearCuenta();
-            this.cambiodeCuenta2 = new Consola_Spotflix.CambiodeCuenta();
-            this.crearPlaylist1 = new Consola_Spotflix.CrearPlaylist();
-            this.buscador1 = new Consola_Spotflix.Buscador();
-            this.archivos1 = new Consola_Spotflix.Archivo();
+            this.infoPerfil1 = new Consola_Spotflix.InfoPerfil();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -130,8 +131,9 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.archivos1);
+            this.panel1.Controls.Add(this.infoPerfil1);
             this.panel1.Controls.Add(this.buscador1);
+            this.panel1.Controls.Add(this.archivos1);
             this.panel1.Controls.Add(this.crearPlaylist1);
             this.panel1.Controls.Add(this.cambiodeCuenta2);
             this.panel1.Controls.Add(this.informacion1);
@@ -153,6 +155,47 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1264, 681);
             this.panel1.TabIndex = 14;
+            // 
+            // archivos1
+            // 
+            this.archivos1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.archivos1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.archivos1.Location = new System.Drawing.Point(0, 0);
+            this.archivos1.Name = "archivos1";
+            this.archivos1.Size = new System.Drawing.Size(1264, 681);
+            this.archivos1.TabIndex = 24;
+            this.archivos1.Visible = false;
+            // 
+            // buscador1
+            // 
+            this.buscador1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.buscador1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buscador1.ForeColor = System.Drawing.SystemColors.Menu;
+            this.buscador1.Location = new System.Drawing.Point(0, 0);
+            this.buscador1.Name = "buscador1";
+            this.buscador1.Size = new System.Drawing.Size(1264, 681);
+            this.buscador1.TabIndex = 23;
+            this.buscador1.Visible = false;
+            // 
+            // crearPlaylist1
+            // 
+            this.crearPlaylist1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.crearPlaylist1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.crearPlaylist1.Location = new System.Drawing.Point(0, 0);
+            this.crearPlaylist1.Name = "crearPlaylist1";
+            this.crearPlaylist1.Size = new System.Drawing.Size(1264, 681);
+            this.crearPlaylist1.TabIndex = 22;
+            this.crearPlaylist1.Visible = false;
+            // 
+            // cambiodeCuenta2
+            // 
+            this.cambiodeCuenta2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.cambiodeCuenta2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cambiodeCuenta2.Location = new System.Drawing.Point(0, 0);
+            this.cambiodeCuenta2.Name = "cambiodeCuenta2";
+            this.cambiodeCuenta2.Size = new System.Drawing.Size(1264, 681);
+            this.cambiodeCuenta2.TabIndex = 21;
+            this.cambiodeCuenta2.Visible = false;
             // 
             // informacion1
             // 
@@ -198,6 +241,7 @@
             // 
             // perfiles1
             // 
+            this.perfiles1.AutoSize = true;
             this.perfiles1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
             this.perfiles1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.perfiles1.Location = new System.Drawing.Point(0, 0);
@@ -228,46 +272,15 @@
             this.crearCuenta1.TabIndex = 14;
             this.crearCuenta1.Visible = false;
             // 
-            // cambiodeCuenta2
+            // infoPerfil1
             // 
-            this.cambiodeCuenta2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
-            this.cambiodeCuenta2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cambiodeCuenta2.Location = new System.Drawing.Point(0, 0);
-            this.cambiodeCuenta2.Name = "cambiodeCuenta2";
-            this.cambiodeCuenta2.Size = new System.Drawing.Size(1264, 681);
-            this.cambiodeCuenta2.TabIndex = 21;
-            this.cambiodeCuenta2.Visible = false;
-            // 
-            // crearPlaylist1
-            // 
-            this.crearPlaylist1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
-            this.crearPlaylist1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.crearPlaylist1.Location = new System.Drawing.Point(0, 0);
-            this.crearPlaylist1.Name = "crearPlaylist1";
-            this.crearPlaylist1.Size = new System.Drawing.Size(1264, 681);
-            this.crearPlaylist1.TabIndex = 22;
-            this.crearPlaylist1.Visible = false;
-            // 
-            // buscador1
-            // 
-            this.buscador1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
-            this.buscador1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buscador1.ForeColor = System.Drawing.SystemColors.Menu;
-            this.buscador1.Location = new System.Drawing.Point(0, 0);
-            this.buscador1.Name = "buscador1";
-            this.buscador1.Size = new System.Drawing.Size(1264, 681);
-            this.buscador1.TabIndex = 23;
-            this.buscador1.Visible = false;
-            // 
-            // archivos1
-            // 
-            this.archivos1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
-            this.archivos1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.archivos1.Location = new System.Drawing.Point(0, 0);
-            this.archivos1.Name = "archivos1";
-            this.archivos1.Size = new System.Drawing.Size(1264, 681);
-            this.archivos1.TabIndex = 24;
-            this.archivos1.Visible = false;
+            this.infoPerfil1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.infoPerfil1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.infoPerfil1.Location = new System.Drawing.Point(0, 0);
+            this.infoPerfil1.Name = "infoPerfil1";
+            this.infoPerfil1.Size = new System.Drawing.Size(1264, 681);
+            this.infoPerfil1.TabIndex = 25;
+            this.infoPerfil1.Visible = false;
             // 
             // Main_Spotflix
             // 
@@ -312,6 +325,7 @@
         private CrearPlaylist crearPlaylist1;
         private Buscador buscador1;
         private Archivo archivos1;
+        private InfoPerfil infoPerfil1;
     }
 }
 

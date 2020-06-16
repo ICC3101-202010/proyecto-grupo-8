@@ -263,7 +263,7 @@ namespace Consola_Spotflix
 
         private void Button_Perfil_En_Linea_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(Spotflix.perfilenlinea.Usuario_Asociado.Nombre);
+            Registro.Infoperf.CargarPerfil();
         }
 
         private void button_Retroceder_Click(object sender, EventArgs e)
