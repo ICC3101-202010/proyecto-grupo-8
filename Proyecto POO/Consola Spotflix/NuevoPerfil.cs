@@ -90,7 +90,6 @@ namespace Proyecto_POO
         private void Back_Click(object sender, EventArgs e)
         {
             int cantperfenlinea = Spotflix.Lista_perfilesenlinea.Count();
-            MessageBox.Show(cantperfenlinea.ToString());
             Registro.p1.loadPerfiles(cantperfenlinea);
             Hide();
         }
