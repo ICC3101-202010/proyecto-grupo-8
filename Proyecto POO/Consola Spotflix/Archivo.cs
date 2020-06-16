@@ -21,9 +21,9 @@ namespace Consola_Spotflix
             Registro.Crear_Archivo = this;
             panel_Agregar_Archivo.Dock = DockStyle.Fill;
         }
-        public string direccion_archivo;
-        public string direccion_imagen;
-        public string direccion_letra;
+        public string direccion_archivo="";
+        public string direccion_imagen = "";
+        public string direccion_letra = "";
         public List<Persona> Cantantes = new List<Persona>();
         public List<Persona> Compositores = new List<Persona>();
         public List<int> profesion = new List<int>();
