@@ -500,14 +500,17 @@ namespace Consola_Spotflix
                     {
                         foreach (var item3 in Spotflix.perfilenlinea.Playlists_Audiolibro_Propios)
                         {
+                            encontrado = false;
+                            encontrado2 = false;
 
                             if (item3.Nombre == (string)comboBox4.SelectedItem)
                             {
-                                encontrado2 = true; ;
+                                encontrado2 = true;
+
                             }
                             if (encontrado2 == true)
                             {
-                                foreach (var item2 in Spotflix.perfilenlinea.En_Cola_audiolibro)
+                                foreach (var item2 in item3.Playlist_paralista_AL)
                                 {
                                     if (item2 == c1)
                                     {
@@ -515,10 +518,10 @@ namespace Consola_Spotflix
                                     }
                                 }
                             }
-                            if (encontrado2 == true && encontrado==true)
+                            if (encontrado2 == true && encontrado == true)
                             {
                                 label3.Show();
-                                label3.Text = "Audiolibro ya existe en la lista!";
+                                label3.Text = "AudioLibro ya existe en la lista!";
                                 break;
                             }
                             else if (encontrado2 == true && encontrado == false)
@@ -529,11 +532,14 @@ namespace Consola_Spotflix
                                 break;
                             }
                         }
-                        
-
+                        if (encontrado2 == false && encontrado == false)
+                        {
+                            label3.Show();
+                            label3.Text = "No ha pasado nada";
+                        }
                     }
 
-                    }
+                }
                 if ((string)comboBox1.SelectedItem == "Eliminar")
                 {
                     AudioLibro c1 = new AudioLibro();
@@ -566,7 +572,7 @@ namespace Consola_Spotflix
                             label3.Text = "AudioLibro no esta en la lista";
                         }
                     }
-                    else
+                    else if ((string)comboBox4.SelectedItem == "En Cola")
                     {
                         foreach (var item2 in Spotflix.perfilenlinea.En_Cola_audiolibro)
                         {
@@ -583,6 +589,47 @@ namespace Consola_Spotflix
                         else
                         {
                             label3.Text = "AudioLibro no esta en la lista";
+                        }
+                    }
+                    else
+                    {
+                        foreach (var item3 in Spotflix.perfilenlinea.Playlists_Audiolibro_Propios)
+                        {
+                            encontrado = false;
+                            encontrado2 = false;
+
+                            if (item3.Nombre == (string)comboBox4.SelectedItem)
+                            {
+                                encontrado2 = true;
+                            }
+                            if (encontrado2 == true)
+                            {
+                                foreach (var item2 in item3.Playlist_paralista_AL)
+                                {
+                                    if (item2 == c1)
+                                    {
+                                        encontrado = true;
+                                    }
+                                }
+                            }
+                            if (encontrado2 == true && encontrado == true)
+                            {
+                                label3.Show();
+                                label3.Text = "AudioLibro eliminada de la lista!";
+                                item3.Playlist_paralista_AL.Remove(c1);
+                                break;
+                            }
+                            else if (encontrado2 == true && encontrado == false)
+                            {
+                                label3.Show();
+                                label3.Text = "AudioLibro no esta en la lista";
+                                break;
+                            }
+                        }
+                        if (encontrado2 == false && encontrado == false)
+                        {
+                            label3.Show();
+                            label3.Text = "No ha pasado nada";
                         }
                     }
 
@@ -648,14 +695,17 @@ namespace Consola_Spotflix
                     {
                         foreach (var item3 in Spotflix.perfilenlinea.Playlists_Canciones_Propias)
                         {
+                            encontrado = false;
+                            encontrado2 = false;
 
                             if (item3.Nombre == (string)comboBox4.SelectedItem)
                             {
-                                encontrado2 = true; ;
+                                encontrado2 = true;
+
                             }
                             if (encontrado2 == true)
                             {
-                                foreach (var item2 in Spotflix.perfilenlinea.En_Cola_cancion)
+                                foreach (var item2 in item3.Playlist_paralista_Ca)
                                 {
                                     if (item2 == c1)
                                     {
@@ -667,20 +717,21 @@ namespace Consola_Spotflix
                             {
                                 label3.Show();
                                 label3.Text = "Cancion ya existe en la lista!";
-                                MessageBox.Show("");
                                 break;
                             }
                             else if (encontrado2 == true && encontrado == false)
                             {
                                 label3.Show();
-                                MessageBox.Show("HOla");
                                 label3.Text = "Cancion Agregada a la lista!";
                                 item3.Playlist_paralista_Ca.Add(c1);
                                 break;
                             }
                         }
-
-
+                        if (encontrado2 == false && encontrado == false)
+                        {
+                            label3.Show();
+                            label3.Text = "No ha pasado nada";
+                        }
                     }
                 }
                 if ((string)comboBox1.SelectedItem == "Eliminar")
@@ -709,33 +760,76 @@ namespace Consola_Spotflix
                             label3.Text = "Cancion eliminadad de la lista!";
                             Spotflix.perfilenlinea.Fav_Canciones.Remove(c1);
                         }
+
                         else
                         {
                             label3.Show();
                             label3.Text = "Cancion no esta en la lista";
                         }
                     }
-                    else
-                    {
-                        foreach (var item2 in Spotflix.perfilenlinea.En_Cola_cancion)
+                    else if ((string)comboBox4.SelectedItem == "En Cola")
                         {
-                            if (item2 == c1)
+                            foreach (var item2 in Spotflix.perfilenlinea.En_Cola_cancion)
                             {
-                                encontrado = true;
+                                if (item2 == c1)
+                                {
+                                    encontrado = true;
+                                }
+                            }
+                            if (encontrado == true)
+                            {
+                                label3.Show();
+                                label3.Text = "Cancion eliminadad de la lista!";
+                                Spotflix.perfilenlinea.En_Cola_cancion.Remove(c1);
+                            }
+                            else
+                            {
+                                label3.Show();
+                                label3.Text = "Cancion no esta en la lista";
                             }
                         }
-                        if (encontrado == true)
+                    else
+                    {
+                        foreach (var item3 in Spotflix.perfilenlinea.Playlists_Canciones_Propias)
                         {
-                            label3.Show();
-                            label3.Text = "Cancion eliminadad de la lista!";
-                            Spotflix.perfilenlinea.En_Cola_cancion.Remove(c1);
+                            encontrado = false;
+                            encontrado2 = false;
+
+                            if (item3.Nombre == (string)comboBox4.SelectedItem)
+                            {
+                                encontrado2 = true;
+                            }
+                            if (encontrado2 == true)
+                            {
+                                foreach (var item2 in item3.Playlist_paralista_Ca)
+                                {
+                                    if (item2 == c1)
+                                    {
+                                        encontrado = true;
+                                    }
+                                }
+                            }
+                            if (encontrado2 == true && encontrado == true)
+                            {
+                                label3.Show();
+                                label3.Text = "Cancion eliminada de la lista!";
+                                item3.Playlist_paralista_Ca.Remove(c1);
+                                break;
+                            }
+                            else if (encontrado2 == true && encontrado == false)
+                            {
+                                label3.Show();
+                                label3.Text = "Cancion no esta en la lista";
+                                break;
+                            }
                         }
-                        else
+                        if (encontrado2 == false && encontrado == false)
                         {
                             label3.Show();
-                            label3.Text = "Cancion no esta en la lista";
+                            label3.Text = "No ha pasado nada";
                         }
                     }
+
 
                 }
             }
@@ -746,6 +840,7 @@ namespace Consola_Spotflix
                 if ((string)comboBox1.SelectedItem == "Agregar")
                 {
                     Pelicula c1 = new Pelicula();
+                    bool encontrado2 = false;
                     foreach (var item in Spotflix.Lista_Peliculas)
                     {
                         if (item.Titulo == (string)comboBox3.SelectedItem)
@@ -775,7 +870,7 @@ namespace Consola_Spotflix
                             Spotflix.perfilenlinea.Fav_Pelicula.Add(c1);
                         }
                     }
-                    else
+                    else if ((string)comboBox4.SelectedItem == "En Cola")
                     {
                         foreach (var item2 in Spotflix.perfilenlinea.En_Cola_pelicula)
                         {
@@ -796,10 +891,53 @@ namespace Consola_Spotflix
                             Spotflix.perfilenlinea.En_Cola_pelicula.Add(c1);
                         }
                     }
+                    else
+                    {
+                        foreach (var item3 in Spotflix.perfilenlinea.Playlists_Peliculas_Propias)
+                        {
+                            encontrado = false;
+                            encontrado2 = false;
+
+                            if (item3.Nombre == (string)comboBox4.SelectedItem)
+                            {
+                                encontrado2 = true;
+
+                            }
+                            if (encontrado2 == true)
+                            {
+                                foreach (var item2 in item3.Playlist_paralista_Pe)
+                                {
+                                    if (item2 == c1)
+                                    {
+                                        encontrado = true;
+                                    }
+                                }
+                            }
+                            if (encontrado2 == true && encontrado == true)
+                            {
+                                label3.Show();
+                                label3.Text = "Pelicula ya existe en la lista!";
+                                break;
+                            }
+                            else if (encontrado2 == true && encontrado == false)
+                            {
+                                label3.Show();
+                                label3.Text = "Pelicula Agregada a la lista!";
+                                item3.Playlist_paralista_Pe.Add(c1);
+                                break;
+                            }
+                        }
+                        if (encontrado2 == false && encontrado == false)
+                        {
+                            label3.Show();
+                            label3.Text = "No ha pasado nada";
+                        }
+                    }
                 }
                 if ((string)comboBox1.SelectedItem == "Eliminar")
                 {
                     Pelicula c1 = new Pelicula();
+                    bool encontrado2 = false;
                     foreach (var item in Spotflix.Lista_Peliculas)
                     {
                         if (item.Titulo == (string)comboBox3.SelectedItem)
@@ -829,7 +967,7 @@ namespace Consola_Spotflix
                             label3.Text = "Pelicula no esta en la lista";
                         }
                     }
-                    else
+                    else if ((string)comboBox4.SelectedItem == "En Cola")
                     {
                         foreach (var item2 in Spotflix.perfilenlinea.En_Cola_pelicula)
                         {
@@ -850,12 +988,54 @@ namespace Consola_Spotflix
                             label3.Text = "Pelicula no esta en la lista";
                         }
                     }
+                    else
+                    {
+                        foreach (var item3 in Spotflix.perfilenlinea.Playlists_Peliculas_Propias)
+                        {
+                            encontrado = false;
+                            encontrado2 = false;
+
+                            if (item3.Nombre == (string)comboBox4.SelectedItem)
+                            {
+                                encontrado2 = true;
+                            }
+                            if (encontrado2 == true)
+                            {
+                                foreach (var item2 in item3.Playlist_paralista_Pe)
+                                {
+                                    if (item2 == c1)
+                                    {
+                                        encontrado = true;
+                                    }
+                                }
+                            }
+                            if (encontrado2 == true && encontrado == true)
+                            {
+                                label3.Show();
+                                label3.Text = "Pelicula eliminada de la lista!";
+                                item3.Playlist_paralista_Pe.Remove(c1);
+                                break;
+                            }
+                            else if (encontrado2 == true && encontrado == false)
+                            {
+                                label3.Show();
+                                label3.Text = "Cancion no esta en la lista";
+                                break;
+                            }
+                        }
+                        if (encontrado2 == false && encontrado == false)
+                        {
+                            label3.Show();
+                            label3.Text = "No ha pasado nada";
+                        }
+                    }
 
                 }
             }
             else if (tipo == "Podcasts")
             {
                 bool encontrado = false;
+                bool encontrado2 = false;
 
                 if ((string)comboBox1.SelectedItem == "Agregar")
                 {
@@ -889,7 +1069,7 @@ namespace Consola_Spotflix
                             Spotflix.perfilenlinea.Fav_Podcast.Add(c1);
                         }
                     }
-                    else
+                    else if ((string)comboBox4.SelectedItem == "En Cola")
                     {
                         foreach (var item2 in Spotflix.perfilenlinea.En_Cola_podcast)
                         {
@@ -908,6 +1088,48 @@ namespace Consola_Spotflix
                             label3.Show();
                             label3.Text = "Podcast Agregada a la lista!";
                             Spotflix.perfilenlinea.En_Cola_podcast.Add(c1);
+                        }
+                    }
+                    else
+                    {
+                        foreach (var item3 in Spotflix.perfilenlinea.Playlists_Podcast_Propios)
+                        {
+                            encontrado = false;
+                            encontrado2 = false;
+
+                            if (item3.Nombre == (string)comboBox4.SelectedItem)
+                            {
+                                encontrado2 = true;
+
+                            }
+                            if (encontrado2 == true)
+                            {
+                                foreach (var item2 in item3.Playlist_paralista_Po)
+                                {
+                                    if (item2 == c1)
+                                    {
+                                        encontrado = true;
+                                    }
+                                }
+                            }
+                            if (encontrado2 == true && encontrado == true)
+                            {
+                                label3.Show();
+                                label3.Text = "Podcast ya existe en la lista!";
+                                break;
+                            }
+                            else if (encontrado2 == true && encontrado == false)
+                            {
+                                label3.Show();
+                                label3.Text = "Podcast Agregada a la lista!";
+                                item3.Playlist_paralista_Po.Add(c1);
+                                break;
+                            }
+                        }
+                        if (encontrado2 == false && encontrado == false)
+                        {
+                            label3.Show();
+                            label3.Text = "No ha pasado nada";
                         }
                     }
                 }
@@ -943,7 +1165,7 @@ namespace Consola_Spotflix
                             label3.Text = "Podcast no esta en la lista";
                         }
                     }
-                    else
+                    else if ((string)comboBox4.SelectedItem == "En Cola")
                     {
                         foreach (var item2 in Spotflix.perfilenlinea.En_Cola_podcast)
                         {
@@ -964,13 +1186,54 @@ namespace Consola_Spotflix
                             label3.Text = "Podcast no esta en la lista";
                         }
                     }
+                    else
+                    {
+                        foreach (var item3 in Spotflix.perfilenlinea.Playlists_Podcast_Propios)
+                        {
+                            encontrado = false;
+                            encontrado2 = false;
+
+                            if (item3.Nombre == (string)comboBox4.SelectedItem)
+                            {
+                                encontrado2 = true;
+                            }
+                            if (encontrado2 == true)
+                            {
+                                foreach (var item2 in item3.Playlist_paralista_Po)
+                                {
+                                    if (item2 == c1)
+                                    {
+                                        encontrado = true;
+                                    }
+                                }
+                            }
+                            if (encontrado2 == true && encontrado == true)
+                            {
+                                label3.Show();
+                                label3.Text = "Podcast eliminada de la lista!";
+                                item3.Playlist_paralista_Po.Remove(c1);
+                                break;
+                            }
+                            else if (encontrado2 == true && encontrado == false)
+                            {
+                                label3.Show();
+                                label3.Text = "Podcast no esta en la lista";
+                                break;
+                            }
+                        }
+                        if (encontrado2 == false && encontrado == false)
+                        {
+                            label3.Show();
+                            label3.Text = "No ha pasado nada";
+                        }
+                    }
 
                 }
             }
             else if (tipo == "Videos")
             {
                 bool encontrado = false;
-
+                bool encontrado2 = false;
                 if ((string)comboBox1.SelectedItem == "Agregar")
                 {
                     Video c1 = new Video();
@@ -1003,7 +1266,7 @@ namespace Consola_Spotflix
                             Spotflix.perfilenlinea.Fav_Videos.Add(c1);
                         }
                     }
-                    else
+                    else if ((string)comboBox4.SelectedItem == "En Cola")
                     {
                         foreach (var item2 in Spotflix.perfilenlinea.En_Cola_video)
                         {
@@ -1022,6 +1285,48 @@ namespace Consola_Spotflix
                             label3.Show();
                             label3.Text = "Video Agregado a la lista!";
                             Spotflix.perfilenlinea.En_Cola_video.Add(c1);
+                        }
+                    }
+                    else
+                    {
+                        foreach (var item3 in Spotflix.perfilenlinea.Playlists_Video_Propios)
+                        {
+                            encontrado = false;
+                            encontrado2 = false;
+
+                            if (item3.Nombre == (string)comboBox4.SelectedItem)
+                            {
+                                encontrado2 = true;
+
+                            }
+                            if (encontrado2 == true)
+                            {
+                                foreach (var item2 in item3.Playlist_paralista_Vi)
+                                {
+                                    if (item2 == c1)
+                                    {
+                                        encontrado = true;
+                                    }
+                                }
+                            }
+                            if (encontrado2 == true && encontrado == true)
+                            {
+                                label3.Show();
+                                label3.Text = "Video ya existe en la lista!";
+                                break;
+                            }
+                            else if (encontrado2 == true && encontrado == false)
+                            {
+                                label3.Show();
+                                label3.Text = "Video Agregada a la lista!";
+                                item3.Playlist_paralista_Vi.Add(c1);
+                                break;
+                            }
+                        }
+                        if (encontrado2 == false && encontrado == false)
+                        {
+                            label3.Show();
+                            label3.Text = "No ha pasado nada";
                         }
                     }
                 }
@@ -1057,7 +1362,7 @@ namespace Consola_Spotflix
                             label3.Text = "Video no esta en la lista";
                         }
                     }
-                    else
+                    else if ((string)comboBox4.SelectedItem == "En Cola")
                     {
                         foreach (var item2 in Spotflix.perfilenlinea.En_Cola_video)
                         {
@@ -1076,6 +1381,47 @@ namespace Consola_Spotflix
                         {
                             label3.Show();
                             label3.Text = "Video no esta en la lista";
+                        }
+                    }
+                    else
+                    {
+                        foreach (var item3 in Spotflix.perfilenlinea.Playlists_Video_Propios)
+                        {
+                            encontrado = false;
+                            encontrado2 = false;
+
+                            if (item3.Nombre == (string)comboBox4.SelectedItem)
+                            {
+                                encontrado2 = true;
+                            }
+                            if (encontrado2 == true)
+                            {
+                                foreach (var item2 in item3.Playlist_paralista_Vi)
+                                {
+                                    if (item2 == c1)
+                                    {
+                                        encontrado = true;
+                                    }
+                                }
+                            }
+                            if (encontrado2 == true && encontrado == true)
+                            {
+                                label3.Show();
+                                label3.Text = "Video eliminada de la lista!";
+                                item3.Playlist_paralista_Vi.Remove(c1);
+                                break;
+                            }
+                            else if (encontrado2 == true && encontrado == false)
+                            {
+                                label3.Show();
+                                label3.Text = "Video no esta en la lista";
+                                break;
+                            }
+                        }
+                        if (encontrado2 == false && encontrado == false)
+                        {
+                            label3.Show();
+                            label3.Text = "No ha pasado nada";
                         }
                     }
 
@@ -1497,6 +1843,7 @@ namespace Consola_Spotflix
                 {
                     if ((string)comboBox2.SelectedItem == "Nacionalidad" && item.Nacionalidad == textBox1.Text)
                     {
+
                         //if (item.Nacionalidad.Contains(textBox1.Text)==true)
                         //{
                         //   comboBox3.Items.Add(item.Nombre_y_Apellido);
@@ -1629,7 +1976,6 @@ namespace Consola_Spotflix
 
                 foreach (var item in Spotflix.Lista_Peliculas)
                 {
-                    int i = 0;
                     if ((string)comboBox2.SelectedItem == "Titulo" && item.Titulo == textBox1.Text)
                     {
                         comboBox3.Items.Add(item.Titulo);
@@ -1697,7 +2043,6 @@ namespace Consola_Spotflix
                 }
                 foreach (var item in Spotflix.Lista_AudioLibros)
                 {
-                    int i = 0;
                     if ((string)comboBox2.SelectedItem == "Titulo" && item.Titulo == textBox1.Text)
                     {
                         comboBox3.Items.Add(item.Titulo);

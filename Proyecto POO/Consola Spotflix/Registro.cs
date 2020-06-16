@@ -126,6 +126,6 @@ namespace Consola_Spotflix
             }
             return compositores;
         }
-        }
+        
     }
 }
