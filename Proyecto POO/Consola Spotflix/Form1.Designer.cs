@@ -46,7 +46,7 @@
             this.cambiodeCuenta2 = new Consola_Spotflix.CambiodeCuenta();
             this.crearPlaylist1 = new Consola_Spotflix.CrearPlaylist();
             this.buscador1 = new Consola_Spotflix.Buscador();
-            this.archivos1 = new Consola_Spotflix.Archivos();
+            this.archivos1 = new Consola_Spotflix.Archivo();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -311,7 +311,7 @@
         private CambiodeCuenta cambiodeCuenta2;
         private CrearPlaylist crearPlaylist1;
         private Buscador buscador1;
-        private Archivos archivos1;
+        private Archivo archivos1;
     }
 }
 
