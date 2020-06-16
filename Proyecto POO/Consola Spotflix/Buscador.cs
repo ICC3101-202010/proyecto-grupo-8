@@ -316,6 +316,8 @@ namespace Consola_Spotflix
                                 {
                                     p.Seguidos.Add(p2);
                                     o += 1;
+                                    label3.Show();
+                                    label3.Text = "Perfil seguido!";
                                     break;
                                 }
 

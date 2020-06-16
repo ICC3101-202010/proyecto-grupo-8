@@ -79,7 +79,6 @@ namespace Proyecto_POO
             }
             else if (b==3)
             {
-                MessageBox.Show("ACA");
                 botonCrearPerfil.Show();
                 botonPerfil1.Show();
                 botonPerfil1.Location = new Point(86, 148);
