@@ -113,6 +113,7 @@
             // CodSeguridad
             // 
             this.CodSeguridad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.CodSeguridad.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.CodSeguridad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CodSeguridad.ForeColor = System.Drawing.SystemColors.Menu;
             this.CodSeguridad.Location = new System.Drawing.Point(399, 480);
@@ -161,6 +162,7 @@
             // Vencimiento
             // 
             this.Vencimiento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.Vencimiento.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Vencimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Vencimiento.ForeColor = System.Drawing.SystemColors.Menu;
             this.Vencimiento.Location = new System.Drawing.Point(399, 448);
@@ -184,6 +186,7 @@
             // Ntarjeta
             // 
             this.Ntarjeta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.Ntarjeta.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Ntarjeta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Ntarjeta.ForeColor = System.Drawing.SystemColors.Menu;
             this.Ntarjeta.Location = new System.Drawing.Point(399, 416);
@@ -195,6 +198,7 @@
             // Banco
             // 
             this.Banco.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.Banco.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Banco.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Banco.ForeColor = System.Drawing.SystemColors.Menu;
             this.Banco.Location = new System.Drawing.Point(399, 384);
@@ -206,6 +210,7 @@
             // Email
             // 
             this.Email.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.Email.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Email.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Email.ForeColor = System.Drawing.SystemColors.Menu;
             this.Email.Location = new System.Drawing.Point(399, 288);
@@ -216,6 +221,7 @@
             // Contraseña
             // 
             this.Contraseña.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.Contraseña.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Contraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Contraseña.ForeColor = System.Drawing.SystemColors.Menu;
             this.Contraseña.Location = new System.Drawing.Point(399, 320);
@@ -226,6 +232,7 @@
             // Pais
             // 
             this.Pais.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.Pais.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Pais.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Pais.ForeColor = System.Drawing.SystemColors.Menu;
             this.Pais.Location = new System.Drawing.Point(399, 256);
@@ -236,6 +243,7 @@
             // FechaNac
             // 
             this.FechaNac.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.FechaNac.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.FechaNac.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FechaNac.ForeColor = System.Drawing.SystemColors.Menu;
             this.FechaNac.Location = new System.Drawing.Point(399, 192);
@@ -246,6 +254,7 @@
             // Apellido
             // 
             this.Apellido.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.Apellido.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Apellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Apellido.ForeColor = System.Drawing.SystemColors.Menu;
             this.Apellido.Location = new System.Drawing.Point(399, 160);
@@ -256,6 +265,7 @@
             // Nombre
             // 
             this.Nombre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.Nombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Nombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Nombre.ForeColor = System.Drawing.SystemColors.Menu;
             this.Nombre.Location = new System.Drawing.Point(399, 128);

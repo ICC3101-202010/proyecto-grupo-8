@@ -90,6 +90,7 @@
             // comboBoxTipoMulti
             // 
             this.comboBoxTipoMulti.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.comboBoxTipoMulti.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxTipoMulti.ForeColor = System.Drawing.SystemColors.Menu;
             this.comboBoxTipoMulti.FormattingEnabled = true;
             this.comboBoxTipoMulti.Location = new System.Drawing.Point(444, 227);
@@ -101,6 +102,7 @@
             // textBoxnombre
             // 
             this.textBoxnombre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.textBoxnombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxnombre.ForeColor = System.Drawing.SystemColors.Menu;
             this.textBoxnombre.Location = new System.Drawing.Point(444, 276);
             this.textBoxnombre.Name = "textBoxnombre";
@@ -110,6 +112,7 @@
             // comboBoxPrivacidad
             // 
             this.comboBoxPrivacidad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.comboBoxPrivacidad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxPrivacidad.ForeColor = System.Drawing.SystemColors.Menu;
             this.comboBoxPrivacidad.FormattingEnabled = true;
             this.comboBoxPrivacidad.Location = new System.Drawing.Point(444, 327);

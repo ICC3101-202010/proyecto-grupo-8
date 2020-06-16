@@ -28,7 +28,9 @@ namespace Consola_Spotflix
                 Buscar.Hide();
                 comboBox1.Items.Add("Seguir");
                 comboBox1.Items.Add("Dejar de seguir");
+                label1.Show();
                 label1.Text = "Accion";
+                label2.Show();
                 label2.Text = "Perfil:";
                 foreach (var item in Spotflix.Lista_Perfiles)
                 {
@@ -84,7 +86,7 @@ namespace Consola_Spotflix
                 comboBox3.Show();
                 comboBox4.Show();
                 label6.Text = "Playlist";
-
+                textBox1.Show();
                 label1.Text = "Accion";
                 comboBox1.Items.Add("Agregar");
                 comboBox1.Items.Add("Eliminar");
@@ -114,6 +116,7 @@ namespace Consola_Spotflix
                 label4.Show();
                 label5.Show();
                 label6.Show();
+                textBox1.Show();
                 comboBox1.Show();
                 comboBox2.Show();
                 comboBox3.Show();
@@ -152,6 +155,7 @@ namespace Consola_Spotflix
                 label4.Show();
                 label5.Show();
                 label6.Show();
+                textBox1.Show();
                 comboBox1.Show();
                 comboBox2.Show();
                 comboBox3.Show();
@@ -187,6 +191,7 @@ namespace Consola_Spotflix
                 label4.Show();
                 label5.Show();
                 label6.Show();
+                textBox1.Show();
                 comboBox1.Show();
                 comboBox2.Show();
                 comboBox3.Show();
@@ -225,6 +230,7 @@ namespace Consola_Spotflix
                 label4.Show();
                 label5.Show();
                 label6.Show();
+                textBox1.Show();
                 comboBox1.Show();
                 comboBox2.Show();
                 comboBox3.Show();
@@ -275,6 +281,7 @@ namespace Consola_Spotflix
                 comboBox3.Items.Add("");
                 label4.Text = "Valor:";
                 label5.Text = "Playlist";
+                textBox1.Show();
                 label4.Show();
                 label5.Show();
                 comboBox3.Show();
