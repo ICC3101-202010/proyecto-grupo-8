@@ -10,44 +10,4 @@
     <Contraseña>ronca</Contraseña>
     <Tipo_de_Membresia>2</Tipo_de_Membresia>
   </Usuario>
-  <Usuario>
-    <Nombre>Camila</Nombre>
-    <Apellido>Villalobos</Apellido>
-    <Fecha_De_Nacimiento>1998-09-30T00:00:00</Fecha_De_Nacimiento>
-    <Sexo>2</Sexo>
-    <Pais>Chile</Pais>
-    <Email>cami@spotflix.com</Email>
-    <Contraseña>cami</Contraseña>
-    <Tipo_de_Membresia>1</Tipo_de_Membresia>
-  </Usuario>
-  <Usuario>
-    <Nombre>Cristobal</Nombre>
-    <Apellido>Neira</Apellido>
-    <Fecha_De_Nacimiento>1998-09-16T00:00:00</Fecha_De_Nacimiento>
-    <Sexo>1</Sexo>
-    <Pais>Chile</Pais>
-    <Email>cristobal@spotflix.com</Email>
-    <Contraseña>cristobal</Contraseña>
-    <Tipo_de_Membresia>1</Tipo_de_Membresia>
-  </Usuario>
-  <Usuario>
-    <Nombre>zorro</Nombre>
-    <Apellido>zorreao</Apellido>
-    <Fecha_De_Nacimiento>1993-06-14T00:00:00</Fecha_De_Nacimiento>
-    <Sexo>1</Sexo>
-    <Pais>Chile</Pais>
-    <Email>cris@gmail.com</Email>
-    <Contraseña>cris</Contraseña>
-    <Tipo_de_Membresia>1</Tipo_de_Membresia>
-  </Usuario>
-  <Usuario>
-    <Nombre>zsdzsdz</Nombre>
-    <Apellido>szdzsdsz</Apellido>
-    <Fecha_De_Nacimiento>1998-07-16T00:00:00</Fecha_De_Nacimiento>
-    <Sexo>1</Sexo>
-    <Pais>Chile</Pais>
-    <Email>cris@cris.com</Email>
-    <Contraseña>cris</Contraseña>
-    <Tipo_de_Membresia>1</Tipo_de_Membresia>
-  </Usuario>
 </ArrayOfUsuario>
