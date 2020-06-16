@@ -46,6 +46,7 @@
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.Cambiar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -207,10 +208,11 @@
             this.comboBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
             this.comboBox2.ForeColor = System.Drawing.SystemColors.Menu;
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(718, 265);
+            this.comboBox2.Location = new System.Drawing.Point(487, 263);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(225, 21);
             this.comboBox2.TabIndex = 15;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // Cambiar
             // 
@@ -224,6 +226,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.Cambiar);
             this.panel1.Controls.Add(this.comboBox2);
             this.panel1.Controls.Add(this.label8);
@@ -246,6 +249,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1264, 681);
             this.panel1.TabIndex = 18;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(805, 42);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(108, 29);
+            this.button1.TabIndex = 18;
+            this.button1.Text = "Atras";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // CambiodeCuenta
             // 
@@ -282,5 +295,6 @@
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Button Cambiar;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button button1;
     }
 }
