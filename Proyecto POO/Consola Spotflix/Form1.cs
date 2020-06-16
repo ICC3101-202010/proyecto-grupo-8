@@ -45,8 +45,7 @@ namespace Consola_Spotflix
                 {
                     Spotflix.Lista_perfilesenlinea.Add(p);
                     b += 1;
-                    Usuario u = p.Usuario_Asociado;
-                    Spotflix.usuarioenlinea = u;
+                    
                 }
             }
             int c = 0;
@@ -54,6 +53,9 @@ namespace Consola_Spotflix
             {
                 if (u.Email==email && u.Contraseña == contraseña)
                 {
+                    Usuario u2 = u;
+                    Spotflix.usuarioenlinea = u2;
+                    MessageBox.Show(Spotflix.usuarioenlinea.Nombre);
                     c += 1;
                     Usuarionoencontrado.Hide();
                     perfiles1.loadPerfiles(b);

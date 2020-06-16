@@ -84,6 +84,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="InfoPerfil.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InfoPerfil.Designer.cs">
+      <DependentUpon>InfoPerfil.cs</DependentUpon>
+    </Compile>
     <Compile Include="Informacion.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -134,6 +140,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoPerfil.resx">
+      <DependentUpon>InfoPerfil.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Informacion.resx">
       <DependentUpon>Informacion.cs</DependentUpon>
