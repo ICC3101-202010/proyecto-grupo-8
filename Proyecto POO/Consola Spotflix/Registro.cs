@@ -19,6 +19,7 @@ namespace Consola_Spotflix
         public static CrearCuenta Crear_Cuenta;
         public static Buscador bubusc1;
         public static Archivo Crear_Archivo;
+        public static CambiodeCuenta CambiodeCuenta;
 
 
 

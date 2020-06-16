@@ -16,6 +16,7 @@ namespace Consola_Spotflix
         public CambiodeCuenta()
         {
             InitializeComponent();
+            Registro.CambiodeCuenta = this;
         }
 
         private void CambiodeCuenta_Load(object sender, EventArgs e)

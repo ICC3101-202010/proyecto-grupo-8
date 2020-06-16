@@ -396,7 +396,8 @@ namespace Consola_Spotflix
 
         private void button_Cambio_de_Cuenta_Click(object sender, EventArgs e)
         {
-           
+            Registro.CambiodeCuenta.Show();
+            Registro.CambiodeCuenta.BringToFront();
         }
 
         private void button_Crear_Playlist_Click(object sender, EventArgs e)
