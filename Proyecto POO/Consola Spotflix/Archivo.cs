@@ -77,6 +77,7 @@ namespace Consola_Spotflix
             {
                 label_Cantante_1.Text = "Cantante 1:";
                 Cantantes1.Show();
+                label_Cantante_1.Show();
                 button_Agregar_Segundo_cantante.Show();
                 label_Cantante_2.Text = "Cantante 2:";
                 button_Crear_Persona.Show();
@@ -87,6 +88,7 @@ namespace Consola_Spotflix
                 label_compositor_2.Text = "Compositor 2:";
                 label_album.Text = "Album:";
                 label_album.Show();
+                textBox_Album.Show();
                 label_Imagen.Text = "Imagen:";
                 textBox_Imagen.Show();
                 button_Examinar_Imagen.Show();

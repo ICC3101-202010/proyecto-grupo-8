@@ -147,6 +147,7 @@
             this.panel_Agregar_Archivo.Controls.Add(this.comboBox_Calificacion);
             this.panel_Agregar_Archivo.Controls.Add(this.comboBoxIdioma);
             this.panel_Agregar_Archivo.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel_Agregar_Archivo.ForeColor = System.Drawing.SystemColors.Menu;
             this.panel_Agregar_Archivo.Location = new System.Drawing.Point(0, 0);
             this.panel_Agregar_Archivo.Name = "panel_Agregar_Archivo";
             this.panel_Agregar_Archivo.Size = new System.Drawing.Size(627, 681);
@@ -250,7 +251,6 @@
             this.label_Letra.Size = new System.Drawing.Size(34, 13);
             this.label_Letra.TabIndex = 62;
             this.label_Letra.Text = "Letra:";
-            this.label_Letra.Visible = false;
             // 
             // label3
             // 
@@ -283,6 +283,7 @@
             // button_Limpiar_Agregar_Archivo
             // 
             this.button_Limpiar_Agregar_Archivo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button_Limpiar_Agregar_Archivo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
             this.button_Limpiar_Agregar_Archivo.Location = new System.Drawing.Point(186, 612);
             this.button_Limpiar_Agregar_Archivo.Name = "button_Limpiar_Agregar_Archivo";
             this.button_Limpiar_Agregar_Archivo.Size = new System.Drawing.Size(105, 50);
@@ -295,6 +296,7 @@
             // button_Agregar_Archivo
             // 
             this.button_Agregar_Archivo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button_Agregar_Archivo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
             this.button_Agregar_Archivo.Location = new System.Drawing.Point(296, 612);
             this.button_Agregar_Archivo.Name = "button_Agregar_Archivo";
             this.button_Agregar_Archivo.Size = new System.Drawing.Size(105, 50);
@@ -326,7 +328,6 @@
             this.label_Genero.Size = new System.Drawing.Size(45, 13);
             this.label_Genero.TabIndex = 59;
             this.label_Genero.Text = "Genero:";
-            this.label_Genero.Visible = false;
             // 
             // textBox_Imagen
             // 
@@ -350,7 +351,6 @@
             this.label_Imagen.Size = new System.Drawing.Size(45, 13);
             this.label_Imagen.TabIndex = 57;
             this.label_Imagen.Text = "Imagen:";
-            this.label_Imagen.Visible = false;
             // 
             // textBox_Album
             // 
@@ -433,6 +433,7 @@
             // button_Atras_Agregar_archivo
             // 
             this.button_Atras_Agregar_archivo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button_Atras_Agregar_archivo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
             this.button_Atras_Agregar_archivo.Location = new System.Drawing.Point(27, 23);
             this.button_Atras_Agregar_archivo.Name = "button_Atras_Agregar_archivo";
             this.button_Atras_Agregar_archivo.Size = new System.Drawing.Size(106, 40);
