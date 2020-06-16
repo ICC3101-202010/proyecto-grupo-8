@@ -149,6 +149,7 @@ namespace Consola_Spotflix
                 {
                     Nombre_Cancion.Text = Spotflix.Temporal_Info_Ca[i].Titulo;
                     Nombre_Artista.Text = Spotflix.Temporal_Info_Ca[i].Cantante[0].Nombre_y_Apellido;
+                    //pictureBox.Image.
                     Spotflix.Temporal_Info_Ca[i].Duracion = TimeSpan.Parse(axWindowsMediaPlayer1.currentMedia.durationString);
                     break;
                 }
@@ -233,6 +234,7 @@ namespace Consola_Spotflix
                     if (tipo == 1)
                     {
                         Cancion_Artista_Ca();
+
                     }
                     else if (tipo == 2)
                     {

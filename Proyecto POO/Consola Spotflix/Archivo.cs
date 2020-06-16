@@ -71,6 +71,8 @@ namespace Consola_Spotflix
             label_Direccion_Archivo.Show();
             textBox_Direccion.Show();
             button_Examinar_Direccion.Show();
+            button_Agregar_Archivo.Show();
+            button_Limpiar.Show();
             if (comboBox_Categorias.SelectedItem.ToString() =="Cancion")
             {
                 label_Cantante_1.Text = "Cantante 1:";

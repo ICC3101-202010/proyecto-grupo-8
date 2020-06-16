@@ -67,6 +67,8 @@
             this.comboBox_Categorias = new System.Windows.Forms.ComboBox();
             this.label_categoria = new System.Windows.Forms.Label();
             this.label1_Agregar_Archivo = new System.Windows.Forms.Label();
+            this.comboBox_Calificacion = new System.Windows.Forms.ComboBox();
+            this.comboBoxIdioma = new System.Windows.Forms.ComboBox();
             this.panel_Agregar_Persona = new System.Windows.Forms.Panel();
             this.button_Atras_Agregar_persona = new System.Windows.Forms.Button();
             this.label_Fecha_Nacimiento = new System.Windows.Forms.Label();
@@ -87,8 +89,6 @@
             this.label_Sexo = new System.Windows.Forms.Label();
             this.label_Nombre_Persona = new System.Windows.Forms.Label();
             this.label_Persona = new System.Windows.Forms.Label();
-            this.comboBox_Calificacion = new System.Windows.Forms.ComboBox();
-            this.comboBoxIdioma = new System.Windows.Forms.ComboBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.panel1.SuspendLayout();
             this.panel_Agregar_Archivo.SuspendLayout();
@@ -242,7 +242,7 @@
             // 
             // label_Letra
             // 
-            this.label_Letra.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label_Letra.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label_Letra.AutoSize = true;
             this.label_Letra.ForeColor = System.Drawing.SystemColors.Menu;
             this.label_Letra.Location = new System.Drawing.Point(108, 569);
@@ -624,6 +624,42 @@
             this.label1_Agregar_Archivo.TabIndex = 0;
             this.label1_Agregar_Archivo.Text = "Agregar Archivo:";
             // 
+            // comboBox_Calificacion
+            // 
+            this.comboBox_Calificacion.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.comboBox_Calificacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.comboBox_Calificacion.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.comboBox_Calificacion.ForeColor = System.Drawing.SystemColors.Menu;
+            this.comboBox_Calificacion.FormattingEnabled = true;
+            this.comboBox_Calificacion.Items.AddRange(new object[] {
+            "AA",
+            "A",
+            "B",
+            "C",
+            "D"});
+            this.comboBox_Calificacion.Location = new System.Drawing.Point(186, 456);
+            this.comboBox_Calificacion.Name = "comboBox_Calificacion";
+            this.comboBox_Calificacion.Size = new System.Drawing.Size(215, 21);
+            this.comboBox_Calificacion.TabIndex = 70;
+            this.comboBox_Calificacion.Visible = false;
+            // 
+            // comboBoxIdioma
+            // 
+            this.comboBoxIdioma.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.comboBoxIdioma.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.comboBoxIdioma.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.comboBoxIdioma.ForeColor = System.Drawing.SystemColors.Menu;
+            this.comboBoxIdioma.FormattingEnabled = true;
+            this.comboBoxIdioma.Items.AddRange(new object[] {
+            "Español",
+            "Ingles",
+            "Portugues"});
+            this.comboBoxIdioma.Location = new System.Drawing.Point(186, 404);
+            this.comboBoxIdioma.Name = "comboBoxIdioma";
+            this.comboBoxIdioma.Size = new System.Drawing.Size(215, 21);
+            this.comboBoxIdioma.TabIndex = 71;
+            this.comboBoxIdioma.Visible = false;
+            // 
             // panel_Agregar_Persona
             // 
             this.panel_Agregar_Persona.Controls.Add(this.button_Atras_Agregar_persona);
@@ -890,41 +926,6 @@
             this.label_Persona.Size = new System.Drawing.Size(201, 29);
             this.label_Persona.TabIndex = 18;
             this.label_Persona.Text = "Agregar Persona:";
-            // 
-            // comboBox_Calificacion
-            // 
-            this.comboBox_Calificacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
-            this.comboBox_Calificacion.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.comboBox_Calificacion.ForeColor = System.Drawing.SystemColors.Menu;
-            this.comboBox_Calificacion.FormattingEnabled = true;
-            this.comboBox_Calificacion.Items.AddRange(new object[] {
-            "AA",
-            "A",
-            "B",
-            "C",
-            "D"});
-            this.comboBox_Calificacion.Location = new System.Drawing.Point(186, 456);
-            this.comboBox_Calificacion.Name = "comboBox_Calificacion";
-            this.comboBox_Calificacion.Size = new System.Drawing.Size(215, 21);
-            this.comboBox_Calificacion.TabIndex = 70;
-            this.comboBox_Calificacion.Visible = false;
-            // 
-            // comboBoxIdioma
-            // 
-            this.comboBoxIdioma.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboBoxIdioma.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
-            this.comboBoxIdioma.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.comboBoxIdioma.ForeColor = System.Drawing.SystemColors.Menu;
-            this.comboBoxIdioma.FormattingEnabled = true;
-            this.comboBoxIdioma.Items.AddRange(new object[] {
-            "Español",
-            "Ingles",
-            "Portugues"});
-            this.comboBoxIdioma.Location = new System.Drawing.Point(186, 404);
-            this.comboBoxIdioma.Name = "comboBoxIdioma";
-            this.comboBoxIdioma.Size = new System.Drawing.Size(215, 21);
-            this.comboBoxIdioma.TabIndex = 71;
-            this.comboBoxIdioma.Visible = false;
             // 
             // openFileDialog1
             // 
