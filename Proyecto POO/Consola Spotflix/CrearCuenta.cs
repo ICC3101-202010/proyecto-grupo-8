@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Proyecto_POO;
 using System.Threading;
+using System.IO;
+using System.Xml.Serialization;
 
 namespace Consola_Spotflix
 {
@@ -137,6 +139,20 @@ namespace Consola_Spotflix
                 Usuario us1 = new Usuario(nombre1, apellido, dt, sexo, pais, email, contraseña, membb);
                 Spotflix.Lista_Usuarios.Add(us1);
                 MessageBox.Show("Tu usuario " + nombre1 + " ha sido creado!");
+                //Serializar la info de perfil.
+                using (Stream fs1 = new FileStream(Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + @"\Informacion\Perfiles\Data_Perfiles.xml", FileMode.Create,
+                    FileAccess.Write, FileShare.None))
+                {
+                    XmlSerializer serializer = new XmlSerializer(typeof(List<Perfil>));
+                    serializer.Serialize(fs1, Spotflix.Lista_Perfiles);
+                }
+                //Serializar la info de usuario
+                using (Stream fs2 = new FileStream(Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + @"\Informacion\Usuarios\Data_Usuarios.xml", FileMode.Create,
+                    FileAccess.Write, FileShare.None))
+                {
+                    XmlSerializer serializer = new XmlSerializer(typeof(List<Usuario>));
+                    serializer.Serialize(fs2, Spotflix.Lista_Usuarios);
+                }
                 ALMENU();
 
             }

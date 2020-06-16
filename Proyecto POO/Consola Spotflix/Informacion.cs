@@ -19,6 +19,7 @@ namespace Consola_Spotflix
     {
         public Informacion()
         {
+
             InitializeComponent();
             Registro.Informacion = this;
         }

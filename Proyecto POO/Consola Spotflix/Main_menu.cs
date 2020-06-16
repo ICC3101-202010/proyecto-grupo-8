@@ -13,6 +13,8 @@ using WMPLib;
 using Proyecto_POO;
 using System.Threading;
 using System.Security.AccessControl;
+using System.Xml.Serialization;
+using System.IO;
 
 namespace Consola_Spotflix
 {
@@ -356,6 +358,38 @@ namespace Consola_Spotflix
 
         private void button_Informacion_Click(object sender, EventArgs e)
         {
+            Spotflix.Lista_Perfiles = null;
+            Spotflix.Lista_Usuarios = null;
+
+            //Deserializar info perfil
+
+            XmlSerializer serializer1 = new XmlSerializer(typeof(List<Perfil>));
+            using (FileStream fs3 = File.OpenRead(Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + @"\Informacion\Perfiles\Data_Perfiles.xml"))
+            {
+                Spotflix.Lista_Perfiles = (List<Perfil>)serializer1.Deserialize(fs3);
+            }
+            ////Deserializar info perfil
+            XmlSerializer serializer2 = new XmlSerializer(typeof(List<Usuario>));
+            using (FileStream fs3 = File.OpenRead(Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + @"\Informacion\Usuarios\Data_Usuarios.xml"))
+            {
+                Spotflix.Lista_Usuarios = (List<Usuario>)serializer2.Deserialize(fs3);
+            }
+            //Serializar la info de perfil.
+            using (Stream fs1 = new FileStream(Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + @"\Informacion\Perfiles\Data_Perfiles.xml", FileMode.Create,
+                FileAccess.Write, FileShare.None))
+            {
+                XmlSerializer serializer = new XmlSerializer(typeof(List<Perfil>));
+                serializer.Serialize(fs1, Spotflix.Lista_Perfiles);
+            }
+            //Serializar la info de usuario
+            using (Stream fs2 = new FileStream(Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + @"\Informacion\Usuarios\Data_Usuarios.xml", FileMode.Create,
+                FileAccess.Write, FileShare.None))
+            {
+                XmlSerializer serializer = new XmlSerializer(typeof(List<Usuario>));
+                serializer.Serialize(fs2, Spotflix.Lista_Usuarios);
+            }
+
+
             Registro.Informacion.Show();
             Registro.Informacion.BringToFront();
         }
