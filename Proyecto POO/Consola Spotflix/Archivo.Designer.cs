@@ -586,6 +586,7 @@
             this.comboBox_Categorias.Name = "comboBox_Categorias";
             this.comboBox_Categorias.Size = new System.Drawing.Size(215, 21);
             this.comboBox_Categorias.TabIndex = 2;
+            this.comboBox_Categorias.SelectedIndexChanged += new System.EventHandler(this.comboBox_Categorias_SelectedIndexChanged);
             // 
             // label_categoria
             // 

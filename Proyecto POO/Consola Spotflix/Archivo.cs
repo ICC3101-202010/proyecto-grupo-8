@@ -50,5 +50,13 @@ namespace Consola_Spotflix
             panel_Agregar_Persona.Show();
             panel_Agregar_Persona.Dock = DockStyle.Fill;
         }
+
+        private void comboBox_Categorias_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBox_Categorias.SelectedItem =="Canciones")
+            {
+
+            }
+        }
     }
 }

@@ -130,9 +130,9 @@
             this.panel1.Controls.Add(this.axWindowsMediaPlayer1);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(245, 31);
+            this.panel1.Location = new System.Drawing.Point(150, 31);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(885, 626);
+            this.panel1.Size = new System.Drawing.Size(980, 626);
             this.panel1.TabIndex = 0;
             // 
             // axWindowsMediaPlayer1
@@ -142,7 +142,7 @@
             this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(0, 0);
             this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
             this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
-            this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(885, 433);
+            this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(980, 433);
             this.axWindowsMediaPlayer1.TabIndex = 2;
             // 
             // panel3
@@ -152,7 +152,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel3.Location = new System.Drawing.Point(0, 433);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(885, 193);
+            this.panel3.Size = new System.Drawing.Size(980, 193);
             this.panel3.TabIndex = 1;
             // 
             // playlist_Perfil_En_Linea1
@@ -165,7 +165,7 @@
             this.playlist_Perfil_En_Linea1.Location = new System.Drawing.Point(0, 0);
             this.playlist_Perfil_En_Linea1.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.playlist_Perfil_En_Linea1.Name = "playlist_Perfil_En_Linea1";
-            this.playlist_Perfil_En_Linea1.Size = new System.Drawing.Size(885, 193);
+            this.playlist_Perfil_En_Linea1.Size = new System.Drawing.Size(980, 193);
             this.playlist_Perfil_En_Linea1.TabIndex = 0;
             this.playlist_Perfil_En_Linea1.Load += new System.EventHandler(this.playlist_Perfil_En_Linea1_Load);
             // 
@@ -352,9 +352,9 @@
             // 
             this.panel2.Controls.Add(this.panel6);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(245, 663);
+            this.panel2.Location = new System.Drawing.Point(150, 663);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(885, 54);
+            this.panel2.Size = new System.Drawing.Size(980, 54);
             this.panel2.TabIndex = 4;
             // 
             // panel6
@@ -369,13 +369,13 @@
             this.panel6.Controls.Add(this.panel7);
             this.panel6.Location = new System.Drawing.Point(75, 0);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(722, 57);
+            this.panel6.Size = new System.Drawing.Size(817, 57);
             this.panel6.TabIndex = 7;
             // 
             // button_Adelantar
             // 
             this.button_Adelantar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button_Adelantar.Location = new System.Drawing.Point(356, 0);
+            this.button_Adelantar.Location = new System.Drawing.Point(403, 0);
             this.button_Adelantar.Name = "button_Adelantar";
             this.button_Adelantar.Size = new System.Drawing.Size(71, 31);
             this.button_Adelantar.TabIndex = 3;
@@ -386,7 +386,7 @@
             // button_Retroceder
             // 
             this.button_Retroceder.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button_Retroceder.Location = new System.Drawing.Point(202, 0);
+            this.button_Retroceder.Location = new System.Drawing.Point(249, 0);
             this.button_Retroceder.Name = "button_Retroceder";
             this.button_Retroceder.Size = new System.Drawing.Size(71, 31);
             this.button_Retroceder.TabIndex = 4;
@@ -397,7 +397,7 @@
             // button_PlayPausa
             // 
             this.button_PlayPausa.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button_PlayPausa.Location = new System.Drawing.Point(279, 0);
+            this.button_PlayPausa.Location = new System.Drawing.Point(326, 0);
             this.button_PlayPausa.Name = "button_PlayPausa";
             this.button_PlayPausa.Size = new System.Drawing.Size(71, 31);
             this.button_PlayPausa.TabIndex = 8;
@@ -414,14 +414,14 @@
             this.panel7.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel7.Location = new System.Drawing.Point(0, 32);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(722, 25);
+            this.panel7.Size = new System.Drawing.Size(817, 25);
             this.panel7.TabIndex = 8;
             // 
             // label_Tiempo_Fin
             // 
             this.label_Tiempo_Fin.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label_Tiempo_Fin.ForeColor = System.Drawing.SystemColors.MenuBar;
-            this.label_Tiempo_Fin.Location = new System.Drawing.Point(679, 6);
+            this.label_Tiempo_Fin.Location = new System.Drawing.Point(774, 6);
             this.label_Tiempo_Fin.Name = "label_Tiempo_Fin";
             this.label_Tiempo_Fin.Size = new System.Drawing.Size(43, 15);
             this.label_Tiempo_Fin.TabIndex = 7;
@@ -447,7 +447,7 @@
             this.trackBar_Duracion.MaximumSize = new System.Drawing.Size(10000, 24);
             this.trackBar_Duracion.MinimumSize = new System.Drawing.Size(549, 24);
             this.trackBar_Duracion.Name = "trackBar_Duracion";
-            this.trackBar_Duracion.Size = new System.Drawing.Size(633, 24);
+            this.trackBar_Duracion.Size = new System.Drawing.Size(728, 24);
             this.trackBar_Duracion.TabIndex = 0;
             this.trackBar_Duracion.TickStyle = System.Windows.Forms.TickStyle.None;
             this.trackBar_Duracion.ValueChanged += new System.EventHandler(this.trackBar_Duracion_ValueChanged);
@@ -526,7 +526,7 @@
             this.buscarToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(242, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(147, 28);
             this.menuStrip1.TabIndex = 8;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -544,26 +544,26 @@
             // nuevoToolStripMenuItem
             // 
             this.nuevoToolStripMenuItem.Name = "nuevoToolStripMenuItem";
-            this.nuevoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.nuevoToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
             this.nuevoToolStripMenuItem.Text = "Nuevo";
             this.nuevoToolStripMenuItem.Click += new System.EventHandler(this.nuevoToolStripMenuItem_Click);
             // 
             // editarToolStripMenuItem
             // 
             this.editarToolStripMenuItem.Name = "editarToolStripMenuItem";
-            this.editarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.editarToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
             this.editarToolStripMenuItem.Text = "Editar";
             // 
             // descargarToolStripMenuItem
             // 
             this.descargarToolStripMenuItem.Name = "descargarToolStripMenuItem";
-            this.descargarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.descargarToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
             this.descargarToolStripMenuItem.Text = "Descargar";
             // 
             // eliminarToolStripMenuItem
             // 
             this.eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
-            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
             this.eliminarToolStripMenuItem.Text = "Eliminar";
             // 
             // buscarToolStripMenuItem
