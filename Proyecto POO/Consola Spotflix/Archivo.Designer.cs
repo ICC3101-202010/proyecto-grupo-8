@@ -157,6 +157,7 @@
             // 
             this.Compositor2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Compositor2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.Compositor2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Compositor2.ForeColor = System.Drawing.SystemColors.Menu;
             this.Compositor2.FormattingEnabled = true;
             this.Compositor2.Location = new System.Drawing.Point(186, 382);
@@ -169,6 +170,7 @@
             // 
             this.Compositor1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Compositor1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.Compositor1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Compositor1.ForeColor = System.Drawing.SystemColors.Menu;
             this.Compositor1.FormattingEnabled = true;
             this.Compositor1.Location = new System.Drawing.Point(186, 357);
@@ -181,6 +183,7 @@
             // 
             this.Cantantes2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Cantantes2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.Cantantes2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Cantantes2.ForeColor = System.Drawing.SystemColors.Menu;
             this.Cantantes2.FormattingEnabled = true;
             this.Cantantes2.Location = new System.Drawing.Point(186, 330);
@@ -193,6 +196,7 @@
             // 
             this.Cantantes1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Cantantes1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.Cantantes1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Cantantes1.ForeColor = System.Drawing.SystemColors.Menu;
             this.Cantantes1.FormattingEnabled = true;
             this.Cantantes1.Location = new System.Drawing.Point(186, 301);
@@ -251,6 +255,7 @@
             this.label_Letra.Size = new System.Drawing.Size(34, 13);
             this.label_Letra.TabIndex = 62;
             this.label_Letra.Text = "Letra:";
+            this.label_Letra.Visible = false;
             // 
             // label3
             // 
@@ -328,6 +333,7 @@
             this.label_Genero.Size = new System.Drawing.Size(45, 13);
             this.label_Genero.TabIndex = 59;
             this.label_Genero.Text = "Genero:";
+            this.label_Genero.Visible = false;
             // 
             // textBox_Imagen
             // 
@@ -351,6 +357,7 @@
             this.label_Imagen.Size = new System.Drawing.Size(45, 13);
             this.label_Imagen.TabIndex = 57;
             this.label_Imagen.Text = "Imagen:";
+            this.label_Imagen.Visible = false;
             // 
             // textBox_Album
             // 
@@ -587,6 +594,7 @@
             // 
             this.comboBox_Categorias.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.comboBox_Categorias.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.comboBox_Categorias.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox_Categorias.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.comboBox_Categorias.ForeColor = System.Drawing.SystemColors.Menu;
             this.comboBox_Categorias.FormattingEnabled = true;

@@ -91,6 +91,9 @@ namespace Consola_Spotflix
                 textBox_Album.Show();
                 label_Imagen.Text = "Imagen:";
                 textBox_Imagen.Show();
+                label_Imagen.Show();
+                label_Genero.Show();
+                label_Letra.Show();
                 button_Examinar_Imagen.Show();
                 label_Genero.Text = "Genero:";
                 textBox_Genero.Show();
