@@ -245,7 +245,7 @@ namespace Consola_Spotflix
         {
             try
             {
-                if (comboBox_Categorias.SelectedItem.ToString() == "Canciones")
+                if (comboBox_Categorias.SelectedItem.ToString() == "Cancion")
                 {
                     listas(1, 2);
                     Spotflix.Lista_Canciones.Add(new Cancion(textBox_Titulo.Text, 1, Convert.ToDateTime(textBox_año.Text), TimeSpan.Zero, 10, 0, direccion_archivo, Cantantes, Compositores, textBox_Album.Text, direccion_imagen, direccion_letra, textBox_Genero.Text));
