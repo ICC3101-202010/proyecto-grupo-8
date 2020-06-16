@@ -9,8 +9,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Proyecto_POO;
 using Consola_Spotflix;
-using System.IO;
-using System.Xml.Serialization;
 
 namespace Proyecto_POO
 {
@@ -24,11 +22,13 @@ namespace Proyecto_POO
             InitializeComponent();
             Registro.np1=this;
         }
+        
 
         private void NombrePerfil_TextChanged(object sender, EventArgs e)
         {
            nombreperfil = NombrePerfil.Text;
         }
+
 
         private void comboTipoPerfil_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -66,20 +66,6 @@ namespace Proyecto_POO
                 Spotflix.Lista_Perfiles.Add(p1);
                 Spotflix.Lista_perfilesenlinea.Add(p1);
                 MessageBox.Show("Tu perfil " + nombreperfil + " ha sido añadido a tu cuenta!");
-                //Serializar la info de perfil.
-                using (Stream fs1 = new FileStream(Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + @"\Informacion\Perfiles\Data_Perfiles.xml", FileMode.Create,
-                    FileAccess.Write, FileShare.None))
-                {
-                    XmlSerializer serializer = new XmlSerializer(typeof(List<Perfil>));
-                    serializer.Serialize(fs1, Spotflix.Lista_Perfiles);
-                }
-                //Serializar la info de usuario
-                using (Stream fs2 = new FileStream(Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + @"\Informacion\Usuarios\Data_Usuarios.xml", FileMode.Create,
-                    FileAccess.Write, FileShare.None))
-                {
-                    XmlSerializer serializer = new XmlSerializer(typeof(List<Usuario>));
-                    serializer.Serialize(fs2, Spotflix.Lista_Usuarios);
-                }
             }
             else
             {

@@ -183,7 +183,6 @@ namespace Consola_Spotflix
 
 
 
-
             //Deserializar info perfil
 
             XmlSerializer serializer1 = new XmlSerializer(typeof(List<Perfil>));
