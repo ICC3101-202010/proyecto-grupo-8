@@ -40,7 +40,7 @@ namespace Consola_Spotflix
                 {      
                     if (p.Usuario_Asociado.Contraseña == contraseña)
                     {
-                        listBox1.Items.Add(p.Nombre_perfil + " Tipo de perfil: " + (enum_TipoDePerfil)p.Tipo_de_Perfil + " Usuario Asociado: " + p.Usuario_Asociado.Nombre);
+                        listBox1.Items.Add(p.Nombre_perfil + ", Tipo de perfil: Publico, Usuario Asociado: " + p.Usuario_Asociado.Nombre);
                     }
                 }
                 a += 1;

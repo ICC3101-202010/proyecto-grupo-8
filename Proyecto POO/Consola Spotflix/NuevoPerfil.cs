@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Proyecto_POO;
 using Consola_Spotflix;
+using System.IO;
+using System.Xml.Serialization;
 
 namespace Proyecto_POO
 {
@@ -66,6 +68,7 @@ namespace Proyecto_POO
                 Spotflix.Lista_Perfiles.Add(p1);
                 Spotflix.Lista_perfilesenlinea.Add(p1);
                 MessageBox.Show("Tu perfil " + nombreperfil + " ha sido añadido a tu cuenta!");
+                //Serializar la info de perfil.
             }
             else
             {
@@ -86,9 +89,10 @@ namespace Proyecto_POO
 
         private void Back_Click(object sender, EventArgs e)
         {
+            int cantperfenlinea = Spotflix.Lista_perfilesenlinea.Count();
+            MessageBox.Show(cantperfenlinea.ToString());
+            Registro.p1.loadPerfiles(cantperfenlinea);
             Hide();
-            Registro.p1.loadPerfiles(Registro.Cantidaddeperfiles(Spotflix.usuarioenlinea));
-
         }
     }
 }

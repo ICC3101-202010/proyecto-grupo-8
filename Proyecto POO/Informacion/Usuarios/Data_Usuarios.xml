@@ -10,4 +10,24 @@
     <Contraseña>ronca</Contraseña>
     <Tipo_de_Membresia>2</Tipo_de_Membresia>
   </Usuario>
+  <Usuario>
+    <Nombre>eee</Nombre>
+    <Apellido>eee</Apellido>
+    <Fecha_De_Nacimiento>1998-08-15T00:00:00</Fecha_De_Nacimiento>
+    <Sexo>1</Sexo>
+    <Pais>eee</Pais>
+    <Email>e</Email>
+    <Contraseña>e</Contraseña>
+    <Tipo_de_Membresia>1</Tipo_de_Membresia>
+  </Usuario>
+  <Usuario>
+    <Nombre>Camila</Nombre>
+    <Apellido>Villalobos</Apellido>
+    <Fecha_De_Nacimiento>1998-09-16T00:00:00</Fecha_De_Nacimiento>
+    <Sexo>2</Sexo>
+    <Pais>Chile</Pais>
+    <Email>camils@spotflix.com</Email>
+    <Contraseña>camils</Contraseña>
+    <Tipo_de_Membresia>1</Tipo_de_Membresia>
+  </Usuario>
 </ArrayOfUsuario>

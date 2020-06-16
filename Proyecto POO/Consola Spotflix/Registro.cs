@@ -10,6 +10,7 @@ namespace Consola_Spotflix
 {
     public static class Registro
     {
+        public static InfoPerfil Infoperf;
         public static Main_menu mm1;
         public static NuevoPerfil np1;
         public static Perfiles p1;
@@ -20,6 +21,7 @@ namespace Consola_Spotflix
         public static Buscador bubusc1;
         public static Archivo Crear_Archivo;
         public static CambiodeCuenta CambiodeCuenta;
+        public static Playlist_Perfil_En_Linea ppel;
 
         public static List<Persona> cantantes()
         {

@@ -40,11 +40,12 @@ namespace Consola_Spotflix
             //cantidad de perfiles
             foreach (Perfil p in Spotflix.Lista_Perfiles)
             {
+
                 if (p.Usuario_Asociado.Email == email && p.Usuario_Asociado.Contraseña == contraseña)
                 {
                     Spotflix.Lista_perfilesenlinea.Add(p);
                     b += 1;
-                    Spotflix.usuarioenlinea = p.Usuario_Asociado;
+                    
                 }
             }
             int c = 0;
@@ -52,6 +53,8 @@ namespace Consola_Spotflix
             {
                 if (u.Email==email && u.Contraseña == contraseña)
                 {
+                    Usuario u2 = u;
+                    Spotflix.usuarioenlinea = u2;
                     c += 1;
                     Usuarionoencontrado.Hide();
                     perfiles1.loadPerfiles(b);
