@@ -24,9 +24,9 @@ namespace Consola_Spotflix
         {
 
         }
-
-        private void CrearPlaylist_Load(object sender, EventArgs e)
+        public void cargarCrearPlaylists()
         {
+            Show();
             comboBoxTipoMulti.Items.Add("Canciones");
             comboBoxTipoMulti.Items.Add("Videos");
             comboBoxTipoMulti.Items.Add("Peliculas");
@@ -36,6 +36,9 @@ namespace Consola_Spotflix
             comboBoxPrivacidad.Items.Add("Privada");
             label5.Hide();
         }
+        private void CrearPlaylist_Load(object sender, EventArgs e)
+        {
+        }
         int a = 0;
 
         private void botonCrear_Click(object sender, EventArgs e)
@@ -44,7 +47,6 @@ namespace Consola_Spotflix
             a += 1;
             if (a%2 == 0)
             {
-                Show();
                 string nombre = textBoxnombre.Text;
                 tipoperfil = (string)comboBoxPrivacidad.SelectedItem;
 
@@ -92,11 +94,11 @@ namespace Consola_Spotflix
 
         private void botonAtras_Click(object sender, EventArgs e)
         {
-            Hide();
             textBoxnombre.Clear();
             comboBoxPrivacidad.Items.Clear();
             comboBoxTipoMulti.Items.Clear();
-            
+            Registro.ppel.Iniciar();
+            Hide();
         }
     }
 }
