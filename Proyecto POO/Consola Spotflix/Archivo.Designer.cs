@@ -45,14 +45,18 @@
             this.textBox_Album = new System.Windows.Forms.TextBox();
             this.label_album = new System.Windows.Forms.Label();
             this.button2_Crear_Persona = new System.Windows.Forms.Button();
+            this.textBox_Compositor_2 = new System.Windows.Forms.TextBox();
             this.buttonAgregar_segundo_compositor = new System.Windows.Forms.Button();
             this.label_compositor_2 = new System.Windows.Forms.Label();
             this.label_Compositor_1 = new System.Windows.Forms.Label();
+            this.textBox_Comositor_1 = new System.Windows.Forms.TextBox();
             this.button_Atras_Agregar_archivo = new System.Windows.Forms.Button();
             this.button_Crear_Persona = new System.Windows.Forms.Button();
+            this.textBox_Cantante_2 = new System.Windows.Forms.TextBox();
             this.button_Agregar_Segundo_cantante = new System.Windows.Forms.Button();
             this.label_Cantante_2 = new System.Windows.Forms.Label();
             this.label_Cantante_1 = new System.Windows.Forms.Label();
+            this.textBox_Cantante_1 = new System.Windows.Forms.TextBox();
             this.button_Examinar_Direccion = new System.Windows.Forms.Button();
             this.textBox_Direccion = new System.Windows.Forms.TextBox();
             this.label_Direccion_Archivo = new System.Windows.Forms.Label();
@@ -83,10 +87,6 @@
             this.label_Sexo = new System.Windows.Forms.Label();
             this.label_Nombre_Persona = new System.Windows.Forms.Label();
             this.label_Persona = new System.Windows.Forms.Label();
-            this.Cantantes1 = new System.Windows.Forms.ComboBox();
-            this.Cantantes2 = new System.Windows.Forms.ComboBox();
-            this.Compositor1 = new System.Windows.Forms.ComboBox();
-            this.Compositor2 = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panel_Agregar_Archivo.SuspendLayout();
             this.panel_Agregar_Persona.SuspendLayout();
@@ -104,10 +104,6 @@
             // 
             // panel_Agregar_Archivo
             // 
-            this.panel_Agregar_Archivo.Controls.Add(this.Compositor2);
-            this.panel_Agregar_Archivo.Controls.Add(this.Compositor1);
-            this.panel_Agregar_Archivo.Controls.Add(this.Cantantes2);
-            this.panel_Agregar_Archivo.Controls.Add(this.Cantantes1);
             this.panel_Agregar_Archivo.Controls.Add(this.label_Archivo_Creado);
             this.panel_Agregar_Archivo.Controls.Add(this.button_Examinar_Letra);
             this.panel_Agregar_Archivo.Controls.Add(this.textBox_Letra);
@@ -123,14 +119,18 @@
             this.panel_Agregar_Archivo.Controls.Add(this.textBox_Album);
             this.panel_Agregar_Archivo.Controls.Add(this.label_album);
             this.panel_Agregar_Archivo.Controls.Add(this.button2_Crear_Persona);
+            this.panel_Agregar_Archivo.Controls.Add(this.textBox_Compositor_2);
             this.panel_Agregar_Archivo.Controls.Add(this.buttonAgregar_segundo_compositor);
             this.panel_Agregar_Archivo.Controls.Add(this.label_compositor_2);
             this.panel_Agregar_Archivo.Controls.Add(this.label_Compositor_1);
+            this.panel_Agregar_Archivo.Controls.Add(this.textBox_Comositor_1);
             this.panel_Agregar_Archivo.Controls.Add(this.button_Atras_Agregar_archivo);
             this.panel_Agregar_Archivo.Controls.Add(this.button_Crear_Persona);
+            this.panel_Agregar_Archivo.Controls.Add(this.textBox_Cantante_2);
             this.panel_Agregar_Archivo.Controls.Add(this.button_Agregar_Segundo_cantante);
             this.panel_Agregar_Archivo.Controls.Add(this.label_Cantante_2);
             this.panel_Agregar_Archivo.Controls.Add(this.label_Cantante_1);
+            this.panel_Agregar_Archivo.Controls.Add(this.textBox_Cantante_1);
             this.panel_Agregar_Archivo.Controls.Add(this.button_Examinar_Direccion);
             this.panel_Agregar_Archivo.Controls.Add(this.textBox_Direccion);
             this.panel_Agregar_Archivo.Controls.Add(this.label_Direccion_Archivo);
@@ -332,6 +332,18 @@
             this.button2_Crear_Persona.Visible = false;
             this.button2_Crear_Persona.Click += new System.EventHandler(this.button2_Crear_Persona_Click);
             // 
+            // textBox_Compositor_2
+            // 
+            this.textBox_Compositor_2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox_Compositor_2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.textBox_Compositor_2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox_Compositor_2.ForeColor = System.Drawing.SystemColors.Menu;
+            this.textBox_Compositor_2.Location = new System.Drawing.Point(186, 379);
+            this.textBox_Compositor_2.Name = "textBox_Compositor_2";
+            this.textBox_Compositor_2.Size = new System.Drawing.Size(215, 20);
+            this.textBox_Compositor_2.TabIndex = 53;
+            this.textBox_Compositor_2.Visible = false;
+            // 
             // buttonAgregar_segundo_compositor
             // 
             this.buttonAgregar_segundo_compositor.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -371,6 +383,18 @@
             this.label_Compositor_1.Text = "Compositor 1:";
             this.label_Compositor_1.Visible = false;
             // 
+            // textBox_Comositor_1
+            // 
+            this.textBox_Comositor_1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox_Comositor_1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.textBox_Comositor_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox_Comositor_1.ForeColor = System.Drawing.SystemColors.Menu;
+            this.textBox_Comositor_1.Location = new System.Drawing.Point(186, 354);
+            this.textBox_Comositor_1.Name = "textBox_Comositor_1";
+            this.textBox_Comositor_1.Size = new System.Drawing.Size(215, 20);
+            this.textBox_Comositor_1.TabIndex = 49;
+            this.textBox_Comositor_1.Visible = false;
+            // 
             // button_Atras_Agregar_archivo
             // 
             this.button_Atras_Agregar_archivo.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -396,6 +420,18 @@
             this.button_Crear_Persona.UseVisualStyleBackColor = true;
             this.button_Crear_Persona.Visible = false;
             this.button_Crear_Persona.Click += new System.EventHandler(this.button_Crear_Persona_Click);
+            // 
+            // textBox_Cantante_2
+            // 
+            this.textBox_Cantante_2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox_Cantante_2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.textBox_Cantante_2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox_Cantante_2.ForeColor = System.Drawing.SystemColors.Menu;
+            this.textBox_Cantante_2.Location = new System.Drawing.Point(186, 327);
+            this.textBox_Cantante_2.Name = "textBox_Cantante_2";
+            this.textBox_Cantante_2.Size = new System.Drawing.Size(215, 20);
+            this.textBox_Cantante_2.TabIndex = 45;
+            this.textBox_Cantante_2.Visible = false;
             // 
             // button_Agregar_Segundo_cantante
             // 
@@ -434,6 +470,18 @@
             this.label_Cantante_1.TabIndex = 40;
             this.label_Cantante_1.Text = "Cantante 1:";
             this.label_Cantante_1.Visible = false;
+            // 
+            // textBox_Cantante_1
+            // 
+            this.textBox_Cantante_1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox_Cantante_1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.textBox_Cantante_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox_Cantante_1.ForeColor = System.Drawing.SystemColors.Menu;
+            this.textBox_Cantante_1.Location = new System.Drawing.Point(186, 302);
+            this.textBox_Cantante_1.Name = "textBox_Cantante_1";
+            this.textBox_Cantante_1.Size = new System.Drawing.Size(215, 20);
+            this.textBox_Cantante_1.TabIndex = 17;
+            this.textBox_Cantante_1.Visible = false;
             // 
             // button_Examinar_Direccion
             // 
@@ -827,38 +875,6 @@
             this.label_Persona.TabIndex = 18;
             this.label_Persona.Text = "Agregar Persona:";
             // 
-            // Cantantes1
-            // 
-            this.Cantantes1.FormattingEnabled = true;
-            this.Cantantes1.Location = new System.Drawing.Point(186, 301);
-            this.Cantantes1.Name = "Cantantes1";
-            this.Cantantes1.Size = new System.Drawing.Size(121, 21);
-            this.Cantantes1.TabIndex = 66;
-            // 
-            // Cantantes2
-            // 
-            this.Cantantes2.FormattingEnabled = true;
-            this.Cantantes2.Location = new System.Drawing.Point(186, 330);
-            this.Cantantes2.Name = "Cantantes2";
-            this.Cantantes2.Size = new System.Drawing.Size(121, 21);
-            this.Cantantes2.TabIndex = 67;
-            // 
-            // Compositor1
-            // 
-            this.Compositor1.FormattingEnabled = true;
-            this.Compositor1.Location = new System.Drawing.Point(186, 357);
-            this.Compositor1.Name = "Compositor1";
-            this.Compositor1.Size = new System.Drawing.Size(121, 21);
-            this.Compositor1.TabIndex = 68;
-            // 
-            // Compositor2
-            // 
-            this.Compositor2.FormattingEnabled = true;
-            this.Compositor2.Location = new System.Drawing.Point(186, 382);
-            this.Compositor2.Name = "Compositor2";
-            this.Compositor2.Size = new System.Drawing.Size(121, 21);
-            this.Compositor2.TabIndex = 69;
-            // 
             // Archivo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -895,14 +911,18 @@
         private System.Windows.Forms.TextBox textBox_Album;
         private System.Windows.Forms.Label label_album;
         private System.Windows.Forms.Button button2_Crear_Persona;
+        private System.Windows.Forms.TextBox textBox_Compositor_2;
         private System.Windows.Forms.Button buttonAgregar_segundo_compositor;
         private System.Windows.Forms.Label label_compositor_2;
         private System.Windows.Forms.Label label_Compositor_1;
+        private System.Windows.Forms.TextBox textBox_Comositor_1;
         private System.Windows.Forms.Button button_Atras_Agregar_archivo;
         private System.Windows.Forms.Button button_Crear_Persona;
+        private System.Windows.Forms.TextBox textBox_Cantante_2;
         private System.Windows.Forms.Button button_Agregar_Segundo_cantante;
         private System.Windows.Forms.Label label_Cantante_2;
         private System.Windows.Forms.Label label_Cantante_1;
+        private System.Windows.Forms.TextBox textBox_Cantante_1;
         private System.Windows.Forms.Button button_Examinar_Direccion;
         private System.Windows.Forms.TextBox textBox_Direccion;
         private System.Windows.Forms.Label label_Direccion_Archivo;
@@ -933,9 +953,5 @@
         private System.Windows.Forms.Label label_Sexo;
         private System.Windows.Forms.Label label_Nombre_Persona;
         private System.Windows.Forms.Label label_Persona;
-        private System.Windows.Forms.ComboBox Compositor2;
-        private System.Windows.Forms.ComboBox Compositor1;
-        private System.Windows.Forms.ComboBox Cantantes2;
-        private System.Windows.Forms.ComboBox Cantantes1;
     }
 }

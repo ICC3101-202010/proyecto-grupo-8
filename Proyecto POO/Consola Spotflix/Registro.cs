@@ -21,36 +21,7 @@ namespace Consola_Spotflix
         public static Archivo Crear_Archivo;
         public static CambiodeCuenta CambiodeCuenta;
 
-        public static List<Persona> cantantes()
-        {
-            List<Persona> cantantes = new List<Persona>() ;
-            foreach (var item in Spotflix.Lista_Personas)
-            {
-                foreach (var item2 in item.Profesion)
-                {
-                    if (item2 == 1)
-                    {
-                        cantantes.Add(item);
-                    }
-                }
-            }
-            return cantantes;
-        }
-        public static List<Persona> compositores()
-        {
-            List<Persona> compositores = new List<Persona>();
-            foreach (var item in Spotflix.Lista_Personas)
-            {
-                foreach (var item2 in item.Profesion)
-                {
-                    if (item2 == 2)
-                    {
-                        compositores.Add(item);
-                    }
-                }
-            }
-            return compositores;
-        }
+
 
         public static int Cantidaddeperfiles(Usuario u)
         {

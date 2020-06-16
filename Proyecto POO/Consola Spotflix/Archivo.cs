@@ -55,16 +55,7 @@ namespace Consola_Spotflix
         {
             if (comboBox_Categorias.SelectedItem =="Canciones")
             {
-                foreach (var item in Registro.compositores())
-                {
-                    Compositor1.Items.Add(item.Nombre_y_Apellido);
-                    Compositor2.Items.Add(item.Nombre_y_Apellido);
-                }
-                foreach(var item in Registro.cantantes())
-                {
-                    Cantantes1.Items.Add(item.Nombre_y_Apellido);
-                    Cantantes2.Items.Add(item.Nombre_y_Apellido);
-                }
+
             }
         }
     }
