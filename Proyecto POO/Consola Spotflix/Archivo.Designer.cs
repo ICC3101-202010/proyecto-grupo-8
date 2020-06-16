@@ -30,6 +30,10 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel_Agregar_Archivo = new System.Windows.Forms.Panel();
+            this.Compositor2 = new System.Windows.Forms.ComboBox();
+            this.Compositor1 = new System.Windows.Forms.ComboBox();
+            this.Cantantes2 = new System.Windows.Forms.ComboBox();
+            this.Cantantes1 = new System.Windows.Forms.ComboBox();
             this.label_Archivo_Creado = new System.Windows.Forms.Label();
             this.button_Examinar_Letra = new System.Windows.Forms.Button();
             this.textBox_Letra = new System.Windows.Forms.TextBox();
@@ -83,10 +87,9 @@
             this.label_Sexo = new System.Windows.Forms.Label();
             this.label_Nombre_Persona = new System.Windows.Forms.Label();
             this.label_Persona = new System.Windows.Forms.Label();
-            this.Cantantes1 = new System.Windows.Forms.ComboBox();
-            this.Cantantes2 = new System.Windows.Forms.ComboBox();
-            this.Compositor1 = new System.Windows.Forms.ComboBox();
-            this.Compositor2 = new System.Windows.Forms.ComboBox();
+            this.comboBox_Calificacion = new System.Windows.Forms.ComboBox();
+            this.comboBoxIdioma = new System.Windows.Forms.ComboBox();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.panel1.SuspendLayout();
             this.panel_Agregar_Archivo.SuspendLayout();
             this.panel_Agregar_Persona.SuspendLayout();
@@ -141,11 +144,61 @@
             this.panel_Agregar_Archivo.Controls.Add(this.comboBox_Categorias);
             this.panel_Agregar_Archivo.Controls.Add(this.label_categoria);
             this.panel_Agregar_Archivo.Controls.Add(this.label1_Agregar_Archivo);
+            this.panel_Agregar_Archivo.Controls.Add(this.comboBox_Calificacion);
+            this.panel_Agregar_Archivo.Controls.Add(this.comboBoxIdioma);
             this.panel_Agregar_Archivo.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel_Agregar_Archivo.Location = new System.Drawing.Point(0, 0);
             this.panel_Agregar_Archivo.Name = "panel_Agregar_Archivo";
             this.panel_Agregar_Archivo.Size = new System.Drawing.Size(627, 681);
             this.panel_Agregar_Archivo.TabIndex = 49;
+            // 
+            // Compositor2
+            // 
+            this.Compositor2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Compositor2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.Compositor2.ForeColor = System.Drawing.SystemColors.Menu;
+            this.Compositor2.FormattingEnabled = true;
+            this.Compositor2.Location = new System.Drawing.Point(186, 382);
+            this.Compositor2.Name = "Compositor2";
+            this.Compositor2.Size = new System.Drawing.Size(215, 21);
+            this.Compositor2.TabIndex = 69;
+            this.Compositor2.Visible = false;
+            // 
+            // Compositor1
+            // 
+            this.Compositor1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Compositor1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.Compositor1.ForeColor = System.Drawing.SystemColors.Menu;
+            this.Compositor1.FormattingEnabled = true;
+            this.Compositor1.Location = new System.Drawing.Point(186, 357);
+            this.Compositor1.Name = "Compositor1";
+            this.Compositor1.Size = new System.Drawing.Size(215, 21);
+            this.Compositor1.TabIndex = 68;
+            this.Compositor1.Visible = false;
+            // 
+            // Cantantes2
+            // 
+            this.Cantantes2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Cantantes2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.Cantantes2.ForeColor = System.Drawing.SystemColors.Menu;
+            this.Cantantes2.FormattingEnabled = true;
+            this.Cantantes2.Location = new System.Drawing.Point(186, 330);
+            this.Cantantes2.Name = "Cantantes2";
+            this.Cantantes2.Size = new System.Drawing.Size(215, 21);
+            this.Cantantes2.TabIndex = 67;
+            this.Cantantes2.Visible = false;
+            // 
+            // Cantantes1
+            // 
+            this.Cantantes1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Cantantes1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.Cantantes1.ForeColor = System.Drawing.SystemColors.Menu;
+            this.Cantantes1.FormattingEnabled = true;
+            this.Cantantes1.Location = new System.Drawing.Point(186, 301);
+            this.Cantantes1.Name = "Cantantes1";
+            this.Cantantes1.Size = new System.Drawing.Size(215, 21);
+            this.Cantantes1.TabIndex = 66;
+            this.Cantantes1.Visible = false;
             // 
             // label_Archivo_Creado
             // 
@@ -173,6 +226,7 @@
             this.button_Examinar_Letra.Text = "Examinar";
             this.button_Examinar_Letra.UseVisualStyleBackColor = true;
             this.button_Examinar_Letra.Visible = false;
+            this.button_Examinar_Letra.Click += new System.EventHandler(this.button_Examinar_Letra_Click);
             // 
             // textBox_Letra
             // 
@@ -188,14 +242,14 @@
             // 
             // label_Letra
             // 
-            this.label_Letra.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label_Letra.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label_Letra.AutoSize = true;
             this.label_Letra.ForeColor = System.Drawing.SystemColors.Menu;
             this.label_Letra.Location = new System.Drawing.Point(108, 569);
             this.label_Letra.Name = "label_Letra";
-            this.label_Letra.Size = new System.Drawing.Size(45, 13);
+            this.label_Letra.Size = new System.Drawing.Size(34, 13);
             this.label_Letra.TabIndex = 62;
-            this.label_Letra.Text = "Imagen:";
+            this.label_Letra.Text = "Letra:";
             this.label_Letra.Visible = false;
             // 
             // label3
@@ -224,6 +278,7 @@
             this.button_Examinar_Imagen.Text = "Examinar";
             this.button_Examinar_Imagen.UseVisualStyleBackColor = true;
             this.button_Examinar_Imagen.Visible = false;
+            this.button_Examinar_Imagen.Click += new System.EventHandler(this.button_Examinar_Imagen_Click);
             // 
             // button_Limpiar_Agregar_Archivo
             // 
@@ -234,6 +289,8 @@
             this.button_Limpiar_Agregar_Archivo.TabIndex = 44;
             this.button_Limpiar_Agregar_Archivo.Text = "Limpiar";
             this.button_Limpiar_Agregar_Archivo.UseVisualStyleBackColor = true;
+            this.button_Limpiar_Agregar_Archivo.Visible = false;
+            this.button_Limpiar_Agregar_Archivo.Click += new System.EventHandler(this.button_Limpiar_Agregar_Archivo_Click);
             // 
             // button_Agregar_Archivo
             // 
@@ -244,6 +301,8 @@
             this.button_Agregar_Archivo.TabIndex = 43;
             this.button_Agregar_Archivo.Text = "Agregar";
             this.button_Agregar_Archivo.UseVisualStyleBackColor = true;
+            this.button_Agregar_Archivo.Visible = false;
+            this.button_Agregar_Archivo.Click += new System.EventHandler(this.button_Agregar_Archivo_Click);
             // 
             // textBox_Genero
             // 
@@ -410,6 +469,7 @@
             this.button_Agregar_Segundo_cantante.Text = "Agregar segundo cantante";
             this.button_Agregar_Segundo_cantante.UseVisualStyleBackColor = true;
             this.button_Agregar_Segundo_cantante.Visible = false;
+            this.button_Agregar_Segundo_cantante.Click += new System.EventHandler(this.button_Agregar_Segundo_cantante_Click);
             // 
             // label_Cantante_2
             // 
@@ -448,6 +508,7 @@
             this.button_Examinar_Direccion.Text = "Examinar";
             this.button_Examinar_Direccion.UseVisualStyleBackColor = true;
             this.button_Examinar_Direccion.Visible = false;
+            this.button_Examinar_Direccion.Click += new System.EventHandler(this.button_Examinar_Direccion_Click);
             // 
             // textBox_Direccion
             // 
@@ -827,37 +888,44 @@
             this.label_Persona.TabIndex = 18;
             this.label_Persona.Text = "Agregar Persona:";
             // 
-            // Cantantes1
+            // comboBox_Calificacion
             // 
-            this.Cantantes1.FormattingEnabled = true;
-            this.Cantantes1.Location = new System.Drawing.Point(186, 301);
-            this.Cantantes1.Name = "Cantantes1";
-            this.Cantantes1.Size = new System.Drawing.Size(121, 21);
-            this.Cantantes1.TabIndex = 66;
+            this.comboBox_Calificacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.comboBox_Calificacion.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.comboBox_Calificacion.ForeColor = System.Drawing.SystemColors.Menu;
+            this.comboBox_Calificacion.FormattingEnabled = true;
+            this.comboBox_Calificacion.Items.AddRange(new object[] {
+            "AA",
+            "A",
+            "B",
+            "C",
+            "D"});
+            this.comboBox_Calificacion.Location = new System.Drawing.Point(186, 456);
+            this.comboBox_Calificacion.Name = "comboBox_Calificacion";
+            this.comboBox_Calificacion.Size = new System.Drawing.Size(215, 21);
+            this.comboBox_Calificacion.TabIndex = 70;
+            this.comboBox_Calificacion.Visible = false;
             // 
-            // Cantantes2
+            // comboBoxIdioma
             // 
-            this.Cantantes2.FormattingEnabled = true;
-            this.Cantantes2.Location = new System.Drawing.Point(186, 330);
-            this.Cantantes2.Name = "Cantantes2";
-            this.Cantantes2.Size = new System.Drawing.Size(121, 21);
-            this.Cantantes2.TabIndex = 67;
+            this.comboBoxIdioma.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.comboBoxIdioma.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.comboBoxIdioma.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.comboBoxIdioma.ForeColor = System.Drawing.SystemColors.Menu;
+            this.comboBoxIdioma.FormattingEnabled = true;
+            this.comboBoxIdioma.Items.AddRange(new object[] {
+            "Español",
+            "Ingles",
+            "Portugues"});
+            this.comboBoxIdioma.Location = new System.Drawing.Point(186, 404);
+            this.comboBoxIdioma.Name = "comboBoxIdioma";
+            this.comboBoxIdioma.Size = new System.Drawing.Size(215, 21);
+            this.comboBoxIdioma.TabIndex = 71;
+            this.comboBoxIdioma.Visible = false;
             // 
-            // Compositor1
+            // openFileDialog1
             // 
-            this.Compositor1.FormattingEnabled = true;
-            this.Compositor1.Location = new System.Drawing.Point(186, 357);
-            this.Compositor1.Name = "Compositor1";
-            this.Compositor1.Size = new System.Drawing.Size(121, 21);
-            this.Compositor1.TabIndex = 68;
-            // 
-            // Compositor2
-            // 
-            this.Compositor2.FormattingEnabled = true;
-            this.Compositor2.Location = new System.Drawing.Point(186, 382);
-            this.Compositor2.Name = "Compositor2";
-            this.Compositor2.Size = new System.Drawing.Size(121, 21);
-            this.Compositor2.TabIndex = 69;
+            this.openFileDialog1.FileName = "openFileDialog1";
             // 
             // Archivo
             // 
@@ -937,5 +1005,8 @@
         private System.Windows.Forms.ComboBox Compositor1;
         private System.Windows.Forms.ComboBox Cantantes2;
         private System.Windows.Forms.ComboBox Cantantes1;
+        private System.Windows.Forms.ComboBox comboBox_Calificacion;
+        private System.Windows.Forms.ComboBox comboBoxIdioma;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }
