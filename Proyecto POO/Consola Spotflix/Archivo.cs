@@ -66,6 +66,22 @@ namespace Consola_Spotflix
                     Cantantes2.Items.Add(item.Nombre_y_Apellido);
                 }
             }
+            else if (comboBox_Categorias.SelectedItem == "AudioLibro")
+            {
+
+            }
+            else if (comboBox_Categorias.SelectedItem == "Peliculas")
+            {
+
+            }
+            else if (comboBox_Categorias.SelectedItem == "Canciones")
+            {
+
+            }
+            else if (comboBox_Categorias.SelectedItem == "Canciones")
+            {
+
+            }
         }
     }
 }

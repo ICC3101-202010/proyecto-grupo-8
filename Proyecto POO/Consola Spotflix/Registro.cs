@@ -23,7 +23,7 @@ namespace Consola_Spotflix
 
         public static List<Persona> cantantes()
         {
-            List<Persona> cantantes = new List<Persona>() ;
+            List<Persona> cantantes = new List<Persona>();
             foreach (var item in Spotflix.Lista_Personas)
             {
                 foreach (var item2 in item.Profesion)
@@ -64,6 +64,68 @@ namespace Consola_Spotflix
             }
             return c;
         }
+        public static List<Persona> actores()
+        {
+            List<Persona> compositores = new List<Persona>();
+            foreach (var item in Spotflix.Lista_Personas)
+            {
+                foreach (var item2 in item.Profesion)
+                {
+                    if (item2 == 3)
+                    {
+                        compositores.Add(item);
+                    }
 
+                }
+                
+            }
+            return compositores;
+        }
+        public static List<Persona> locutores()
+        {
+            List<Persona> compositores = new List<Persona>();
+            foreach (var item in Spotflix.Lista_Personas)
+            {
+                foreach (var item2 in item.Profesion)
+                {
+                    if (item2 == 5)
+                    {
+                        compositores.Add(item);
+                    }
+                }
+            }
+            return compositores;
+        }
+        public static List<Persona> directores()
+        {
+            List<Persona> compositores = new List<Persona>();
+            foreach (var item in Spotflix.Lista_Personas)
+            {
+                foreach (var item2 in item.Profesion)
+                {
+                    if (item2 == 4)
+                    {
+                        compositores.Add(item);
+                    }
+                }
+            }
+            return compositores;
+        }
+        public static List<Persona> lectores()
+        {
+            List<Persona> compositores = new List<Persona>();
+            foreach (var item in Spotflix.Lista_Personas)
+            {
+                foreach (var item2 in item.Profesion)
+                {
+                    if (item2 == 6)
+                    {
+                        compositores.Add(item);
+                    }
+                }
+            }
+            return compositores;
+        }
+        }
     }
 }
