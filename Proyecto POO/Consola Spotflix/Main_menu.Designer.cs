@@ -481,6 +481,7 @@
             this.pictureBox.Location = new System.Drawing.Point(0, 0);
             this.pictureBox.Name = "pictureBox";
             this.pictureBox.Size = new System.Drawing.Size(57, 54);
+            this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox.TabIndex = 3;
             this.pictureBox.TabStop = false;
             // 
@@ -538,7 +539,7 @@
             // nuevoToolStripMenuItem
             // 
             this.nuevoToolStripMenuItem.Name = "nuevoToolStripMenuItem";
-            this.nuevoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.nuevoToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
             this.nuevoToolStripMenuItem.Text = "Nuevo";
             this.nuevoToolStripMenuItem.Click += new System.EventHandler(this.nuevoToolStripMenuItem_Click);
             // 

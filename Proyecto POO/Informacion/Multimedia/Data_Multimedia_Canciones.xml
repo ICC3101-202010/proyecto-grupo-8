@@ -1,0 +1,272 @@
+<?xml version="1.0"?>
+<ArrayOfCancion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Cancion>
+    <Titulo>Como se siente</Titulo>
+    <Categoria>1</Categoria>
+    <Año>2020-05-11T00:00:00</Año>
+    <Duracion />
+    <Ranking>10</Ranking>
+    <Estado>2</Estado>
+    <URL>C:\Users\juani\Desktop\POO\Proyecto\Repositorio Proyecto\proyecto-grupo-8\Proyecto POO\Biblioteca\Musica\Bad bunny - Como se siente.mp3</URL>
+    <Cantante>
+      <Persona>
+        <Nombre_y_Apellido>Bad Bunny</Nombre_y_Apellido>
+        <Sexo>1</Sexo>
+        <Nacionalidad>Puertorriqueño</Nacionalidad>
+        <Fecha_De_Nacimiento>1994-03-10T00:00:00</Fecha_De_Nacimiento>
+        <Profesion>
+          <int>1</int>
+          <int>2</int>
+        </Profesion>
+      </Persona>
+    </Cantante>
+    <Compositor>
+      <Persona>
+        <Nombre_y_Apellido>Bad Bunny</Nombre_y_Apellido>
+        <Sexo>1</Sexo>
+        <Nacionalidad>Puertorriqueño</Nacionalidad>
+        <Fecha_De_Nacimiento>1994-03-10T00:00:00</Fecha_De_Nacimiento>
+        <Profesion>
+          <int>1</int>
+          <int>2</int>
+        </Profesion>
+      </Persona>
+    </Compositor>
+    <Album>Las que no iban a salir</Album>
+    <Imagen>Imagen</Imagen>
+    <Letra>Letra</Letra>
+    <Genero>Trap</Genero>
+  </Cancion>
+  <Cancion>
+    <Titulo>Gangsta's paradise</Titulo>
+    <Categoria>1</Categoria>
+    <Año>1995-08-08T00:00:00</Año>
+    <Duracion />
+    <Ranking>10</Ranking>
+    <Estado>2</Estado>
+    <URL>C:\Users\juani\Desktop\POO\Proyecto\Repositorio Proyecto\proyecto-grupo-8\Proyecto POO\Biblioteca\Musica\Coolio - gangstas paradise.wav</URL>
+    <Cantante>
+      <Persona>
+        <Nombre_y_Apellido>Coolio</Nombre_y_Apellido>
+        <Sexo>1</Sexo>
+        <Nacionalidad>Estadounidense</Nacionalidad>
+        <Fecha_De_Nacimiento>1963-08-01T00:00:00</Fecha_De_Nacimiento>
+        <Profesion>
+          <int>1</int>
+          <int>2</int>
+        </Profesion>
+      </Persona>
+    </Cantante>
+    <Compositor>
+      <Persona>
+        <Nombre_y_Apellido>Coolio</Nombre_y_Apellido>
+        <Sexo>1</Sexo>
+        <Nacionalidad>Estadounidense</Nacionalidad>
+        <Fecha_De_Nacimiento>1963-08-01T00:00:00</Fecha_De_Nacimiento>
+        <Profesion>
+          <int>1</int>
+          <int>2</int>
+        </Profesion>
+      </Persona>
+    </Compositor>
+    <Album>Gangsta's Paradise 2k11</Album>
+    <Imagen>Imagen</Imagen>
+    <Letra>Letra</Letra>
+    <Genero>Rap</Genero>
+  </Cancion>
+  <Cancion>
+    <Titulo>3 de Abril</Titulo>
+    <Categoria>1</Categoria>
+    <Año>2020-04-03T00:00:00</Año>
+    <Duracion />
+    <Ranking>10</Ranking>
+    <Estado>2</Estado>
+    <URL>C:\Users\juani\Desktop\POO\Proyecto\Repositorio Proyecto\proyecto-grupo-8\Proyecto POO\Biblioteca\Musica\Anuel AA - 3 de abril.wav</URL>
+    <Cantante>
+      <Persona>
+        <Nombre_y_Apellido>Anuel AA</Nombre_y_Apellido>
+        <Sexo>1</Sexo>
+        <Nacionalidad>Puertorriqueño</Nacionalidad>
+        <Fecha_De_Nacimiento>1992-11-27T00:00:00</Fecha_De_Nacimiento>
+        <Profesion>
+          <int>1</int>
+          <int>2</int>
+        </Profesion>
+      </Persona>
+    </Cantante>
+    <Compositor>
+      <Persona>
+        <Nombre_y_Apellido>Anuel AA</Nombre_y_Apellido>
+        <Sexo>1</Sexo>
+        <Nacionalidad>Puertorriqueño</Nacionalidad>
+        <Fecha_De_Nacimiento>1992-11-27T00:00:00</Fecha_De_Nacimiento>
+        <Profesion>
+          <int>1</int>
+          <int>2</int>
+        </Profesion>
+      </Persona>
+    </Compositor>
+    <Album>3 de Abril</Album>
+    <Imagen>Imagen</Imagen>
+    <Letra>Letra</Letra>
+    <Genero>Trap</Genero>
+  </Cancion>
+  <Cancion>
+    <Titulo>Keii</Titulo>
+    <Categoria>1</Categoria>
+    <Año>2020-02-07T00:00:00</Año>
+    <Duracion />
+    <Ranking>10</Ranking>
+    <Estado>2</Estado>
+    <URL>C:\Users\juani\Desktop\POO\Proyecto\Repositorio Proyecto\proyecto-grupo-8\Proyecto POO\Biblioteca\Musica\Anuel AA - Keii.wav</URL>
+    <Cantante>
+      <Persona>
+        <Nombre_y_Apellido>Anuel AA</Nombre_y_Apellido>
+        <Sexo>1</Sexo>
+        <Nacionalidad>Puertorriqueño</Nacionalidad>
+        <Fecha_De_Nacimiento>1992-11-27T00:00:00</Fecha_De_Nacimiento>
+        <Profesion>
+          <int>1</int>
+          <int>2</int>
+        </Profesion>
+      </Persona>
+    </Cantante>
+    <Compositor>
+      <Persona>
+        <Nombre_y_Apellido>Anuel AA</Nombre_y_Apellido>
+        <Sexo>1</Sexo>
+        <Nacionalidad>Puertorriqueño</Nacionalidad>
+        <Fecha_De_Nacimiento>1992-11-27T00:00:00</Fecha_De_Nacimiento>
+        <Profesion>
+          <int>1</int>
+          <int>2</int>
+        </Profesion>
+      </Persona>
+    </Compositor>
+    <Album>Keii</Album>
+    <Imagen>Imagen</Imagen>
+    <Letra>Letra</Letra>
+    <Genero>Trap</Genero>
+  </Cancion>
+  <Cancion>
+    <Titulo>Follow</Titulo>
+    <Categoria>1</Categoria>
+    <Año>2020-04-01T00:00:00</Año>
+    <Duracion />
+    <Ranking>10</Ranking>
+    <Estado>2</Estado>
+    <URL>C:\Users\juani\Desktop\POO\Proyecto\Repositorio Proyecto\proyecto-grupo-8\Proyecto POO\Biblioteca\Musica\Karol G, Anuel AA - Follow.wav</URL>
+    <Cantante>
+      <Persona>
+        <Nombre_y_Apellido>Karol G</Nombre_y_Apellido>
+        <Sexo>2</Sexo>
+        <Nacionalidad>Colombiana</Nacionalidad>
+        <Fecha_De_Nacimiento>1991-02-14T00:00:00</Fecha_De_Nacimiento>
+        <Profesion>
+          <int>1</int>
+          <int>2</int>
+        </Profesion>
+      </Persona>
+      <Persona>
+        <Nombre_y_Apellido>Anuel AA</Nombre_y_Apellido>
+        <Sexo>1</Sexo>
+        <Nacionalidad>Puertorriqueño</Nacionalidad>
+        <Fecha_De_Nacimiento>1992-11-27T00:00:00</Fecha_De_Nacimiento>
+        <Profesion>
+          <int>1</int>
+          <int>2</int>
+        </Profesion>
+      </Persona>
+    </Cantante>
+    <Compositor>
+      <Persona>
+        <Nombre_y_Apellido>Karol G</Nombre_y_Apellido>
+        <Sexo>2</Sexo>
+        <Nacionalidad>Colombiana</Nacionalidad>
+        <Fecha_De_Nacimiento>1991-02-14T00:00:00</Fecha_De_Nacimiento>
+        <Profesion>
+          <int>1</int>
+          <int>2</int>
+        </Profesion>
+      </Persona>
+    </Compositor>
+    <Album>Keii</Album>
+    <Imagen>Imagen</Imagen>
+    <Letra>Letra</Letra>
+    <Genero>Reggaeton</Genero>
+  </Cancion>
+  <Cancion>
+    <Titulo>Skechers</Titulo>
+    <Categoria>1</Categoria>
+    <Año>2020-01-12T00:00:00</Año>
+    <Duracion />
+    <Ranking>10</Ranking>
+    <Estado>2</Estado>
+    <URL>C:\Users\juani\Desktop\POO\Proyecto\Repositorio Proyecto\proyecto-grupo-8\Proyecto POO\Biblioteca\Musica\DripReport - Skechers.wav</URL>
+    <Cantante>
+      <Persona>
+        <Nombre_y_Apellido>DripReport</Nombre_y_Apellido>
+        <Sexo>1</Sexo>
+        <Nacionalidad>Indio</Nacionalidad>
+        <Fecha_De_Nacimiento>1970-06-14T00:00:00</Fecha_De_Nacimiento>
+        <Profesion>
+          <int>1</int>
+          <int>2</int>
+        </Profesion>
+      </Persona>
+    </Cantante>
+    <Compositor>
+      <Persona>
+        <Nombre_y_Apellido>DripReport</Nombre_y_Apellido>
+        <Sexo>1</Sexo>
+        <Nacionalidad>Indio</Nacionalidad>
+        <Fecha_De_Nacimiento>1970-06-14T00:00:00</Fecha_De_Nacimiento>
+        <Profesion>
+          <int>1</int>
+          <int>2</int>
+        </Profesion>
+      </Persona>
+    </Compositor>
+    <Album>Skechers</Album>
+    <Imagen>Imagen</Imagen>
+    <Letra>Letra</Letra>
+    <Genero>Rap</Genero>
+  </Cancion>
+  <Cancion>
+    <Titulo>The box</Titulo>
+    <Categoria>1</Categoria>
+    <Año>2020-02-28T00:00:00</Año>
+    <Duracion />
+    <Ranking>10</Ranking>
+    <Estado>0</Estado>
+    <URL>C:\Users\juani\Desktop\POO\Proyecto\Repositorio Proyecto\proyecto-grupo-8\Proyecto POO\Biblioteca\Musica\The Box.mp3</URL>
+    <Cantante>
+      <Persona>
+        <Nombre_y_Apellido>Roddy Ricch</Nombre_y_Apellido>
+        <Sexo>1</Sexo>
+        <Nacionalidad>Estadounidense</Nacionalidad>
+        <Fecha_De_Nacimiento>1998-10-22T00:00:00</Fecha_De_Nacimiento>
+        <Profesion>
+          <int>1</int>
+          <int>2</int>
+        </Profesion>
+      </Persona>
+    </Cantante>
+    <Compositor>
+      <Persona>
+        <Nombre_y_Apellido>Roddy Ricch</Nombre_y_Apellido>
+        <Sexo>1</Sexo>
+        <Nacionalidad>Estadounidense</Nacionalidad>
+        <Fecha_De_Nacimiento>1998-10-22T00:00:00</Fecha_De_Nacimiento>
+        <Profesion>
+          <int>1</int>
+          <int>2</int>
+        </Profesion>
+      </Persona>
+    </Compositor>
+    <Album>Please Excuse Me for Being Antisocial</Album>
+    <Imagen>C:\Users\juani\Desktop\POO\Proyecto\Repositorio Proyecto\proyecto-grupo-8\Proyecto POO\Biblioteca\Musica\The box.jpg</Imagen>
+    <Letra>C:\Users\juani\Desktop\POO\Proyecto\Repositorio Proyecto\proyecto-grupo-8\Proyecto POO\Biblioteca\Musica\The box_Letra.txt</Letra>
+    <Genero>Hip-hop</Genero>
+  </Cancion>
+</ArrayOfCancion>

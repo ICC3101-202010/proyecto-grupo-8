@@ -221,12 +221,11 @@
             // button_Examinar_Letra
             // 
             this.button_Examinar_Letra.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button_Examinar_Letra.FlatAppearance.BorderSize = 0;
             this.button_Examinar_Letra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Examinar_Letra.ForeColor = System.Drawing.SystemColors.Menu;
-            this.button_Examinar_Letra.Location = new System.Drawing.Point(407, 562);
+            this.button_Examinar_Letra.Location = new System.Drawing.Point(407, 561);
             this.button_Examinar_Letra.Name = "button_Examinar_Letra";
-            this.button_Examinar_Letra.Size = new System.Drawing.Size(91, 20);
+            this.button_Examinar_Letra.Size = new System.Drawing.Size(91, 29);
             this.button_Examinar_Letra.TabIndex = 64;
             this.button_Examinar_Letra.Text = "Examinar";
             this.button_Examinar_Letra.UseVisualStyleBackColor = true;
@@ -273,12 +272,11 @@
             // button_Examinar_Imagen
             // 
             this.button_Examinar_Imagen.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button_Examinar_Imagen.FlatAppearance.BorderSize = 0;
             this.button_Examinar_Imagen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Examinar_Imagen.ForeColor = System.Drawing.SystemColors.Menu;
-            this.button_Examinar_Imagen.Location = new System.Drawing.Point(407, 457);
+            this.button_Examinar_Imagen.Location = new System.Drawing.Point(407, 451);
             this.button_Examinar_Imagen.Name = "button_Examinar_Imagen";
-            this.button_Examinar_Imagen.Size = new System.Drawing.Size(91, 20);
+            this.button_Examinar_Imagen.Size = new System.Drawing.Size(91, 28);
             this.button_Examinar_Imagen.TabIndex = 61;
             this.button_Examinar_Imagen.Text = "Examinar";
             this.button_Examinar_Imagen.UseVisualStyleBackColor = true;
@@ -288,7 +286,9 @@
             // button_Limpiar_Agregar_Archivo
             // 
             this.button_Limpiar_Agregar_Archivo.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button_Limpiar_Agregar_Archivo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.button_Limpiar_Agregar_Archivo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_Limpiar_Agregar_Archivo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_Limpiar_Agregar_Archivo.ForeColor = System.Drawing.SystemColors.Menu;
             this.button_Limpiar_Agregar_Archivo.Location = new System.Drawing.Point(186, 612);
             this.button_Limpiar_Agregar_Archivo.Name = "button_Limpiar_Agregar_Archivo";
             this.button_Limpiar_Agregar_Archivo.Size = new System.Drawing.Size(105, 50);
@@ -301,7 +301,9 @@
             // button_Agregar_Archivo
             // 
             this.button_Agregar_Archivo.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button_Agregar_Archivo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.button_Agregar_Archivo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_Agregar_Archivo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_Agregar_Archivo.ForeColor = System.Drawing.SystemColors.Menu;
             this.button_Agregar_Archivo.Location = new System.Drawing.Point(296, 612);
             this.button_Agregar_Archivo.Name = "button_Agregar_Archivo";
             this.button_Agregar_Archivo.Size = new System.Drawing.Size(105, 50);
@@ -386,7 +388,6 @@
             // button2_Crear_Persona
             // 
             this.button2_Crear_Persona.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button2_Crear_Persona.FlatAppearance.BorderSize = 0;
             this.button2_Crear_Persona.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2_Crear_Persona.ForeColor = System.Drawing.SystemColors.Menu;
             this.button2_Crear_Persona.Location = new System.Drawing.Point(407, 374);
@@ -401,7 +402,6 @@
             // buttonAgregar_segundo_compositor
             // 
             this.buttonAgregar_segundo_compositor.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttonAgregar_segundo_compositor.FlatAppearance.BorderSize = 0;
             this.buttonAgregar_segundo_compositor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonAgregar_segundo_compositor.ForeColor = System.Drawing.SystemColors.Menu;
             this.buttonAgregar_segundo_compositor.Location = new System.Drawing.Point(407, 349);
@@ -452,7 +452,6 @@
             // button_Crear_Persona
             // 
             this.button_Crear_Persona.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button_Crear_Persona.FlatAppearance.BorderSize = 0;
             this.button_Crear_Persona.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Crear_Persona.ForeColor = System.Drawing.SystemColors.Menu;
             this.button_Crear_Persona.Location = new System.Drawing.Point(407, 322);
@@ -467,12 +466,11 @@
             // button_Agregar_Segundo_cantante
             // 
             this.button_Agregar_Segundo_cantante.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button_Agregar_Segundo_cantante.FlatAppearance.BorderSize = 0;
             this.button_Agregar_Segundo_cantante.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Agregar_Segundo_cantante.ForeColor = System.Drawing.SystemColors.Menu;
             this.button_Agregar_Segundo_cantante.Location = new System.Drawing.Point(407, 297);
             this.button_Agregar_Segundo_cantante.Name = "button_Agregar_Segundo_cantante";
-            this.button_Agregar_Segundo_cantante.Size = new System.Drawing.Size(156, 29);
+            this.button_Agregar_Segundo_cantante.Size = new System.Drawing.Size(156, 28);
             this.button_Agregar_Segundo_cantante.TabIndex = 44;
             this.button_Agregar_Segundo_cantante.Text = "Agregar segundo cantante";
             this.button_Agregar_Segundo_cantante.UseVisualStyleBackColor = true;
@@ -506,12 +504,11 @@
             // button_Examinar_Direccion
             // 
             this.button_Examinar_Direccion.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button_Examinar_Direccion.FlatAppearance.BorderSize = 0;
             this.button_Examinar_Direccion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Examinar_Direccion.ForeColor = System.Drawing.SystemColors.Menu;
             this.button_Examinar_Direccion.Location = new System.Drawing.Point(407, 248);
             this.button_Examinar_Direccion.Name = "button_Examinar_Direccion";
-            this.button_Examinar_Direccion.Size = new System.Drawing.Size(91, 20);
+            this.button_Examinar_Direccion.Size = new System.Drawing.Size(91, 30);
             this.button_Examinar_Direccion.TabIndex = 13;
             this.button_Examinar_Direccion.Text = "Examinar";
             this.button_Examinar_Direccion.UseVisualStyleBackColor = true;
@@ -559,11 +556,11 @@
             this.label_Año.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label_Año.AutoSize = true;
             this.label_Año.ForeColor = System.Drawing.SystemColors.Menu;
-            this.label_Año.Location = new System.Drawing.Point(124, 204);
+            this.label_Año.Location = new System.Drawing.Point(42, 199);
             this.label_Año.Name = "label_Año";
-            this.label_Año.Size = new System.Drawing.Size(29, 13);
+            this.label_Año.Size = new System.Drawing.Size(111, 13);
             this.label_Año.TabIndex = 7;
-            this.label_Año.Text = "Año:";
+            this.label_Año.Text = "Fecha (dd/mm/aaaa):";
             this.label_Año.Visible = false;
             // 
             // textBox_Titulo
@@ -637,7 +634,7 @@
             // 
             this.comboBox_Calificacion.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.comboBox_Calificacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
-            this.comboBox_Calificacion.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.comboBox_Calificacion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox_Calificacion.ForeColor = System.Drawing.SystemColors.Menu;
             this.comboBox_Calificacion.FormattingEnabled = true;
             this.comboBox_Calificacion.Items.AddRange(new object[] {
@@ -748,6 +745,9 @@
             // button_Limpiar
             // 
             this.button_Limpiar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button_Limpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_Limpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_Limpiar.ForeColor = System.Drawing.SystemColors.Menu;
             this.button_Limpiar.Location = new System.Drawing.Point(184, 354);
             this.button_Limpiar.Name = "button_Limpiar";
             this.button_Limpiar.Size = new System.Drawing.Size(105, 50);
@@ -759,6 +759,9 @@
             // button_Agregar_Persona
             // 
             this.button_Agregar_Persona.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button_Agregar_Persona.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_Agregar_Persona.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_Agregar_Persona.ForeColor = System.Drawing.SystemColors.Menu;
             this.button_Agregar_Persona.Location = new System.Drawing.Point(294, 354);
             this.button_Agregar_Persona.Name = "button_Agregar_Persona";
             this.button_Agregar_Persona.Size = new System.Drawing.Size(105, 50);
@@ -785,7 +788,7 @@
             // 
             this.comboBox_Profesion_2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.comboBox_Profesion_2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
-            this.comboBox_Profesion_2.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.comboBox_Profesion_2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox_Profesion_2.ForeColor = System.Drawing.SystemColors.Menu;
             this.comboBox_Profesion_2.FormattingEnabled = true;
             this.comboBox_Profesion_2.Items.AddRange(new object[] {
@@ -817,7 +820,7 @@
             // 
             this.comboBox_Profesion_1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.comboBox_Profesion_1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
-            this.comboBox_Profesion_1.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.comboBox_Profesion_1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox_Profesion_1.ForeColor = System.Drawing.SystemColors.Menu;
             this.comboBox_Profesion_1.FormattingEnabled = true;
             this.comboBox_Profesion_1.Items.AddRange(new object[] {
@@ -880,7 +883,7 @@
             // 
             this.comboBox_Sexo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.comboBox_Sexo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
-            this.comboBox_Sexo.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.comboBox_Sexo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox_Sexo.ForeColor = System.Drawing.SystemColors.Menu;
             this.comboBox_Sexo.FormattingEnabled = true;
             this.comboBox_Sexo.Items.AddRange(new object[] {

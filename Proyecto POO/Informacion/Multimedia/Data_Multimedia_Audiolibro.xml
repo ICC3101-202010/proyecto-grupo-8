@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<ArrayOfAudioLibro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <AudioLibro>
+    <Titulo>Azafata chistosa</Titulo>
+    <Categoria>3</Categoria>
+    <Año>2020-05-11T00:00:00</Año>
+    <Duracion />
+    <Ranking>10</Ranking>
+    <Estado>2</Estado>
+    <URL>C:\Users\juani\Desktop\POO\Proyecto\Repositorio Proyecto\proyecto-grupo-8\Proyecto POO\Biblioteca\Audio libros\Azafata Chistosa\Azafata chistosa.mp3</URL>
+    <Genero>Comedia</Genero>
+    <Idioma>1</Idioma>
+    <URL_Texto>C:\Users\juani\Desktop\POO\Proyecto\Repositorio Proyecto\proyecto-grupo-8\Proyecto POO\Biblioteca\Audio libros\Azafata Chistosa\Azafata chistosa.txt</URL_Texto>
+    <Lector>
+      <Nombre_y_Apellido>Roxana Gonzalez</Nombre_y_Apellido>
+      <Sexo>1</Sexo>
+      <Nacionalidad>Española</Nacionalidad>
+      <Fecha_De_Nacimiento>1998-02-02T00:00:00</Fecha_De_Nacimiento>
+      <Profesion>
+        <int>6</int>
+      </Profesion>
+    </Lector>
+  </AudioLibro>
+  <AudioLibro>
+    <Titulo>Hijo huerfano</Titulo>
+    <Categoria>3</Categoria>
+    <Año>2020-05-11T00:00:00</Año>
+    <Duracion />
+    <Ranking>10</Ranking>
+    <Estado>2</Estado>
+    <URL>C:\Users\juani\Desktop\POO\Proyecto\Repositorio Proyecto\proyecto-grupo-8\Proyecto POO\Biblioteca\Audio libros\Hijo Huerfano\Hijo huerfano.mp3</URL>
+    <Genero>Comedia</Genero>
+    <Idioma>1</Idioma>
+    <URL_Texto>C:\Users\juani\Desktop\POO\Proyecto\Repositorio Proyecto\proyecto-grupo-8\Proyecto POO\Biblioteca\Audio libros\Hijo Huerfano\Hijo huerfano.txt</URL_Texto>
+    <Lector>
+      <Nombre_y_Apellido>Roxana Gonzalez</Nombre_y_Apellido>
+      <Sexo>1</Sexo>
+      <Nacionalidad>Española</Nacionalidad>
+      <Fecha_De_Nacimiento>1998-02-02T00:00:00</Fecha_De_Nacimiento>
+      <Profesion>
+        <int>6</int>
+      </Profesion>
+    </Lector>
+  </AudioLibro>
+</ArrayOfAudioLibro>

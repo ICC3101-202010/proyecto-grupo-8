@@ -8,8 +8,10 @@ using WMPLib;
 using System.Threading;
 using System.Windows.Forms;
 
+
 namespace Proyecto_POO
 {
+    
     public static class Spotflix
     {
 

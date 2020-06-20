@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<ArrayOfVideo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Video>
+    <Titulo>Como bajar videos de youtube</Titulo>
+    <Categoria>2</Categoria>
+    <Año>2020-01-15T00:00:00</Año>
+    <Duracion />
+    <Ranking>10</Ranking>
+    <Estado>2</Estado>
+    <URL>C:\Users\juani\Desktop\POO\Proyecto\Repositorio Proyecto\proyecto-grupo-8\Proyecto POO\Biblioteca\Videos\2 Formas Increibles de bajar videos en youtube sin programas 2020.mp4</URL>
+    <Resolucion>2</Resolucion>
+    <Descripcion />
+    <Clasificacion>2</Clasificacion>
+    <Genero>Informativo</Genero>
+  </Video>
+</ArrayOfVideo>

@@ -149,8 +149,17 @@ namespace Consola_Spotflix
                 {
                     Nombre_Cancion.Text = Spotflix.Temporal_Info_Ca[i].Titulo;
                     Nombre_Artista.Text = Spotflix.Temporal_Info_Ca[i].Cantante[0].Nombre_y_Apellido;
-                    //pictureBox.Image.
                     Spotflix.Temporal_Info_Ca[i].Duracion = TimeSpan.Parse(axWindowsMediaPlayer1.currentMedia.durationString);
+                    pictureBox.BackColor = Color.FromArgb(23, 23, 23);
+                    try
+                    { 
+                        pictureBox.Image = new Bitmap(Spotflix.Temporal_Info_Ca[i].Imagen);
+                    }
+                    catch
+                    {
+                        pictureBox.Image = null;
+                    }
+                    
                     break;
                 }
             }
@@ -165,6 +174,7 @@ namespace Consola_Spotflix
                     Nombre_Cancion.Text = Spotflix.Temporal_Info_Pe[i].Titulo;
                     Nombre_Artista.Text = Spotflix.Temporal_Info_Pe[i].Director[0].Nombre_y_Apellido;
                     Spotflix.Temporal_Info_Pe[i].Duracion = TimeSpan.Parse(axWindowsMediaPlayer1.currentMedia.durationString);
+                    
                     break;
                 }
             }
@@ -231,6 +241,7 @@ namespace Consola_Spotflix
                 if (a!="")
                 {
                     label_Tiempo_Fin.Text = axWindowsMediaPlayer1.currentMedia.durationString;
+                    
                     if (tipo == 1)
                     {
                         Cancion_Artista_Ca();

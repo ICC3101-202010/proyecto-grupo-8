@@ -1,0 +1,273 @@
+<?xml version="1.0"?>
+<ArrayOfPelicula xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Pelicula>
+    <Titulo>Mas Barato Por Docena</Titulo>
+    <Categoria>4</Categoria>
+    <Año>2003-12-25T00:00:00</Año>
+    <Duracion />
+    <Ranking>10</Ranking>
+    <Estado>1</Estado>
+    <URL>C:\Users\juani\Desktop\POO\Proyecto\Repositorio Proyecto\proyecto-grupo-8\Proyecto POO\Biblioteca\Peliculas\Mas Barato por Docena - Trailer.mp4</URL>
+    <Actor>
+      <Persona>
+        <Nombre_y_Apellido>Steve Martin</Nombre_y_Apellido>
+        <Sexo>1</Sexo>
+        <Nacionalidad>Canadiense</Nacionalidad>
+        <Fecha_De_Nacimiento>1945-08-14T00:00:00</Fecha_De_Nacimiento>
+        <Profesion>
+          <int>3</int>
+        </Profesion>
+      </Persona>
+      <Persona>
+        <Nombre_y_Apellido>Bonnie Hunt</Nombre_y_Apellido>
+        <Sexo>2</Sexo>
+        <Nacionalidad>Estadounidense</Nacionalidad>
+        <Fecha_De_Nacimiento>1961-09-22T00:00:00</Fecha_De_Nacimiento>
+        <Profesion>
+          <int>3</int>
+        </Profesion>
+      </Persona>
+      <Persona>
+        <Nombre_y_Apellido>Piper Perabo</Nombre_y_Apellido>
+        <Sexo>2</Sexo>
+        <Nacionalidad>Estadounidense</Nacionalidad>
+        <Fecha_De_Nacimiento>1976-10-31T00:00:00</Fecha_De_Nacimiento>
+        <Profesion>
+          <int>3</int>
+        </Profesion>
+      </Persona>
+    </Actor>
+    <Director>
+      <Persona>
+        <Nombre_y_Apellido>Shawn Levy</Nombre_y_Apellido>
+        <Sexo>1</Sexo>
+        <Nacionalidad>Estadounidense</Nacionalidad>
+        <Fecha_De_Nacimiento>1968-07-23T00:00:00</Fecha_De_Nacimiento>
+        <Profesion>
+          <int>4</int>
+        </Profesion>
+      </Persona>
+    </Director>
+    <Estudio>‎20th Century Fox Home Entertainment</Estudio>
+    <Descripcion>Descripcion</Descripcion>
+    <Resolucion>2</Resolucion>
+    <Clasificacion>1</Clasificacion>
+    <Genero>Familiar</Genero>
+  </Pelicula>
+  <Pelicula>
+    <Titulo>Nerve</Titulo>
+    <Categoria>4</Categoria>
+    <Año>2016-09-01T00:00:00</Año>
+    <Duracion />
+    <Ranking>10</Ranking>
+    <Estado>1</Estado>
+    <URL>C:\Users\juani\Desktop\POO\Proyecto\Repositorio Proyecto\proyecto-grupo-8\Proyecto POO\Biblioteca\Peliculas\Nerve - Trailer Oficial.mp4</URL>
+    <Actor>
+      <Persona>
+        <Nombre_y_Apellido>Emma Roberts</Nombre_y_Apellido>
+        <Sexo>2</Sexo>
+        <Nacionalidad>Estadounidense</Nacionalidad>
+        <Fecha_De_Nacimiento>1991-02-10T00:00:00</Fecha_De_Nacimiento>
+        <Profesion>
+          <int>3</int>
+        </Profesion>
+      </Persona>
+      <Persona>
+        <Nombre_y_Apellido>Dave Franco</Nombre_y_Apellido>
+        <Sexo>1</Sexo>
+        <Nacionalidad>Estadounidense</Nacionalidad>
+        <Fecha_De_Nacimiento>1985-06-02T00:00:00</Fecha_De_Nacimiento>
+        <Profesion>
+          <int>3</int>
+        </Profesion>
+      </Persona>
+      <Persona>
+        <Nombre_y_Apellido>Juliette Lewis</Nombre_y_Apellido>
+        <Sexo>2</Sexo>
+        <Nacionalidad>Estadounidense</Nacionalidad>
+        <Fecha_De_Nacimiento>1973-06-21T00:00:00</Fecha_De_Nacimiento>
+        <Profesion>
+          <int>3</int>
+        </Profesion>
+      </Persona>
+    </Actor>
+    <Director>
+      <Persona>
+        <Nombre_y_Apellido>Henry Joost</Nombre_y_Apellido>
+        <Sexo>1</Sexo>
+        <Nacionalidad>Estadounidense</Nacionalidad>
+        <Fecha_De_Nacimiento>1981-07-25T00:00:00</Fecha_De_Nacimiento>
+        <Profesion>
+          <int>4</int>
+        </Profesion>
+      </Persona>
+    </Director>
+    <Estudio>‎Allison Shearmur Productions</Estudio>
+    <Descripcion>Descripcion</Descripcion>
+    <Resolucion>2</Resolucion>
+    <Clasificacion>1</Clasificacion>
+    <Genero>Accion</Genero>
+  </Pelicula>
+  <Pelicula>
+    <Titulo>La Cenicienta</Titulo>
+    <Categoria>4</Categoria>
+    <Año>2015-03-13T00:00:00</Año>
+    <Duracion />
+    <Ranking>10</Ranking>
+    <Estado>1</Estado>
+    <URL>C:\Users\juani\Desktop\POO\Proyecto\Repositorio Proyecto\proyecto-grupo-8\Proyecto POO\Biblioteca\Peliculas\La Cenicienta - Trailer Oficial.mp4</URL>
+    <Actor>
+      <Persona>
+        <Nombre_y_Apellido>Lily James</Nombre_y_Apellido>
+        <Sexo>2</Sexo>
+        <Nacionalidad>Britanica</Nacionalidad>
+        <Fecha_De_Nacimiento>1989-04-05T00:00:00</Fecha_De_Nacimiento>
+        <Profesion>
+          <int>3</int>
+        </Profesion>
+      </Persona>
+      <Persona>
+        <Nombre_y_Apellido>Ben Chaplin</Nombre_y_Apellido>
+        <Sexo>1</Sexo>
+        <Nacionalidad>Britanico</Nacionalidad>
+        <Fecha_De_Nacimiento>1969-07-31T00:00:00</Fecha_De_Nacimiento>
+        <Profesion>
+          <int>3</int>
+        </Profesion>
+      </Persona>
+      <Persona>
+        <Nombre_y_Apellido>Richard Madden</Nombre_y_Apellido>
+        <Sexo>1</Sexo>
+        <Nacionalidad>Britanico</Nacionalidad>
+        <Fecha_De_Nacimiento>1986-06-18T00:00:00</Fecha_De_Nacimiento>
+        <Profesion>
+          <int>3</int>
+        </Profesion>
+      </Persona>
+    </Actor>
+    <Director>
+      <Persona>
+        <Nombre_y_Apellido>Kenneth Branagh</Nombre_y_Apellido>
+        <Sexo>1</Sexo>
+        <Nacionalidad>Britanico</Nacionalidad>
+        <Fecha_De_Nacimiento>1960-12-10T00:00:00</Fecha_De_Nacimiento>
+        <Profesion>
+          <int>4</int>
+        </Profesion>
+      </Persona>
+    </Director>
+    <Estudio>Walt Disney Productions</Estudio>
+    <Descripcion>Descripcion</Descripcion>
+    <Resolucion>2</Resolucion>
+    <Clasificacion>1</Clasificacion>
+    <Genero>Fantasia</Genero>
+  </Pelicula>
+  <Pelicula>
+    <Titulo>High School Musical</Titulo>
+    <Categoria>4</Categoria>
+    <Año>2006-01-20T00:00:00</Año>
+    <Duracion />
+    <Ranking>10</Ranking>
+    <Estado>1</Estado>
+    <URL>C:\Users\juani\Desktop\POO\Proyecto\Repositorio Proyecto\proyecto-grupo-8\Proyecto POO\Biblioteca\Peliculas\High School Musical – Original Trailer.mp4</URL>
+    <Actor>
+      <Persona>
+        <Nombre_y_Apellido>Zac Efron</Nombre_y_Apellido>
+        <Sexo>1</Sexo>
+        <Nacionalidad>Estadounidense</Nacionalidad>
+        <Fecha_De_Nacimiento>1987-10-18T00:00:00</Fecha_De_Nacimiento>
+        <Profesion>
+          <int>3</int>
+        </Profesion>
+      </Persona>
+      <Persona>
+        <Nombre_y_Apellido>Vanessa Hudgens</Nombre_y_Apellido>
+        <Sexo>2</Sexo>
+        <Nacionalidad>Estadounidense</Nacionalidad>
+        <Fecha_De_Nacimiento>1988-12-14T00:00:00</Fecha_De_Nacimiento>
+        <Profesion>
+          <int>3</int>
+        </Profesion>
+      </Persona>
+      <Persona>
+        <Nombre_y_Apellido>Ashley Tisdale</Nombre_y_Apellido>
+        <Sexo>2</Sexo>
+        <Nacionalidad>Estadounidense</Nacionalidad>
+        <Fecha_De_Nacimiento>1985-07-02T00:00:00</Fecha_De_Nacimiento>
+        <Profesion>
+          <int>3</int>
+        </Profesion>
+      </Persona>
+    </Actor>
+    <Director>
+      <Persona>
+        <Nombre_y_Apellido>Kenny Ortega</Nombre_y_Apellido>
+        <Sexo>1</Sexo>
+        <Nacionalidad>Estadounidense</Nacionalidad>
+        <Fecha_De_Nacimiento>1950-04-18T00:00:00</Fecha_De_Nacimiento>
+        <Profesion>
+          <int>4</int>
+        </Profesion>
+      </Persona>
+    </Director>
+    <Estudio>Salty Films</Estudio>
+    <Descripcion>Descripcion</Descripcion>
+    <Resolucion>1</Resolucion>
+    <Clasificacion>2</Clasificacion>
+    <Genero>Musical</Genero>
+  </Pelicula>
+  <Pelicula>
+    <Titulo>Son Como Niños</Titulo>
+    <Categoria>4</Categoria>
+    <Año>2010-06-24T00:00:00</Año>
+    <Duracion />
+    <Ranking>10</Ranking>
+    <Estado>1</Estado>
+    <URL>C:\Users\juani\Desktop\POO\Proyecto\Repositorio Proyecto\proyecto-grupo-8\Proyecto POO\Biblioteca\Peliculas\Son como Niños - Trailer Oficial.mp4</URL>
+    <Actor>
+      <Persona>
+        <Nombre_y_Apellido>Adam Sandles</Nombre_y_Apellido>
+        <Sexo>1</Sexo>
+        <Nacionalidad>Estadounidense</Nacionalidad>
+        <Fecha_De_Nacimiento>1966-09-09T00:00:00</Fecha_De_Nacimiento>
+        <Profesion>
+          <int>3</int>
+        </Profesion>
+      </Persona>
+      <Persona>
+        <Nombre_y_Apellido>Kevin James</Nombre_y_Apellido>
+        <Sexo>1</Sexo>
+        <Nacionalidad>Estadounidense</Nacionalidad>
+        <Fecha_De_Nacimiento>1965-04-28T00:00:00</Fecha_De_Nacimiento>
+        <Profesion>
+          <int>3</int>
+        </Profesion>
+      </Persona>
+      <Persona>
+        <Nombre_y_Apellido>Chris Rock</Nombre_y_Apellido>
+        <Sexo>1</Sexo>
+        <Nacionalidad>Estadounidense</Nacionalidad>
+        <Fecha_De_Nacimiento>1967-02-13T00:00:00</Fecha_De_Nacimiento>
+        <Profesion>
+          <int>3</int>
+        </Profesion>
+      </Persona>
+    </Actor>
+    <Director>
+      <Persona>
+        <Nombre_y_Apellido>Dennis Dugan</Nombre_y_Apellido>
+        <Sexo>1</Sexo>
+        <Nacionalidad>Estadounidense</Nacionalidad>
+        <Fecha_De_Nacimiento>1946-09-05T00:00:00</Fecha_De_Nacimiento>
+        <Profesion>
+          <int>4</int>
+        </Profesion>
+      </Persona>
+    </Director>
+    <Estudio>Relativity Media</Estudio>
+    <Descripcion>Descripcion</Descripcion>
+    <Resolucion>2</Resolucion>
+    <Clasificacion>1</Clasificacion>
+    <Genero>Comedia</Genero>
+  </Pelicula>
+</ArrayOfPelicula>

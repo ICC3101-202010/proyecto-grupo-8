@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using Proyecto_POO;
 using System.IO;
 using System.DirectoryServices;
+using System.Threading;
 
 namespace Consola_Spotflix
 {
@@ -72,19 +73,22 @@ namespace Consola_Spotflix
             textBox_Direccion.Show();
             button_Examinar_Direccion.Show();
             button_Agregar_Archivo.Show();
-            button_Limpiar.Show();
+            button_Limpiar_Agregar_Archivo.Show();
             if (comboBox_Categorias.SelectedItem.ToString() =="Cancion")
             {
                 label_Cantante_1.Text = "Cantante 1:";
                 Cantantes1.Show();
                 label_Cantante_1.Show();
+                button_Agregar_Segundo_cantante.Text="Agregar segundo cantante";
                 button_Agregar_Segundo_cantante.Show();
                 label_Cantante_2.Text = "Cantante 2:";
                 button_Crear_Persona.Show();
                 label_Compositor_1.Text = "Compositor 1:";
                 label_Compositor_1.Show();
                 Compositor1.Show();
+                buttonAgregar_segundo_compositor.Text = "Agregar segundo compositor";
                 buttonAgregar_segundo_compositor.Show();
+                button2_Crear_Persona.Show();
                 label_compositor_2.Text = "Compositor 2:";
                 label_album.Text = "Album:";
                 label_album.Show();
@@ -100,6 +104,10 @@ namespace Consola_Spotflix
                 label_Letra.Text = "Letra:";
                 textBox_Letra.Show();
                 button_Examinar_Letra.Show();
+                Compositor1.Items.Clear();
+                Compositor2.Items.Clear();
+                Cantantes1.Items.Clear();
+                Cantantes2.Items.Clear();
                 foreach (var item in Registro.compositores())
                 {
                     Compositor1.Items.Add(item.Nombre_y_Apellido);
@@ -114,27 +122,38 @@ namespace Consola_Spotflix
             else if (comboBox_Categorias.SelectedItem.ToString() == "Pelicula")
             {
                 label_Cantante_1.Text = "Actor 1:";
+                label_Cantante_1.Show();
                 Cantantes1.Show();
+                button_Agregar_Segundo_cantante.Text="Agregar segundo actor";
                 button_Agregar_Segundo_cantante.Show();
                 label_Cantante_2.Text = "Actor 2:";
                 button_Crear_Persona.Show();
                 label_Compositor_1.Text = "Director 1:";
                 label_Compositor_1.Show();
                 Compositor1.Show();
+                buttonAgregar_segundo_compositor.Text = "Agregar segundo director";
                 buttonAgregar_segundo_compositor.Show();
+                button2_Crear_Persona.Show();
                 label_compositor_2.Text = "Director 2:";
                 label_album.Text = "Estudio:";
                 label_album.Show();
+                textBox_Album.Show();
                 label_Imagen.Text = "Calificacion:";
+                label_Imagen.Show();buttonAgregar_segundo_compositor.Text = "Agregar segundo director";
                 comboBox_Calificacion.Show();
                 label_Genero.Text = "Genero:";
+                label_Genero.Show();
                 textBox_Genero.Show();
-                foreach (var item in Registro.compositores())
+                Compositor1.Items.Clear();
+                Compositor2.Items.Clear();
+                Cantantes1.Items.Clear();
+                Cantantes2.Items.Clear();
+                foreach (var item in Registro.actores())
                 {
                     Compositor1.Items.Add(item.Nombre_y_Apellido);
                     Compositor2.Items.Add(item.Nombre_y_Apellido);
                 }
-                foreach (var item in Registro.cantantes())
+                foreach (var item in Registro.directores())
                 {
                     Cantantes1.Items.Add(item.Nombre_y_Apellido);
                     Cantantes2.Items.Add(item.Nombre_y_Apellido);
@@ -152,12 +171,9 @@ namespace Consola_Spotflix
                 button_Examinar_Imagen.Show();
                 label_Genero.Text = "Genero:";
                 textBox_Genero.Show();
-                foreach (var item in Registro.compositores())
-                {
-                    Compositor1.Items.Add(item.Nombre_y_Apellido);
-                    Compositor2.Items.Add(item.Nombre_y_Apellido);
-                }
-                foreach (var item in Registro.cantantes())
+                Cantantes1.Items.Clear();
+                Cantantes2.Items.Clear();
+                foreach (var item in Registro.locutores())
                 {
                     Cantantes1.Items.Add(item.Nombre_y_Apellido);
                     Cantantes2.Items.Add(item.Nombre_y_Apellido);
@@ -178,12 +194,9 @@ namespace Consola_Spotflix
                 label_Letra.Text = "Direccion Texto:";
                 textBox_Letra.Show();
                 button_Examinar_Letra.Show();
-                foreach (var item in Registro.compositores())
-                {
-                    Compositor1.Items.Add(item.Nombre_y_Apellido);
-                    Compositor2.Items.Add(item.Nombre_y_Apellido);
-                }
-                foreach (var item in Registro.cantantes())
+                Cantantes1.Items.Clear();
+                Cantantes2.Items.Clear();
+                foreach (var item in Registro.lectores())
                 {
                     Cantantes1.Items.Add(item.Nombre_y_Apellido);
                     Cantantes2.Items.Add(item.Nombre_y_Apellido);
@@ -258,7 +271,7 @@ namespace Consola_Spotflix
                 else if (comboBox_Categorias.SelectedItem.ToString() == "Pelicula")
                 {
                     listas(3, 4);
-                    Spotflix.Lista_Peliculas.Add(new Pelicula(textBox_Titulo.Text, 2, Convert.ToDateTime(textBox_año.Text), TimeSpan.Zero, 10, 0, direccion_archivo, Cantantes, Compositores, textBox_Album.Text, 2, "", comboBox_Calificacion.SelectedIndex, textBox_Genero.Text));
+                    Spotflix.Lista_Peliculas.Add(new Pelicula(textBox_Titulo.Text, 2, Convert.ToDateTime(textBox_año.Text), TimeSpan.Zero, 10, 0, direccion_archivo, Cantantes, Compositores, textBox_Album.Text, 2, "", comboBox_Calificacion.SelectedIndex+1, textBox_Genero.Text));
                     label_Archivo_Creado.Show();
                     clear();
                 }
@@ -272,14 +285,14 @@ namespace Consola_Spotflix
                 else if (comboBox_Categorias.SelectedItem.ToString() == "Audio Libro")
                 {
                     listas(6, 0);
-                    Spotflix.Lista_AudioLibros.Add(new AudioLibro(textBox_Titulo.Text, 3, Convert.ToDateTime(textBox_año.Text), TimeSpan.Zero, 10, 0, direccion_archivo, direccion_letra, textBox_Genero.Text, comboBoxIdioma.SelectedIndex, Cantantes[0]));
+                    Spotflix.Lista_AudioLibros.Add(new AudioLibro(textBox_Titulo.Text, 3, Convert.ToDateTime(textBox_año.Text), TimeSpan.Zero, 10, 0, direccion_archivo, direccion_letra, textBox_Genero.Text, comboBoxIdioma.SelectedIndex+1, Cantantes[0]));
                     label_Archivo_Creado.Show();
                     clear();
 
                 }
                 else if (comboBox_Categorias.SelectedItem.ToString() == "Videos")
                 {
-                    Spotflix.Lista_Videos.Add(new Video(textBox_Titulo.Text, 3, Convert.ToDateTime(textBox_año.Text), TimeSpan.Zero, 10, 0, direccion_archivo, 2, "", comboBox_Calificacion.SelectedIndex, textBox_Genero.Text));
+                    Spotflix.Lista_Videos.Add(new Video(textBox_Titulo.Text, 3, Convert.ToDateTime(textBox_año.Text), TimeSpan.Zero, 10, 0, direccion_archivo, 2, "", comboBox_Calificacion.SelectedIndex+1, textBox_Genero.Text));
                     label_Archivo_Creado.Show();
                     clear();
                 }
@@ -301,9 +314,12 @@ namespace Consola_Spotflix
                         {
                             Cantantes.Add(item);
                         }
-                        if (item.Nombre_y_Apellido == Cantantes2.SelectedItem.ToString())
+                        if (Cantantes2.SelectedItem != null)
                         {
-                            Cantantes.Add(item);
+                            if (item.Nombre_y_Apellido == Cantantes2.SelectedItem.ToString())
+                            {
+                                Cantantes.Add(item);
+                            }
                         }
                     }
                 }
@@ -320,9 +336,12 @@ namespace Consola_Spotflix
                             
                             Compositores.Add(item);
                         }
-                        if (item.Nombre_y_Apellido == Compositor2.SelectedItem.ToString())
+                        if (Compositor2.SelectedItem != null)
                         {
-                            Compositores.Add(item);
+                            if (item.Nombre_y_Apellido == Compositor2.SelectedItem.ToString())
+                            {
+                                Compositores.Add(item);
+                            }
                         }
                     }
                 }
@@ -353,7 +372,7 @@ namespace Consola_Spotflix
             sourceFile = openFileDialog1.FileName;
             if (comboBox_Categorias.SelectedItem.ToString() == "Cancion")
             {
-                destFile = Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + @"\Biblioteca\Musica\" + Path.GetFileName(openFileDialog1.FileName); ;
+                destFile = Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + @"\Biblioteca\Musica\" + Path.GetFileName(openFileDialog1.FileName) ;
                 File.Copy(sourceFile, destFile, true);
             }
             else if (comboBox_Categorias.SelectedItem.ToString() == "Pelicula")
@@ -471,14 +490,22 @@ namespace Consola_Spotflix
         private void button_Agregar_Persona_Click(object sender, EventArgs e)
         {
             lista1();
-            Spotflix.Lista_Personas.Add(new Persona(textBox_Nombre_persona.Text, comboBox_Sexo.SelectedIndex, textBox_Nacionalidad.Text, Convert.ToDateTime(textBox_Fecha_De_Nacimiento.Text), profesion));
+            Spotflix.Lista_Personas.Add(new Persona(textBox_Nombre_persona.Text, comboBox_Sexo.SelectedIndex+1, textBox_Nacionalidad.Text, Convert.ToDateTime(textBox_Fecha_De_Nacimiento.Text), profesion));
+            label_Persona_Creada.Show();
+            persona_clear();
+            Thread.Sleep(1000);
+            panel_Agregar_Persona.Hide();
+            panel_Agregar_Archivo.Show();
+            panel_Agregar_Archivo.Dock = DockStyle.Fill;
+            clear();
         }
         public void lista1()
         {
-            profesion.Add(comboBox_Profesion_1.SelectedIndex);
+            profesion.Clear();
+            profesion.Add(comboBox_Profesion_1.SelectedIndex+1);
             try
             {
-                profesion.Add(comboBox_Profesion_2.SelectedIndex);
+                profesion.Add(comboBox_Profesion_2.SelectedIndex+1);
             }
             catch 
             {
@@ -489,7 +516,13 @@ namespace Consola_Spotflix
 
         private void button_Limpiar_Click(object sender, EventArgs e)
         {
-
+            persona_clear(); 
+        }
+        public void persona_clear()
+        {
+            textBox_Nombre_persona.Clear();
+            textBox_Nacionalidad.Clear();
+            textBox_Fecha_De_Nacimiento.Clear();
         }
 
         private void button_Mostrar_Segunda_Profesion_Click(object sender, EventArgs e)

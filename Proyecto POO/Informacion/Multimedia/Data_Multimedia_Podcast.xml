@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<ArrayOfPodcast xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Podcast>
+    <Titulo>Comedia Miguel Granados</Titulo>
+    <Categoria>3</Categoria>
+    <Año>2019-10-17T00:00:00</Año>
+    <Duracion />
+    <Ranking>10</Ranking>
+    <Estado>2</Estado>
+    <URL>C:\Users\juani\Desktop\POO\Proyecto\Repositorio Proyecto\proyecto-grupo-8\Proyecto POO\Biblioteca\Podcast\Comedia - Miguel Granados.mp3</URL>
+    <Locutor>
+      <Persona>
+        <Nombre_y_Apellido>Miguel Granados</Nombre_y_Apellido>
+        <Sexo>1</Sexo>
+        <Nacionalidad>Argentino</Nacionalidad>
+        <Fecha_De_Nacimiento>1986-10-25T00:00:00</Fecha_De_Nacimiento>
+        <Profesion>
+          <int>5</int>
+        </Profesion>
+      </Persona>
+    </Locutor>
+    <Imagen>Imagen</Imagen>
+    <Genero>Comedia</Genero>
+  </Podcast>
+</ArrayOfPodcast>

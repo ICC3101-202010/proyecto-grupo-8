@@ -11,6 +11,7 @@ using System.Xml.Serialization;
 using WMPLib;
 using System.IO;
 using Timer = System.Threading.Timer;
+using System.IO.Ports;
 
 namespace Consola_Spotflix
 {
@@ -177,25 +178,60 @@ namespace Consola_Spotflix
             Spotflix.Lista_Perfiles = null;
             Spotflix.Lista_Usuarios = null;
 
-
-
+            Spotflix.Lista_Canciones = null;
+            Spotflix.Lista_Peliculas = null;
+            Spotflix.Lista_Podcasts = null;
+            Spotflix.Lista_AudioLibros = null;
+            Spotflix.Lista_Videos = null;
 
 
 
 
             //Deserializar info perfil
 
-            XmlSerializer serializer1 = new XmlSerializer(typeof(List<Perfil>));
-            using (FileStream fs3 = File.OpenRead(Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + @"\Informacion\Perfiles\Data_Perfiles.xml"))
+            XmlSerializer serializer101 = new XmlSerializer(typeof(List<Perfil>));
+            using (FileStream fs4 = File.OpenRead(Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + @"\Informacion\Perfiles\Data_Perfiles.xml"))
             {
-                Spotflix.Lista_Perfiles = (List<Perfil>)serializer1.Deserialize(fs3);
+                Spotflix.Lista_Perfiles = (List<Perfil>)serializer101.Deserialize(fs4);
             }
-            ////Deserializar info perfil
-            XmlSerializer serializer2 = new XmlSerializer(typeof(List<Usuario>));
-            using (FileStream fs3 = File.OpenRead(Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + @"\Informacion\Usuarios\Data_Usuarios.xml"))
+            //Deserializar info perfil
+            XmlSerializer serializer102 = new XmlSerializer(typeof(List<Usuario>));
+            using (FileStream fs4 = File.OpenRead(Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + @"\Informacion\Usuarios\Data_Usuarios.xml"))
             {
-                Spotflix.Lista_Usuarios = (List<Usuario>)serializer2.Deserialize(fs3);
+                Spotflix.Lista_Usuarios = (List<Usuario>)serializer102.Deserialize(fs4);
             }
+
+            //Deserializar info canciones
+            XmlSerializer serializer111 = new XmlSerializer(typeof(List<Cancion>));
+            using (FileStream fs4 = File.OpenRead(Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + @"\Informacion\Multimedia\Data_Multimedia_Canciones.xml"))
+            {
+                Spotflix.Lista_Canciones = (List<Cancion>)serializer111.Deserialize(fs4);
+            }
+            //Deserializar info peliculas
+            XmlSerializer serializer112 = new XmlSerializer(typeof(List<Pelicula>));
+            using (FileStream fs4 = File.OpenRead(Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + @"\Informacion\Multimedia\Data_Multimedia_Peliculas.xml"))
+            {
+                Spotflix.Lista_Peliculas = (List<Pelicula>)serializer112.Deserialize(fs4);
+            }
+            //Deserializar info podcast
+            XmlSerializer serializer113 = new XmlSerializer(typeof(List<Podcast>));
+            using (FileStream fs4 = File.OpenRead(Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + @"\Informacion\Multimedia\Data_Multimedia_Podcast.xml"))
+            {
+                Spotflix.Lista_Podcasts = (List<Podcast>)serializer113.Deserialize(fs4);
+            }
+            //Deserializar info audiolibors
+            XmlSerializer serializer114 = new XmlSerializer(typeof(List<AudioLibro>));
+            using (FileStream fs4 = File.OpenRead(Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + @"\Informacion\Multimedia\Data_Multimedia_Audiolibro.xml"))
+            {
+                Spotflix.Lista_AudioLibros = (List<AudioLibro>)serializer114.Deserialize(fs4);
+            }
+            //Deserializar info videos
+            XmlSerializer serializer115 = new XmlSerializer(typeof(List<Video>));
+            using (FileStream fs4 = File.OpenRead(Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + @"\Informacion\Multimedia\Data_Multimedia_Videos.xml"))
+            {
+                Spotflix.Lista_Videos = (List<Video>)serializer115.Deserialize(fs4);
+            }
+
             /////////////////////////////////////////////////////////
             /////////////////////////////////////////////////////////
             Application.EnableVisualStyles();                    ////
@@ -204,19 +240,57 @@ namespace Consola_Spotflix
             /////////////////////////////////////////////////////////
             /////////////////////////////////////////////////////////
 
+
+
+
             //Serializar la info de perfil.
             using (Stream fs1 = new FileStream(Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + @"\Informacion\Perfiles\Data_Perfiles.xml", FileMode.Create,
                 FileAccess.Write, FileShare.None))
             {
-                XmlSerializer serializer = new XmlSerializer(typeof(List<Perfil>));
-                serializer.Serialize(fs1, Spotflix.Lista_Perfiles);
+                XmlSerializer serializer001 = new XmlSerializer(typeof(List<Perfil>));
+                serializer001.Serialize(fs1, Spotflix.Lista_Perfiles);
             }
             //Serializar la info de usuario
             using (Stream fs2 = new FileStream(Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + @"\Informacion\Usuarios\Data_Usuarios.xml", FileMode.Create,
                 FileAccess.Write, FileShare.None))
             {
-                XmlSerializer serializer = new XmlSerializer(typeof(List<Usuario>));
-                serializer.Serialize(fs2, Spotflix.Lista_Usuarios);
+                XmlSerializer serializer002 = new XmlSerializer(typeof(List<Usuario>));
+                serializer002.Serialize(fs2, Spotflix.Lista_Usuarios);
+            }
+            //Serializar la info de canciones.
+            using (Stream fs3 = new FileStream(Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + @"\Informacion\Multimedia\Data_Multimedia_Canciones.xml", FileMode.Create,
+                FileAccess.Write, FileShare.None))
+            {
+                XmlSerializer serializer011 = new XmlSerializer(typeof(List<Cancion>));                
+                serializer011.Serialize(fs3, Spotflix.Lista_Canciones);
+            }
+            //Serializar la info de peliculas.
+            using (Stream fs3 = new FileStream(Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + @"\Informacion\Multimedia\Data_Multimedia_Peliculas.xml", FileMode.Create,
+                FileAccess.Write, FileShare.None))
+            {
+                XmlSerializer serializer012 = new XmlSerializer(typeof(List<Pelicula>));
+                serializer012.Serialize(fs3, Spotflix.Lista_Peliculas);
+            }
+            //Serializar la info de podcast.
+            using (Stream fs3 = new FileStream(Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + @"\Informacion\Multimedia\Data_Multimedia_Podcast.xml", FileMode.Create,
+                FileAccess.Write, FileShare.None))
+            {
+                XmlSerializer serializer013 = new XmlSerializer(typeof(List<Podcast>));
+                serializer013.Serialize(fs3, Spotflix.Lista_Podcasts);
+            }
+            //Serializar la info de audiolibro.
+            using (Stream fs3 = new FileStream(Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + @"\Informacion\Multimedia\Data_Multimedia_Audiolibro.xml", FileMode.Create,
+                FileAccess.Write, FileShare.None))
+            {
+                XmlSerializer serializer014 = new XmlSerializer(typeof(List<AudioLibro>));
+                serializer014.Serialize(fs3, Spotflix.Lista_AudioLibros);
+            }
+            //Serializar la info de videos.
+            using (Stream fs3 = new FileStream(Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + @"\Informacion\Multimedia\Data_Multimedia_Videos.xml", FileMode.Create,
+                FileAccess.Write, FileShare.None))
+            {
+                XmlSerializer serializer015 = new XmlSerializer(typeof(List<Video>));
+                serializer015.Serialize(fs3, Spotflix.Lista_Videos);
             }
         }
 
