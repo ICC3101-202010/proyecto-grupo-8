@@ -93,7 +93,7 @@ namespace Consola_Spotflix
                 label_album.Text = "Album:";
                 label_album.Show();
                 textBox_Album.Show();
-                label_Imagen.Text = "Imagen:";
+                label_Imagen.Text = "Direccion imagen:";
                 textBox_Imagen.Show();
                 label_Imagen.Show();
                 label_Genero.Show();
@@ -101,7 +101,7 @@ namespace Consola_Spotflix
                 button_Examinar_Imagen.Show();
                 label_Genero.Text = "Genero:";
                 textBox_Genero.Show();
-                label_Letra.Text = "Letra:";
+                label_Letra.Text = "Direccion letra:";
                 textBox_Letra.Show();
                 button_Examinar_Letra.Show();
                 Compositor1.Items.Clear();
@@ -162,14 +162,17 @@ namespace Consola_Spotflix
             else if (comboBox_Categorias.SelectedItem.ToString() == "Podcast")
             {
                 label_Cantante_1.Text = "Locutor 1:";
+                label_Cantante_1.Show();
                 Cantantes1.Show();
                 button_Agregar_Segundo_cantante.Show();
                 label_Cantante_2.Text = "Locutor 2:";
                 button_Crear_Persona.Show();
-                label_Imagen.Text = "Imagen:";
+                label_Imagen.Text = "Direccion imagen:";
+                label_Imagen.Show();
                 textBox_Imagen.Show();
                 button_Examinar_Imagen.Show();
                 label_Genero.Text = "Genero:";
+                label_Genero.Show();
                 textBox_Genero.Show();
                 Cantantes1.Items.Clear();
                 Cantantes2.Items.Clear();
@@ -182,16 +185,21 @@ namespace Consola_Spotflix
             else if (comboBox_Categorias.SelectedItem.ToString() == "Audio Libro")
             {
                 label_Cantante_1.Text = "Lector 1:";
+                label_Cantante_1.Show();
                 Cantantes1.Show();
                 button_Crear_Persona.Show();
                 label_album.Text = "Idioma:";
+                label_album.Show();
                 comboBoxIdioma.Show();
-                label_Imagen.Text = "Imagen:";
+                label_Imagen.Text = "Direccion imagen:";
+                label_Imagen.Show();
                 textBox_Imagen.Show();
                 button_Examinar_Imagen.Show();
                 label_Genero.Text = "Genero:";
+                label_Genero.Show();
                 textBox_Genero.Show();
                 label_Letra.Text = "Direccion Texto:";
+                label_Letra.Show();
                 textBox_Letra.Show();
                 button_Examinar_Letra.Show();
                 Cantantes1.Items.Clear();
@@ -202,11 +210,13 @@ namespace Consola_Spotflix
                     Cantantes2.Items.Add(item.Nombre_y_Apellido);
                 }
             }
-            else if (comboBox_Categorias.SelectedItem.ToString() == "Videos")
+            else if (comboBox_Categorias.SelectedItem.ToString() == "Video")
             {                
                 label_Imagen.Text = "Calificacion:";
+                label_Imagen.Show();
                 comboBox_Calificacion.Show();
                 label_Genero.Text = "Genero:";
+                label_Genero.Show();
                 textBox_Genero.Show();
             }
         }
