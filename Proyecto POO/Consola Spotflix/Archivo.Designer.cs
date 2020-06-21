@@ -38,7 +38,7 @@
             this.button_Examinar_Letra = new System.Windows.Forms.Button();
             this.textBox_Letra = new System.Windows.Forms.TextBox();
             this.label_Letra = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.label_Datos_Faltantes_archivos = new System.Windows.Forms.Label();
             this.button_Examinar_Imagen = new System.Windows.Forms.Button();
             this.button_Limpiar_Agregar_Archivo = new System.Windows.Forms.Button();
             this.button_Agregar_Archivo = new System.Windows.Forms.Button();
@@ -115,7 +115,7 @@
             this.panel_Agregar_Archivo.Controls.Add(this.button_Examinar_Letra);
             this.panel_Agregar_Archivo.Controls.Add(this.textBox_Letra);
             this.panel_Agregar_Archivo.Controls.Add(this.label_Letra);
-            this.panel_Agregar_Archivo.Controls.Add(this.label3);
+            this.panel_Agregar_Archivo.Controls.Add(this.label_Datos_Faltantes_archivos);
             this.panel_Agregar_Archivo.Controls.Add(this.button_Examinar_Imagen);
             this.panel_Agregar_Archivo.Controls.Add(this.button_Limpiar_Agregar_Archivo);
             this.panel_Agregar_Archivo.Controls.Add(this.button_Agregar_Archivo);
@@ -249,25 +249,25 @@
             this.label_Letra.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label_Letra.AutoSize = true;
             this.label_Letra.ForeColor = System.Drawing.SystemColors.Menu;
-            this.label_Letra.Location = new System.Drawing.Point(108, 569);
+            this.label_Letra.Location = new System.Drawing.Point(75, 569);
             this.label_Letra.Name = "label_Letra";
-            this.label_Letra.Size = new System.Drawing.Size(34, 13);
+            this.label_Letra.Size = new System.Drawing.Size(78, 13);
             this.label_Letra.TabIndex = 62;
-            this.label_Letra.Text = "Letra:";
+            this.label_Letra.Text = "Direccion letra:";
             this.label_Letra.Visible = false;
             // 
-            // label3
+            // label_Datos_Faltantes_archivos
             // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(432, 626);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(131, 20);
-            this.label3.TabIndex = 45;
-            this.label3.Text = "¡Datos Faltantes!";
-            this.label3.Visible = false;
+            this.label_Datos_Faltantes_archivos.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label_Datos_Faltantes_archivos.AutoSize = true;
+            this.label_Datos_Faltantes_archivos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Datos_Faltantes_archivos.ForeColor = System.Drawing.Color.Red;
+            this.label_Datos_Faltantes_archivos.Location = new System.Drawing.Point(432, 626);
+            this.label_Datos_Faltantes_archivos.Name = "label_Datos_Faltantes_archivos";
+            this.label_Datos_Faltantes_archivos.Size = new System.Drawing.Size(131, 20);
+            this.label_Datos_Faltantes_archivos.TabIndex = 45;
+            this.label_Datos_Faltantes_archivos.Text = "¡Datos Faltantes!";
+            this.label_Datos_Faltantes_archivos.Visible = false;
             // 
             // button_Examinar_Imagen
             // 
@@ -354,11 +354,11 @@
             this.label_Imagen.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label_Imagen.AutoSize = true;
             this.label_Imagen.ForeColor = System.Drawing.SystemColors.Menu;
-            this.label_Imagen.Location = new System.Drawing.Point(108, 464);
+            this.label_Imagen.Location = new System.Drawing.Point(63, 464);
             this.label_Imagen.Name = "label_Imagen";
-            this.label_Imagen.Size = new System.Drawing.Size(45, 13);
+            this.label_Imagen.Size = new System.Drawing.Size(90, 13);
             this.label_Imagen.TabIndex = 57;
-            this.label_Imagen.Text = "Imagen:";
+            this.label_Imagen.Text = "Direccion magen:";
             this.label_Imagen.Visible = false;
             // 
             // textBox_Album
@@ -532,11 +532,11 @@
             this.label_Direccion_Archivo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label_Direccion_Archivo.AutoSize = true;
             this.label_Direccion_Archivo.ForeColor = System.Drawing.SystemColors.Menu;
-            this.label_Direccion_Archivo.Location = new System.Drawing.Point(98, 255);
+            this.label_Direccion_Archivo.Location = new System.Drawing.Point(60, 256);
             this.label_Direccion_Archivo.Name = "label_Direccion_Archivo";
-            this.label_Direccion_Archivo.Size = new System.Drawing.Size(55, 13);
+            this.label_Direccion_Archivo.Size = new System.Drawing.Size(93, 13);
             this.label_Direccion_Archivo.TabIndex = 11;
-            this.label_Direccion_Archivo.Text = "Direccion:";
+            this.label_Direccion_Archivo.Text = "Direccion archivo:";
             this.label_Direccion_Archivo.Visible = false;
             // 
             // textBox_año
@@ -968,7 +968,7 @@
         private System.Windows.Forms.Button button_Examinar_Letra;
         private System.Windows.Forms.TextBox textBox_Letra;
         private System.Windows.Forms.Label label_Letra;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label_Datos_Faltantes_archivos;
         private System.Windows.Forms.Button button_Examinar_Imagen;
         private System.Windows.Forms.Button button_Limpiar_Agregar_Archivo;
         private System.Windows.Forms.Button button_Agregar_Archivo;

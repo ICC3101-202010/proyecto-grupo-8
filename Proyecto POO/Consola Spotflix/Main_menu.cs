@@ -425,5 +425,21 @@ namespace Consola_Spotflix
             Registro.Crear_Archivo.Show();
             Registro.Crear_Archivo.BringToFront();
         }
+        int a=0;
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            if (a ==0)
+            {
+                pictureBox1.Image = Properties.Resources.like_completo;
+                a = 1;
+            }
+            else if (a == 1)
+            {
+                pictureBox1.Image = Properties.Resources.like;
+                a = 0;
+            }
+
+            //agregar cancion a favoritos.
+        }
     }
 }

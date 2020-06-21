@@ -489,15 +489,19 @@ namespace Consola_Spotflix
 
         private void button_Agregar_Persona_Click(object sender, EventArgs e)
         {
-            lista1();
-            Spotflix.Lista_Personas.Add(new Persona(textBox_Nombre_persona.Text, comboBox_Sexo.SelectedIndex+1, textBox_Nacionalidad.Text, Convert.ToDateTime(textBox_Fecha_De_Nacimiento.Text), profesion));
-            label_Persona_Creada.Show();
-            persona_clear();
-            Thread.Sleep(1000);
-            panel_Agregar_Persona.Hide();
-            panel_Agregar_Archivo.Show();
-            panel_Agregar_Archivo.Dock = DockStyle.Fill;
-            clear();
+            try
+            {
+                lista1();
+                Spotflix.Lista_Personas.Add(new Persona(textBox_Nombre_persona.Text, comboBox_Sexo.SelectedIndex + 1, textBox_Nacionalidad.Text, Convert.ToDateTime(textBox_Fecha_De_Nacimiento.Text), profesion));
+                label_Persona_Creada.Visible = true;
+                persona_clear();
+                clear();
+            }
+            catch 
+            {
+                label_Faltan_Datos.Show();
+            }
+            
         }
         public void lista1()
         {
@@ -523,6 +527,8 @@ namespace Consola_Spotflix
             textBox_Nombre_persona.Clear();
             textBox_Nacionalidad.Clear();
             textBox_Fecha_De_Nacimiento.Clear();
+            label_Persona_Creada.Hide();
+            label_Faltan_Datos.Hide();
         }
 
         private void button_Mostrar_Segunda_Profesion_Click(object sender, EventArgs e)
