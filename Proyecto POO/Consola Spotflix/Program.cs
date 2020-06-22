@@ -170,7 +170,7 @@ namespace Consola_Spotflix
             Spotflix.Lista_Usuarios.Add(User_Ronca);
 
             //Crear Perfil
-            Perfil Perfil_Ronca = new Perfil(User_Ronca, "Ronca", 1);
+            Perfil Perfil_Ronca = new Perfil(User_Ronca, "Ronca", 1, "");
 
             //Agregar perfil:
             Spotflix.Lista_Perfiles.Add(Perfil_Ronca);

@@ -20,6 +20,7 @@ namespace Proyecto_POO
         public Usuario Usuario_Asociado;
         public string Nombre_perfil;
         public int Tipo_de_Perfil;
+        public string Imagen;
         public List<Cancion> Fav_Canciones = new List<Cancion>();
         public List<Pelicula> Fav_Pelicula = new List<Pelicula>();
         public List<Video> Fav_Videos = new List<Video>();
@@ -52,12 +53,13 @@ namespace Proyecto_POO
 
         //Constructor
         public Perfil() { }
-        public Perfil(Usuario usuario_asociado, string nombre_perfil,int tipo_de_Perfil)
+        public Perfil(Usuario usuario_asociado, string nombre_perfil,int tipo_de_Perfil, string imagen)
             
         {
             Usuario_Asociado = usuario_asociado;
             Nombre_perfil = nombre_perfil;
             Tipo_de_Perfil = tipo_de_Perfil;
+            Imagen = imagen;
 
         }
         public string Informacion_de_Perfil()

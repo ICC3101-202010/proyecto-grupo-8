@@ -63,7 +63,7 @@ namespace Proyecto_POO
                 }
 
 
-                Perfil p1 = new Perfil(Spotflix.usuarioenlinea, nombreperfil, tipo);
+                Perfil p1 = new Perfil(Spotflix.usuarioenlinea, nombreperfil, tipo, "");
                 Creado.Show();
                 Spotflix.Lista_Perfiles.Add(p1);
                 Spotflix.Lista_perfilesenlinea.Add(p1);
