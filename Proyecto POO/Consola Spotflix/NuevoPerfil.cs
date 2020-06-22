@@ -62,8 +62,8 @@ namespace Proyecto_POO
                     tipo = 3;
                 }
 
-
-                Perfil p1 = new Perfil(Spotflix.usuarioenlinea, nombreperfil, tipo, "");
+                string foto = FotoDePerfil.Text;
+                Perfil p1 = new Perfil(Spotflix.usuarioenlinea, nombreperfil, tipo, foto);
                 Creado.Show();
                 Spotflix.Lista_Perfiles.Add(p1);
                 Spotflix.Lista_perfilesenlinea.Add(p1);
@@ -92,6 +92,11 @@ namespace Proyecto_POO
             int cantperfenlinea = Spotflix.Lista_perfilesenlinea.Count();
             Registro.p1.loadPerfiles(cantperfenlinea);
             Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

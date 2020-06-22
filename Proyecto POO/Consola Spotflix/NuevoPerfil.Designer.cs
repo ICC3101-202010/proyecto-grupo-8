@@ -37,6 +37,9 @@
             this.Creado = new System.Windows.Forms.Label();
             this.NoCreado = new System.Windows.Forms.Label();
             this.Back = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.FotoDePerfil = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -66,7 +69,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.Menu;
-            this.label3.Location = new System.Drawing.Point(68, 210);
+            this.label3.Location = new System.Drawing.Point(68, 198);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(99, 20);
             this.label3.TabIndex = 2;
@@ -89,7 +92,7 @@
             this.comboTipoPerfil.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboTipoPerfil.ForeColor = System.Drawing.SystemColors.Menu;
             this.comboTipoPerfil.FormattingEnabled = true;
-            this.comboTipoPerfil.Location = new System.Drawing.Point(216, 212);
+            this.comboTipoPerfil.Location = new System.Drawing.Point(216, 197);
             this.comboTipoPerfil.Name = "comboTipoPerfil";
             this.comboTipoPerfil.Size = new System.Drawing.Size(242, 21);
             this.comboTipoPerfil.TabIndex = 4;
@@ -110,7 +113,7 @@
             this.Creado.AutoSize = true;
             this.Creado.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Creado.ForeColor = System.Drawing.Color.LimeGreen;
-            this.Creado.Location = new System.Drawing.Point(496, 184);
+            this.Creado.Location = new System.Drawing.Point(250, 321);
             this.Creado.Name = "Creado";
             this.Creado.Size = new System.Drawing.Size(97, 18);
             this.Creado.TabIndex = 6;
@@ -121,7 +124,7 @@
             this.NoCreado.AutoSize = true;
             this.NoCreado.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NoCreado.ForeColor = System.Drawing.Color.Red;
-            this.NoCreado.Location = new System.Drawing.Point(400, 267);
+            this.NoCreado.Location = new System.Drawing.Point(215, 290);
             this.NoCreado.Name = "NoCreado";
             this.NoCreado.Size = new System.Drawing.Size(193, 18);
             this.NoCreado.TabIndex = 7;
@@ -137,11 +140,45 @@
             this.Back.UseVisualStyleBackColor = true;
             this.Back.Click += new System.EventHandler(this.Back_Click);
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.Menu;
+            this.label5.Location = new System.Drawing.Point(68, 248);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(103, 20);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "Foto de Perfil";
+            // 
+            // FotoDePerfil
+            // 
+            this.FotoDePerfil.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.FotoDePerfil.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.FotoDePerfil.ForeColor = System.Drawing.SystemColors.Menu;
+            this.FotoDePerfil.Location = new System.Drawing.Point(216, 244);
+            this.FotoDePerfil.Name = "FotoDePerfil";
+            this.FotoDePerfil.Size = new System.Drawing.Size(242, 20);
+            this.FotoDePerfil.TabIndex = 11;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(464, 244);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 22);
+            this.button1.TabIndex = 12;
+            this.button1.Text = "Examinar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // NuevoPerfil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.FotoDePerfil);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.Back);
             this.Controls.Add(this.NoCreado);
             this.Controls.Add(this.Creado);
@@ -152,7 +189,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "NuevoPerfil";
-            this.Size = new System.Drawing.Size(614, 383);
+            this.Size = new System.Drawing.Size(624, 382);
             this.Load += new System.EventHandler(this.NuevoPerfil_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -170,5 +207,8 @@
         private System.Windows.Forms.Label Creado;
         private System.Windows.Forms.Label NoCreado;
         private System.Windows.Forms.Button Back;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox FotoDePerfil;
+        private System.Windows.Forms.Button button1;
     }
 }
