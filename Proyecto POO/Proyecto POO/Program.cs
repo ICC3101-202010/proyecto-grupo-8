@@ -170,7 +170,7 @@ namespace Proyecto_POO
             Spotflix.Lista_Usuarios.Add(User_Ronca);
 
             //Crear Perfil
-            Perfil Perfil_Ronca = new Perfil(User_Ronca, "Ronca", 1);
+            Perfil Perfil_Ronca = new Perfil(User_Ronca, "Ronca", 1,"");
 
             //Agregar perfil:
             Spotflix.Lista_Perfiles.Add(Perfil_Ronca);
@@ -256,8 +256,8 @@ namespace Proyecto_POO
                                     Console.WriteLine("Ingrese nombre de perfil:");
                                     string nperfil = Console.ReadLine();
                                     int tipoperf = 1;
-                                    perfilesdeusuario.Add(new Perfil(item, nperfil, tipoperf));
-                                    Spotflix.Lista_Perfiles.Add(new Perfil(item, nperfil, tipoperf));
+                                    perfilesdeusuario.Add(new Perfil(item, nperfil, tipoperf,""));
+                                    Spotflix.Lista_Perfiles.Add(new Perfil(item, nperfil, tipoperf,""));
 
                                     int c_1 = 1;
                                     Console.WriteLine("Perfil/es disponible:");
@@ -1072,7 +1072,7 @@ namespace Proyecto_POO
                             break;
                         }
                         int tipoperf = 1;
-                        Perfil perfilenlinea = new Perfil(u, nperfil, tipoperf);
+                        Perfil perfilenlinea = new Perfil(u, nperfil, tipoperf,"");
                         Spotflix.Lista_Perfiles.Add(perfilenlinea);
                         Console.WriteLine("Nuevo perfil creado " + perfilenlinea.Nombre_perfil);
                         Thread.Sleep(2000);

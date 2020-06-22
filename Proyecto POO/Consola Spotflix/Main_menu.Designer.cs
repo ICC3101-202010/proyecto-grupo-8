@@ -61,12 +61,16 @@
             this.label_Tiempo_Fin = new System.Windows.Forms.Label();
             this.label_Tiempo_Inicio = new System.Windows.Forms.Label();
             this.trackBar_Duracion = new System.Windows.Forms.TrackBar();
-            this.Button_Perfil_En_Linea = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
             this.pictureBox = new System.Windows.Forms.PictureBox();
             this.panel9 = new System.Windows.Forms.Panel();
             this.Nombre_Cancion = new System.Windows.Forms.Label();
             this.Nombre_Artista = new System.Windows.Forms.Label();
+            this.botonCerrarSesion = new System.Windows.Forms.Button();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.Button_Perfil_En_Linea = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nuevoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -80,12 +84,8 @@
             this.peliculasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.podcastsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.audiolibrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.botonCerrarSesion = new System.Windows.Forms.Button();
             this.tmSlider = new System.Windows.Forms.Timer(this.components);
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
@@ -100,10 +100,10 @@
             this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.panel9.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -429,16 +429,16 @@
             this.panel7.Controls.Add(this.label_Tiempo_Inicio);
             this.panel7.Controls.Add(this.trackBar_Duracion);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel7.Location = new System.Drawing.Point(0, 24);
+            this.panel7.Location = new System.Drawing.Point(0, 32);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(817, 33);
+            this.panel7.Size = new System.Drawing.Size(817, 25);
             this.panel7.TabIndex = 8;
             // 
             // label_Tiempo_Fin
             // 
             this.label_Tiempo_Fin.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label_Tiempo_Fin.ForeColor = System.Drawing.SystemColors.MenuBar;
-            this.label_Tiempo_Fin.Location = new System.Drawing.Point(774, 10);
+            this.label_Tiempo_Fin.Location = new System.Drawing.Point(774, 6);
             this.label_Tiempo_Fin.Name = "label_Tiempo_Fin";
             this.label_Tiempo_Fin.Size = new System.Drawing.Size(43, 15);
             this.label_Tiempo_Fin.TabIndex = 7;
@@ -468,20 +468,6 @@
             this.trackBar_Duracion.TabIndex = 0;
             this.trackBar_Duracion.TickStyle = System.Windows.Forms.TickStyle.None;
             this.trackBar_Duracion.ValueChanged += new System.EventHandler(this.trackBar_Duracion_ValueChanged);
-            // 
-            // Button_Perfil_En_Linea
-            // 
-            this.Button_Perfil_En_Linea.Dock = System.Windows.Forms.DockStyle.Right;
-            this.Button_Perfil_En_Linea.FlatAppearance.BorderSize = 0;
-            this.Button_Perfil_En_Linea.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button_Perfil_En_Linea.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Button_Perfil_En_Linea.ForeColor = System.Drawing.SystemColors.Menu;
-            this.Button_Perfil_En_Linea.Location = new System.Drawing.Point(31, 0);
-            this.Button_Perfil_En_Linea.Name = "Button_Perfil_En_Linea";
-            this.Button_Perfil_En_Linea.Size = new System.Drawing.Size(177, 22);
-            this.Button_Perfil_En_Linea.TabIndex = 6;
-            this.Button_Perfil_En_Linea.UseVisualStyleBackColor = true;
-            this.Button_Perfil_En_Linea.Click += new System.EventHandler(this.Button_Perfil_En_Linea_Click);
             // 
             // panel8
             // 
@@ -535,16 +521,72 @@
             this.Nombre_Artista.TabIndex = 1;
             this.Nombre_Artista.Text = "Artista";
             // 
+            // botonCerrarSesion
+            // 
+            this.botonCerrarSesion.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.botonCerrarSesion.Location = new System.Drawing.Point(1136, 3);
+            this.botonCerrarSesion.Name = "botonCerrarSesion";
+            this.botonCerrarSesion.Size = new System.Drawing.Size(141, 22);
+            this.botonCerrarSesion.TabIndex = 9;
+            this.botonCerrarSesion.Text = "Cerrar Sesion";
+            this.botonCerrarSesion.UseVisualStyleBackColor = true;
+            this.botonCerrarSesion.Click += new System.EventHandler(this.botonCerrarSesion_Click);
+            // 
+            // panel10
+            // 
+            this.panel10.Controls.Add(this.panel11);
+            this.panel10.Controls.Add(this.menuStrip1);
+            this.panel10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel10.Location = new System.Drawing.Point(150, 3);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(980, 22);
+            this.panel10.TabIndex = 10;
+            // 
+            // panel11
+            // 
+            this.panel11.Controls.Add(this.pictureBox2);
+            this.panel11.Controls.Add(this.Button_Perfil_En_Linea);
+            this.panel11.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel11.Location = new System.Drawing.Point(772, 0);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(208, 22);
+            this.panel11.TabIndex = 0;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(25, 22);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 7;
+            this.pictureBox2.TabStop = false;
+            // 
+            // Button_Perfil_En_Linea
+            // 
+            this.Button_Perfil_En_Linea.Dock = System.Windows.Forms.DockStyle.Right;
+            this.Button_Perfil_En_Linea.FlatAppearance.BorderSize = 0;
+            this.Button_Perfil_En_Linea.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Button_Perfil_En_Linea.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_Perfil_En_Linea.ForeColor = System.Drawing.SystemColors.Menu;
+            this.Button_Perfil_En_Linea.Location = new System.Drawing.Point(31, 0);
+            this.Button_Perfil_En_Linea.Name = "Button_Perfil_En_Linea";
+            this.Button_Perfil_En_Linea.Size = new System.Drawing.Size(177, 22);
+            this.Button_Perfil_En_Linea.TabIndex = 6;
+            this.Button_Perfil_En_Linea.UseVisualStyleBackColor = true;
+            this.Button_Perfil_En_Linea.Click += new System.EventHandler(this.Button_Perfil_En_Linea_Click);
+            // 
             // menuStrip1
             // 
-            this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
+            this.menuStrip1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(40, 40);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.archivoToolStripMenuItem,
             this.buscarToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 1);
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(122, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(980, 22);
             this.menuStrip1.TabIndex = 8;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -553,7 +595,7 @@
             this.archivoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.nuevoToolStripMenuItem});
             this.archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
-            this.archivoToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
+            this.archivoToolStripMenuItem.Size = new System.Drawing.Size(60, 18);
             this.archivoToolStripMenuItem.Text = "Archivo";
             // 
             // nuevoToolStripMenuItem
@@ -571,7 +613,7 @@
             this.playlistToolStripMenuItem,
             this.multimediaToolStripMenuItem});
             this.buscarToolStripMenuItem.Name = "buscarToolStripMenuItem";
-            this.buscarToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
+            this.buscarToolStripMenuItem.Size = new System.Drawing.Size(54, 18);
             this.buscarToolStripMenuItem.Text = "Buscar";
             // 
             // perfilesToolStripMenuItem
@@ -642,17 +684,6 @@
             this.audiolibrosToolStripMenuItem.Text = "Audiolibros";
             this.audiolibrosToolStripMenuItem.Click += new System.EventHandler(this.audiolibrosToolStripMenuItem_Click);
             // 
-            // botonCerrarSesion
-            // 
-            this.botonCerrarSesion.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.botonCerrarSesion.Location = new System.Drawing.Point(1136, 3);
-            this.botonCerrarSesion.Name = "botonCerrarSesion";
-            this.botonCerrarSesion.Size = new System.Drawing.Size(141, 22);
-            this.botonCerrarSesion.TabIndex = 9;
-            this.botonCerrarSesion.Text = "Cerrar Sesion";
-            this.botonCerrarSesion.UseVisualStyleBackColor = true;
-            this.botonCerrarSesion.Click += new System.EventHandler(this.botonCerrarSesion_Click);
-            // 
             // tmSlider
             // 
             this.tmSlider.Tick += new System.EventHandler(this.tmSlider_Tick);
@@ -662,37 +693,6 @@
             this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
             this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            // 
-            // panel10
-            // 
-            this.panel10.Controls.Add(this.panel11);
-            this.panel10.Controls.Add(this.menuStrip1);
-            this.panel10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel10.Location = new System.Drawing.Point(150, 3);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(980, 22);
-            this.panel10.TabIndex = 10;
-            // 
-            // panel11
-            // 
-            this.panel11.Controls.Add(this.pictureBox2);
-            this.panel11.Controls.Add(this.Button_Perfil_En_Linea);
-            this.panel11.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel11.Location = new System.Drawing.Point(772, 0);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(208, 22);
-            this.panel11.TabIndex = 0;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(25, 22);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 7;
-            this.pictureBox2.TabStop = false;
             // 
             // Main_menu
             // 
@@ -726,12 +726,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
             this.panel11.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
 
         }

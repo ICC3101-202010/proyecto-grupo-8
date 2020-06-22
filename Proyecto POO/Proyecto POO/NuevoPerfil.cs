@@ -53,7 +53,7 @@ namespace Proyecto_POO
             {
                 tipo = 3;
             }
-            Perfil p1 = new Perfil(Spotflix.usuarioenlinea, nombreperfil, tipo);
+            Perfil p1 = new Perfil(Spotflix.usuarioenlinea, nombreperfil, tipo,"");
             Creado.Show();
             //Spotflix.Lista_Perfiles.Add();
             Hide();

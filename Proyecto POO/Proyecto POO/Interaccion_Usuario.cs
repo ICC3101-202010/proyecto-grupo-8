@@ -2717,7 +2717,7 @@ namespace Proyecto_POO
                                 string nomb = Console.ReadLine();
                                 Console.WriteLine("Su tipo de perfil: ");
                                 int tipoperf = Convert.ToInt32(Console.ReadLine());
-                                Perfil p1 = new Perfil(per.Usuario_Asociado, nomb, tipoperf);
+                                Perfil p1 = new Perfil(per.Usuario_Asociado, nomb, tipoperf,"");
                                 per.Editar_Informacion(p1);
                             }
                         }
@@ -2828,7 +2828,7 @@ namespace Proyecto_POO
                         }
                         else if (editprofile == 1)
                         {
-                            Perfil perfil2 = new Perfil(usuario, item.Nombre_perfil, item.Tipo_de_Perfil);
+                            Perfil perfil2 = new Perfil(usuario, item.Nombre_perfil, item.Tipo_de_Perfil,"");
                             Spotflix.Lista_Perfiles[count] = perfil2;
                             Console.WriteLine("Listas reseteadas!");
                         }

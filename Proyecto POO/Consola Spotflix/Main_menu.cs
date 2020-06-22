@@ -422,8 +422,16 @@ namespace Consola_Spotflix
 
         private void nuevoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Registro.Crear_Archivo.Show();
-            Registro.Crear_Archivo.BringToFront();
+            if (Spotflix.perfilenlinea.Tipo_de_Perfil == 1)
+            {
+                Registro.Crear_Archivo.Show();
+                Registro.Crear_Archivo.BringToFront();
+            }
+            else
+            {
+                MessageBox.Show("Error, este tipo de perfil no puede agregar archivos.");
+            }
+            
         }
         int a=0;
         private void pictureBox1_Click(object sender, EventArgs e)
