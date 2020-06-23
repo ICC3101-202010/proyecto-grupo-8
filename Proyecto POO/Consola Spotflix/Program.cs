@@ -193,6 +193,10 @@ namespace Consola_Spotflix
             using (FileStream fs4 = File.OpenRead(Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + @"\Informacion\Perfiles\Data_Perfiles.xml"))
             {
                 Spotflix.Lista_Perfiles = (List<Perfil>)serializer101.Deserialize(fs4);
+                foreach (var item in Spotflix.Lista_Perfiles)
+                {
+                    item.Imagen = Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + item.Imagen.Substring(Directory.GetCurrentDirectory().Length - 27);
+                }
             }
             //Deserializar info usuarios
             XmlSerializer serializer102 = new XmlSerializer(typeof(List<Usuario>));
@@ -206,30 +210,50 @@ namespace Consola_Spotflix
             using (FileStream fs4 = File.OpenRead(Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + @"\Informacion\Multimedia\Data_Multimedia_Canciones.xml"))
             {
                 Spotflix.Lista_Canciones = (List<Cancion>)serializer111.Deserialize(fs4);
+                foreach (var item in Spotflix.Lista_Canciones)
+                {
+                    item.URL = Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + item.URL.Substring(Directory.GetCurrentDirectory().Length - 27);
+                }
             }
             //Deserializar info peliculas
             XmlSerializer serializer112 = new XmlSerializer(typeof(List<Pelicula>));
             using (FileStream fs4 = File.OpenRead(Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + @"\Informacion\Multimedia\Data_Multimedia_Peliculas.xml"))
             {
                 Spotflix.Lista_Peliculas = (List<Pelicula>)serializer112.Deserialize(fs4);
+                foreach (var item in Spotflix.Lista_Peliculas)
+                {
+                    item.URL = Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + item.URL.Substring(Directory.GetCurrentDirectory().Length - 27);
+                }
             }
             //Deserializar info podcast
             XmlSerializer serializer113 = new XmlSerializer(typeof(List<Podcast>));
             using (FileStream fs4 = File.OpenRead(Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + @"\Informacion\Multimedia\Data_Multimedia_Podcast.xml"))
             {
                 Spotflix.Lista_Podcasts = (List<Podcast>)serializer113.Deserialize(fs4);
+                foreach (var item in Spotflix.Lista_Podcasts)
+                {
+                    item.URL = Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + item.URL.Substring(Directory.GetCurrentDirectory().Length - 27);
+                }
             }
             //Deserializar info audiolibors
             XmlSerializer serializer114 = new XmlSerializer(typeof(List<AudioLibro>));
             using (FileStream fs4 = File.OpenRead(Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + @"\Informacion\Multimedia\Data_Multimedia_Audiolibro.xml"))
             {
                 Spotflix.Lista_AudioLibros = (List<AudioLibro>)serializer114.Deserialize(fs4);
+                foreach (var item in Spotflix.Lista_AudioLibros)
+                {
+                    item.URL = Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + item.URL.Substring(Directory.GetCurrentDirectory().Length - 27);
+                }
             }
             //Deserializar info videos
             XmlSerializer serializer115 = new XmlSerializer(typeof(List<Video>));
             using (FileStream fs4 = File.OpenRead(Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + @"\Informacion\Multimedia\Data_Multimedia_Videos.xml"))
             {
                 Spotflix.Lista_Videos = (List<Video>)serializer115.Deserialize(fs4);
+                foreach (var item in Spotflix.Lista_Videos)
+                {
+                    item.URL = Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + item.URL.Substring(Directory.GetCurrentDirectory().Length - 27);
+                }
             }
 
             /////////////////////////////////////////////////////////
