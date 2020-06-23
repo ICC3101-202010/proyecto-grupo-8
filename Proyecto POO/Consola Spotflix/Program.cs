@@ -175,6 +175,7 @@ namespace Consola_Spotflix
             //Agregar perfil:
             Spotflix.Lista_Perfiles.Add(Perfil_Ronca);
 
+
             Spotflix.Lista_Perfiles = null;
             Spotflix.Lista_Usuarios = null;
 
@@ -185,7 +186,13 @@ namespace Consola_Spotflix
             Spotflix.Lista_Videos = null;
 
 
+            //Deserializar info muro
 
+            XmlSerializer serializer100 = new XmlSerializer(typeof(List<string>));
+            using (FileStream fs4 = File.OpenRead(Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + @"\Informacion\Muro\Data_Muro.xml"))
+            {
+                Muro.listBox_registro = (List<string>)serializer100.Deserialize(fs4);
+            }
 
             //Deserializar info perfil
 
@@ -342,7 +349,6 @@ namespace Consola_Spotflix
                 }
             }
 
-
             /////////////////////////////////////////////////////////
             /////////////////////////////////////////////////////////
             Application.EnableVisualStyles();                    ////
@@ -403,6 +409,15 @@ namespace Consola_Spotflix
                 XmlSerializer serializer015 = new XmlSerializer(typeof(List<Video>));
                 serializer015.Serialize(fs3, Spotflix.Lista_Videos);
             }
+            //Serializar la info de muro.
+            using (Stream fs3 = new FileStream(Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + @"\Informacion\\Muro\Data_Muro.xml", FileMode.Create,
+                FileAccess.Write, FileShare.None))
+            {
+                XmlSerializer serializer015 = new XmlSerializer(typeof(List<string>));
+                serializer015.Serialize(fs3, Muro.listBox_registro);
+            }
+
+
         }
 
     }

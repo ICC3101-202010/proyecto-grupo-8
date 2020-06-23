@@ -30,6 +30,11 @@ namespace Consola_Spotflix
         {
             Button_Perfil_En_Linea.Text = Spotflix.perfilenlinea.Nombre_perfil;
             playlist_Perfil_En_Linea1.Iniciar();
+            foreach (var item in Muro.listBox_registro)
+            {
+                listBox1.Items.Add(item);
+            }
+            
             try
             {
                 pictureBox2.Image = new Bitmap(Spotflix.perfilenlinea.Imagen); 
@@ -558,6 +563,31 @@ namespace Consola_Spotflix
                     a = 0;
                 }
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string a = "";
+            int a1 = textBox1.Text.Length;
+            int c = 0;
+            string b = "";
+            while (a1 > 15)
+            {
+                b = textBox1.Text.Substring(c, 15);
+                a = Spotflix.perfilenlinea.Nombre_perfil + ": " + b;
+                listBox1.Items.Add(a);
+                a1 -= 10;
+                c += 10;
+            }
+            b = textBox1.Text.Substring(c);
+            a = Spotflix.perfilenlinea.Nombre_perfil + ": " + textBox1.Text;
+            listBox1.Items.Add(a);
+            Muro.listBox_registro.Clear();
+            foreach (var item in listBox1.Items)
+            {
+                Muro.listBox_registro.Add(item.ToString());
+            }
+            textBox1.Text = "";
         }
     }
 }

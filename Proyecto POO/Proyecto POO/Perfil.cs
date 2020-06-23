@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Runtime.Serialization;
-
-
+using System.Windows.Forms;
 
 namespace Proyecto_POO
 {
@@ -50,6 +49,7 @@ namespace Proyecto_POO
         public List<Pelicula> En_Cola_pelicula = new List<Pelicula>();
         public List<Podcast> En_Cola_podcast = new List<Podcast>();
         public List<AudioLibro> En_Cola_audiolibro = new List<AudioLibro>();
+       
 
         //Constructor
         public Perfil() { }
@@ -153,7 +153,7 @@ namespace Proyecto_POO
             info.AddValue("En_Cola_video", En_Cola_video);
             info.AddValue("En_Cola_pelicula", En_Cola_pelicula);
             info.AddValue("En_Cola_podcast", En_Cola_podcast);
-            info.AddValue("En_Cola_audiolibro", En_Cola_audiolibro);
+            info.AddValue("En_Cola_audiolibro", En_Cola_audiolibro);            
         }
         public Perfil(SerializationInfo info, StreamingContext context)
         {

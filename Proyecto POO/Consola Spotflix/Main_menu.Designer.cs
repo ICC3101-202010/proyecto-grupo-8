@@ -36,6 +36,9 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.playlist_Perfil_En_Linea1 = new Consola_Spotflix.Playlist_Perfil_En_Linea();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.button_Crear_Playlist = new System.Windows.Forms.Button();
             this.button_Cambio_de_Cuenta = new System.Windows.Forms.Button();
             this.button_Informacion = new System.Windows.Forms.Button();
@@ -176,6 +179,9 @@
             // panel4
             // 
             this.panel4.AutoScroll = true;
+            this.panel4.Controls.Add(this.listBox1);
+            this.panel4.Controls.Add(this.button1);
+            this.panel4.Controls.Add(this.textBox1);
             this.panel4.Controls.Add(this.button_Crear_Playlist);
             this.panel4.Controls.Add(this.button_Cambio_de_Cuenta);
             this.panel4.Controls.Add(this.button_Informacion);
@@ -186,12 +192,46 @@
             this.panel4.Size = new System.Drawing.Size(141, 626);
             this.panel4.TabIndex = 1;
             // 
+            // listBox1
+            // 
+            this.listBox1.BackColor = System.Drawing.SystemColors.Menu;
+            this.listBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.listBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.IntegralHeight = false;
+            this.listBox1.Location = new System.Drawing.Point(0, 113);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(141, 471);
+            this.listBox1.TabIndex = 4;
+            // 
+            // button1
+            // 
+            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button1.Location = new System.Drawing.Point(0, 90);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(141, 23);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "Publicar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.SystemColors.Menu;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.textBox1.Location = new System.Drawing.Point(0, 70);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(141, 20);
+            this.textBox1.TabIndex = 3;
+            // 
             // button_Crear_Playlist
             // 
             this.button_Crear_Playlist.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.button_Crear_Playlist.Location = new System.Drawing.Point(0, 591);
+            this.button_Crear_Playlist.Location = new System.Drawing.Point(0, 584);
             this.button_Crear_Playlist.Name = "button_Crear_Playlist";
-            this.button_Crear_Playlist.Size = new System.Drawing.Size(141, 35);
+            this.button_Crear_Playlist.Size = new System.Drawing.Size(141, 42);
             this.button_Crear_Playlist.TabIndex = 2;
             this.button_Crear_Playlist.Text = "Crear Playlist";
             this.button_Crear_Playlist.UseVisualStyleBackColor = true;
@@ -715,6 +755,7 @@
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -797,5 +838,8 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.PictureBox pictureBox;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }

@@ -102,6 +102,7 @@
     <Compile Include="Main_menu.Designer.cs">
       <DependentUpon>Main_menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Muro.cs" />
     <Compile Include="NuevoPerfil.cs">
       <SubType>UserControl</SubType>
     </Compile>

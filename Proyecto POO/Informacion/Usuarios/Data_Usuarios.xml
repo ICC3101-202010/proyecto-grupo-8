@@ -10,4 +10,24 @@
     <Contraseña>ronca</Contraseña>
     <Tipo_de_Membresia>2</Tipo_de_Membresia>
   </Usuario>
+  <Usuario>
+    <Nombre>Camila</Nombre>
+    <Apellido>Villalobos</Apellido>
+    <Fecha_De_Nacimiento>1998-09-30T00:00:00</Fecha_De_Nacimiento>
+    <Sexo>2</Sexo>
+    <Pais>Chile</Pais>
+    <Email>cami@spotflix.com</Email>
+    <Contraseña>cami</Contraseña>
+    <Tipo_de_Membresia>2</Tipo_de_Membresia>
+  </Usuario>
+  <Usuario>
+    <Nombre>Cami</Nombre>
+    <Apellido>Villalobos</Apellido>
+    <Fecha_De_Nacimiento>1998-09-30T00:00:00</Fecha_De_Nacimiento>
+    <Sexo>2</Sexo>
+    <Pais>Chile</Pais>
+    <Email>cami@spotflix.com</Email>
+    <Contraseña>cami</Contraseña>
+    <Tipo_de_Membresia>2</Tipo_de_Membresia>
+  </Usuario>
 </ArrayOfUsuario>
