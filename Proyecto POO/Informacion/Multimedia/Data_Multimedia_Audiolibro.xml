@@ -7,10 +7,10 @@
     <Duracion />
     <Ranking>10</Ranking>
     <Estado>2</Estado>
-    <URL>C:\Users\juani\Desktop\POO\Proyecto\Repositorio Proyecto\proyecto-grupo-8\Proyecto POOProyecto POOProyecto POOProyecto POOAzafata chistosa.mp3</URL>
+    <URL>C:\Users\juani\Desktop\POO\Proyecto\Repositorio Proyecto\proyecto-grupo-8\Proyecto POO\Biblioteca\Audio Libros\Azafata chistosa.mp3</URL>
     <Genero>Comedia</Genero>
     <Idioma>1</Idioma>
-    <URL_Texto>C:\Users\juani\Desktop\POO\Proyecto\Repositorio Proyecto\proyecto-grupo-8\Proyecto POOProyecto POOProyecto POOProyecto POOAzafata chistosa.txt</URL_Texto>
+    <URL_Texto>C:\Users\juani\Desktop\POO\Proyecto\Repositorio Proyecto\proyecto-grupo-8\Proyecto POO\Biblioteca\Audio Libros\Azafata chistosa.txt</URL_Texto>
     <Lector>
       <Nombre_y_Apellido>Roxana Gonzalez</Nombre_y_Apellido>
       <Sexo>1</Sexo>
@@ -28,10 +28,10 @@
     <Duracion />
     <Ranking>10</Ranking>
     <Estado>2</Estado>
-    <URL>C:\Users\juani\Desktop\POO\Proyecto\Repositorio Proyecto\proyecto-grupo-8\Proyecto POOProyecto POOProyecto POOProyecto POOHijo huerfano.mp3</URL>
+    <URL>C:\Users\juani\Desktop\POO\Proyecto\Repositorio Proyecto\proyecto-grupo-8\Proyecto POO\Biblioteca\Audio Libros\Hijo huerfano.mp3</URL>
     <Genero>Comedia</Genero>
     <Idioma>1</Idioma>
-    <URL_Texto>C:\Users\juani\Desktop\POO\Proyecto\Repositorio Proyecto\proyecto-grupo-8\Proyecto POOProyecto POOProyecto POOProyecto POOHijo huerfano.txt</URL_Texto>
+    <URL_Texto>C:\Users\juani\Desktop\POO\Proyecto\Repositorio Proyecto\proyecto-grupo-8\Proyecto POO\Biblioteca\Audio Libros\Hijo huerfano.txt</URL_Texto>
     <Lector>
       <Nombre_y_Apellido>Roxana Gonzalez</Nombre_y_Apellido>
       <Sexo>1</Sexo>
