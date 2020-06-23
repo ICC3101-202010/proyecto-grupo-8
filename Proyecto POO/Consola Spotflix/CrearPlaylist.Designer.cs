@@ -168,6 +168,7 @@
             this.label6.Size = new System.Drawing.Size(331, 24);
             this.label6.TabIndex = 11;
             this.label6.Text = "¡Recuerda rellenar todos los espacios!";
+            this.label6.Visible = false;
             // 
             // panel1
             // 

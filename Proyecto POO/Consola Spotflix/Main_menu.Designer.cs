@@ -32,8 +32,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main_menu));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.playlist_Perfil_En_Linea1 = new Consola_Spotflix.Playlist_Perfil_En_Linea();
             this.panel4 = new System.Windows.Forms.Panel();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -86,13 +86,11 @@
             this.peliculasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.podcastsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.audiolibrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.tmSlider = new System.Windows.Forms.Timer(this.components);
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.playlist_Perfil_En_Linea1 = new Consola_Spotflix.Playlist_Perfil_En_Linea();
+            this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -108,7 +106,7 @@
             this.panel11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -124,7 +122,6 @@
             this.tableLayoutPanel1.Controls.Add(this.panel8, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.botonCerrarSesion, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.panel10, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox3, 2, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -146,16 +143,6 @@
             this.panel1.Size = new System.Drawing.Size(980, 626);
             this.panel1.TabIndex = 0;
             // 
-            // axWindowsMediaPlayer1
-            // 
-            this.axWindowsMediaPlayer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.axWindowsMediaPlayer1.Enabled = true;
-            this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(0, 0);
-            this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
-            this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
-            this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(980, 433);
-            this.axWindowsMediaPlayer1.TabIndex = 2;
-            // 
             // panel3
             // 
             this.panel3.AutoScroll = true;
@@ -165,6 +152,20 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(980, 193);
             this.panel3.TabIndex = 1;
+            // 
+            // playlist_Perfil_En_Linea1
+            // 
+            this.playlist_Perfil_En_Linea1.AutoScroll = true;
+            this.playlist_Perfil_En_Linea1.AutoSize = true;
+            this.playlist_Perfil_En_Linea1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.playlist_Perfil_En_Linea1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.playlist_Perfil_En_Linea1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.playlist_Perfil_En_Linea1.Location = new System.Drawing.Point(0, 0);
+            this.playlist_Perfil_En_Linea1.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.playlist_Perfil_En_Linea1.Name = "playlist_Perfil_En_Linea1";
+            this.playlist_Perfil_En_Linea1.Size = new System.Drawing.Size(980, 193);
+            this.playlist_Perfil_En_Linea1.TabIndex = 0;
+            this.playlist_Perfil_En_Linea1.Load += new System.EventHandler(this.playlist_Perfil_En_Linea1_Load);
             // 
             // panel4
             // 
@@ -494,16 +495,16 @@
             this.panel7.Controls.Add(this.label_Tiempo_Inicio);
             this.panel7.Controls.Add(this.trackBar_Duracion);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel7.Location = new System.Drawing.Point(0, 32);
+            this.panel7.Location = new System.Drawing.Point(0, 24);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(817, 25);
+            this.panel7.Size = new System.Drawing.Size(817, 33);
             this.panel7.TabIndex = 8;
             // 
             // label_Tiempo_Fin
             // 
             this.label_Tiempo_Fin.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label_Tiempo_Fin.ForeColor = System.Drawing.SystemColors.MenuBar;
-            this.label_Tiempo_Fin.Location = new System.Drawing.Point(774, 6);
+            this.label_Tiempo_Fin.Location = new System.Drawing.Point(774, 10);
             this.label_Tiempo_Fin.Name = "label_Tiempo_Fin";
             this.label_Tiempo_Fin.Size = new System.Drawing.Size(43, 15);
             this.label_Tiempo_Fin.TabIndex = 7;
@@ -754,19 +755,6 @@
             this.audiolibrosToolStripMenuItem.Text = "Audiolibros";
             this.audiolibrosToolStripMenuItem.Click += new System.EventHandler(this.audiolibrosToolStripMenuItem_Click);
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackgroundImage = global::Consola_Spotflix.Properties.Resources.LogoSpotflix;
-            this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox3.Image = global::Consola_Spotflix.Properties.Resources.LogoSpotflix;
-            this.pictureBox3.InitialImage = global::Consola_Spotflix.Properties.Resources.LogoSpotflix;
-            this.pictureBox3.Location = new System.Drawing.Point(1136, 663);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(65, 54);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 11;
-            this.pictureBox3.TabStop = false;
-            // 
             // tmSlider
             // 
             this.tmSlider.Tick += new System.EventHandler(this.tmSlider_Tick);
@@ -777,19 +765,15 @@
             this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             // 
-            // playlist_Perfil_En_Linea1
+            // axWindowsMediaPlayer1
             // 
-            this.playlist_Perfil_En_Linea1.AutoScroll = true;
-            this.playlist_Perfil_En_Linea1.AutoSize = true;
-            this.playlist_Perfil_En_Linea1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
-            this.playlist_Perfil_En_Linea1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.playlist_Perfil_En_Linea1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.playlist_Perfil_En_Linea1.Location = new System.Drawing.Point(0, 0);
-            this.playlist_Perfil_En_Linea1.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
-            this.playlist_Perfil_En_Linea1.Name = "playlist_Perfil_En_Linea1";
-            this.playlist_Perfil_En_Linea1.Size = new System.Drawing.Size(980, 193);
-            this.playlist_Perfil_En_Linea1.TabIndex = 0;
-            this.playlist_Perfil_En_Linea1.Load += new System.EventHandler(this.playlist_Perfil_En_Linea1_Load);
+            this.axWindowsMediaPlayer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.axWindowsMediaPlayer1.Enabled = true;
+            this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(0, 0);
+            this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
+            this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
+            this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(980, 433);
+            this.axWindowsMediaPlayer1.TabIndex = 2;
             // 
             // Main_menu
             // 
@@ -805,7 +789,6 @@
             this.Size = new System.Drawing.Size(1280, 720);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
@@ -830,7 +813,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -896,6 +879,5 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }
