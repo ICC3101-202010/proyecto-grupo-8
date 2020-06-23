@@ -276,7 +276,7 @@ namespace Consola_Spotflix
                 
             }
             //agregar mullt a playlist
-            else if (tipo == "Playlist")
+            else if (tipo == "Playlists")
             {
                 Buscar.Show();
                 label1.Show();
@@ -291,12 +291,10 @@ namespace Consola_Spotflix
                 comboBox2.Items.Add("Peliculas");
                 comboBox2.Items.Add("Podcasts"); 
                 comboBox2.Items.Add("Videos");
-
-
                 label2.Text = "Tipo de Playlists:";
                 label2.Show();
                 comboBox3.Items.Add("");
-                label4.Text = "Valor:";
+                label4.Text = "Nombre:";
                 label5.Text = "Playlist";
                 textBox1.Show();
                 label4.Show();
@@ -1452,7 +1450,7 @@ namespace Consola_Spotflix
 
                 }
             }
-            else if (tipo == "Playlist")
+            else if (tipo == "Playlists")
             {
                 if ((string)comboBox1.SelectedItem == "Seguir")
                 {
@@ -1806,6 +1804,7 @@ namespace Consola_Spotflix
                             if (item.Nombre == (string)comboBox3.SelectedItem)
                             {
                                 Spotflix.perfilenlinea.Playlists_Audiolibro_Propios.Remove(item);
+                                break;
                             }
 
                         }
@@ -1813,13 +1812,12 @@ namespace Consola_Spotflix
                     }
                     if ((string)comboBox2.SelectedItem == "Canciones")
                     {
-                        Playlist p1 = new Playlist();
-
                         foreach (var item in Spotflix.perfilenlinea.Playlists_Canciones_Propias)
                         {
                             if (item.Nombre == (string)comboBox3.SelectedItem)
                             {
                                 Spotflix.perfilenlinea.Playlists_Canciones_Propias.Remove(item);
+                                break;
                             }
 
                         }
@@ -1832,6 +1830,7 @@ namespace Consola_Spotflix
                             if (item.Nombre == (string)comboBox3.SelectedItem)
                             {
                                 Spotflix.perfilenlinea.Playlists_Peliculas_Propias.Remove(item);
+                                break;
                             }
 
                         }
@@ -1843,6 +1842,7 @@ namespace Consola_Spotflix
                             if (item.Nombre == (string)comboBox3.SelectedItem)
                             {
                                 Spotflix.perfilenlinea.Playlists_Podcast_Propios.Remove(item);
+                                break;
                             }
 
                         }
@@ -1855,51 +1855,14 @@ namespace Consola_Spotflix
                             if (item.Nombre == (string)comboBox3.SelectedItem)
                             {
                                 Spotflix.perfilenlinea.Playlists_Video_Propios.Remove(item);
+                                break;
                             }
 
                         }
                     }
                 }
             }
-            //Playlist
         }
-
-        private void Buscador_Load(object sender, EventArgs e)
-        {
-            BringToFront();
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-
-            
-        }
-
-        //Faltan los hides y clears
-        private void atras_Click(object sender, EventArgs e)
-        {
-            label1.Hide();
-            label2.Hide();
-            label3.Hide();
-            label4.Hide();
-            label5.Hide();
-            label6.Hide();
-            comboBox1.Items.Clear();
-            comboBox2.Items.Clear();
-            comboBox3.Items.Clear();
-            comboBox4.Items.Clear();
-            textBox1.Clear();
-            Hide();
-            //clears.
-        }
-
-        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        //boton del text (abajo)
         private void Buscar_Click(object sender, EventArgs e)
         {
             if (tipo == "Artistas")
@@ -1963,7 +1926,7 @@ namespace Consola_Spotflix
 
                     }
                     else if ((string)comboBox2.SelectedItem == "Nombre" && item.Nombre_y_Apellido == textBox1.Text)
-                    { 
+                    {
                         comboBox3.Items.Add(item.Nombre_y_Apellido);
                     }
                     else if ((string)comboBox2.SelectedItem == "Nombre" && (string)comboBox5.SelectedItem == "Nacionalidad"
@@ -1998,7 +1961,7 @@ namespace Consola_Spotflix
                     }
 
                 }
-                
+
             }
             else if (tipo == "Canciones")
             {
@@ -2196,94 +2159,25 @@ namespace Consola_Spotflix
             //FUncion Playlist
             else if (tipo == "Playlists")
             {
-                if ((string)comboBox1.SelectedItem == "Eliminar")
-                {
-                    if ((string)comboBox2.SelectedItem == "AudioLibros")
-                    {
-
-                        foreach (var item2 in Spotflix.perfilenlinea.Playlists_Audiolibro_Propios)
-                        {
-                            if (item2.Nombre == textBox1.Text)
-                            {
-                                comboBox3.Items.Add(item2.Nombre);
-                            }
-                        }
-                        
-                    }
-                    else if ((string)comboBox2.SelectedItem == "Canciones")
-                    {
-                        foreach (var item2 in Spotflix.perfilenlinea.Playlists_Canciones_Propias)
-                        {
-                            if (item2.Nombre == textBox1.Text)
-                            {
-                                comboBox3.Items.Add(item2.Nombre);
-                            }
-                        }
-                    }
-                    else if ((string)comboBox2.SelectedItem == "Peliculas")
-                    {
-                        foreach (var item in Spotflix.Lista_Perfiles)
-                        {
-                            foreach (var item2 in item.Playlists_Peliculas_Propias)
-                            {
-                                if (item2.Nombre == textBox1.Text)
-                                {
-                                    comboBox3.Items.Add(item2.Nombre);
-                                }
-                            }
-                        }
-                    }
-                    else if ((string)comboBox2.SelectedItem == "Podcasts")
-                    {
-                        foreach (var item in Spotflix.Lista_Perfiles)
-                        {
-                            foreach (var item2 in item.Playlists_Podcast_Propios)
-                            {
-                                if (item2.Nombre == textBox1.Text)
-                                {
-                                    comboBox3.Items.Add(item2.Nombre);
-                                }
-                            }
-                        }
-                    }
-                    else if ((string)comboBox2.SelectedItem == "Videos")
-                    {
-                        foreach (var item in Spotflix.Lista_Perfiles)
-                        {
-                            foreach (var item2 in item.Playlists_Video_Propios)
-                            {
-                                if (item2.Nombre == textBox1.Text)
-                                {
-                                    comboBox3.Items.Add(item2.Nombre);
-                                }
-                            }
-                        }
-                    }
-                }
-
                 if ((string)comboBox2.SelectedItem == "Audiolibros")
                 {
-                    foreach (var item in Spotflix.Lista_Perfiles)
+
+                    foreach (var item2 in Spotflix.perfilenlinea.Playlists_Audiolibro_Propios)
                     {
-                        foreach (var item2 in item.Playlists_Audiolibro_Propios)
+                        if (item2.Nombre == textBox1.Text)
                         {
-                            if (item2.Nombre == textBox1.Text)
-                            {
-                                comboBox3.Items.Add(item2.Nombre);
-                            }
+                            comboBox3.Items.Add(item2.Nombre);
                         }
                     }
+
                 }
                 else if ((string)comboBox2.SelectedItem == "Canciones")
                 {
-                    foreach (var item in Spotflix.Lista_Perfiles)
+                    foreach (var item2 in Spotflix.perfilenlinea.Playlists_Canciones_Propias)
                     {
-                        foreach (var item2 in item.Playlists_Canciones_Propias)
+                        if (item2.Nombre == textBox1.Text)
                         {
-                            if (item2.Nombre == textBox1.Text)
-                            {
-                                comboBox3.Items.Add(item2.Nombre);
-                            }
+                            comboBox3.Items.Add(item2.Nombre);
                         }
                     }
                 }
@@ -2326,9 +2220,49 @@ namespace Consola_Spotflix
                         }
                     }
                 }
-                
-
             }
+           
+
+
         }
+        private void atras_Click(object sender, EventArgs e)
+        {
+            label1.Hide();
+            label2.Hide();
+            label3.Hide();
+            label4.Hide();
+            label5.Hide();
+            label6.Hide();
+            comboBox1.Items.Clear();
+            comboBox2.Items.Clear();
+            comboBox3.Items.Clear();
+            comboBox4.Items.Clear();
+            textBox1.Clear();
+            Hide();
+            //clears.
+        }
+
+        private void Buscador_Load(object sender, EventArgs e)
+        {
+            BringToFront();
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+
+            
+        }
+
+        //Faltan los hides y clears
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        //boton del text (abajo)
+
+        
     }
 }

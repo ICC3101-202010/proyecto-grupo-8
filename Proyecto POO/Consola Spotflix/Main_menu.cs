@@ -423,7 +423,7 @@ namespace Consola_Spotflix
 
         private void playlistToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Registro.busc1.tipo = "Playlist";
+            Registro.busc1.tipo = "Playlists";
             Registro.busc1.CargarBuscador();
         }
 
@@ -453,8 +453,9 @@ namespace Consola_Spotflix
 
         private void audiolibrosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //Registro.buscador1.cargar(); ;
-            //buscador1.tipo = "Audio Libro";
+            Registro.busc1.tipo = "Audiolibros";
+            Registro.busc1.CargarBuscador(); ;
+            
         }
 
         private void botonCerrarSesion_Click(object sender, EventArgs e)

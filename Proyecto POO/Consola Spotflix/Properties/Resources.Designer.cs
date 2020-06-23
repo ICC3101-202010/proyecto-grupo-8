@@ -113,6 +113,16 @@ namespace Consola_Spotflix.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap LogoSpotflix {
+            get {
+                object obj = ResourceManager.GetObject("LogoSpotflix", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap rojo {
             get {
                 object obj = ResourceManager.GetObject("rojo", resourceCulture);
