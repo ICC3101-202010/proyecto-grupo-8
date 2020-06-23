@@ -54,6 +54,7 @@
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -208,9 +209,9 @@
             // 
             // botonatras
             // 
-            this.botonatras.Location = new System.Drawing.Point(578, 24);
+            this.botonatras.Location = new System.Drawing.Point(563, 24);
             this.botonatras.Name = "botonatras";
-            this.botonatras.Size = new System.Drawing.Size(75, 23);
+            this.botonatras.Size = new System.Drawing.Size(90, 31);
             this.botonatras.TabIndex = 13;
             this.botonatras.Text = "Atras";
             this.botonatras.UseVisualStyleBackColor = true;
@@ -354,6 +355,14 @@
             this.pictureBox1.TabIndex = 25;
             this.pictureBox1.TabStop = false;
             // 
+            // panel1
+            // 
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(719, 467);
+            this.panel1.TabIndex = 26;
+            // 
             // InfoPerfil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -385,6 +394,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.panel1);
             this.Name = "InfoPerfil";
             this.Size = new System.Drawing.Size(719, 467);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -421,5 +431,6 @@
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel panel1;
     }
 }

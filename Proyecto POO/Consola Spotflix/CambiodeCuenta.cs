@@ -63,7 +63,7 @@ namespace Consola_Spotflix
                 label7.Hide();
                 label8.Hide();
                 comboBox2.Hide();
-                
+
             }
             else if (opcion == "Tipo de Perfil")
             {
@@ -71,9 +71,9 @@ namespace Consola_Spotflix
                 label3.Show();
                 label3.Text = "Tipo de perfil";
                 comboBox2.Show();
-                comboBox2.Items.Add("Artista");
                 comboBox2.Items.Add("Publico");
                 comboBox2.Items.Add("Privado");
+                comboBox2.Items.Add("Artista");
                 textBox1.Hide();
                 textBox2.Hide();
                 textBox3.Hide();
@@ -85,7 +85,7 @@ namespace Consola_Spotflix
                 label6.Hide();
                 label7.Hide();
                 label8.Hide();
-                
+
             }
             else if (opcion == "Contraseña")
             {
@@ -104,7 +104,7 @@ namespace Consola_Spotflix
                 label7.Hide();
                 label8.Hide();
                 comboBox2.Hide();
-                
+
 
             }
             else if (opcion == "Membresia")
@@ -127,7 +127,7 @@ namespace Consola_Spotflix
                 comboBox2.Items.Add("Gratis");
                 comboBox2.Items.Add("Premium");
 
-                
+
 
             }
 
@@ -147,26 +147,28 @@ namespace Consola_Spotflix
                 }
 
             }
-            else if ((string)comboBox1.SelectedItem == "Tipo de perfil")
+            else if ((string)comboBox1.SelectedItem == "Tipo de Perfil")
             {
-                int tipo = 3;
-                if ((string)comboBox2.SelectedItem == "Publico") 
-                {
-                    tipo = 1;
-                }
-                else if ((string)comboBox2.SelectedItem == "Privado")
+                int tipo = 0;
+                if ((string)comboBox2.SelectedItem == "Publico")
                 {
                     tipo = 2;
+                }
+                else if ((string)comboBox2.SelectedItem == "Artista")
+                {
+                    tipo = 1;
                 }
                 else
                 {
                     tipo = 3;
                 }
-
                 foreach (Perfil p in Spotflix.Lista_Perfiles)
                 {
+
                     if (p == Spotflix.perfilenlinea)
                     {
+
+                        Spotflix.perfilenlinea.Tipo_de_Perfil = tipo;
                         p.Tipo_de_Perfil = tipo;
                     }
                 }
@@ -182,7 +184,7 @@ namespace Consola_Spotflix
                     {
                         p.Contraseña = contraseña;
                     }
-        
+
 
                 }
 
@@ -198,7 +200,7 @@ namespace Consola_Spotflix
                 else
                 {
                     membresia = 2;
-                    
+
                 }
                 foreach (Usuario p in Spotflix.Lista_Usuarios)
                 {
@@ -218,7 +220,7 @@ namespace Consola_Spotflix
             textBox6.Clear();
             comboBox1.Items.Clear();
             comboBox2.Items.Clear();
-            
+
         }
         public void Showww()
         {
