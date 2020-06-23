@@ -15,12 +15,13 @@ using System.Threading;
 using System.Security.AccessControl;
 using System.Xml.Serialization;
 using System.IO;
+using Consola_Spotflix.Properties;
 
 namespace Consola_Spotflix
 {
     public partial class Main_menu : UserControl
-    {
-        int v1 = 50;
+    {        
+        int a = 0;
         public OpenFileDialog archivo = new OpenFileDialog();
         int play = 0;
         public string ruta;
@@ -28,7 +29,17 @@ namespace Consola_Spotflix
         public void Iniciar()
         {
             Button_Perfil_En_Linea.Text = Spotflix.perfilenlinea.Nombre_perfil;
-            playlist_Perfil_En_Linea1.Iniciar();        
+            playlist_Perfil_En_Linea1.Iniciar();
+            try
+            {
+                pictureBox2.Image = new Bitmap(Spotflix.perfilenlinea.Imagen); 
+            }
+            catch 
+            {
+
+                pictureBox2.Image = Resources.fondo_imagenes;
+            }
+            
         }
         public Main_menu()
         {
@@ -131,14 +142,27 @@ namespace Consola_Spotflix
         }
         private void trackBar_Duracion_ValueChanged(object sender, EventArgs e)
         {
-            trackBar_Duracion.Maximum = (int)axWindowsMediaPlayer1.currentMedia.duration;
-            if (trackBar_Duracion.Value == (int)axWindowsMediaPlayer1.Ctlcontrols.currentPosition)
+            if (axWindowsMediaPlayer1.currentMedia == null)
             {
 
             }
             else
             {
-                axWindowsMediaPlayer1.Ctlcontrols.currentPosition = trackBar_Duracion.Value;
+                try
+                {
+                    trackBar_Duracion.Maximum = (int)axWindowsMediaPlayer1.currentMedia.duration;
+                    if (trackBar_Duracion.Value == (int)axWindowsMediaPlayer1.Ctlcontrols.currentPosition)
+                    {
+
+                    }
+                    else
+                    {
+                        axWindowsMediaPlayer1.Ctlcontrols.currentPosition = trackBar_Duracion.Value;
+                    }
+                }
+                catch
+                {
+                }
             }
         }
         private void Cancion_Artista_Ca()
@@ -149,6 +173,21 @@ namespace Consola_Spotflix
                 {
                     Nombre_Cancion.Text = Spotflix.Temporal_Info_Ca[i].Titulo;
                     Nombre_Artista.Text = Spotflix.Temporal_Info_Ca[i].Cantante[0].Nombre_y_Apellido;
+                    foreach (var item in Spotflix.perfilenlinea.Fav_Canciones)
+                    {
+                        if (Spotflix.Temporal_Info_Ca[i].Titulo==item.Titulo)
+                        {
+                            
+                            pictureBox1.Image = Properties.Resources.like_completo;
+                            a = 1;
+                            break;
+                        }
+                        else
+                        {
+                            pictureBox1.Image = Properties.Resources.like;
+                            a = 0;
+                        }
+                    }
                     Spotflix.Temporal_Info_Ca[i].Duracion = TimeSpan.Parse(axWindowsMediaPlayer1.currentMedia.durationString);
                     pictureBox.BackColor = Color.FromArgb(23, 23, 23);
                     try
@@ -174,7 +213,20 @@ namespace Consola_Spotflix
                     Nombre_Cancion.Text = Spotflix.Temporal_Info_Pe[i].Titulo;
                     Nombre_Artista.Text = Spotflix.Temporal_Info_Pe[i].Director[0].Nombre_y_Apellido;
                     Spotflix.Temporal_Info_Pe[i].Duracion = TimeSpan.Parse(axWindowsMediaPlayer1.currentMedia.durationString);
-                    
+                    foreach (var item in Spotflix.perfilenlinea.Fav_Pelicula)
+                    {
+                        if (Spotflix.Temporal_Info_Pe[i] == item)
+                        {
+                            pictureBox1.Image = Properties.Resources.like_completo;
+                            a = 1;
+                        }
+                        else
+                        {
+                            pictureBox1.Image = Properties.Resources.like;
+                            a = 0;
+                        }
+                    }
+
                     break;
                 }
             }
@@ -190,6 +242,19 @@ namespace Consola_Spotflix
                     Nombre_Cancion.Text = Spotflix.Temporal_Info_Po[i].Titulo;
                     Nombre_Artista.Text = Spotflix.Temporal_Info_Po[i].Locutor[0].Nombre_y_Apellido;
                     Spotflix.Temporal_Info_Po[i].Duracion = TimeSpan.Parse(axWindowsMediaPlayer1.currentMedia.durationString);
+                    foreach (var item in Spotflix.perfilenlinea.Fav_Podcast)
+                    {
+                        if (Spotflix.Temporal_Info_Po[i] == item)
+                        {
+                            pictureBox1.Image = Properties.Resources.like_completo;
+                            a = 1;
+                        }
+                        else
+                        {
+                            pictureBox1.Image = Properties.Resources.like;
+                            a = 0;
+                        }
+                    }
                     break;
                 }
             }
@@ -205,6 +270,19 @@ namespace Consola_Spotflix
                     Nombre_Cancion.Text = Spotflix.Temporal_Info_AL[i].Titulo;
                     Nombre_Artista.Text = Spotflix.Temporal_Info_AL[i].Lector.Nombre_y_Apellido;
                     Spotflix.Temporal_Info_AL[i].Duracion = TimeSpan.Parse(axWindowsMediaPlayer1.currentMedia.durationString);
+                    foreach (var item in Spotflix.perfilenlinea.Fav_AudioLibro)
+                    {
+                        if (Spotflix.Temporal_Info_AL[i] == item)
+                        {
+                            pictureBox1.Image = Properties.Resources.like_completo;
+                            a = 1;
+                        }
+                        else
+                        {
+                            pictureBox1.Image = Properties.Resources.like;
+                            a = 0;
+                        }
+                    }
                     break;
                 }
             }
@@ -218,6 +296,19 @@ namespace Consola_Spotflix
                 {
                     Nombre_Cancion.Text = Spotflix.Temporal_Info_Vi[i].Titulo;
                     Spotflix.Temporal_Info_Vi[i].Duracion = TimeSpan.Parse(axWindowsMediaPlayer1.currentMedia.durationString);
+                    foreach (var item in Spotflix.perfilenlinea.Fav_Videos)
+                    {
+                        if (Spotflix.Temporal_Info_Vi[i] == item)
+                        {
+                            pictureBox1.Image = Properties.Resources.like_completo;
+                            a = 1;
+                        }
+                        else
+                        {
+                            pictureBox1.Image = Properties.Resources.like;
+                            a = 0;
+                        }
+                    }
                     break;
                 }
             }
@@ -433,21 +524,40 @@ namespace Consola_Spotflix
             }
             
         }
-        int a=0;
+
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            if (a ==0)
+            if (tipo == 1)
             {
-                pictureBox1.Image = Properties.Resources.like_completo;
-                a = 1;
-            }
-            else if (a == 1)
-            {
-                pictureBox1.Image = Properties.Resources.like;
-                a = 0;
-            }
+                if (a == 0)
+                {
 
-            //agregar cancion a favoritos.
+                    for (int i = 0; i < Spotflix.Temporal.count; i++)
+                    {
+                        if (axWindowsMediaPlayer1.currentMedia.isIdentical[Spotflix.Temporal.Item[i]])
+                        {
+                            Spotflix.perfilenlinea.Fav_Canciones.Add(Spotflix.Temporal_Info_Ca[i]);
+                            break;
+                        }
+                    }
+                    pictureBox1.Image = Properties.Resources.like_completo;
+                    a = 1;
+
+                }
+                else if (a == 1)
+                {
+                    for (int i = 0; i < Spotflix.Temporal.count; i++)
+                    {
+                        if (axWindowsMediaPlayer1.currentMedia.isIdentical[Spotflix.Temporal.Item[i]])
+                        {                            
+                            Spotflix.perfilenlinea.Fav_Canciones.Remove(Spotflix.Temporal_Info_Ca[i]);
+                            break;
+                        }
+                    }
+                    pictureBox1.Image = Properties.Resources.like;
+                    a = 0;
+                }
+            }
         }
     }
 }

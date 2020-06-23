@@ -194,7 +194,7 @@ namespace Consola_Spotflix
             {
                 Spotflix.Lista_Perfiles = (List<Perfil>)serializer101.Deserialize(fs4);
             }
-            //Deserializar info perfil
+            //Deserializar info usuarios
             XmlSerializer serializer102 = new XmlSerializer(typeof(List<Usuario>));
             using (FileStream fs4 = File.OpenRead(Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + @"\Informacion\Usuarios\Data_Usuarios.xml"))
             {

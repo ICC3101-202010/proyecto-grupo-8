@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Proyecto_POO;
+using Consola_Spotflix.Properties;
 
 namespace Consola_Spotflix
 {
@@ -35,6 +36,16 @@ namespace Consola_Spotflix
             label24.Show();
             label9.Text = "Publico";
             label8.Text = Spotflix.perfilenlinea.Nombre_perfil;
+            try
+            {
+                pictureBox1.Image = new Bitmap(Spotflix.perfilenlinea.Imagen);
+            }
+            catch 
+            {
+
+                pictureBox1.Image = Resources.fondo_imagenes;
+            }
+            
             if (Spotflix.perfilenlinea.Tipo_de_Perfil == 1)
             {
                 label9.Text = "Artista";

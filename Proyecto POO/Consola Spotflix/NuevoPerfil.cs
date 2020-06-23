@@ -18,7 +18,8 @@ namespace Proyecto_POO
     {
         string nombreperfil;
         string tipodeperfil;
-        
+        string direccion_imagen = "";
+
         public NuevoPerfil()
         {
             InitializeComponent();
@@ -62,7 +63,7 @@ namespace Proyecto_POO
                     tipo = 3;
                 }
 
-                string foto = FotoDePerfil.Text;
+                string foto = direccion_imagen;
                 Perfil p1 = new Perfil(Spotflix.usuarioenlinea, nombreperfil, tipo, foto);
                 Creado.Show();
                 Spotflix.Lista_Perfiles.Add(p1);
@@ -93,10 +94,28 @@ namespace Proyecto_POO
             Registro.p1.loadPerfiles(cantperfenlinea);
             Hide();
         }
-
+        
         private void button1_Click(object sender, EventArgs e)
         {
+            string sourceFile;
+            string destFile = "";
+            openFileDialog1.Filter = "Archivo files|*.png;*.jpg;.*;";
+            DialogResult dres1 = openFileDialog1.ShowDialog();
+            if (dres1 == DialogResult.Abort)
+            {
+                return;
+            }
+            if (dres1 == DialogResult.Cancel)
+            {
+                return;
+            }
+            sourceFile = openFileDialog1.FileName;
+            
+            destFile = Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + @"\Informacion\Perfiles\" + Path.GetFileName(openFileDialog1.FileName); ;
+            File.Copy(sourceFile, destFile, true);
 
+            direccion_imagen = destFile;
+            FotoDePerfil.Text = Path.GetFileName(openFileDialog1.FileName);
         }
     }
 }

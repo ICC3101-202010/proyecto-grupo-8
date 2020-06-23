@@ -232,41 +232,4 @@
     <Letra>Letra</Letra>
     <Genero>Rap</Genero>
   </Cancion>
-  <Cancion>
-    <Titulo>The box</Titulo>
-    <Categoria>1</Categoria>
-    <Año>2020-02-28T00:00:00</Año>
-    <Duracion />
-    <Ranking>10</Ranking>
-    <Estado>0</Estado>
-    <URL>C:\Users\juani\Desktop\POO\Proyecto\Repositorio Proyecto\proyecto-grupo-8\Proyecto POO\Biblioteca\Musica\The Box.mp3</URL>
-    <Cantante>
-      <Persona>
-        <Nombre_y_Apellido>Roddy Ricch</Nombre_y_Apellido>
-        <Sexo>1</Sexo>
-        <Nacionalidad>Estadounidense</Nacionalidad>
-        <Fecha_De_Nacimiento>1998-10-22T00:00:00</Fecha_De_Nacimiento>
-        <Profesion>
-          <int>1</int>
-          <int>2</int>
-        </Profesion>
-      </Persona>
-    </Cantante>
-    <Compositor>
-      <Persona>
-        <Nombre_y_Apellido>Roddy Ricch</Nombre_y_Apellido>
-        <Sexo>1</Sexo>
-        <Nacionalidad>Estadounidense</Nacionalidad>
-        <Fecha_De_Nacimiento>1998-10-22T00:00:00</Fecha_De_Nacimiento>
-        <Profesion>
-          <int>1</int>
-          <int>2</int>
-        </Profesion>
-      </Persona>
-    </Compositor>
-    <Album>Please Excuse Me for Being Antisocial</Album>
-    <Imagen>C:\Users\juani\Desktop\POO\Proyecto\Repositorio Proyecto\proyecto-grupo-8\Proyecto POO\Biblioteca\Musica\The box.jpg</Imagen>
-    <Letra>C:\Users\juani\Desktop\POO\Proyecto\Repositorio Proyecto\proyecto-grupo-8\Proyecto POO\Biblioteca\Musica\The box_Letra.txt</Letra>
-    <Genero>Hip-hop</Genero>
-  </Cancion>
 </ArrayOfCancion>
