@@ -250,13 +250,16 @@ namespace Consola_Spotflix
             }
             foreach (var item in Spotflix.Lista_Canciones)
             {
+                string dir = "";
                 if (item.Imagen == "")
                 {
 
                 }
                 else
                 {
-                    item.Imagen = Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + item.Imagen.Substring(Directory.GetCurrentDirectory().Length - 27);
+                    dir = "";
+                    dir = @"\Biblioteca\Musica\" + Path.GetFileName(item.Imagen).Substring(12);
+                    item.Imagen = Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + dir;
                 }
                 if (item.Letra == "")
                 {
@@ -264,58 +267,76 @@ namespace Consola_Spotflix
                 }
                 else
                 {
-                    item.Letra = Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + item.Letra.Substring(Directory.GetCurrentDirectory().Length - 27);
+                    dir = "";
+                    dir = @"\Biblioteca\Musica\" + Path.GetFileName(item.Letra).Substring(12);
+                    item.Letra = Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + dir;
                 }
-
-                item.URL = Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + item.URL.Substring(Directory.GetCurrentDirectory().Length - 27);
+                dir = "";
+                dir = @"\Biblioteca\Musica\" + Path.GetFileName(item.URL).Substring(12);               
+                item.URL = Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + dir;
+                
 
             }
             foreach (var item in Spotflix.Lista_Peliculas)
             {
+                string dir="";
                 if (item.URL == "")
                 {
 
                 }
                 else
                 {
-                    item.URL = Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + item.URL.Substring(Directory.GetCurrentDirectory().Length - 27);
+                    dir = "";
+                    dir = @"\Biblioteca\Peliculas\" + Path.GetFileName(item.URL).Substring(12);
+                    item.URL = Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + dir;
                 }
             }
             foreach (var item in Spotflix.Lista_Podcasts)
             {
+                string dir = "";
                 if (item.Imagen == "")
                 {
 
                 }
                 else
                 {
-                    item.Imagen = Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + item.Imagen.Substring(Directory.GetCurrentDirectory().Length - 27);
+                    dir = "";
+                    dir = @"\Biblioteca\Podcast\" + Path.GetFileName(item.Imagen).Substring(12);
+                    item.Imagen = Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + dir;
                 }
-                item.URL = Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + item.URL.Substring(Directory.GetCurrentDirectory().Length - 27);
-
+                dir = "";
+                dir = @"\Biblioteca\Podcast\" + Path.GetFileName(item.URL).Substring(12);
+                item.URL = Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + dir;
             }
             foreach (var item in Spotflix.Lista_AudioLibros)
             {
+                string dir = "";
                 if (item.URL_Texto == "")
                 {
 
                 }
                 else
                 {
-                    item.URL_Texto = Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + item.URL_Texto.Substring(Directory.GetCurrentDirectory().Length - 27);
+                    dir = "";
+                    dir = @"\Biblioteca\Audio Libros\" + Path.GetFileName(item.URL_Texto).Substring(12);
+                    item.URL_Texto = Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + dir;
                 }
-                item.URL = Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + item.URL.Substring(Directory.GetCurrentDirectory().Length - 27);
-
+                dir = "";
+                dir = @"\Biblioteca\Audio Libros\" + Path.GetFileName(item.URL).Substring(12);
+                item.URL = Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + dir;
             }
             foreach (var item in Spotflix.Lista_Videos)
             {
+                string dir = "";
                 if (item.URL == "")
                 {
 
                 }
                 else
                 {
-                    item.URL = Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + item.URL.Substring(Directory.GetCurrentDirectory().Length - 27);
+                    dir = "";
+                    dir = @"\Biblioteca\Videos\" + Path.GetFileName(item.URL).Substring(12);
+                    item.URL = Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + dir;
                 }
             }
 
