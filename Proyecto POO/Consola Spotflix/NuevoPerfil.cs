@@ -35,7 +35,7 @@ namespace Proyecto_POO
 
         private void comboTipoPerfil_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            tipodeperfil = comboTipoPerfil.SelectedItem.ToString();
         }
         int a = 0;
         private void botonCrearPerfil_Click(object sender, EventArgs e)
