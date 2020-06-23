@@ -209,12 +209,14 @@
             // 
             // botonatras
             // 
-            this.botonatras.Location = new System.Drawing.Point(563, 24);
+            this.botonatras.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.botonatras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.botonatras.Location = new System.Drawing.Point(522, 24);
             this.botonatras.Name = "botonatras";
-            this.botonatras.Size = new System.Drawing.Size(90, 31);
+            this.botonatras.Size = new System.Drawing.Size(131, 46);
             this.botonatras.TabIndex = 13;
             this.botonatras.Text = "Atras";
-            this.botonatras.UseVisualStyleBackColor = true;
+            this.botonatras.UseVisualStyleBackColor = false;
             this.botonatras.Click += new System.EventHandler(this.botonatras_Click);
             // 
             // label14

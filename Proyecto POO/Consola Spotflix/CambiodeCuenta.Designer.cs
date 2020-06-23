@@ -55,7 +55,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Menu;
-            this.label1.Location = new System.Drawing.Point(309, 65);
+            this.label1.Location = new System.Drawing.Point(347, 65);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(267, 33);
             this.label1.TabIndex = 0;
@@ -229,12 +229,15 @@
             // 
             // Cambiar
             // 
-            this.Cambiar.Location = new System.Drawing.Point(805, 446);
+            this.Cambiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.Cambiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Cambiar.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.Cambiar.Location = new System.Drawing.Point(794, 448);
             this.Cambiar.Name = "Cambiar";
-            this.Cambiar.Size = new System.Drawing.Size(108, 38);
+            this.Cambiar.Size = new System.Drawing.Size(119, 38);
             this.Cambiar.TabIndex = 17;
             this.Cambiar.Text = "Cambiar";
-            this.Cambiar.UseVisualStyleBackColor = true;
+            this.Cambiar.UseVisualStyleBackColor = false;
             this.Cambiar.Click += new System.EventHandler(this.Cambiar_Click);
             // 
             // panel1
@@ -266,12 +269,15 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.SystemColors.InfoText;
             this.button1.Location = new System.Drawing.Point(805, 42);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(108, 29);
             this.button1.TabIndex = 18;
             this.button1.Text = "Atras";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // CambiodeCuenta

@@ -424,24 +424,28 @@
             // 
             // Menu
             // 
-            this.Menu.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.Menu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Menu.ForeColor = System.Drawing.SystemColors.InfoText;
             this.Menu.Location = new System.Drawing.Point(813, 58);
             this.Menu.Name = "Menu";
             this.Menu.Size = new System.Drawing.Size(142, 39);
             this.Menu.TabIndex = 93;
             this.Menu.Text = "Menu";
-            this.Menu.UseVisualStyleBackColor = true;
+            this.Menu.UseVisualStyleBackColor = false;
             this.Menu.Click += new System.EventHandler(this.Menu_Click);
             // 
             // Crear
             // 
+            this.Crear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.Crear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Crear.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Crear.Location = new System.Drawing.Point(813, 461);
             this.Crear.Name = "Crear";
             this.Crear.Size = new System.Drawing.Size(142, 39);
             this.Crear.TabIndex = 94;
             this.Crear.Text = "Crear";
-            this.Crear.UseVisualStyleBackColor = true;
+            this.Crear.UseVisualStyleBackColor = false;
             this.Crear.Click += new System.EventHandler(this.Crear_Click);
             // 
             // CrearCuenta

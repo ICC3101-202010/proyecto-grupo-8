@@ -36,8 +36,10 @@
             this.Registrarse = new System.Windows.Forms.Button();
             this.Aceptar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.archivos1 = new Consola_Spotflix.Archivo();
+            this.Usuarionoencontrado = new System.Windows.Forms.Label();
             this.buscador1 = new Consola_Spotflix.Buscador();
+            this.infoPerfil1 = new Consola_Spotflix.InfoPerfil();
+            this.archivos1 = new Consola_Spotflix.Archivo();
             this.crearPlaylist1 = new Consola_Spotflix.CrearPlaylist();
             this.cambiodeCuenta2 = new Consola_Spotflix.CambiodeCuenta();
             this.informacion1 = new Consola_Spotflix.Informacion();
@@ -45,9 +47,7 @@
             this.main_menu1 = new Consola_Spotflix.Main_menu();
             this.nuevoPerfil1 = new Proyecto_POO.NuevoPerfil();
             this.perfiles1 = new Proyecto_POO.Perfiles();
-            this.Usuarionoencontrado = new System.Windows.Forms.Label();
             this.crearCuenta1 = new Consola_Spotflix.CrearCuenta();
-            this.infoPerfil1 = new Consola_Spotflix.InfoPerfil();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -110,29 +110,34 @@
             // Registrarse
             // 
             this.Registrarse.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Registrarse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.Registrarse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Registrarse.Location = new System.Drawing.Point(462, 392);
             this.Registrarse.Name = "Registrarse";
             this.Registrarse.Size = new System.Drawing.Size(343, 44);
             this.Registrarse.TabIndex = 8;
             this.Registrarse.Text = "Registrarse";
-            this.Registrarse.UseVisualStyleBackColor = true;
+            this.Registrarse.UseVisualStyleBackColor = false;
             this.Registrarse.Click += new System.EventHandler(this.Registrarse_Click);
             // 
             // Aceptar
             // 
             this.Aceptar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Aceptar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.Aceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Aceptar.ForeColor = System.Drawing.Color.Black;
             this.Aceptar.Location = new System.Drawing.Point(774, 324);
             this.Aceptar.Name = "Aceptar";
             this.Aceptar.Size = new System.Drawing.Size(116, 30);
             this.Aceptar.TabIndex = 7;
             this.Aceptar.Text = "Aceptar";
-            this.Aceptar.UseVisualStyleBackColor = true;
+            this.Aceptar.UseVisualStyleBackColor = false;
             this.Aceptar.Click += new System.EventHandler(this.Aceptar_Click_1);
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.infoPerfil1);
             this.panel1.Controls.Add(this.buscador1);
+            this.panel1.Controls.Add(this.infoPerfil1);
             this.panel1.Controls.Add(this.archivos1);
             this.panel1.Controls.Add(this.crearPlaylist1);
             this.panel1.Controls.Add(this.cambiodeCuenta2);
@@ -156,15 +161,16 @@
             this.panel1.Size = new System.Drawing.Size(1264, 681);
             this.panel1.TabIndex = 14;
             // 
-            // archivos1
+            // Usuarionoencontrado
             // 
-            this.archivos1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
-            this.archivos1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.archivos1.Location = new System.Drawing.Point(0, 0);
-            this.archivos1.Name = "archivos1";
-            this.archivos1.Size = new System.Drawing.Size(1264, 681);
-            this.archivos1.TabIndex = 24;
-            this.archivos1.Visible = false;
+            this.Usuarionoencontrado.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Usuarionoencontrado.ForeColor = System.Drawing.SystemColors.Menu;
+            this.Usuarionoencontrado.Location = new System.Drawing.Point(782, 277);
+            this.Usuarionoencontrado.Name = "Usuarionoencontrado";
+            this.Usuarionoencontrado.Size = new System.Drawing.Size(108, 28);
+            this.Usuarionoencontrado.TabIndex = 15;
+            this.Usuarionoencontrado.Text = "Usuario no encontrado";
+            this.Usuarionoencontrado.Visible = false;
             // 
             // buscador1
             // 
@@ -176,6 +182,26 @@
             this.buscador1.Size = new System.Drawing.Size(1264, 681);
             this.buscador1.TabIndex = 23;
             this.buscador1.Visible = false;
+            // 
+            // infoPerfil1
+            // 
+            this.infoPerfil1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.infoPerfil1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.infoPerfil1.Location = new System.Drawing.Point(0, 0);
+            this.infoPerfil1.Name = "infoPerfil1";
+            this.infoPerfil1.Size = new System.Drawing.Size(1264, 681);
+            this.infoPerfil1.TabIndex = 25;
+            this.infoPerfil1.Visible = false;
+            // 
+            // archivos1
+            // 
+            this.archivos1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.archivos1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.archivos1.Location = new System.Drawing.Point(0, 0);
+            this.archivos1.Name = "archivos1";
+            this.archivos1.Size = new System.Drawing.Size(1264, 681);
+            this.archivos1.TabIndex = 24;
+            this.archivos1.Visible = false;
             // 
             // crearPlaylist1
             // 
@@ -250,17 +276,6 @@
             this.perfiles1.TabIndex = 16;
             this.perfiles1.Visible = false;
             // 
-            // Usuarionoencontrado
-            // 
-            this.Usuarionoencontrado.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Usuarionoencontrado.ForeColor = System.Drawing.SystemColors.Menu;
-            this.Usuarionoencontrado.Location = new System.Drawing.Point(782, 277);
-            this.Usuarionoencontrado.Name = "Usuarionoencontrado";
-            this.Usuarionoencontrado.Size = new System.Drawing.Size(108, 28);
-            this.Usuarionoencontrado.TabIndex = 15;
-            this.Usuarionoencontrado.Text = "Usuario no encontrado";
-            this.Usuarionoencontrado.Visible = false;
-            // 
             // crearCuenta1
             // 
             this.crearCuenta1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
@@ -271,16 +286,6 @@
             this.crearCuenta1.Size = new System.Drawing.Size(1264, 681);
             this.crearCuenta1.TabIndex = 14;
             this.crearCuenta1.Visible = false;
-            // 
-            // infoPerfil1
-            // 
-            this.infoPerfil1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
-            this.infoPerfil1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.infoPerfil1.Location = new System.Drawing.Point(0, 0);
-            this.infoPerfil1.Name = "infoPerfil1";
-            this.infoPerfil1.Size = new System.Drawing.Size(1264, 681);
-            this.infoPerfil1.TabIndex = 25;
-            this.infoPerfil1.Visible = false;
             // 
             // Main_Spotflix
             // 

@@ -194,7 +194,7 @@
             // 
             // listBox1
             // 
-            this.listBox1.BackColor = System.Drawing.SystemColors.Menu;
+            this.listBox1.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.listBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.listBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listBox1.FormattingEnabled = true;
@@ -206,13 +206,15 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.button1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Location = new System.Drawing.Point(0, 90);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(141, 23);
             this.button1.TabIndex = 5;
             this.button1.Text = "Publicar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox1
@@ -228,35 +230,41 @@
             // 
             // button_Crear_Playlist
             // 
+            this.button_Crear_Playlist.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.button_Crear_Playlist.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.button_Crear_Playlist.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Crear_Playlist.Location = new System.Drawing.Point(0, 584);
             this.button_Crear_Playlist.Name = "button_Crear_Playlist";
             this.button_Crear_Playlist.Size = new System.Drawing.Size(141, 42);
             this.button_Crear_Playlist.TabIndex = 2;
             this.button_Crear_Playlist.Text = "Crear Playlist";
-            this.button_Crear_Playlist.UseVisualStyleBackColor = true;
+            this.button_Crear_Playlist.UseVisualStyleBackColor = false;
             this.button_Crear_Playlist.Click += new System.EventHandler(this.button_Crear_Playlist_Click);
             // 
             // button_Cambio_de_Cuenta
             // 
+            this.button_Cambio_de_Cuenta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.button_Cambio_de_Cuenta.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button_Cambio_de_Cuenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Cambio_de_Cuenta.Location = new System.Drawing.Point(0, 35);
             this.button_Cambio_de_Cuenta.Name = "button_Cambio_de_Cuenta";
             this.button_Cambio_de_Cuenta.Size = new System.Drawing.Size(141, 35);
             this.button_Cambio_de_Cuenta.TabIndex = 1;
             this.button_Cambio_de_Cuenta.Text = "Cambio de cuenta";
-            this.button_Cambio_de_Cuenta.UseVisualStyleBackColor = true;
+            this.button_Cambio_de_Cuenta.UseVisualStyleBackColor = false;
             this.button_Cambio_de_Cuenta.Click += new System.EventHandler(this.button_Cambio_de_Cuenta_Click);
             // 
             // button_Informacion
             // 
+            this.button_Informacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.button_Informacion.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button_Informacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Informacion.Location = new System.Drawing.Point(0, 0);
             this.button_Informacion.Name = "button_Informacion";
             this.button_Informacion.Size = new System.Drawing.Size(141, 35);
             this.button_Informacion.TabIndex = 0;
             this.button_Informacion.Text = "Informacion";
-            this.button_Informacion.UseVisualStyleBackColor = true;
+            this.button_Informacion.UseVisualStyleBackColor = false;
             this.button_Informacion.Click += new System.EventHandler(this.button_Informacion_Click);
             // 
             // panel5
@@ -282,109 +290,130 @@
             // 
             // button19
             // 
+            this.button19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button19.Location = new System.Drawing.Point(3, 64);
             this.button19.Name = "button19";
             this.button19.Size = new System.Drawing.Size(114, 57);
             this.button19.TabIndex = 28;
             this.button19.Text = "button19";
-            this.button19.UseVisualStyleBackColor = true;
+            this.button19.UseVisualStyleBackColor = false;
             this.button19.Visible = false;
             // 
             // button18
             // 
+            this.button18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button18.Location = new System.Drawing.Point(3, 127);
             this.button18.Name = "button18";
             this.button18.Size = new System.Drawing.Size(114, 57);
             this.button18.TabIndex = 27;
             this.button18.Text = "button18";
-            this.button18.UseVisualStyleBackColor = true;
+            this.button18.UseVisualStyleBackColor = false;
             this.button18.Visible = false;
             // 
             // button17
             // 
+            this.button17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button17.Location = new System.Drawing.Point(3, 190);
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(114, 57);
             this.button17.TabIndex = 26;
             this.button17.Text = "button17";
-            this.button17.UseVisualStyleBackColor = true;
+            this.button17.UseVisualStyleBackColor = false;
             this.button17.Visible = false;
             // 
             // button16
             // 
+            this.button16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button16.Location = new System.Drawing.Point(3, 253);
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(114, 57);
             this.button16.TabIndex = 25;
             this.button16.Text = "button16";
-            this.button16.UseVisualStyleBackColor = true;
+            this.button16.UseVisualStyleBackColor = false;
             this.button16.Visible = false;
             // 
             // button15
             // 
+            this.button15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button15.Location = new System.Drawing.Point(3, 316);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(114, 57);
             this.button15.TabIndex = 24;
             this.button15.Text = "button15";
-            this.button15.UseVisualStyleBackColor = true;
+            this.button15.UseVisualStyleBackColor = false;
             this.button15.Visible = false;
             // 
             // button14
             // 
+            this.button14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button14.Location = new System.Drawing.Point(3, 379);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(114, 57);
             this.button14.TabIndex = 23;
             this.button14.Text = "button14";
-            this.button14.UseVisualStyleBackColor = true;
+            this.button14.UseVisualStyleBackColor = false;
             this.button14.Visible = false;
             // 
             // button13
             // 
+            this.button13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button13.Location = new System.Drawing.Point(3, 441);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(114, 57);
             this.button13.TabIndex = 22;
             this.button13.Text = "button13";
-            this.button13.UseVisualStyleBackColor = true;
+            this.button13.UseVisualStyleBackColor = false;
             this.button13.Visible = false;
             // 
             // button12
             // 
+            this.button12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button12.Location = new System.Drawing.Point(3, 504);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(114, 57);
             this.button12.TabIndex = 21;
             this.button12.Text = "button12";
-            this.button12.UseVisualStyleBackColor = true;
+            this.button12.UseVisualStyleBackColor = false;
             this.button12.Visible = false;
             // 
             // button11
             // 
+            this.button11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button11.Location = new System.Drawing.Point(3, 567);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(114, 57);
             this.button11.TabIndex = 20;
             this.button11.Text = "button11";
-            this.button11.UseVisualStyleBackColor = true;
+            this.button11.UseVisualStyleBackColor = false;
             this.button11.Visible = false;
             // 
             // button10
             // 
+            this.button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button10.Location = new System.Drawing.Point(3, 630);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(114, 57);
             this.button10.TabIndex = 19;
             this.button10.Text = "button10";
-            this.button10.UseVisualStyleBackColor = true;
+            this.button10.UseVisualStyleBackColor = false;
             this.button10.Visible = false;
             // 
             // Nombre_Playlist
             // 
             this.Nombre_Playlist.AutoSize = true;
+            this.Nombre_Playlist.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Nombre_Playlist.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Nombre_Playlist.ForeColor = System.Drawing.SystemColors.Menu;
+            this.Nombre_Playlist.ForeColor = System.Drawing.SystemColors.Highlight;
             this.Nombre_Playlist.Location = new System.Drawing.Point(3, 13);
             this.Nombre_Playlist.MaximumSize = new System.Drawing.Size(122, 1000);
             this.Nombre_Playlist.Name = "Nombre_Playlist";
@@ -432,34 +461,40 @@
             // button_Adelantar
             // 
             this.button_Adelantar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button_Adelantar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.button_Adelantar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Adelantar.Location = new System.Drawing.Point(403, 0);
             this.button_Adelantar.Name = "button_Adelantar";
             this.button_Adelantar.Size = new System.Drawing.Size(71, 31);
             this.button_Adelantar.TabIndex = 3;
             this.button_Adelantar.Text = "Adelantar";
-            this.button_Adelantar.UseVisualStyleBackColor = true;
+            this.button_Adelantar.UseVisualStyleBackColor = false;
             this.button_Adelantar.Click += new System.EventHandler(this.button33_Click);
             // 
             // button_Retroceder
             // 
             this.button_Retroceder.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button_Retroceder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.button_Retroceder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Retroceder.Location = new System.Drawing.Point(249, 0);
             this.button_Retroceder.Name = "button_Retroceder";
             this.button_Retroceder.Size = new System.Drawing.Size(71, 31);
             this.button_Retroceder.TabIndex = 4;
             this.button_Retroceder.Text = "Retroceder";
-            this.button_Retroceder.UseVisualStyleBackColor = true;
+            this.button_Retroceder.UseVisualStyleBackColor = false;
             this.button_Retroceder.Click += new System.EventHandler(this.button_Retroceder_Click);
             // 
             // button_PlayPausa
             // 
             this.button_PlayPausa.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button_PlayPausa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.button_PlayPausa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_PlayPausa.Location = new System.Drawing.Point(326, 0);
             this.button_PlayPausa.Name = "button_PlayPausa";
             this.button_PlayPausa.Size = new System.Drawing.Size(71, 31);
             this.button_PlayPausa.TabIndex = 8;
             this.button_PlayPausa.Text = "Play";
-            this.button_PlayPausa.UseVisualStyleBackColor = true;
+            this.button_PlayPausa.UseVisualStyleBackColor = false;
             this.button_PlayPausa.Click += new System.EventHandler(this.button_PlayPausa_Click);
             // 
             // panel7
@@ -469,16 +504,16 @@
             this.panel7.Controls.Add(this.label_Tiempo_Inicio);
             this.panel7.Controls.Add(this.trackBar_Duracion);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel7.Location = new System.Drawing.Point(0, 32);
+            this.panel7.Location = new System.Drawing.Point(0, 24);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(817, 25);
+            this.panel7.Size = new System.Drawing.Size(817, 33);
             this.panel7.TabIndex = 8;
             // 
             // label_Tiempo_Fin
             // 
             this.label_Tiempo_Fin.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label_Tiempo_Fin.ForeColor = System.Drawing.SystemColors.MenuBar;
-            this.label_Tiempo_Fin.Location = new System.Drawing.Point(774, 6);
+            this.label_Tiempo_Fin.Location = new System.Drawing.Point(774, 10);
             this.label_Tiempo_Fin.Name = "label_Tiempo_Fin";
             this.label_Tiempo_Fin.Size = new System.Drawing.Size(43, 15);
             this.label_Tiempo_Fin.TabIndex = 7;
@@ -565,13 +600,15 @@
             // 
             // botonCerrarSesion
             // 
+            this.botonCerrarSesion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.botonCerrarSesion.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.botonCerrarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.botonCerrarSesion.Location = new System.Drawing.Point(1136, 3);
             this.botonCerrarSesion.Name = "botonCerrarSesion";
             this.botonCerrarSesion.Size = new System.Drawing.Size(141, 22);
             this.botonCerrarSesion.TabIndex = 9;
             this.botonCerrarSesion.Text = "Cerrar Sesion";
-            this.botonCerrarSesion.UseVisualStyleBackColor = true;
+            this.botonCerrarSesion.UseVisualStyleBackColor = false;
             this.botonCerrarSesion.Click += new System.EventHandler(this.botonCerrarSesion_Click);
             // 
             // panel10
@@ -644,7 +681,7 @@
             // nuevoToolStripMenuItem
             // 
             this.nuevoToolStripMenuItem.Name = "nuevoToolStripMenuItem";
-            this.nuevoToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
+            this.nuevoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.nuevoToolStripMenuItem.Text = "Nuevo";
             this.nuevoToolStripMenuItem.Click += new System.EventHandler(this.nuevoToolStripMenuItem_Click);
             // 

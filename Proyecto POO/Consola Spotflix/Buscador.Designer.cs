@@ -75,13 +75,15 @@
             // 
             // Accion
             // 
+            this.Accion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.Accion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Accion.ForeColor = System.Drawing.SystemColors.InfoText;
             this.Accion.Location = new System.Drawing.Point(589, 334);
             this.Accion.Name = "Accion";
             this.Accion.Size = new System.Drawing.Size(206, 45);
             this.Accion.TabIndex = 5;
             this.Accion.Text = "Accion";
-            this.Accion.UseVisualStyleBackColor = true;
+            this.Accion.UseVisualStyleBackColor = false;
             this.Accion.Click += new System.EventHandler(this.button1_Click);
             // 
             // label3
@@ -95,13 +97,15 @@
             // 
             // atras
             // 
+            this.atras.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.atras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.atras.ForeColor = System.Drawing.SystemColors.InfoText;
             this.atras.Location = new System.Drawing.Point(124, 334);
             this.atras.Name = "atras";
             this.atras.Size = new System.Drawing.Size(206, 45);
             this.atras.TabIndex = 8;
             this.atras.Text = "Atras";
-            this.atras.UseVisualStyleBackColor = true;
+            this.atras.UseVisualStyleBackColor = false;
             this.atras.Click += new System.EventHandler(this.atras_Click);
             // 
             // label1
@@ -196,13 +200,15 @@
             // 
             // Buscar
             // 
+            this.Buscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.Buscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Buscar.ForeColor = System.Drawing.SystemColors.InfoText;
             this.Buscar.Location = new System.Drawing.Point(659, 197);
             this.Buscar.Name = "Buscar";
             this.Buscar.Size = new System.Drawing.Size(119, 29);
             this.Buscar.TabIndex = 17;
             this.Buscar.Text = "Buscar";
-            this.Buscar.UseVisualStyleBackColor = true;
+            this.Buscar.UseVisualStyleBackColor = false;
             this.Buscar.Click += new System.EventHandler(this.Buscar_Click);
             // 
             // Busqueda
