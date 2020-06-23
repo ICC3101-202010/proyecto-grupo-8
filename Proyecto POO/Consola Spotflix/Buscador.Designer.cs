@@ -43,6 +43,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.Buscar = new System.Windows.Forms.Button();
             this.Busqueda = new System.Windows.Forms.Label();
+            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // comboBox1
@@ -67,7 +69,7 @@
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Location = new System.Drawing.Point(299, 153);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(349, 32);
+            this.comboBox2.Size = new System.Drawing.Size(177, 32);
             this.comboBox2.TabIndex = 2;
             this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
@@ -166,7 +168,7 @@
             this.textBox1.ForeColor = System.Drawing.SystemColors.Menu;
             this.textBox1.Location = new System.Drawing.Point(299, 194);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(349, 29);
+            this.textBox1.Size = new System.Drawing.Size(177, 29);
             this.textBox1.TabIndex = 14;
             // 
             // comboBox4
@@ -213,11 +215,36 @@
             this.Busqueda.TabIndex = 18;
             this.Busqueda.Text = "Busqueda";
             // 
+            // comboBox5
+            // 
+            this.comboBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox5.ForeColor = System.Drawing.SystemColors.Menu;
+            this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.Location = new System.Drawing.Point(482, 153);
+            this.comboBox5.Name = "comboBox5";
+            this.comboBox5.Size = new System.Drawing.Size(166, 32);
+            this.comboBox5.TabIndex = 19;
+            // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.ForeColor = System.Drawing.SystemColors.Menu;
+            this.textBox2.Location = new System.Drawing.Point(482, 194);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(166, 29);
+            this.textBox2.TabIndex = 20;
+            // 
             // Buscador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.comboBox5);
             this.Controls.Add(this.Busqueda);
             this.Controls.Add(this.Buscar);
             this.Controls.Add(this.label6);
@@ -258,5 +285,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button Buscar;
         private System.Windows.Forms.Label Busqueda;
+        private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }

@@ -34,7 +34,9 @@ namespace Consola_Spotflix
                 label2.Text = "Perfil:";
                 foreach (var item in Spotflix.Lista_Perfiles)
                 {
+                    comboBox2.Items.Remove(Spotflix.perfilenlinea.Nombre_perfil);
                     comboBox2.Items.Add(item.Nombre_perfil);
+                    
                 }
                 label4.Hide();
                 label5.Hide();
@@ -43,11 +45,17 @@ namespace Consola_Spotflix
                 label3.Hide();
                 comboBox4.Hide();
                 label6.Hide();
+                comboBox5.Hide();
+                textBox2.Hide();
             }
             //ok
             else if (tipo == "Artistas")
             {
                 Buscar.Show();
+                comboBox5.Show();
+                textBox2.Show();
+                comboBox5.Items.Add("Nacionalidad");
+                comboBox5.Items.Add("Sexo");
                 label1.Text = "Accion";
                 comboBox1.Items.Add("Seguir");
                 comboBox1.Items.Add("Dejar de seguir");
@@ -76,7 +84,8 @@ namespace Consola_Spotflix
             else if (tipo == "Canciones")
             {
                 Buscar.Show();
-
+                comboBox5.Hide();
+                textBox2.Hide();
                 label1.Show();
                 label2.Show();
                 label4.Show();
@@ -94,7 +103,6 @@ namespace Consola_Spotflix
 
                 comboBox2.Items.Add("Titulo");
                 comboBox2.Items.Add("Cantante");
-                comboBox2.Items.Add("Album");
                 comboBox2.Items.Add("Genero");
                 label2.Text = "Tipo de Categoria";
 
@@ -112,6 +120,8 @@ namespace Consola_Spotflix
             //ok
             else if (tipo == "Videos")
             {
+                comboBox5.Hide();
+                textBox2.Hide();
                 label1.Show();
                 label2.Show();
                 label4.Show();
@@ -128,9 +138,8 @@ namespace Consola_Spotflix
                 comboBox1.Items.Add("Eliminar");
 
                 comboBox2.Items.Add("Titulo");
-                comboBox2.Items.Add("Cantante");
-                comboBox2.Items.Add("Album");
                 comboBox2.Items.Add("Genero");
+                comboBox2.Items.Add("Clasificacion");
                 label2.Text = "Tipo de Categoria";
 
                 label6.Text = "En que lista?";
@@ -150,7 +159,10 @@ namespace Consola_Spotflix
             //ok
             else if (tipo == "Peliculas")
             {
+
                 Buscar.Show();
+                comboBox5.Hide();
+                textBox2.Hide();
                 label1.Show();
                 label2.Show();
                 label4.Show();
@@ -167,8 +179,7 @@ namespace Consola_Spotflix
                 comboBox1.Items.Add("Eliminar");
 
                 comboBox2.Items.Add("Titulo");
-                comboBox2.Items.Add("Cantante");
-                comboBox2.Items.Add("Album");
+                comboBox2.Items.Add("Clasificacion");
                 comboBox2.Items.Add("Genero");
                 label2.Text = "Tipo de Categoria";
 
@@ -187,6 +198,8 @@ namespace Consola_Spotflix
             //ok
             else if (tipo == "Podcasts")
             {
+                comboBox5.Hide();
+                textBox2.Hide();
                 label1.Show();
                 label2.Show();
                 label4.Show();
@@ -204,8 +217,7 @@ namespace Consola_Spotflix
                 comboBox1.Items.Add("Eliminar");
 
                 comboBox2.Items.Add("Titulo");
-                comboBox2.Items.Add("Cantante");
-                comboBox2.Items.Add("Album");
+                comboBox2.Items.Add("Locutor");
                 comboBox2.Items.Add("Genero");
                 label2.Text = "Tipo de Categoria";
 
@@ -226,6 +238,8 @@ namespace Consola_Spotflix
             else if (tipo == "Audiolibros")
             {
                 Buscar.Show();
+                comboBox5.Hide();
+                textBox2.Hide();
                 label1.Show();
                 label2.Show();
                 label4.Show();
@@ -243,7 +257,6 @@ namespace Consola_Spotflix
 
                 comboBox2.Items.Add("Titulo");
                 comboBox2.Items.Add("Lector");
-                comboBox2.Items.Add("Album");
                 comboBox2.Items.Add("Genero");
                 label2.Text = "Tipo de Categoria";
 
@@ -267,6 +280,8 @@ namespace Consola_Spotflix
             {
                 Buscar.Show();
                 label1.Show();
+                comboBox5.Hide();
+                textBox2.Hide();
                 label1.Text = "Accion";
                 comboBox1.Items.Add("Seguir");
                 comboBox1.Items.Add("Dejar de Seguir");
@@ -446,7 +461,7 @@ namespace Consola_Spotflix
                 }
 
             }
-            else if (tipo == "AudioLibros")
+            else if (tipo == "Audiolibros")
             {
                 bool encontrado = false;
                 bool encontrado2 = false;
@@ -1895,6 +1910,11 @@ namespace Consola_Spotflix
                 {
                     sexo = 1;
                 }
+                int sexo1 = 2;
+                if (textBox2.Text == "Hombre")
+                {
+                    sexo1 = 1;
+                }
                 int profesion = 0;
                 if (textBox1.Text == "Cantante")
                 {
@@ -1946,6 +1966,37 @@ namespace Consola_Spotflix
                     { 
                         comboBox3.Items.Add(item.Nombre_y_Apellido);
                     }
+                    else if ((string)comboBox2.SelectedItem == "Nombre" && (string)comboBox5.SelectedItem == "Nacionalidad"
+                        && item.Nombre_y_Apellido == textBox1.Text && item.Nacionalidad == textBox2.Text)
+                    {
+                        comboBox3.Items.Add(item.Nombre_y_Apellido);
+                    }
+                    else if ((string)comboBox2.SelectedItem == "Nombre" && (string)comboBox5.SelectedItem == "Sexo"
+                        && item.Sexo == sexo1 && item.Nombre_y_Apellido == textBox1.Text)
+                    {
+                        comboBox3.Items.Add(item.Nombre_y_Apellido);
+                    }
+                    else if ((string)comboBox2.SelectedItem == "Profesion" && (string)comboBox5.SelectedItem == "Sexo"
+                     && item.Sexo == sexo1 && item.Profesion[0] == profesion)
+                    {
+                        comboBox3.Items.Add(item.Nombre_y_Apellido);
+                    }
+                    else if ((string)comboBox2.SelectedItem == "Profesion" && (string)comboBox5.SelectedItem == "Nacionalidad"
+                         && item.Sexo == sexo1 && item.Nacionalidad == textBox1.Text)
+                    {
+                        comboBox3.Items.Add(item.Nombre_y_Apellido);
+                    }
+                    else if ((string)comboBox2.SelectedItem == "Edad" && (string)comboBox5.SelectedItem == "Sexo"
+                    && item.Sexo == sexo1 && 2020 - item.Fecha_De_Nacimiento.Year == Convert.ToInt32(textBox1.Text))
+                    {
+                        comboBox3.Items.Add(item.Nombre_y_Apellido);
+                    }
+                    else if ((string)comboBox2.SelectedItem == "Edad" && (string)comboBox5.SelectedItem == "Nacionalidad"
+                        && item.Nacionalidad == textBox2.Text && 2020 - item.Fecha_De_Nacimiento.Year == Convert.ToInt32(textBox1.Text))
+                    {
+                        comboBox3.Items.Add(item.Nombre_y_Apellido);
+                    }
+
                 }
                 
             }
@@ -1964,10 +2015,7 @@ namespace Consola_Spotflix
                             }
                         }
                     }
-                    else if ((string)comboBox2.SelectedItem == "Album" && item.Album == textBox1.Text)
-                    {
-                        comboBox3.Items.Add(item.Titulo);
-                    }
+
                     else if ((string)comboBox2.SelectedItem == "Genero" && item.Genero == textBox1.Text)
                     {
                         comboBox3.Items.Add(item.Titulo);
@@ -2131,7 +2179,7 @@ namespace Consola_Spotflix
                         comboBox3.Items.Add(item.Titulo);
 
                     }
-                    else if ((string)comboBox2.SelectedItem == "Locutor")
+                    else if ((string)comboBox2.SelectedItem == "Lector")
                     {
                         foreach (var item1 in Spotflix.Lista_Personas)
                         {
