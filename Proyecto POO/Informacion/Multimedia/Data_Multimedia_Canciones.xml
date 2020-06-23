@@ -33,8 +33,8 @@
       </Persona>
     </Compositor>
     <Album>Las que no iban a salir</Album>
-    <Imagen>Imagen</Imagen>
-    <Letra>Letra</Letra>
+    <Imagen />
+    <Letra />
     <Genero>Trap</Genero>
   </Cancion>
   <Cancion>
@@ -70,8 +70,8 @@
       </Persona>
     </Compositor>
     <Album>Gangsta's Paradise 2k11</Album>
-    <Imagen>Imagen</Imagen>
-    <Letra>Letra</Letra>
+    <Imagen />
+    <Letra />
     <Genero>Rap</Genero>
   </Cancion>
   <Cancion>
@@ -107,8 +107,8 @@
       </Persona>
     </Compositor>
     <Album>3 de Abril</Album>
-    <Imagen>Imagen</Imagen>
-    <Letra>Letra</Letra>
+    <Imagen />
+    <Letra />
     <Genero>Trap</Genero>
   </Cancion>
   <Cancion>
@@ -144,8 +144,8 @@
       </Persona>
     </Compositor>
     <Album>Keii</Album>
-    <Imagen>Imagen</Imagen>
-    <Letra>Letra</Letra>
+    <Imagen />
+    <Letra />
     <Genero>Trap</Genero>
   </Cancion>
   <Cancion>
@@ -191,8 +191,8 @@
       </Persona>
     </Compositor>
     <Album>Keii</Album>
-    <Imagen>Imagen</Imagen>
-    <Letra>Letra</Letra>
+    <Imagen />
+    <Letra />
     <Genero>Reggaeton</Genero>
   </Cancion>
   <Cancion>
@@ -228,8 +228,8 @@
       </Persona>
     </Compositor>
     <Album>Skechers</Album>
-    <Imagen>Imagen</Imagen>
-    <Letra>Letra</Letra>
+    <Imagen />
+    <Letra />
     <Genero>Rap</Genero>
   </Cancion>
 </ArrayOfCancion>

@@ -19,7 +19,7 @@
         </Profesion>
       </Persona>
     </Locutor>
-    <Imagen>Imagen</Imagen>
+    <Imagen />
     <Genero>Comedia</Genero>
   </Podcast>
 </ArrayOfPodcast>

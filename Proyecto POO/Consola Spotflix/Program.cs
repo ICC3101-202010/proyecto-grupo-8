@@ -88,22 +88,22 @@ namespace Consola_Spotflix
             //Crear Canciones:
             Cancion Como_se_siente = new Cancion("Como se siente", 1, new DateTime(2020, 05, 11), TimeSpan.Zero, 10.0, 2,
                 Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + @"\Biblioteca\Musica\Bad bunny - Como se siente.mp3"
-                , new List<Persona> { Bad_Bunny }, new List<Persona> { Bad_Bunny }, "Las que no iban a salir", "Imagen", "Letra", "Trap");
+                , new List<Persona> { Bad_Bunny }, new List<Persona> { Bad_Bunny }, "Las que no iban a salir", "", "", "Trap");
             Cancion Gangstas_paradise = new Cancion("Gangsta's paradise", 1, new DateTime(1995, 08, 08), TimeSpan.Zero, 10.0, 2,
                 Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + @"\Biblioteca\Musica\Coolio - gangstas paradise.wav",
-                new List<Persona> { Coolio }, new List<Persona> { Coolio }, "Gangsta's Paradise 2k11", "Imagen", "Letra", "Rap");
+                new List<Persona> { Coolio }, new List<Persona> { Coolio }, "Gangsta's Paradise 2k11", "", "", "Rap");
             Cancion Tres_de_abril = new Cancion("3 de Abril", 1, new DateTime(2020, 04, 03), TimeSpan.Zero, 10.0, 2,
                 Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + @"\Biblioteca\Musica\Anuel AA - 3 de abril.wav",
-                new List<Persona> { Anuel }, new List<Persona> { Anuel }, "3 de Abril", "Imagen", "Letra", "Trap");
+                new List<Persona> { Anuel }, new List<Persona> { Anuel }, "3 de Abril", "", "", "Trap");
             Cancion Keii = new Cancion("Keii", 1, new DateTime(2020, 02, 07), TimeSpan.Zero, 10.0, 2,
                 Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + @"\Biblioteca\Musica\Anuel AA - Keii.wav",
-                new List<Persona> { Anuel }, new List<Persona> { Anuel }, "Keii", "Imagen", "Letra", "Trap");
+                new List<Persona> { Anuel }, new List<Persona> { Anuel }, "Keii", "", "", "Trap");
             Cancion Follow = new Cancion("Follow", 1, new DateTime(2020, 04, 01), TimeSpan.Zero, 10.0, 2,
                 Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + @"\Biblioteca\Musica\Karol G, Anuel AA - Follow.wav",
-                new List<Persona> { Karol_G, Anuel }, new List<Persona> { Karol_G }, "Keii", "Imagen", "Letra", "Reggaeton");
+                new List<Persona> { Karol_G, Anuel }, new List<Persona> { Karol_G }, "Keii", "", "", "Reggaeton");
             Cancion Skechers = new Cancion("Skechers", 1, new DateTime(2020, 01, 12), TimeSpan.Zero, 10.0, 2,
                 Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + @"\Biblioteca\Musica\DripReport - Skechers.wav",
-                new List<Persona> { DripReport }, new List<Persona> { DripReport }, "Skechers", "Imagen", "Letra", "Rap");
+                new List<Persona> { DripReport }, new List<Persona> { DripReport }, "Skechers", "", "", "Rap");
 
             //Agregar Canciones:
             Spotflix.Lista_Canciones.Add(Como_se_siente);
@@ -158,7 +158,7 @@ namespace Consola_Spotflix
 
             //Crear Podcast:
             Podcast Comedia_Miguel_Granados = new Podcast("Comedia Miguel Granados", 3, new DateTime(2019, 10, 17), TimeSpan.Zero, 10.0, 2,
-                Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + @"\Biblioteca\Podcast\Comedia - Miguel Granados.mp3", new List<Persona> { Miguel_Granados }, "Imagen", "Comedia");
+                Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + @"\Biblioteca\Podcast\Comedia - Miguel Granados.mp3", new List<Persona> { Miguel_Granados }, "", "Comedia");
 
             //Agregar Podcast:
             Spotflix.Lista_Podcasts.Add(Comedia_Miguel_Granados);
@@ -193,10 +193,6 @@ namespace Consola_Spotflix
             using (FileStream fs4 = File.OpenRead(Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + @"\Informacion\Perfiles\Data_Perfiles.xml"))
             {
                 Spotflix.Lista_Perfiles = (List<Perfil>)serializer101.Deserialize(fs4);
-                foreach (var item in Spotflix.Lista_Perfiles)
-                {
-                    item.Imagen = Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + item.Imagen.Substring(Directory.GetCurrentDirectory().Length - 27);
-                }
             }
             //Deserializar info usuarios
             XmlSerializer serializer102 = new XmlSerializer(typeof(List<Usuario>));
@@ -210,51 +206,119 @@ namespace Consola_Spotflix
             using (FileStream fs4 = File.OpenRead(Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + @"\Informacion\Multimedia\Data_Multimedia_Canciones.xml"))
             {
                 Spotflix.Lista_Canciones = (List<Cancion>)serializer111.Deserialize(fs4);
-                foreach (var item in Spotflix.Lista_Canciones)
-                {
-                    item.URL = Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + item.URL.Substring(Directory.GetCurrentDirectory().Length - 27);
-                }
+
             }
             //Deserializar info peliculas
             XmlSerializer serializer112 = new XmlSerializer(typeof(List<Pelicula>));
             using (FileStream fs4 = File.OpenRead(Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + @"\Informacion\Multimedia\Data_Multimedia_Peliculas.xml"))
             {
                 Spotflix.Lista_Peliculas = (List<Pelicula>)serializer112.Deserialize(fs4);
-                foreach (var item in Spotflix.Lista_Peliculas)
-                {
-                    item.URL = Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + item.URL.Substring(Directory.GetCurrentDirectory().Length - 27);
-                }
+
             }
             //Deserializar info podcast
             XmlSerializer serializer113 = new XmlSerializer(typeof(List<Podcast>));
             using (FileStream fs4 = File.OpenRead(Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + @"\Informacion\Multimedia\Data_Multimedia_Podcast.xml"))
             {
                 Spotflix.Lista_Podcasts = (List<Podcast>)serializer113.Deserialize(fs4);
-                foreach (var item in Spotflix.Lista_Podcasts)
-                {
-                    item.URL = Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + item.URL.Substring(Directory.GetCurrentDirectory().Length - 27);
-                }
+
             }
             //Deserializar info audiolibors
             XmlSerializer serializer114 = new XmlSerializer(typeof(List<AudioLibro>));
             using (FileStream fs4 = File.OpenRead(Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + @"\Informacion\Multimedia\Data_Multimedia_Audiolibro.xml"))
             {
                 Spotflix.Lista_AudioLibros = (List<AudioLibro>)serializer114.Deserialize(fs4);
-                foreach (var item in Spotflix.Lista_AudioLibros)
-                {
-                    item.URL = Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + item.URL.Substring(Directory.GetCurrentDirectory().Length - 27);
-                }
+
             }
             //Deserializar info videos
             XmlSerializer serializer115 = new XmlSerializer(typeof(List<Video>));
             using (FileStream fs4 = File.OpenRead(Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + @"\Informacion\Multimedia\Data_Multimedia_Videos.xml"))
             {
                 Spotflix.Lista_Videos = (List<Video>)serializer115.Deserialize(fs4);
-                foreach (var item in Spotflix.Lista_Videos)
+
+            }
+            foreach (var item in Spotflix.Lista_Perfiles)
+            {
+                if (item.Imagen == "")
+                {
+
+                }
+                else
+                {
+                    string a = item.Imagen;
+                    item.Imagen = Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + a.Substring(Directory.GetCurrentDirectory().Length - 27);
+                }
+            }
+            foreach (var item in Spotflix.Lista_Canciones)
+            {
+                if (item.Imagen == "")
+                {
+
+                }
+                else
+                {
+                    item.Imagen = Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + item.Imagen.Substring(Directory.GetCurrentDirectory().Length - 27);
+                }
+                if (item.Letra == "")
+                {
+
+                }
+                else
+                {
+                    item.Letra = Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + item.Letra.Substring(Directory.GetCurrentDirectory().Length - 27);
+                }
+
+                item.URL = Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + item.URL.Substring(Directory.GetCurrentDirectory().Length - 27);
+
+            }
+            foreach (var item in Spotflix.Lista_Peliculas)
+            {
+                if (item.URL == "")
+                {
+
+                }
+                else
                 {
                     item.URL = Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + item.URL.Substring(Directory.GetCurrentDirectory().Length - 27);
                 }
             }
+            foreach (var item in Spotflix.Lista_Podcasts)
+            {
+                if (item.Imagen == "")
+                {
+
+                }
+                else
+                {
+                    item.Imagen = Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + item.Imagen.Substring(Directory.GetCurrentDirectory().Length - 27);
+                }
+                item.URL = Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + item.URL.Substring(Directory.GetCurrentDirectory().Length - 27);
+
+            }
+            foreach (var item in Spotflix.Lista_AudioLibros)
+            {
+                if (item.URL_Texto == "")
+                {
+
+                }
+                else
+                {
+                    item.URL_Texto = Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + item.URL_Texto.Substring(Directory.GetCurrentDirectory().Length - 27);
+                }
+                item.URL = Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + item.URL.Substring(Directory.GetCurrentDirectory().Length - 27);
+
+            }
+            foreach (var item in Spotflix.Lista_Videos)
+            {
+                if (item.URL == "")
+                {
+
+                }
+                else
+                {
+                    item.URL = Directory.GetCurrentDirectory().Substring(0, Directory.GetCurrentDirectory().Length - 27) + item.URL.Substring(Directory.GetCurrentDirectory().Length - 27);
+                }
+            }
+
 
             /////////////////////////////////////////////////////////
             /////////////////////////////////////////////////////////
