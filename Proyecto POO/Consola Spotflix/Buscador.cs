@@ -53,6 +53,7 @@ namespace Consola_Spotflix
                 comboBox1.Items.Add("Dejar de seguir");
 
                 label2.Text = "Categoria";
+                comboBox2.Items.Add("Nombre");
                 comboBox2.Items.Add("Nacionalidad");
                 comboBox2.Items.Add("Sexo");
                 comboBox2.Items.Add("Profesion");
@@ -269,6 +270,7 @@ namespace Consola_Spotflix
                 label1.Text = "Accion";
                 comboBox1.Items.Add("Seguir");
                 comboBox1.Items.Add("Dejar de Seguir");
+                comboBox1.Items.Add("Eliminar");
                 comboBox2.Items.Add("Audiolibros");
                 comboBox2.Items.Add("Canciones");
                 comboBox2.Items.Add("Peliculas");
@@ -1474,7 +1476,7 @@ namespace Consola_Spotflix
                         }
 
                     }
-                    if ((string)comboBox2.SelectedItem == "Cancion")
+                    if ((string)comboBox2.SelectedItem == "Canciones")
                     {
                         Playlist p1 = new Playlist();
                         foreach (var item in Spotflix.Lista_Perfiles)
@@ -1608,7 +1610,7 @@ namespace Consola_Spotflix
                     }
 
                 }
-                else
+                else if ((string)comboBox1.SelectedItem == "Dejar de seguir")
                 {
                     bool encontrado = false;
                     if ((string)comboBox2.SelectedItem == "Audiolibros")
@@ -1645,7 +1647,7 @@ namespace Consola_Spotflix
                         }
 
                     }
-                    if ((string)comboBox2.SelectedItem == "Cancion")
+                    if ((string)comboBox2.SelectedItem == "Canciones")
                     {
                         Playlist p1 = new Playlist();
                         foreach (var item in Spotflix.Lista_Perfiles)
@@ -1778,6 +1780,70 @@ namespace Consola_Spotflix
                         }
                     }
 
+                }
+                else
+                {
+                    bool encontrado = false;
+                    if ((string)comboBox2.SelectedItem == "Audiolibros")
+                    {
+                        foreach (var item in Spotflix.perfilenlinea.Playlists_Audiolibro_Propios)
+                        {
+                            if (item.Nombre == (string)comboBox3.SelectedItem)
+                            {
+                                Spotflix.perfilenlinea.Playlists_Audiolibro_Propios.Remove(item);
+                            }
+
+                        }
+
+                    }
+                    if ((string)comboBox2.SelectedItem == "Canciones")
+                    {
+                        Playlist p1 = new Playlist();
+
+                        foreach (var item in Spotflix.perfilenlinea.Playlists_Canciones_Propias)
+                        {
+                            if (item.Nombre == (string)comboBox3.SelectedItem)
+                            {
+                                Spotflix.perfilenlinea.Playlists_Canciones_Propias.Remove(item);
+                            }
+
+                        }
+
+                    }
+                    if ((string)comboBox2.SelectedItem == "Peliculas")
+                    {
+                        foreach (var item in Spotflix.perfilenlinea.Playlists_Peliculas_Propias)
+                        {
+                            if (item.Nombre == (string)comboBox3.SelectedItem)
+                            {
+                                Spotflix.perfilenlinea.Playlists_Peliculas_Propias.Remove(item);
+                            }
+
+                        }
+                    }
+                    if ((string)comboBox2.SelectedItem == "Podcasts")
+                    {
+                        foreach (var item in Spotflix.perfilenlinea.Playlists_Podcast_Propios)
+                        {
+                            if (item.Nombre == (string)comboBox3.SelectedItem)
+                            {
+                                Spotflix.perfilenlinea.Playlists_Podcast_Propios.Remove(item);
+                            }
+
+                        }
+
+                    }
+                    if ((string)comboBox2.SelectedItem == "Videos")
+                    {
+                        foreach (var item in Spotflix.perfilenlinea.Playlists_Video_Propios)
+                        {
+                            if (item.Nombre == (string)comboBox3.SelectedItem)
+                            {
+                                Spotflix.perfilenlinea.Playlists_Video_Propios.Remove(item);
+                            }
+
+                        }
+                    }
                 }
             }
             //Playlist
@@ -1875,6 +1941,10 @@ namespace Consola_Spotflix
                     {
                         comboBox3.Items.Add(item.Nombre_y_Apellido);
 
+                    }
+                    else if ((string)comboBox2.SelectedItem == "Nombre" && item.Nombre_y_Apellido == textBox1.Text)
+                    { 
+                        comboBox3.Items.Add(item.Nombre_y_Apellido);
                     }
                 }
                 
@@ -2078,8 +2148,72 @@ namespace Consola_Spotflix
             //FUncion Playlist
             else if (tipo == "Playlists")
             {
+                if ((string)comboBox1.SelectedItem == "Eliminar")
+                {
+                    if ((string)comboBox2.SelectedItem == "AudioLibros")
+                    {
 
-                if ((string)comboBox2.SelectedItem == "AudioLibros")
+                        foreach (var item2 in Spotflix.perfilenlinea.Playlists_Audiolibro_Propios)
+                        {
+                            if (item2.Nombre == textBox1.Text)
+                            {
+                                comboBox3.Items.Add(item2.Nombre);
+                            }
+                        }
+                        
+                    }
+                    else if ((string)comboBox2.SelectedItem == "Canciones")
+                    {
+                        foreach (var item2 in Spotflix.perfilenlinea.Playlists_Canciones_Propias)
+                        {
+                            if (item2.Nombre == textBox1.Text)
+                            {
+                                comboBox3.Items.Add(item2.Nombre);
+                            }
+                        }
+                    }
+                    else if ((string)comboBox2.SelectedItem == "Peliculas")
+                    {
+                        foreach (var item in Spotflix.Lista_Perfiles)
+                        {
+                            foreach (var item2 in item.Playlists_Peliculas_Propias)
+                            {
+                                if (item2.Nombre == textBox1.Text)
+                                {
+                                    comboBox3.Items.Add(item2.Nombre);
+                                }
+                            }
+                        }
+                    }
+                    else if ((string)comboBox2.SelectedItem == "Podcasts")
+                    {
+                        foreach (var item in Spotflix.Lista_Perfiles)
+                        {
+                            foreach (var item2 in item.Playlists_Podcast_Propios)
+                            {
+                                if (item2.Nombre == textBox1.Text)
+                                {
+                                    comboBox3.Items.Add(item2.Nombre);
+                                }
+                            }
+                        }
+                    }
+                    else if ((string)comboBox2.SelectedItem == "Videos")
+                    {
+                        foreach (var item in Spotflix.Lista_Perfiles)
+                        {
+                            foreach (var item2 in item.Playlists_Video_Propios)
+                            {
+                                if (item2.Nombre == textBox1.Text)
+                                {
+                                    comboBox3.Items.Add(item2.Nombre);
+                                }
+                            }
+                        }
+                    }
+                }
+
+                if ((string)comboBox2.SelectedItem == "Audiolibros")
                 {
                     foreach (var item in Spotflix.Lista_Perfiles)
                     {
@@ -2105,7 +2239,7 @@ namespace Consola_Spotflix
                         }
                     }
                 }
-                if ((string)comboBox2.SelectedItem == "Peliculas")
+                else if ((string)comboBox2.SelectedItem == "Peliculas")
                 {
                     foreach (var item in Spotflix.Lista_Perfiles)
                     {
@@ -2118,7 +2252,7 @@ namespace Consola_Spotflix
                         }
                     }
                 }
-                if ((string)comboBox2.SelectedItem == "Podcasts")
+                else if ((string)comboBox2.SelectedItem == "Podcasts")
                 {
                     foreach (var item in Spotflix.Lista_Perfiles)
                     {
@@ -2131,7 +2265,7 @@ namespace Consola_Spotflix
                         }
                     }
                 }
-                if ((string)comboBox2.SelectedItem == "Videos")
+                else if ((string)comboBox2.SelectedItem == "Videos")
                 {
                     foreach (var item in Spotflix.Lista_Perfiles)
                     {
