@@ -71,6 +71,7 @@ namespace Consola_Spotflix
                 label3.Show();
                 label3.Text = "Tipo de perfil";
                 comboBox2.Show();
+                comboBox2.Items.Add("Artista");
                 comboBox2.Items.Add("Publico");
                 comboBox2.Items.Add("Privado");
                 textBox1.Hide();
@@ -148,14 +149,18 @@ namespace Consola_Spotflix
             }
             else if ((string)comboBox1.SelectedItem == "Tipo de perfil")
             {
-                int tipo = 0;
+                int tipo = 3;
                 if ((string)comboBox2.SelectedItem == "Publico") 
                 {
                     tipo = 1;
                 }
-                else 
+                else if ((string)comboBox2.SelectedItem == "Privado")
                 {
                     tipo = 2;
+                }
+                else
+                {
+                    tipo = 3;
                 }
 
                 foreach (Perfil p in Spotflix.Lista_Perfiles)
