@@ -193,7 +193,6 @@ namespace Consola_Spotflix
             {
                 Muro.listBox_registro = (List<string>)serializer100.Deserialize(fs4);
             }
-
             //Deserializar info perfil
 
             XmlSerializer serializer101 = new XmlSerializer(typeof(List<Perfil>));
